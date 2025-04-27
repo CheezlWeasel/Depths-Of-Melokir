@@ -1031,13 +1031,24 @@
 					"items": [
 						{
 							"type": "item",
+							"name": "Poison (Cost: 1d6).",
 							"entries": [
-								"Poison (Cost: 1d6). You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.",
+								"You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.",
 								"To use this effect, you must have a Poisoner's Kit on your person."
 							]
 						},
-						"Trip (Cost: 1d6). If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.",
-						"Withdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks."		
+						{
+							"type": "item",
+							"name": "Trip (Cost: 1d6).",
+							"entry":"If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition."
+						},
+						{
+							"type": "item",
+							"name": "Withdraw (Cost: 1d6).",
+							"entry":"Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks."	
+						}
+						
+							
 					]
 				}
 			]
@@ -1187,9 +1198,21 @@
 				{
 					"type":"list",
 					"items":[
-					"Daze (Cost: 2d6). The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.",
-					"Knock Out (Cost: 6d6). The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
-					"Obscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn."	
+						{
+							"type": "item",
+							"name": "Daze (Cost: 2d6).",
+							"entry": "The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action."
+						},
+						{
+							"type": "item",
+							"name": "Obscure (Cost: 3d6).",
+							"entry": "The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn."	
+						},
+						{
+							"type": "item",
+							"name": "Knock Out (Cost: 6d6).",
+							"entry": "The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success."
+						}
 					]
 				}
 			]

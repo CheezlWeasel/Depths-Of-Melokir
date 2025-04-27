@@ -886,19 +886,22 @@
 									"items": [
 										{
 											"type": "item",
-											"entry": "Flurry of Blows. You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action."
+											"name":"Flurry of Blows.",
+											"entry": "You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action."
 										},
 										{
 											"type": "item",
-											"entry": "Patient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action."
+											"name":"Patient Defense.",
+											"entry": "You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action."
 										},
 										{
 											"type": "item",
-											"entry": "Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn."
+											"name":"Step of the Wind.",
+											"entry": "You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn."
 										}
 									]
 								}
-							]				
+							]
 						}
 					]
 				}
