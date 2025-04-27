@@ -3438,9 +3438,9 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MisMV1] = `${Parser.MisMVX_PREFIX}1`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_AATM] = `${Parser.AA_PREFIX}The Mortuary`;
 
 Parser.SOURCE_JSON_TO_ABV = {};
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB'14";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMG] = "DMG'14";
-Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MM] = "MM'14";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PHB] = "PHB";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DMG] = "DMG";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MM] = "MM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CoS] = "CoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EEPC] = "EEPC";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_EET] = "EET";
