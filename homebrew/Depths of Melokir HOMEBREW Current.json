@@ -1,0 +1,3566 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "DepthsofMelokir",
+                "abbreviation": "DoM",
+                "full": "Depths of Melokir",
+                "url": "",
+                "authors": ["Depths of Melokir DM's and Co"],
+                "convertedBy": [
+                    "Cheezl"
+                ]
+            }
+        ],
+        "optionalFeatureTypes": {
+            "FS:L": "Fighting Style: Lictor" 
+        }
+    },    
+    "optionalfeature": [
+        {
+            "name": "Parry",
+            "source": "DepthsofMelokir",
+            "featureType": [
+                "FS:L"
+            ],
+            "entries": [
+                "When a creature you can see makes a melee attack against you, you may use a reaction to gain a +2 to your AC until the end of the creature's turn. You must be wielding a simple or martial weapon and a dagger to use this reaction."
+            ]
+        },
+        {
+            "name": "Perilous Blows",
+            "source": "DepthsofMelokir",
+            "featureType": [
+                "FS:L"
+            ],
+            "entries": [
+                "When you make your first attack on your turn, you can decide to strike with extra lethality in exchange for opening up your own defense. Doing so means your melee weapon attack rolls during this turn also score a critical hit on a d20 roll of 1 lower than usual (for example on a 19 or 20, rather than just a 20), but attack rolls against you share the same benefit until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Versatile Fighting",
+            "source": "DepthsofMelokir",
+            "featureType": [
+                "FS:L"
+            ],
+            "entries": [
+                "While wielding a single versatile weapon and no shield, you can choose to wield your weapon one or two-handed until the start of your next turn. When wielding it one-handed you gain a +1 bonus to attack rolls and to your Armor class. Wielding it two-handed you gain a +2 bonus to your damage rolls."
+            ]
+        }
+    ],
+    "race": [
+        {
+            "name": "Human Redux",
+            "source": "DepthsofMelokir",
+            "page": "",
+            "ability": [
+                {
+                    "choose": {
+                    "weighted": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "weights": [2,1]
+                    }
+                  }
+                },
+                  {
+                    "choose": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "amount": 1,
+                      "count": 3
+                    }
+                  }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+                    ]   
+                },
+                {
+                    "type": "entries",
+                    "name": "Fast Learners",
+                    "entries": [
+                        "You gain proficiencies in any two skills, or tools of your choice. (you may also mix and match, eg: 1 skill and 1 tool)"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Indomitable Human spirit.",
+                    "entries": [
+                        "Once per long rest, if you are bloodied (Reduced to below half your hit point maximum), you may immediately use your reaction to roll a d12 plus your constitution modifier and gain that many hit points."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Versatile",
+                    "entries": [
+                        "Humans are a varied lot. Choose one of the following options for your character:",
+                        {
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Athletic",
+									"entry": "You gain proficiency in the Athletics skill, and your movement speed increases by 5ft."
+                                },
+								{
+									"type": "item",
+									"name": "Ingenious",
+									"entry": "You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+								},
+								{
+									"type": "item",
+									"name": "Martial Prodigy",
+									"entry": "You gain proficiency in light armor, shields, and two simple or martial weapons of your choice."
+								}
+							]
+						}    
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ithovine",
+            "source": "DepthsofMelokir",
+            "page": "",
+            "ability": [
+                {
+                    "choose": {
+                    "weighted": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "weights": [2,1]
+                    }
+                  }
+                },
+                  {
+                    "choose": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "amount": 1,
+                      "count": 3
+                    }
+                  }
+            ],
+            "size": [
+                "M", "S"
+            ],
+            "speed": 30,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Ancestral Legacy",
+                    "entries": [
+                        "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in Intimidation and one skill of your choice."
+                    ]   
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Regenerating Form",
+                    "entries": [
+                        "Your body is laced with regenerative potential, manifesting in the following benefits:",
+                        "- You gain a +1 bonus to your Armour Class, as your constantly regenerating body is harder to wound.",
+                        "- Once per long rest, when you start your turn while bloodied, you can push your regeneration to its limits. At the start of each of your turns while this ability is active, you regain hit points equal to your proficiency bonus and can repeat a saving throw against any effect that would allow you to make a saving throw against it at the end of your turn. You cannot heal yourself above half your hit points with this feature. This burst of regenerative energy lasts for one minute or until you are incapacitated."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        " You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gnoll",
+            "source": "DepthsofMelokir",
+            "page": "",
+            "ability": [
+                {
+                    "choose": {
+                    "weighted": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "weights": [2,1]
+                    }
+                  }
+                },
+                  {
+                    "choose": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "amount": 1,
+                      "count": 3
+                    }
+                  }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 30,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Bite",
+                    "entries": [
+                        "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+                    ]   
+                },
+                {
+                    "type": "entries",
+                    "name": "Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have proficiency in the Perception skill."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Laughing Curse",
+                    "entries": [
+                        "Your speech is interspersed with cackling laughter. As a bonus action, you may choose to give into the curse, giving you advantage on Charisma (Intimidation) checks, but disadvantage on Charisma (Persuasion) and Charisma (Performance) for 1 minute."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and Gnoll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dragon Tortle",
+            "source": "DepthsofMelokir",
+            "page": "",
+            "ability": [
+                {
+                    "choose": {
+                    "weighted": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "weights": [2,1]
+                    }
+                  }
+                },
+                  {
+                    "choose": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "amount": 1,
+                      "count": 3
+                    }
+                  }
+            ],
+            "size": [
+                "S", "M"
+            ],
+            "speed": 30,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Claws",
+                    "entries": [
+                        "You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+                    ]   
+                },
+                {
+                    "type": "entries",
+                    "name": "Hold Breath",
+                    "entries": [
+                        "You can hold your breath for up to 1 hour."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Natural Armor",
+                    "entries": [
+                        "Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Aquatic Affinity",
+                    "entries": [
+                        "You have a swimming speed equal to your walking speed."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Steam Breath",
+                    "entries": [
+                        "You have the ability to exhale scalding breath. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15 foot cone. Each creature in that area must make a Constitution saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 fire damage. On a successful save, it takes half as much damage. Being underwater does not grant resistance to this damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).","You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"Dollkin",
+            "source":"DepthsofMelokir",
+            "ability":  [
+                {
+                    "choose": {
+                    "weighted": {
+                      "from": ["str", "dex", "con", "int", "wis", "cha"],
+                      "weights": [2,1]
+                    }
+                  }
+                },
+                {
+                "choose": {
+                    "from": ["str", "dex", "con", "int", "wis", "cha"],
+                    "amount": 1,
+                    "count": 3
+                }
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": 35,
+            "entries":[
+                {
+                    "type":"entries",
+                    "name":"Languages",
+                    "entries": [
+                        "You can speak, read, and write Common as well as one additional language of your choice."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"Darkvision",
+                    "entries": [
+                        "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"Armored Casing",
+                    "entries": [
+                        "You are encased in thin metal or some other durable material. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"Alien Mind",
+                    "entries": [
+                        "When you are required to make an Intelligence, Wisdom or Charisma saving throw, you can add 1d4 to it. If you choose to do this, it does not stack with other spells or magical resistance effects (this includes bless, magical resistance and resistance)."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"Sentry's Rest",
+                    "entries": [
+                        "When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you remain conscious."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"Unique Construction",
+                    "entries": [
+                        "Opportunity attacks made against you are rolled with disadvantage."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"Artful Taste",
+                    "entries": [
+                        "You gain proficiency in Performance."
+                    ]
+                }
+            ]
+        }
+    ],
+    "subrace": [
+        {
+            "name": "Wildjaw Gnoll",
+            "source": "DepthsofMelokir",
+            "raceName": "Gnoll",
+            "raceSource": "DepthsofMelokir",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Rampage",
+                    "entries": [
+                        "When you reduce a creature to 0 hit points on your turn, you may use your bonus action to move up to your movement speed and make a Bite attack against a creature within your reach. You can use this feature a number of times equal to your proficiency bonus, and regain all uses when you finish a long rest."
+                    ] 
+                },
+                {
+                    "type": "entries",
+                    "name": "Strong Jaws",
+                    "entries": [
+                        "Your bite deals 1d6 + your Strength modifier, instead of 1d4."
+                    ] 
+                },
+                {
+                    "type": "entries",
+                    "name": "Tough Hide",
+                    "entries": [
+                        "Your AC when you aren’t wearing armor is equal to 13 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+                    ] 
+                }
+            ]
+        },
+        {
+            "name": "Ghostfur Gnoll",
+            "source": "DepthsofMelokir",
+            "raceName": "Gnoll",
+            "raceSource": "DepthsofMelokir",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Haunted Magic",
+                    "entries": [
+                        "You learn a {@filter cantrip of your choice from the Bard spell list.|spells|level=0|class=Bard} Intelligence, Wisdom, or Charisma is your spellcasting modifier for this (choose when you select this subrace). When you reach 3rd level, you can cast a 1st-level spell from the Necromancy or Illusion schools of magic (choose a single spell when you reach this level) with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 1st level or higher."
+                    ] 
+                },
+                {
+                    "type": "entries",
+                    "name": "Cursed Jaws",
+                    "entries": [
+                        "When you score a critical hit with your Bite or a melee spell attack, you can regain your use of your Haunted Magic 1st-level spell, or regain a first-level spell slot. You can use this feature a number of times equal to your proficiency bonus, and regain all uses when you finish a long rest.","In addition, your Bite is considered to be a melee weapon worth at least 1 gp for the purposes of spell components."
+                    ] 
+                }
+            ]
+        },
+        {
+            "name": "Variant Goliath",
+            "source": "DepthsofMelokir",
+            "raceName": "Goliath",
+            "raceSource": "MPMM",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Stone Throw",
+                    "entries": [
+                        "You can draw on the strength of giants and channel it into destructive force. When you take the Attack action on your turn you may replace one of the attacks and hurl a boulder through the air. You throw a mass of earth up to 60 feet to a point you can see. Creatures within a 5 cube centered on that point must succeed on a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus) or take 1d10 bludgeoning damage. Taking half as much on a success. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).","You must have a hand free to use this trait and you can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. If you have a feature that would make your unarmed attacks magical, this attack becomes magical too."
+                    ],
+                    "data": {
+						"overwrite": "Stone's Endurance"
+					}
+                }
+            ]
+        }
+    ],
+    "class": [
+        {
+            "name": "Lictor",
+            "source": "DepthsofMelokir",
+            "proficiency": [
+                "con","cha"
+            ],
+
+            "optionalFeatureTypes": {
+                "NecroEng": "Necrotic Engine"
+            },
+            "optionalfeatureProgression": [
+				{
+					"name": "Necrotic Charges",
+					"featureType": [
+						"NecroEng"
+					],
+					"progression": [
+						0,
+						3,
+						3,
+						3,
+						4,
+						4,
+						4,
+						4,
+						4,
+						4,
+						5,
+						5,
+						5,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6,
+						6
+					]
+                }
+            ],
+            "classTableGroups": [
+				{
+					"colLabels": [
+						"Necrotic Charges",
+						"Necrotic Engine Dice"
+					],
+                    "rows": [
+						[
+							"-",
+                            "-"
+						],
+						[
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 4
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 4
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 4
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 4
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 8
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							}
+						],
+                        [
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 10
+									}
+								],
+								"rollable": true
+							}
+						]
+                    ]
+                }
+            ],
+            "startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"shield"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"athletics",
+								"intimidation",
+								"history",
+								"religion",
+								"stealth",
+                                "survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+                    "(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon} or (b) one {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb}",
+                    "(a)  a {@item light crossbow} and 20 bolts or (b) two {@item handaxe|phb|handaxes}",
+					"(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}"
+				],
+				"defaultData": [
+                    {
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						]
+					},
+					{
+						"a": [
+							"light crossbow|phb"
+						],
+						"b": [
+                            {
+                                "item": "handaxe|phb",
+                                "quantity": 2
+                            }
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13,
+					"str": 13	
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"shield"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+            "classFeatures": [
+                {
+                    "classFeature": "Accursed Office|Lictor|DepthsofMelokir|1",
+                    "gainSubclassFeature": true
+                },
+				"Fighting Style|Lictor|DepthsofMelokir|1",
+				"Necrotic Engine|Lictor|DepthsofMelokir|2",
+				"Soul Survivor|Lictor|DepthsofMelokir|2",
+				{
+					"classFeature": "Accursed Office Feature|Lictor|DepthsofMelokir|3",
+					"gainSubclassFeature": true
+				},
+				"Wrack Foes|Lictor|DepthsofMelokir|3",
+                "Undead Fortitude|Lictor|DepthsofMelokir|3",
+				"Ability Score Improvement|Lictor|DepthsofMelokir|4",
+				"Extra Attack|Lictor|DepthsofMelokir|5",
+                "Past Knowledge|Lictor|DepthsofMelokir|5",
+				{
+					"classFeature": "Accursed Office Feature|Lictor|DepthsofMelokir|6",
+					"gainSubclassFeature": true
+				},
+                "Unrelenting Animus|Lictor|DepthsofMelokir|7",
+				"Ability Score Improvement|Lictor|DepthsofMelokir|8",
+				"Revenant Tenacity|Lictor|DepthsofMelokir|9",
+                "Reduced Reliquary|Lictor|DepthsofMelokir|9",
+				"Inexorable March|Lictor|DepthsofMelokir|10",
+				{
+					"classFeature": "Accursed Office Feature|Lictor|DepthsofMelokir|11",
+					"gainSubclassFeature": true
+				},
+				"Dead Tough|Lictor|DepthsofMelokir|11",
+				"Ability Score Improvement|Lictor|DepthsofMelokir|12",
+				"Revenant Tenacity (Two Uses)|Lictor|DepthsofMelokir|13",
+                "Vindication|Lictor|DepthsofMelokir|14",
+				{
+					"classFeature": "Accursed Office Feature|Lictor|DepthsofMelokir|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Lictor|DepthsofMelokir|16",
+				"Eternal Animus|Lictor|DepthsofMelokir|17",
+				{
+					"classFeature": "Accursed Office Feature|Lictor|DepthsofMelokir|18",
+					"gainSubclassFeature": true
+				},                
+				"Ability Score Improvement|Lictor|DepthsofMelokir|19",
+				"Become Death|Lictor|DepthsofMelokir|20"
+			],
+			"subclassTitle": "Accursed Office"
+        }
+        
+    ],
+    "subclass": [
+        {
+            "name":"Office of the Apparition",
+            "shortName": "Apparition",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Incorporeal Form|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|1",
+                "The Old Haunt|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Grief|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|3",
+				"Consumption of Misfortune|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|3",
+                "Geist's Waltz|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|6",
+				"Improved Incorporeal Form|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|11",
+				"Ethereal Passage|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|15",
+				"Spectral Absolute|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Death Knight",
+            "shortName": "Death Knight",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Condemned Armory|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|1",
+                "Pile on Woes|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Hellfire|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|3",
+                "Consumption of Wrath|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|3",
+				"Command Macabre|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|6",
+				"Wield Death|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|11",
+				"Aura of Vulnerability|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|15",
+				"Undying Commander|Lictor|DepthsofMelokir|Death Knight|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Wight",
+            "shortName": "Wight",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Deadened Pain|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|1",
+                "Tireless Strength|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Weakness|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|3",
+                "Consumption of Spirit|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|3",
+				"Vigor Mortis|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|6",
+				"Unrelenting Grasp|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|11",
+				"Inexorable Form|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|15",
+				"Unstoppable Force|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Tomb Guardian",
+            "shortName": "Tomb Guardian",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Empty Flesh|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1",
+                "Forgive no Trespass|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Regret|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|3",
+                "Consumption of Greed|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|3",
+				"Immuring Mark|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|6",
+				"Thief's Curse|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|11",
+				"Dispersing Passage|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|15",
+				"Ascendant Psychopomp|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Tribute",
+            "shortName": "Tribute",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Harbinger of Doom|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|1",
+                "Withering Aura|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Corruption|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|3",
+                "Consumption of Despair|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|3",
+				"Rising Horror|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|6",
+				"Malignant Armor|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|11",
+				"Effluence of Death|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|15",
+				"Beacon of the Tainted|Lictor|DepthsofMelokir|Tribute|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Vampire",
+            "shortName": "Vampire",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Refined Tastes|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|1",
+                "A Noble Creature|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Obsession|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|3",
+                "Consumption of Envy|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|3",
+				"Perfected Scion|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|6",
+				"Nocturnal Champion|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|11",
+				"Dread Eclipse|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|15",
+				"Lord of the Night|Lictor|DepthsofMelokir|Vampire|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Wailer",
+            "shortName": "Wailer",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Wailing|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|1",
+                "Gnashing of Teeth|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Noise|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|3",
+                "Consumption of Discord|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|3",
+				"Death Rattle|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|6",
+				"Persephonic Orchestra|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|11",
+				"Crecendo of Despair|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|15",
+				"Herald of Doom|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Necromancer Redux",
+            "shortName": "Necromancer Redux",
+            "source": "DepthsofMelokir",
+            "className": "Wizard",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Necromancer Redux|Wizard|PHB|Necromancer Redux|DepthsofMelokir|2",
+                "Seance|Wizard|PHB|Necromancer Redux|DepthsofMelokir|6",
+                "Accustomed to the Macabre|Wizard|PHB|Necromancer Redux|DepthsofMelokir|10",
+                "Haunt foe|Wizard|PHB|Necromancer Redux|DepthsofMelokir|14"
+            ]
+        },
+
+        {
+            "name":"Thug",
+            "shortName": "Thug",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Thug|Rogue|PHB|Thug|DepthsofMelokir|3",
+                "Hired Muscle|Rogue|PHB|Thug|DepthsofMelokir|9",
+                "Gang Up|Rogue|PHB|Thug|DepthsofMelokir|13",
+                "Thug's Mastery|Rogue|PHB|Thug|DepthsofMelokir|17"
+            ]
+        },
+        {
+            "name":"Veildancer",
+            "shortName": "Veildancer",
+            "source": "DepthsofMelokir",
+            "className": "Ranger",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Veildancer|Ranger|PHB|Veildancer|DepthsofMelokir|3",
+                "Elusive Shrouds|Ranger|PHB|Veildancer|DepthsofMelokir|7",
+                "Vaporous Dodge|Ranger|PHB|Veildancer|DepthsofMelokir|11",
+                "Misty Warriors|Ranger|PHB|Veildancer|DepthsofMelokir|15"
+            ]
+        },
+        {
+            "name":"Wild Card",
+            "shortName": "Wild Card",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Wild Card|Rogue|PHB|Wild Card|DepthsofMelokir|3",
+                "Shifting the Odds|Rogue|PHB|Wild Card|DepthsofMelokir|9",
+                "Twist of Fate|Rogue|PHB|Wild Card|DepthsofMelokir|13",
+                "Joker Wild|Rogue|PHB|Wild Card|DepthsofMelokir|17"
+            ]
+        },
+        {
+            "name":"Brute",
+            "shortName": "Brute",
+            "source": "DepthsofMelokir",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Brute|Fighter|PHB|Brute|DepthsofMelokir|3",
+                "Brutal Defense|Fighter|PHB|Brute|DepthsofMelokir|7",
+                "Third Wind|Fighter|PHB|Brute|DepthsofMelokir|10",
+                "Brutal Champion|Fighter|PHB|Brute|DepthsofMelokir|15",
+                "Too Angry to Die|Fighter|PHB|Brute|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Forge Adept",
+            "shortName": "Forge Adept",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassFeatures": [
+                "Forge Adept|Artificer|TCE|Forge Adept|DepthsofMelokir|3",
+                "Extra Attack|Artificer|TCE|Forge Adept|DepthsofMelokir|5",
+                "Runes of War|Artificer|TCE|Forge Adept|DepthsofMelokir|9",
+                "Perfect Weapon|Artificer|TCE|Forge Adept|DepthsofMelokir|15"
+            ]
+        },
+        {
+            "name":"Circle of Stone",
+            "shortName": "Stone",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Circle of Stone|Druid|PHB|Stone|DepthsofMelokir|2",
+                "Extra Attack|Druid|PHB|Stone|DepthsofMelokir|6",
+                "Warding Earth|Druid|PHB|Stone|DepthsofMelokir|10",
+                "Metallic Bulwark|Druid|PHB|Stone|DepthsofMelokir|14"
+            ]
+        },
+        {
+            "name":"Oath of Liberty",
+            "shortName": "Liberty",
+            "source": "DepthsofMelokir",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"fog cloud",
+							"zephyr strike"
+						],
+						"5": [
+							"gust of wind",
+                            "warding wind"
+						],
+						"9": [
+							"thunder step",
+                            "wind wall"
+						],
+						"13": [
+							"freedom of movement",
+                            "storm sphere"
+						],
+						"17": [
+							"control winds",
+                            "steel wind strike"
+						]
+					}
+				}
+			],
+            "subclassFeatures": [
+                "Oath of Liberty|Paladin|PHB|Liberty|DepthsofMelokir|3",
+                "Aura of Lethargy|Paladin|PHB|Liberty|DepthsofMelokir|7",
+                "Unrelenting Tempest|Paladin|PHB|Liberty|DepthsofMelokir|15",
+                "Eye of the Storm|Paladin|PHB|Liberty|DepthsofMelokir|20"
+            ]
+        },
+        {
+            "name":"Path of the Thrashing Monster",
+            "shortName": "Thrashing Monster",
+            "source": "DepthsofMelokir",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Path of the Thrashing Monster|Barbarian|PHB|Thrashing Monster|DepthsofMelokir|3",
+                "Directed Shock|Barbarian|PHB|Thrashing Monster|DepthsofMelokir|6",
+                "Unstoppable Rampage|Barbarian|PHB|Thrashing Monster|DepthsofMelokir|10",
+                "Unbeatable Strength|Barbarian|PHB|Thrashing Monster|DepthsofMelokir|14"
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Accursed Office",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",  
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
+            ]          
+        },
+        {
+            "name": "Fighting Style",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Blind Fighting|TCE"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Defense"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Dueling"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Great Weapon Fighting"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Interception|TCE"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Parry|DepthsofMelokir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Perilous Blows|DepthsofMelokir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Protection"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Unarmed Fighting|TCE"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Versatile Fighting|DepthsofMelokir"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Two-Weapon Fighting"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Necrotic Engine",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 2,
+            "entries": [
+                "{@i 2nd-level Lictor}",
+                "You are now kept alive - after a fashion - by the necromanticmagic that turns within you. You don't need to eat, drink, or breathe.",
+                "The energy of nearby death also refuels your ongoing quest for vindication. You have three Necrotic Charges. You can never have more Necrotic charges than shown on the table for your level. You regain all spent Necrotic Charges when you finish a long rest. Additionally, you gain a charge whenever a creature of size Small or larger within 30ft of you dies, and in the other way determined by your office at 3rd level.",
+                "On your turn while you are not incapacitated, you can expend one or more Necrotic charges as a bonus action to gain 2d4 temporary hit points, plus an additional die for each additional charge. Alternatively, you can expend a charge when you successfully hit with a melee attack to deal an additional 2d4 necrotic damage.",
+                "This temporary HP / damage increases to 2d6 at 6th level, 2d8 at 10th level, and 2d10 at 15th level. The maximum number of charges your Necrotic Engine can hold increases as you gain levels in this class: up to 4 charges at 5th level, 5 charges at 11th level, and 6 charges at 17th level."
+            ]
+        },
+        {
+            "name": "Soul Survivor",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 2,
+            "entries": [
+                "{@i 2nd-level Lictor}",
+                "The fact that your mind and morality have endured the process of becoming undead is a testament to your resolve, unwilling to bend. You have advantage on saving throws against effects that would cause you to be charmed or frightened."  
+            ]
+        },
+        {
+            "name": "Accursed Office Feature",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",  
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
+            ]          
+        },
+        {
+            "name": "Wrack Foes",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain the ability to extend the foul powers that fuel you, temporarily, using that energy to inflict various woes upon your enemies. You can create two such effects: Wrack With Pain and an effect determined by your office. Once per turn when you take the Attack action on your turn, you can expend a Necrotic Charge to replace one of the attacks with a use of this feature. When you do so, you choose which effect to create out of those available to you. The Save DC of your Wrack Foes is:",
+                {
+                    "type": "abilityDc",
+                    "name": "Wrack",
+                    "attributes": [
+                        "cha"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Wrack With Pain",
+                    "entries": [
+                        "You extend the agony of undeath to enemies around you. Creatures of your choice within 10 feet of you must succeed on a Constitution saving throw or take necrotic damage equal to 2d6 + your proficiency bonus. On a successful save, a creature takes half as much damage.",
+                        "Additionally, creatures that fail this save have disadvantage on their next concentration saving throw.",
+                        "Additionally, creatures that fail the save by 5 or more cannot benefit from resistance to necrotic damage for 1 minute.",
+                        "This feature's damage increases to 2d8 + PROF at 6th level, 2d10 + PROF at 10th level, and 2d12 + PROF at 15th level.",
+                        "Additionally, at 18th level this feature ignores resistance to necrotic damage, and treats immunity to necrotic damage as resistance."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Undead Fortitude",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "By virtue of your exhumed nature, you are able to ignore some attacks that would fell living peers. When using medium armour, you may use your Constitution modifier instead of your Dexterity modifier for calculating your AC, still up to the maximum the armour allows."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 4,
+            "entries": [
+                "{@i 4th-level Lictor}",
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 5,
+            "entries": [
+                "{@i 5th-level Lictor}",
+                "You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+            ]
+        },
+        {
+            "name": "Past Knowledge",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 5,
+            "entries": [
+                "{@i 5th-level Lictor}",
+                "You died. You got better. Regardless of the circumstances of your resurrection, you were laid to rest and awoke in a world removed from your own. Whether it be a distance of years or centuries, you've got access to knowledge from a dead time.",
+                "Pick two skills or tool proficiencies that require intelligence. You become proficient in them if you are not already, and gain the ability to use your constitution in place of intelligence for those skills."
+            ]
+        },
+        {
+            "name": "Accursed Office Feature",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",  
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
+            ]          
+        },
+        {
+            "name": "Unrelenting Animus",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 7,
+            "entries": [
+                "{@i 7th-level Lictor}",
+                "Your restless body no longer feels the effects of decay, and you cannot be aged magically. Additionally, the first time you gain a level of exhaustion, you may ignore it. This ability resets on a short rest.",
+                "Moreover, when you are reduced to 0 hit points, you can expend a Necrotic Charge to sustain your body with a surge of magic. If you do so, you are not knocked unconscious. You still must make death saving throws as normal, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until this effect expires. While under this effect, you cannot gain any necrotic charges. This effect lasts until the end of your next turn, and may be extended by expending more charges.",
+                "When you reach level 14, you can gain necrotic charges while under the effect of Necrotic Animus."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 8,
+            "entries": [
+                "{@i 8th-level Lictor}",
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
+            ]
+        },
+        {
+            "name": "Revenant Tenacity",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 9,
+            "entries": [
+                "{@i 9th-level Lictor}",
+                "Your exhumed nature makes you easier to bring back from beyond the veil of death. If you are targeted by a spell such as Revivify, with sole effect of restoring you to life after dying, the caster does not need material components.",
+                "Additionally, you are a valid target for these types of spells for up to an additional hour after your death. Furthermore, you are able to expend your withered vitality to more swiftly recover. When you are healed or stabilised while at 0 hit points, you may expend an amount of hit die equal to your proficiency bonus and regain that much HP, becoming conscious in the process.",
+                "Once you use this feature, you must finish a long rest before you can use it again. Starting at 13th level, you can use it twice before a long rest."
+            ]
+        },
+        {
+            "name": "Reduced Reliquary",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 9,
+            "entries": [
+                "{@i 9th-level Lictor}",
+                "Even a small part of you is infused with the pallor of death, which is handy in a pinch.",
+                "As a bonus action, you can harmlessly remove a part of yourself (e.g a nail, tooth, lock of hair, small bone). This reliquary is imbued with magic until you finish a long rest.",
+                "While the reliquary is imbued this way, you can give it one of these features:",
+                "- You can spend an action to see and hear from the reliquary, blinding and deafening yourself until you dismiss the viewing or until 1 minute passes.",
+                "- Someone holding the reliquary can cast Thaumaturgy, Prestidigitation or Druidcraft centred on the reliquary.",
+                "- A creature holding the reliquary can understand and speak a language of your choice that you know.",
+                "Once you create a token using this feature, you can't do so again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Inexorable March",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 10,
+            "entries": [
+                "{@i 10th-level Lictor}",
+                "Whenever a creature of size small or larger within 30 feet of you is reduced to below half of its hit point maximum for the first time since its last long rest, you become aware of this fact, and your necrotic engine gains a charge."
+            ]
+        },
+        {
+            "name": "Dead Tough",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "As a reaction to a saving throw being imposed on you, you may spend a necrotic charge and add your constitution modifier to the roll. This occurs before you roll."
+            ]
+        },
+        {
+            "name": "Accursed Office Feature",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",  
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
+            ]          
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 12,
+            "entries": [
+                "{@i 12th-level Lictor}",
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."   
+            ]
+        },
+        {
+            "name": "Revenant Tenacity (two uses)",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 13,
+            "entries": [
+                "{@i 13th-level Lictor}",
+                "You can use Revenant Tenacity's ability to expend hit die to heal after being healed or stabilised at 0 hit points twice between long rests."
+            ]
+        },
+        {
+            "name": "Vindication",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 14,
+            "entries": [
+                "{@i 14th-level Lictor}",
+                "Although nothing has come easy, you have reclaimed some of your old identity through immense work. You gain one of the following benefits of your choice as befitting your former life.",
+                "- you learn one 1st-level spell from any spell list. This spell when you use it uses Charisma for its Save DC and Spell Attack rolls, and you can cast it once per short rest.",
+                "- You learn an additional Fighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.",
+                "- You learn one language and gain one proficiency in one skill of your choice. Additionally, pick one skill you are proficient in. When you make an ability check using the chosen skill, you can roll 1d4 and add the result to the check."
+            ]
+        },
+        {
+            "name": "Accursed Office Feature",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",  
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
+            ]          
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 16,
+            "entries": [
+                "{@i 16th-level Lictor}",
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."   
+            ]
+        },
+        {
+            "name": "Eternal Animus",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 17,
+            "entries": [
+                "{@i 17th-level Lictor}",
+                "You cannot be killed instantly by massive damage, or have your body altered or destroyed by effects that would do so after reducing you to 0 hit points."
+            ]
+        },
+        {
+            "name": "Accursed Office Feature",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",  
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
+            ]          
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 19,
+            "entries": [
+                "{@i 19th-level Lictor}",
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead." 
+            ]
+        },
+        {
+            "name": "Become Death",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "level": 20,
+            "entries": [
+                "{@i 20th-level Lictor}",
+                "You are now immune to necrotic and poison damage. In addition, whenever you roll initiative, your Necrotic Engine's charges are set to their maximum amount."
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Incorporeal Form",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "You can move through other creatures as if they were difficult terrain, and creatures gain no benefit from half-cover or shields against your melee attack rolls.",
+                "At the start of your turn, you can become incorporeal, able to move through objects of size Large or smaller, including doors or windows but not solid walls. You can do so a number of times equal to your proficiency bonus, and regain all expended uses upon completing a short rest. You take 1d10 force damage if you end your turn inside an object or creature and are shunted to the nearest safe empty space."
+            ]
+        },
+        {
+            "name": "The Old Haunt",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "As an Apparition you may disperse your spectral self to view another area, haunting the surroundings. You can spend one minute concentrating on an object or creature within 100 feet of you that you are familiar with, and on completion you begin haunting the object/creature. While haunting, your are blind to your own senses, but gain the following benefits:",
+                "You can see and hear through a point above the object/creature haunted.",
+                "You can speak from a point within 30ft of the object/creature at any volume ranging from faint whispers to thunderous shouts, either from one location within it or several simultaneously.",
+                "You can move objects within it other than the object/creature you are haunting as if by the mage hand cantrip as an action. This version of the hand can carry/move up to 10 x Lictor level pounds.",
+                "You can end your haunting as an action. You cannot begin haunting another object/creature while haunting anobject/creature."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Grief",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 20 feet of you must succeed on a Wisdom saving throw or take 2d6 psychic damage and fall prone, being unable to stand until the end of your next turn. A creature that fails its save by 5 or more is also frightened of you until the start of your next turn.",
+                "This feature's damage increases to 2d8 at 6th level, 2d10 at 10th level, and 2d12 at 15th level."
+            ]
+        },
+        {
+            "name": "Consumption of Misfortune",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain an additional way to regain Necrotic Charges:",
+                "Once per round, whenever a creature you can see rolls a 1 or 2 on a D20, you can gain a Necrotic Charge."
+            ]
+        },
+        {
+            "name": "Geist's Waltz",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "Once per turn when you move through a creature, you can cause that creature to take 1d8+PROF cold damage.",
+                "This damage increases to 2d8 at 11th level, and 3d8 at 15th level.",
+                "Additionally, you do not provoke opportunity attacks and your speed increases by 10ft."
+            ]
+        },
+        {
+            "name": "Improved Incorporeal Form",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "Your melee weapon attacks can now deal psychic or cold damage (your choice), instead of their usual damage type.",
+                "This can also change the additional necrotic damage from Necrotic Engine.",
+                "In addition, you can now move through objects of any size, including solid walls, without the need to concentrate or expend uses of your Incorporeal Form feature. As an action, you can touch one creature and expend a use of that feature to share this benefit with it until the start of your next turn. If a creature sharing this benefits ends its turn inside an object, it is immediately shunted to the nearest unoccupied space outside of the object, taking 1d10 force damage for every 5 feet it was shunted."
+            ]
+        },
+        {
+            "name": "Ethereal Passage",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "You are able to tap into your ethereal nature, shifting between the ethereal and material plane at will. As a bonus action, you may loosen your connection to your current plane of existence for 1 minute. As part of this action and as a bonus action on subsequent turns while under this effect, you may vanish from your current plane of existence and appear in the Ethereal Plane.",
+                "While in the Ethereal plane you may use a bonus action to return to an unoccupied space in the plane you originated from corresponding to your position in the Ethereal plane.",
+                "While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away.",
+                "This ability may be used once per short rest."
+            ]
+        },
+        {
+            "name": "Spectral Absolute",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Apparition",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You gain the following benefits:",
+                "- Creatures you have damaged with Painful Presence have their AC reduced by 2 until the start of your next turn, and you gain 5ft of movement after using Painful Presence.",
+                "- Your Apparition features ignore resistance to pyschic and cold damage, and treat immunity to psychic and cold damage as resistance.",
+                "- You add an additional 1d6 necrotic or psychic (your choice) damage to damage rolls against a creature that has taken damage from Painful Presence this turn."
+            ]
+        },
+        {
+            "name": "Condemned Armory",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "Yours is the office of war, and you have armed accordingly for your cursed crusade. You gain proficiency with heavy armor.",
+                "Additionally, you take an additional fighting style from the Lictor Fighting Style list. You cannot take a fighting style you already have."
+            ]
+        },
+        {
+            "name": "Pile on Woes",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "You bear a dark likeness of a paladin's power. You have a pool of negative energy equal to 5 x your lictor level that replenishes when you take a long rest.",
+                "After dealing damage to a creature with a melee weapon attack, you can draw energy from the pool up to the amount of damage done and gain temporary Hit Points equal to the amount of points expended."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Hellfire",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You release a revelation of dark flame that explodes around you. Each creature of your choice within 10 feet of you must succeed on a Dexterity saving throw or take 2d6+PROF fire damage and reduces their AC by 2 until the start of your next turn. On a successful save, a creature takes half as much damage and doesn't reduce their AC. If a creature fails its save by 5 or more, you treat results of 1 or 2 on the damage die as a 3.",
+                "This feature's damage increases to 2d8 at 6th level, 2d10 at 10th level, and 2d12 at 15th level."
+            ]
+        },
+        {
+            "name": "Consumption of Wrath",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain an additional way to regain Necrotic Charges:",
+                "Once per round, Whenever a creature within 30ft of you beats someone's AC by 5 or more, you can gain a necrotic charge."
+            ]
+        },
+        {
+            "name": "Command Macabre",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "You have lost none of the gravitas in your grave commands. You are immune to being frightened. Additionally, as a bonus action you may command a willing allied creature within 30ft of you to do one of the following:",
+                "- Move: The creature expends their reaction to move up to half their movement speed without provoking opportunity attacks.",
+                "- Reinforce: The creature expends their reaction to gain the benefits of half cover until the start of their next turn.",
+                "- Hold the line: until the start of your next turn, the creature can use their reaction to make an opportunity attack against an enemy that comes within their reach. This ability may be used an amount of times equal to twice your proficiency bonus per long rest."
+            ]
+        },
+        {
+            "name": "Wield Death",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "As a death knight, the powers of death hone your edge. Your weapon attacks deal an additional 1d8 fire or necrotic damage (your choice).",
+                "Additionally, the first time each combat you spend your last Necrotic Charge, you immediately gain 2 back."
+            ]
+        },
+        {
+            "name": "Aura of Vulnerability",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "You may channel your undead energy into an aura of menace, inverting a Paladin's aegis. You may expend two Necrotic Charges as an action to create an aura with a 30ft radius centered on yourself, lasting for 1 minute. Whenever creatures of your choice roll a 1 or 2 on a damage roll they make for a weapon attack, they can reroll the die and must use the new roll, even if it is a 1 or a 2."
+            ]
+        },
+        {
+            "name": "Undying Commander",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Death Knight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You have reached the apex of undead command. Your various abilities gain the following benefits:",
+                "- Your Wrack Foes and weapon attacks ignore resistance to necrotic and fire damage, and treat immunity as resistance.",
+                "- Whenever you use Command Macabre, you can target up to three creatures at a time using the one bonus action.",
+                "- Your Aura of Vulnerability also applies to attack rolls. You gain a second Extra Attack."
+            ]
+        },
+        {
+            "name": "Deadened Pain",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "Due to your soul being reinforced by strong emotion, you have a high threshold for pain, which is equal to half your Lictor level rounded down + your proficiency bonus. If a source of damage dealing bludgeoning, piercing or slashing damage deals damage equal to your pain threshold or less, you take no damage instead. The damage considered for this feature must be before resistance is applied, and not afterwards.",
+                "At 10th level, your pain threshold also applies to all non-radiant damage, and is doubled for necrotic and poison damage."
+            ]
+        },
+        {
+            "name": "Tireless Strength",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "With intense fervour that fuels strength beyond the grave, you pull down your foes. You have advantage on checks made to resist someone escaping a grapple."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Weakness",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You issue forth a wave of weakness to enemies around you. Creatures of your choice within 10 feet of you must succeed on a Constitution saving throw or become poisoned until the end of your next turn. A creature can be immune to this poison only if it is also immune to disease. A creature that fails its save by 5 or more is poisoned for 1 minute, and the damage of its weapon attacks is halved until the end of your next turn.",
+                "At Level 10, if a creature uses a teleportation effect while affected by your wrack, you may also teleport along with them, appearing in an unoccupied space within 5ft of them of your choice. If you were grappling them when this occurred, you are still grappling them."
+            ]
+        },
+        {
+            "name": "Consumption of Spirit",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain an additional way to regain Necrotic Charges:",
+                "Once per round, whenever you succeed on a Shove check, Grapple check, check to resist a Grapple escape, or a Grapple check to climb onto a larger creature, you can gain a Necrotic Charge."
+            ]
+        },
+        {
+            "name": "Vigor Mortis",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "Whenever you successfully grapple a creature, you can choose to immediately attempt to shove it prone as part of the same attack.",
+                "Furthermore, you can grapple creatures up to two size categories above yourself."
+            ]
+        },
+        {
+            "name": "Unrelenting Grasp",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "A creature grappled by you must make a Constitution saving throw against your Wrack Save DC upon successfully escaping your grapple. On a failed save, you can move to remain adjacent to them as they move without provoking opportunity attacks."
+            ]
+        },
+        {
+            "name": "Inexorable Form",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "Whenever you take damage, you can use your reaction to make a Constitution saving throw with a DC of 5 + half the damage taken, unless the damage is radiant or from a critical hit. On a success, you halve the damage taken; if this reduces the damage taken to below your pain threshold, you ignore it entirely.",
+                "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses upon completing a long rest."
+            ]
+        },
+        {
+            "name": "Unstoppable Force",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wight",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You have reached the apex of your Office, becoming a herculean undead with strength only matched by the spirit that flows through your core. You gain the following benefits:",
+                "You can grapple up to three creatures, regardless of how many hands you have free.","Your Wrack Foes ignores resistance to poison damage,and treats immunity as resistance.",
+                "You deal 1d8+STR bludgeoning damage against your target whenever you make a successful grapple check or shove check, or an enemy fails their escape check against you.",
+                "Your movement speed is not reduced from grappling a creature."
+            ]
+        },
+        {
+            "name": "Empty Flesh",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "Removed or replaced organs have left precious little for a thief's dagger to puncture when you come upon them in the dark. You gain resistance to piercing damage and darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet. In addition, you can extend your withering energies as an action to instantly molder or evaporate up to 1 cubic foot of food or water that you touch. Other nonmagical drinks are spoiled — wine turning to vinegar, for instance."
+            ]
+        },
+        {
+            "name": "Forgive no Trespass",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "On any creature's turn other than your own, the reach of your melee attacks is increased by 5 feet. If you hit a creature with an opportunity attack, its remaining movement speed is reduced by 10 feet until the end of its next turn.",
+                "The amount you reduce the movement speed of your target by increases as you gain levels in this class; up to 15 feet at 11th level, and up to 20 feet at 15th level."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Regret",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You utter a curse of doom upon those that transgress against you. hostile creatures within 10ft of you must make a Wisdom saving throw or take 1d6 force damage and cannot take movement that would move them more than 30ft away from you until the end of your next turn. If they fail the save by 5 or more, whenever they attack one of your allies they take 1d6 force damage for the same duration. This feature's damage increases to 1d8 at 6th level, 1d10 at 10th level, and 1d12 at 15th level."
+            ]
+        },
+        {
+            "name": "Consumption of Greed",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain another way to regain Necrotic Charges:",
+                "Once per round, whenever you deal damage to a creature not on your turn whilst within 30ft of them, you can gain a necrotic charge."
+            ]
+        },
+        {
+            "name": "Immuring Mark",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "Immediately after you hit a creature with a melee weapon attack, you can use a bonus action to mark the target with sapping magic to prevent its escape. The target is marked for 1 minute. The mark ends early if you use this feature again. Until the effect ends, you gain the following benefits:",
+                "Once per round, you can make an opportunity attack against the marked target without using your reaction.",
+                "You can make opportunity attacks against the target if it moves while within the reach of your melee attacks, even if that movement does not take it out of your reach. ",
+                "If the marked creature tries to cast a spell of 3rd level or lower, its magic is disrupted. The creature must make a Constitution saving throw against your Wrack Save DC. On a failed save, it takes 1d4 necrotic damage per level of the spell, the spell fails and has no effect. The creature may still make another action that isn't casting a spell. On a success, the creature is able to cast the spell as normal.",
+                "You can't use this feature again until you finish a long rest, unless you expend a Necrotic Charge to do so again."
+            ]
+        },
+        {
+            "name": "Thief's Curse",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "Those who would take what you guard must reckon with an abjuring curse. When a divination spell is cast on a target within 60 feet of you, you become aware of it and can use your reaction to cause it to fail or provide misleading results.",
+                "Alternatively, when a creature you can see picks up or moves an object you can see, you can use your reaction to curse the creature. Until the object is dropped or returned to its place, the cursed target subtracts 1d6 from all saving throws. This curse lasts for 1 minute, or until you use this feature on another target.",
+                "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses upon completing a long rest."
+            ]
+        },
+        {
+            "name": "Dispersing Passage",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "As a bonus action, you can magically transform into a whirlwind of dust, insects, salt, or sand and move up to 60 feet before reverting to your normal form. While in whirlwind form, you are immune to all damage, can't be grappled, petrified, knocked prone, restrained, or stunned, and you can pass freely through the space of other creatures. A creature whose space you pass through in whirlwind form must succeed on a Dexterity saving throw against your Wrack Save DC or become blinded until the end of your next turn.",
+                "Once you use this feature, you must complete a long rest before you can use it again, unless you expend two Necrotic Charges to do so again."
+            ]
+        },
+        {
+            "name": "Ascendant Psychopomp",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You have reached the apex of your office, becoming the ultimate guardian of those laid to rest. You gain the following benefits:",
+                "- You have an additional reaction.",
+                "- Creatures of your choice within 20ft of you have advantage on Wisdom and Intelligence saving throws. You deal an additional die of weapon damage on successful opportunity attacks."
+            ]
+        },
+        {
+            "name": "Harbinger of Doom",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "Your imbuement of deathly energies grants you a unique connection to the dead. Once per short rest, you can cast Detect Evil and Good or Augury without a spell slot."
+            ]
+        },
+        {
+            "name": "Withering Aura",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "As a bonus action, you can allow the death incubating inside your body to exude outwards in an aura that extends 10 feet from you in all directions, or withdraw it again. Any creature other than you that ends its turn in the aura takes 1d4+PROF necrotic, poison or piercing (your choice) damage.",
+                "The damage dealt by your aura increases when you reach certain levels in this class: 2d4+PROF at 6th level, 3d4+PROF at 11th level, 4d4+PROF at 15th level, and 5d4+PROF at 18th level."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Corruption",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You regurgitate the evils within you towards nearby enemies. Creatures of your choice within 10 feet of you must succeed on a Constitution saving throw or become corrupted for 1 minute. A corrupted target takes 1d6+PROF necrotic, piercing, or poison damage (your choice) at the start of each of its turns. A creature can use its action to end this effect. A creature that fails its save by 5 or more becomes vulnerable to the damage it takes from this Wrack, and its creature type becomes undead for the duration of the corruption as your curse begins to turn it.",
+                "This feature's damage increases to 1d8+PROF at 6th level, 1d10+PROF at 10th level, and 1d12+PROF at 15th level."
+            ]
+        },
+        {
+            "name": "Consumption of Despair",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain another way to regain Necrotic Charges:",
+                "Once per round, when at least three creatures take damage from Withering Aura before the start of your next turn, you can gain a Necrotic Charge."
+            ]
+        },
+        {
+            "name": "Rising Horror",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "If a creature of size small or larger that you can see dies due to damage you've caused, you can use your reaction to infuse their energy into the Withering Aura. Until the end of your next turn, your Withering Aura counts as difficult terrain to hostile creatures and deals 1d6 necrotic, piercing, or poison damage (your choice) to hostile creatures moving into or through the area for every 5 feet they travel.",
+                "Once you have used this reaction, you can no longer do so unless you spend a Necrotic Charge to do so again, or finish a long rest. A Necrotic Charge can also be spent as a bonus action on subsequent turns to extend the duration of the effect by another turn."
+            ]
+        },
+        {
+            "name": "Malignant Armor",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "Your curse enfolds you, skin and bone. At the start of each of your turns, roll 1d6. Until you roll this die again, you have a bonus to your AC equal to half the number rolled (rounded down), and a creature that hits you with a melee attack takes necrotic, piercing, or poison damage (your choice) equal to the number rolled."
+            ]
+        },
+        {
+            "name": "Effluence of Death",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "Through spreading your decay, you may empower your allies with unholy vitality. On your turn, as a reaction to a friendly creature within 30 feet being knocked unconscious you can expend any number of hit die and roll them. The creature gets 1 HP and an amount of temporary HP equal to the number rolled, not being knocked unconscious. While that creature has that temporary HP, their creature type is also Undead and they deal an additional 2d4 necrotic, piercing, or poison damage (your choice) on weapon attacks and unarmed strikes.",
+                "You can use this feature a number of times equal to your proficiency bonus per long rest."
+            ]
+        },
+        {
+            "name": "Beacon of the Tainted",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tribute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You have risen to be the apex of your Office, an exemplar of the decayed that leads hordes into damnation. You gain the following benefits:",
+                "The radius of Withering Aura increases to 20 feet. Office of the Tribute features ignore resistance to poison, necrotic, and piercing damage, and treat immunity as resistance.",
+                "You can reroll 1s on damage rolls for Office of the Tribute features an unlimited amount of times."
+            ]
+        },
+        {
+            "name": "Refined Tastes",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your constitution modifier instead of strength for its attack and damage rolls, and deals 1d8 piercing damage. Additionally, when you reduce a hostile creature to 0 HP, you can expend a necrotic charge to give an ally within 30ft a number of temporary hit points equal to a roll of your necrotic engine.",
+                "At level 6, the bite becomes magical."
+            ]
+        },
+        {
+            "name": "A Noble Creature",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "One of the gifts of your vampiric nature is attunement to creatures of the night. Over the course of a minute in concentration, you may transform into a wolf or a rat, gaining its statistics. If your mental (INT, WIS, CHA) ability scores are higher than the chosen form, you retain your own of those ability scores. You don't have access to your Lictor features while transformed. This transformation lasts for 1 hour, but you can end it early (no action required), appearing in its space. If you take damage while transformed, you appear in that space in your normal form. At 8th level, you can also turn into a bat."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Obsession",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You enforce a challenge towards a foe with your unnatural charisma. Choose a creature of your choice within 30 feet of you: they must succeed on a Charisma saving throw or take 3d4 psychic damage.",
+                "If they fail by 5 or more you gain half cover against the target until the start of your next turn.",
+                "Regardless of whether they succeed or not, they are now Challenged: They have disadvantage on attacks against targets other than you until the start of your next turn. You can now use Refined Tastes to grant your ally temporary HP as a reaction when the Challenged target dies while within 30ft of you.",
+                "This feature's damage increases by 1d4 at 6th level, 10th level, and 15th level."
+            ]
+        },
+        {
+            "name": "Consumption of Envy",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain a new way to regain Necrotic Charges:",
+                "Once per round when a hostile creature misses an attack roll against an ally by 5 or more, you may gain a necrotic charge."
+            ]
+        },
+        {
+            "name": "Perfected Scion",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "You have trained extensively to improve your martial skill: when you attack a creature while no creatures other than your target are within 5ft of you, your range for critical hits is reduced by 1.",
+                "Additionally, you can briefly become incorporeal: you can cast Misty Step as a bonus action by spending 2 necrotic charges."
+            ]
+        },
+        {
+            "name": "Nocturnal Champion",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "While you have a creature Challenged, you gain half cover creatures that aren't your challenged target; Furthermore, whenever you spend a necrotic charge to deal necrotic damage you add an additional two die against the Challenged creature.",
+                "You have learned the sanguine gift of levitation: as a bonus action, you may give yourself flying speed equal to your current walking speed for 1 minute. This ability is usable proficiency bonus times per long rest."
+            ]
+        },
+        {
+            "name": "Dread Eclipse",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "When you kill a Challenged creature on your turn, you can then Challenge another creature within 30 feet of you (no action required).",
+                "As an action you may darken the day as it flees your vampiric power. The area within 30 feet of you becomes dim light, and confers the following bonuses within the area:",
+                "Allies become immune to fear.",
+                "Enemies must make a wisdom saving throw equal to your wrack save DC when starting their turn or entering this space for the first time during their turn, falling prone and becoming frightened of you until the end of their next turn. This effect does not work against your Challenged Target.",
+                "You reroll 1s on damage rolls against your Challenged target.",
+                "This effect lasts for 1 minute. You may use this a number of times equal to your proficiency bonus per long rest."
+            ]
+        },
+        {
+            "name": "Lord of the Night",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Vampire",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You have reached the apex of your office, becoming the ultimate vampiric elite. you gain the following benefits:",
+                "When you grant an ally temporary HP by spending a necrotic charge, you may target up to three allies within 30 feet of you.",
+                "You take (2x prof bonus) less damage from creatures that are not your challenged target. Your wracks ignore resistance to psychic or necrotic damage, and treat immunity as resistance."
+            ]
+        },
+        {
+            "name": "Wailing",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "You can demoralize others by giving voice to the discordant negative energy reverberating through your body. You can use a bonus action to start Wailing, which lasts for 1 minute. The sounds are audible up to 120 feet away, and can be heard on the Ethereal Plane. Your Wailing ends early if you are incapacitated, end your turn entirely within an area of sunlight, or are rendered unable to speak. You can also cease Wailing at any time (no action required). While you are Wailing, you have advantage on Charisma (Intimidation) checks and disadvantage on Charisma (Performance) checks, and creatures of your choice within 20 feet of you are subject to the following effects: In order to cast a spell with a verbal component, they must succeed on a DC 5 concentration saving throw. If they fail, they can take another action but are unable to cast a spell that turn.",
+                "In order to move within 5ft of you, they must make a DC 5 constitution saving throw. On a failure they instead move 5ft in a random direction away from you. Only triggers once per turn.",
+                "On the turn you begin Wailing, and as a bonus action on subsequent turns while your Wailing persists, you can choose one creature that is subject to these effects. The chosen creature subtracts 1d6 from the first ability check, attack roll, or saving throw it makes before the end of your next turn.",
+                "You can use this feature once, and cannot do so again until you complete a short rest or long rest, unless you expend a Necrotic Charge to do so again. ",
+                "The saving throws imposed by this feature is increased to 8 at 6th level, 11 at 11th level, 14 at 15th level, and 17 at 18th level."                
+            ]
+        },
+        {
+            "name": "Gnashing of Teeth",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "{@i 1st-level Lictor}",
+                "When a friendly creature within 30 feet of you that you can see or hear is hit with a critical attack, falls unconscious, or fails a saving throw , you can use your reaction to clash your teeth together in a bloodcurdling retort. When you do so, you have advantage on your next attack roll against a creature within 15 feet of you, provided the target could see or hear you when this reaction was used."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Noise",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You raise an unholy cacophony that overwhelms the senses of your foes. Each creature in a 15-foot cone must succeed on a Constitution saving throw or take 3d8 thunder damage and is pushed 10ft away from you. A creature that fails its save by 5 or more is also dazed until the end of your next turn. (A dazed creature can only do one of the following things on their turn: move, use an action, or use a bonus action.)",
+                "This feature's damage increases to 4d8 at 6th level, 5d8 at 10th level, and 6d8 at 15th level."
+            ]
+        },
+        {
+            "name": "Consumption of Discord",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "{@i 3rd-level Lictor}",
+                "You gain another way of regaining Necrotic Charges: Once per round, when a hostile creature fails an attack roll that was under the effect of Wailing, or fails a saving throw that was under the effect of Wailing, you can gain a Necrotic Charge."
+            ]
+        },
+        {
+            "name": "Death Rattle",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [
+                "{@i 6th-level Lictor}",
+                "The thrill of deathly energy resonates within you, emerging as unearthly shivers of sound. Whenever you gain a Necrotic Charge or use your Unrelenting Animus feature, you can choose one creature within 30 feet of you to direct an echo of death towards. The chosen creature must make a Charisma saving throw equal to your Wrack DC: on a failure, they take 2d4 thunder or necrotic damage (your choice).", 
+                "Additionally, the target subtracts the higher number on the d4s rolled from the first instance of damage it inflicts before the start of your next turn. This ability is only usable once per round.", 
+                "The amount of d4s rolled is increased to 3d4 at 9th level, 4d4 at 12th level, 5d4 at 15th level, and 6d4 at 18th level."
+            ]
+        },
+        {
+            "name": "Persephonic Orchestra",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [
+                "{@i 11th-level Lictor}",
+                "Whenever you begin Wailing, friendly creatures within 20 feet of you that can hear you can choose to join you. Any creature that does so gains temporary hit points equal to your lictor level, and spreads its effects of your Wailing to within 10 feet of itself while your Wailing continues.",
+                "Additionally, your Wrack with Noise can originate from the location of a creature joining in."
+            ]
+        },
+        {
+            "name": "Crecendo of Despair",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "{@i 15th-level Lictor}",
+                "You can imbue creatures with fatalistic energy, burning bright before the void. As an action, you can touch a willing creature (including yourself). For 1 minute, the creature is surrounded by wailing music and ghostly notes, granting the following benefits and drawbacks: The creature has +3 bonus to AC.",
+                "It has advantage on attack rolls and saving throws. When the creature hits a target with a weapon attack or spell attack, the target takes an extra 1d8 thunder damage.",
+                "Damage rolls against the creature reroll 1s and 2s once. The effect ends early if the creature is knocked unconscious. When the effect ends, the creature immediately drops to 0 hit points and already has one failed death save. Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Herald of Doom",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Wailer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "{@i 18th-level Lictor}",
+                "You have reached the apex of your office, becoming a calamitous harbinger of the End. You gain the following benefits:",
+                "You can target up to two creatures with the ability check / attack roll / saving throw reduction inflicted by Wailing at the same time.",
+                "Your Office of the Wailer features ignore resistance to thunder and necrotic damage, and treat immunity as resistance.",
+                "The radius of your Wailing while kept conscious by Unrelenting Animus is doubled."
+            ]
+        },
+        {
+            "name": "Necromancer Redux",
+            "source": "DepthsofMelokir",
+            "className": "Wizard",
+            "classSource": "PHB",
+            "subclassShortName": "Necromancer Redux",
+            "subclassSource": "DepthsofMelokir",
+            "level": 2,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Necromancy Savant",
+                    "entries": [
+                        "Beginning when you select this school at 2nd level, the gold and time you must spend to copy a necromancy spell into your spellbook is halved."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Whispers from beyond",
+                    "entries": [
+                        "At 2nd level, The souls of the lost and the damned occasionally whisper knowledge & secrets to aid you. When you miss with an attack roll or fail an ability check, you can roll a d6 and add it to the result, potentially changing the result. You can add a die in this way a number of times equal to your intelligence modifier, and you regain all expended uses when you finish a long rest.",
+                        "At 6th level, this die becomes a d8, at 10th level this die becomes a d10, and at 14th level this die becomes a d12."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Seance",
+            "source": "DepthsofMelokir",
+            "className": "Wizard",
+            "classSource": "PHB",
+            "subclassShortName": "Necromancer Redux",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [   
+                "At 6th level, you add the Speak with Dead and Augury spells to your spellbook and they both count as necromancy wizard spells for you. Furthermore you may cast Augury twice between long rests instead of once before the spell begins to risk providing a random result.",
+                {
+                    "type": "entries",
+                    "name": "Friends on the Other Side",
+                    "entries": [
+                        "You can now beseech the spirits you’ve contacted for aid in combat. If you or another creature you can see within 30 feet of you takes damage, you can use your reaction to call upon these spirits to supernaturally defend you or your ally, reducing that damage by 4d6.",
+                        "Calling upon these spirits more than once a day may anger them, however. Each time you use this ability after the first in a single day, there is a cumulative 10 percent chance for the spirits to refuse to lend their aid (The reaction is still lost)."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Accustomed to the Macabre",
+            "source": "DepthsofMelokir",
+            "className": "Wizard",
+            "classSource": "PHB",
+            "subclassShortName": "Necromancer Redux",
+            "subclassSource": "DepthsofMelokir",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you have resistance to necrotic damage, and you become immune to the frightened condition. Furthermore, you are now immune to any effect that would lead to you being possessed, unless you allow it."
+            ]
+        },
+        {
+            "name": "Haunt Foe",
+            "source": "DepthsofMelokir",
+            "className": "Wizard",
+            "classSource": "PHB",
+            "subclassShortName": "Necromancer Redux",
+            "subclassSource": "DepthsofMelokir",
+            "level": 14,
+            "entries": [
+                "The spirits you interact with can aid you in combat in even more unnerving ways. Once per short rest, as an action, you can target a creature you can see within 60 ft feet of yourself and a spirit will begin haunting it. While the target is haunted, you can sense the direction and distance to the target if it is on the same plane of existence as you. Additionally, the target has disadvantage on all saving throws against your necromancy spells. The target remains haunted for 24 hours, until it dies, or until you use this feature on another creature."
+            ]
+        },
+        {
+            "name": "Thug",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Thug",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "You hone your skill in the less subtle aspects of being a rogue. You’re less worried about being hidden, and care more about making an impact on your foes. Bouncers and ruffians belong to this archetype.",
+                {
+                    "type": "entries",
+                    "name": "Streetsmarts",
+                    "entries": [
+                        "When you choose this archetype at 3rd level, you gain proficiency in medium armour, shields, and improvised weapons. You also gain proficiency in the Intimidation skill. If you already have proficiency in the Intimidation skill, you may choose another skill listed in the Rogue class. The damage dice for simple and improvised weapons, as well as your unarmed strikes increases to 1d6 if it was lower than that before."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Dirty Tricks",
+                    "entries": [
+                        "Starting at 3rd level, you have a knack for dirty fighting. You may apply sneak attack to any simple melee weapon, improvised weapon, or unarmed strike. In addition, when you hit a creature with a melee weapon attack or unarmed strike, you may choose to apply one of the following effects:",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Shake ‘em down!",
+                                    "entry": "The target of your attack must make a Dexterity saving throw or drop an object they are holding."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Spook ‘em!",
+                                    "entry": " The target of your attack must make a Wisdom saving throw or be frightened of you until the end of your next turn."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Grab ‘em!",
+                                    "entry": "The target of your attack must make a Strength saving throw or be grappled by you."
+                                }
+                            ]
+                        },
+                        "The saving throw DC for these effects equals 8 + PB + your Strength modifier.",
+                        "You can benefit from these effects a number of times equal to 2 + your Strength modifier, and regain all uses when you finish a long rest."
+                    ]
+                }             
+            ]
+        },
+        {
+            "name": "Hired Muscle",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Thug",
+            "subclassSource": "DepthsofMelokir",
+            "level": 9,
+            "entries": [
+                "At 9th level, your experience with strong-arming people has taught you to hit even harder. The damage dice for your simple and improvised weapons, as well as your unarmed strikes increases to 1d8. In addition, you have advantage on Strength (Athletics) checks if you move no more than half your speed on the same turn."
+            ]
+        },
+        {
+            "name": "Gang Up",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Thug",
+            "subclassSource": "DepthsofMelokir",
+            "level": 13,
+            "entries": [
+                "At 13th level, you take any opportunity possible to deal some damage, kicking people when they’re down. When a creature within your reach is hit by an attack, you may use your reaction to make a melee attack against them. Your sneak attack feature does not apply to this attack, instead you roll ½ your sneak attack dice (rounded down) and add that to the damage of the attack."
+            ]
+        },
+        {
+            "name": "Thug's Mastery",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Thug",
+            "subclassSource": "DepthsofMelokir",
+            "level": 17,
+            "entries": [
+                "At 17th level, your dirty fighting becomes the dirtiest. When you use one of your Dirty Tricks features and deal sneak attack damage on the same attack, your Dirty Tricks features gain the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Shake ‘em down!",
+                            "entry": "A creature that dropped any item by this effect must use their action to pick it back up."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Spook ‘em!",
+                            "entry": "A creature frightened this way must use its next turn to run away from you."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Grab ‘em!",
+                            "entry": "A creature grappled this way is also restrained, and cannot cast spells with somatic or material components. To escape the grapple, they must succeed on a Strength or Dexterity check against your Dirty Tricks DC."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brute",
+            "source": "DepthsofMelokir",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Brute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Bodyguard",
+                    "entries": [
+                        "When an ally within 15 ft of you makes an intimidation check, they may add your strength modifier to the result."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Brutal Cunning",
+                    "entries": [
+                        "You harbor a reserve of pure brute force within yourself. This reserve is represented by your Brute dice, which are each a d6. You have a number of these dice equal to your 1 + your strength modifier, and they fuel various abilities you have, which are detailed below.",
+                        "Some of your abilities expend a Brute die, and you can’t use an ability if it requires you to use a die when your dice are all expended. You regain all your expended Brute dice when you finish a short rest. In addition, you regain one expended Brute die when you use your second wind.",
+                        "When you reach certain levels in this class, the size of your Brute dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12). The abilities below use your Brute dice.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Brutal Strike",
+                                    "entry": "Once on each of your turns, immediately after you hit a target with an attack and deal damage to it with a weapon using strength, you can expend one Brute die, rolling it and dealing additional damage to the target equal to the number rolled plus your Proficiency Bonus."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Brute force",
+                                    "entry": "When you roll an Athletics or intimidation check, you may expend one Brute die, and add it to the roll."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "That didn’t hurt one bit",
+                                    "entry": "As a bonus action, you can expend one Brute die, rolling it and gaining temporary hit points equal to the roll of the die + your constitution modifier."
+                                }
+                            ]
+                        } 
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brutal Defense",
+            "source": "DepthsofMelokir",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Brute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 7,
+            "entries": [
+                "You gain new defensive ways to use your Brute dice.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "name": "Brute constitution.",
+                            "entry": "When you roll a Constitution saving throw, you may expend one Brute die, and add it to the roll. If you still fail the saving throw, the Brute die is not expended. "
+                        },
+                        {
+                            "type": "item",
+                            "name": "Unstoppable",
+                            "entry": "When you roll a Death saving throw, you may expend one Brute die, and add it to the roll. If the result of your death saving throw is equal to or greater than 20, it is treated as if you had rolled a natural 20, and you regain 1 hit point."
+                        },
+                        {
+                            "type": "item",
+                            "name": "Nice try",
+                            "entry": "You can use your reaction to expend one Brute die, when you are hit by a melee weapon attack, to lessen the blow. When you do so, the damage you take from the attack is reduced by your Brute die + your strength modifier + your fighter level."
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "name": "Third Wind",
+            "source": "DepthsofMelokir",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Brute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 10,
+            "entries": [
+                "Third wind Once per long rest, when you are reduced below half your hit point maximum, you can regain all your expended Brute Dice.",
+                {
+                    "type":"entries",
+                    "name": "Go for the throat",
+                    "entries": [
+                        "Your weapon attacks, that use strength, now score a critical hit on a roll of 19 or 20. Furthermore, you regain one Brute Die each time you roll a critical hit."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brutal Champion",
+            "source": "DepthsofMelokir",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Brute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "You can now use your Brutal strike more than once a turn."
+            ]
+        },
+        {
+            "name": "Too angry to die",
+            "source": "DepthsofMelokir",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Brute",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "entries": [
+                "At the start of your turn, if you are below half your hit point maximum, but still have hit points, regain a number of hit points equal to 5+your constitution modifier."
+            ]
+        },
+        {
+            "name": "Oath of Liberty",
+            "source": "DepthsofMelokir",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Liberty",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                "Those who take the Oath of Liberty draw their power from the winds and the freedom they represent. They believe in the inherent right of all beings to live unburdened, unrestricted, and unrestrained. With a focus on breaking chains and upholding personal freedom, these paladins become agents of liberation, seeking to bring justice and equality to those oppressed by tyranny and injustice. Known as wind speakers, stormbound or grey knights, these paladins seek to liberate those from under the thumbs of the powerful.",
+                {
+                    "type": "entries",
+                    "name": "Channel Divinity",
+                    "entries": [
+                        "When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+                        {
+                            "type":"list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "name": "Whirlwind's Embrace.",
+                                    "entry": "You can use your Channel Divinity to create a gale of swirling winds to stop your foes in their tracks. As an action, you can force each creature of your choice that you can see within 20 feet of you to make a Strength saving throw. On a failed save, a creature is knocked prone. This effect lasts 1 minute and each creature of your choice that ends its turn within the radius must make the saving throw or fall prone."
+                                },
+                                {
+                                    "type": "item",
+                                    "name": "Breath of Deflection",
+                                    "entry": "You can use your Channel Divinity to summon a protective gust of wind to shield an ally from harm. Immediately after a hostile creature within 30 feet of you hits with an attack against a creature other than you, you can use your reaction to force the attacker to make a Strength saving throw. On a failed save, you may redirect the attack to a creature of your choice within 30 feet of you and within the triggering attack's range."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath of Liberty Spells|Paladin|PHB|Liberty|DepthsofMelokir|3"
+				}
+            ]
+        },
+        {
+			"name": "Oath of Liberty Spells",
+			"source": "DepthsofMelokir",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Liberty",
+			"subclassSource": "DepthsofMelokir",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath of liberty spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of Liberty Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell fog cloud}, {@spell zephyr strike}"
+						],
+						[
+							"5th",
+							"{@spell gust of wind}, {@spell warding wind}"
+						],
+						[
+							"9th",
+							"{@spell thunder step}, {@spell wind wall}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement}, {@spell storm sphere}"
+						],
+						[
+							"17th",
+							"{@spell control wind}, {@spell steel wind strike}"
+						]
+					]
+				}
+			]
+		},
+        {
+            "name": "Aura of Lethargy",
+            "source": "DepthsofMelokir",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Liberty",
+            "subclassSource": "DepthsofMelokir",
+            "level": 7,
+            "entries": [
+                "Starting at 7th level, the swirling currents of air around you hinder enemy movement. While you are not incapacitated, the area within 10 feet of you is difficult terrain for creatures of your choice.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Unrelenting Tempest",
+            "source": "DepthsofMelokir",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Liberty",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [
+                "Starting at 15th level, you gain greater control over the winds and can call them to aid you. You can take the dash action or make a shove attack as a bonus action on each of your turns.",
+                "Additionally, you can speak, read, and write Primordial."
+            ]
+        },
+        {
+            "name": "Eye of the Storm",
+            "source": "DepthsofMelokir",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Liberty",
+            "subclassSource": "DepthsofMelokir",
+            "level": 20,
+            "entries": [
+                "At 20th level, you can assume the form of an intangible, unstoppable force of air. As an action, you undergo a transformation. For 1 minute, you gain the following benefits:",
+                {
+                    "type":"list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "entry": "You gain resistance to bludgeoning, piercing and slashing damage."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You have advantage on Strength (Athletics) checks and Dexterity saving throws."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You gain a flying speed equal to your walking speed."
+                        }
+                    ]
+                },
+                "Once you use this feature, you can’t use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Circle of Stone",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 2,
+            "entries": [  
+                "Druids of the Circle of Stone draw their power from stone and metal. Casting aside their aversion to metallic armour, these druids understand its purpose in the natural world. Members of the Circle of Stone act as stalwart guardians of nature, and their allies.",
+                {
+                    "type":"entries",
+                    "name":"Circle Spells",
+                    "entries": [
+                        "Your connection to the spirits of the Elemental Plane of Earth grants you access to some spells when you reach certain levels in this class, as shown on the Circle of Stone Spells table.",
+                        "Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
+                    ]
+                },
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle of Stone Spells|Druid|PHB|Stone|DepthsofMelokir|2"
+				},
+                {
+                    "type":"refSubclassFeature",
+                    "subclassFeature": "Stone's Teachings|Druid|PHB|Stone|DepthsofMelokir|2"
+                },
+                {
+                    "type":"refSubclassFeature",
+                    "subclassFeature": "Earthen Form|Druid|PHB|Stone|DepthsofMelokir|2"
+                }     
+            ]
+        },
+        {
+            "name": "Circle of Stone Spells",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 2,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Circle of Stone Spells",
+                    "colLabels": [
+                        "Druid Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "2nd",
+                            "{@spell fog cloud}, {@spell zephyr strike}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell gust of wind}, {@spell warding wind}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell thunder step}, {@spell wind wall}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell freedom of movement}, {@spell storm sphere}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell control wind}, {@spell steel wind strike}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stone's Teachings",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 2,
+            "header": 1,
+            "entries": [
+                "At second level, you have learned how to use the materials granted to you by the earth. You gain proficiency in martial melee weapons. In addition, you may use armour and shields that are made of metal."
+            ]
+        },
+        {
+            "name": "Earthen Form",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 2,
+            "header": 1,
+            "entries": [
+                "As a bonus action, you may expend one use of your Wild Shape feature to reduce all bludgeoning, piercing and slashing damage you take by ½ your druid level (instead of assuming a beast form)  for one minute, until you are incapacitated, or you dismiss it as a bonus action."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [  
+                "You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, you can cast one of your cantrips that has a casting time of one action in place of one of those attacks if you have your Earthen Form feature active."
+            ]
+        },
+        {
+            "name": "Warding Earth",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 10,
+            "entries": [  
+                "At 10th level, you can command the earth to shield yourself and your allies. When you, or a creature you can see within 30ft of you is about to take damage, you may use your reaction to expend one spell slot to grant that creature a number of temporary hit points equal to twice the level of the spell slot plus your wisdom modifier before they take the damage.",
+                {
+                    "type":"entries",
+                    "name":"Earthen Form Improvement",
+                    "entries": [
+                        "Additionally at 10th level, while in your Earthen form, you gain the following features:",
+                        {
+                            "type":"list",
+                            "items": [
+                                {
+                                    "type":"item",
+                                    "entry":"When you cast a spell of 1st level or higher with a casting time of 1 action, you may make a single melee weapon attack  as a bonus action that turn."
+                                },
+                                {
+                                    "type":"item",
+                                    "entry":"Once during each of your turns when you hit with an attack roll with a melee weapon, you can deal extra thunder damage to the target equal to your Wisdom modifier"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Metallic Bulwark",
+            "source": "DepthsofMelokir",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "DepthsofMelokir",
+            "level": 14,
+            "entries": [  
+                "At 14th level, you can use the forces of elemental Earth to better protect your allies. While in your Earthen Form, bludgeoning, piercing and slashing damage an ally takes within 20ft of you is reduced by ½ your druid level."
+            ]
+        },
+        {
+            "name": "Path of the Thrashing Monster",
+            "source": "DepthsofMelokir",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Thrashing Monster",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [  
+                "At 3rd level, you gain the ability to affect those around you. When you take the Attack action on your turn, you can replace one or more of your attacks to create a special effect. You cannot replace more attacks than you have available and can only use this ability once per turn. The effect’s area is a sphere with a radius equal to the number of attacks you replace x 5 feet.",
+                "Each creature within that area must make a saving throw (the DC is 8 + your proficiency bonus + your Strength modifier), taking the effect’s damage on a failure or half as much on a success. Choose the nature of this effect from the following: the DC is 8 + your proficiency bonus + your Strength modifier:",
+                {
+                    "type":"list",
+                    "items": [
+                        {
+                            "type":"item",
+                            "name":"Stomp",
+                            "entry":"The saving throw is Strength, the damage is 1d8 + Strength Modifier bludgeoning for every attack substituted, creatures not touching the ground automatically succeed, creatures who fail are knocked prone. "
+                        },
+                        {
+                            "type":"item",
+                            "name":"Roar",
+                            "entry":"The saving throw is Constitution, the damage is 1d6 + Strength Modifier thunder for every attack substituted, creatures who fail are deafened for a minute. Deafened creatures may repeat the saving throw at the end of each of their turns, ending the effect on a success."
+                        },
+                        {
+                            "type":"item",
+                            "name":"Clap",
+                            "entry":"The saving throw is Constitution, the damage is 1d8 + Strength Modifier damage bludgeoning for every attack substituted, creatures who fail are pushed 10 feet away and knocked prone. Requires two empty hands."
+                        }
+                    ]
+                },
+                "(For example whilst using stomp and all available attacks. At 3rd level, this attack would deal 1d8 + STR damage, at 6th level the damage improves to 2d8 + STR*2, at 10th level this attack would deal 3d8 + STR*2, at 14th level this attack would deal 4d8 + STR*3).",
+                "Additionally, your jump distance is tripled."
+            ]
+        },
+        {
+            "name": "Directed Shock",
+            "source": "DepthsofMelokir",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Thrashing Monster",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "entries": [  
+                "Beginning at 6th level, When you use Cry and Wreak Havoc, you may instead choose to make the effect a line coming from you that is 5 feet wide, as well as 15 feet long for every attack substituted. Additionally, when you use the effect of Cry and Wreak Havoc it counts as magical bludgeoning."
+            ]
+        },
+        {
+            "name": "Unstoppable Rampage",
+            "source": "DepthsofMelokir",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Thrashing Monster",
+            "subclassSource": "DepthsofMelokir",
+            "level": 10,
+            "entries": [  
+                "While raging, you may move through barriers created by spells such as wall of force or forcecage by hitting them with an attack (AC 10 + the spell’s level). Additionally your Cry and Wreak Havoc feature improves, the initial damage from Stomp & Clap increases by 1d8 and Roar increases by 1d6.",
+                "Additionally, your speed increases by 10 feet while you aren't wearing heavy armor."
+            ]
+        },
+        {
+            "name": "Unbeatable Strength",
+            "source": "DepthsofMelokir",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Thrashing Monster",
+            "subclassSource": "DepthsofMelokir",
+            "level": 14,
+            "entries": [  
+                "Whilst you are raging, when you use Cry and Wreak Havoc it is considered to have an additional attack added to it.",
+                {
+                    "type":"entries",
+                    "name":"Fathomless Rage",
+                    "entries":[
+                        "Your speed increases by 10 feet, and you have a bonus to Intelligence, Wisdom, and Charisma saving throws equal to your Constitution Modifier (minimum of +0)."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Forge Adept",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [  
+                "As a Forge Adept, you carry on these ancient traditions, creating mystical weapons and armor, strengthening allies on the battlefield, and bringing down enemies with weapons imbued with your own soul energy. If you’re dar, you learned these techniques from the masters of your clan. Are you content to follow ancient traditions, or do you want to add your own innovations? If you’re not Dhakaani, did you learn these techniques from a daashor mentor? Did you steal this knowledge? Or are you replicating these traditions on your own?",
+                {
+                    "type": "entries",
+                    "name": "Tool Proficiency",
+                    "entries": [
+                        "When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Forge Adept Spells",
+                    "entries": [
+                        "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Forge Adept Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare."
+                    ]
+                },
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Forge Adept Spells|Artificer|TCE|Forge Adept|DepthsofMelokir|3"                    
+                },
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Battle Ready|Artificer|TCE|Forge Adept|DepthsofMelokir|3"                    
+                },
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ghaal'shaarat|Artificer|TCE|Forge Adept|DepthsofMelokir|3"                    
+                }
+            ]
+        },
+        {
+            "name": "Forge Adept Spells",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+				{
+					"type": "table",
+					"caption": "Forge Adept Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell armor of agathys}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell spiritual weapon}, {@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell remove curse}"
+						],
+						[
+							"13th",
+							"{@spell death ward}, {@spell fire shield}"
+						],
+						[
+							"17th",
+							"{@spell banishing smite}, {@spell wall of force}"
+						]
+					]
+				}
+			]
+		},     
+        {
+            "name": "Battle Ready",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [  
+                "When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:",
+                {
+                    "type":"list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "entry": "You gain proficiency with martial weapons."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ghaal'shaarat",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [  
+                "At 3rd level, you learn to imbue a weapon with a fraction of your spirit. The Dhakaani daashors called this weapon the ghaal’shaarat, Goblin for “mighty blade.” Imbuing your ghaal’shaarat works like infusing an item, but does not count toward your maximum number of infused items.",
+                "When you finish a long rest, you can touch a magic or nonmagical simple or martial melee weapon, which becomes your ghaal’shaarat. Once imbued, your ghaal’shaarat is a magic weapon that grants a +1 bonus to attack and damage rolls. If the base weapon you imbued already grants such a bonus, you instead only take the higher bonus. This bonus increases when you reach certain levels in this class, increasing to +2 at 8th level and +3 at 13th level. If the weapon you imbued has the thrown property, it returns to your hand immediately after it is used to make a ranged attack.",
+                "Your ghaal’shaarat’s benefits remain until the weapon is destroyed or until you use this ability to imbue a new item with this power. Other creatures can’t benefit from your ghaal’shaarat’s powers, and to them, it functions as the unimbued weapon did."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 5,
+            "entries": [  
+                "You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+            ]
+        },
+        {
+            "name": "Runes of War",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 9,
+            "entries": [  
+                "At 9th level, you gain the ability to enhance the weapons of your squad, targeting the damage to the weakness of your enemies.",
+                "As an action, you can activate an aura that extends from you in a 30-foot radius. The aura moves with you, centered on you, and lasts for 1 minute or until your concentration ends (as if you were casting a spell). When you activate this aura, choose one of the following damage types: acid, cold, fire, lightning, or thunder. Each creature of your choice in the aura deals an extra 1d4 damage of the chosen type when it hits with a weapon attack.",
+                "You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses after a long rest."
+            ]
+        },
+        {
+            "name": "Perfect Weapon",
+            "source": "DepthsofMelokir",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Forge Adept",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [  
+                "At 15th level, you learn how to imbue your ghaal’shaarat with additional power, and how to draw on it in time of need. The first time you attack with your ghaal’shaarat on your turn, you can transfer some or all of its bonus to your armor class, instead of using the bonus on any attacks that turn. For every 1 you reduce your attack and damage rolls by, you gain +1 to your AC. As long as you continue holding your ghaal’shaarat, the AC bonus remains in effect until the start of your next turn.",
+                "Additionally, when you finish a long rest, you can select one of the following benefits. ",
+                "Until you finish your next long rest, you gain the selected benefit whenever you’re holding your ghaal’shaarat.",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "entry": "You have resistance to psychic damage, and you can’t be charmed or frightened."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You use your ghaal’shaarat to channel the elements. When you select this ability, select one of the following damage types: acid, cold, fire, lightning, or thunder. When you hit with your ghaal’shaarat, the target takes an extra 1d6 damage of the chosen type."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wild Card",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [  
+                "Some rogues favor honing their skill and precision, others perfect a silver tongue, but you — well, you’ve always gotten a kick out of leaving things up to chance.",
+                "Rogues of the Wild Card variety thrive on the high stakes and random thrill of the game table. Armed with cunning cheats and no small amount of luck, these sly gamblers live and die by their rules, never keen to simply accept the hand fate deals them.",
+                {
+                    "type": "entries",
+                    "name": "Tricks Up the Sleeve",
+                    "entries": [
+                        "Starting at 3rd level, your penchant for games has afforded you the ability to subtly manipulate fortune to your favor. When you choose this archetype at 3rd level, you learn the Guidance cantrip. Starting at 9th level, it has a range of 30 feet for you, and you can cast it as a bonus action."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Wild Card’s Gambit ",
+                    "entries": [
+                        "Also at 3rd level, you gain proficiency with one of the following gaming sets: dice set, dragonchess set, or playing card set.",
+                        "The gaming set you choose grants you a Wild Card’s Gambit, as detailed below. If you are proficient in multiple types of gaming sets, you must choose which gambit to use when you gain this feature. You can change your choice of gambit whenever you gain a level in this class.",
+                        {
+                            "type":"entries",
+                            "name":"Dragonchess",
+                            "entries": [
+                                "Your prowess of the chessboard has made you a skilled tactician on the battlefield. As a bonus action on your turn, you can execute one of the following chess maneuvers. You can use a bonus action in this way a number of times equal to your Charisma modifier (minimum of once), and regain all uses after a long rest.",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "type": "item",
+                                            "name": "Dragon",
+                                            "entry": "Choose a creature you can see within 30 feet of you. The first time that creature makes a successful attack roll before the start of your next turn, they deal extra damage equal to your level in this class."
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Griffon",
+                                            "entry": "You take the Dash action, and your movement does not provoke opportunity attacks. These benefits last until the start of your next turn."
+                                        },
+                                        {
+                                            "type": "item",
+                                            "name": "Sylph",
+                                            "entry": "Choose creatures up to your Charisma modifier within 30 feet of you, they have advantage on Dexterity saving throws until the start of your next turn."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Loaded Dice",
+                            "entries": [
+                                "You gain a pool of d6s equal to the number of d6s you roll for your Sneak Attack damage. (Your pool starts with 2d6 at 3rd level, and increases to 3d6 at 5th level, and so on.) When a creature targets you with an attack, you can use your reaction to spend one die from the pool and subtract the number rolled from the attack. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll hits or misses. Starting at 9th level you can spend up to two dice from the pool at once, and starting at 17th level you can spend up to three dice at once. You regain all expended dice from your loaded dice pool when you complete a long rest."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Playing Cards",
+                            "entries": [
+                                "You have developed a fighting style based around the cartomancy of the Serpent Isles. You have your own deck of enchanted cards, and can make their edges razor-sharp with a flick of your wrist. If you have not yet used your Sneak Attack this turn, you can use your action to take one of these cards and attack a creature within 30 feet with it. The attack roll for this feature uses your Dexterity modifier, and on a hit, it deals slashing damage equal 1d4 + your Dexterity modifier. When you roll for damage, look at the number rolled on the d4. The attack gains a random effect based on the number rolled, as detailed in the Wild Card Suit table below. You can attack using a card in this manner a number of times equal to your Charisma modifier (minimum of once), and regain all uses after a long rest.",
+                                {
+                                    "type": "table",
+                                    "caption": "Wild Card Suit Table",
+                                    "colLabels": [
+                                        "Damage die (d4)",
+                                        "Suit"
+                                    ],
+                                    "colStyles": [
+                                        "col-2 text-center",
+                                        "col-10"
+                                    ],
+                                    "rows": [
+                                        [
+                                            "1",
+                                            "Blade: Roll your Sneak Attack damage and add it to your razor card’s damage. At the start of its next turn, the target takes additional damage equal to half the Sneak Attack damage rolled."
+                                        ],
+                                        [
+                                            "2",
+                                            "Shackle: Until the start of your next turn, the target’s speed is halved. It can’t make more than one attack on its turn while its speed is reduced in this way."
+                                        ],
+                                        [
+                                            "3",
+                                            "Heart: Roll your Sneak Attack damage and add it to your razor card’s damage. You also immediately regain a number of hit points equal to the half the damage dealt. Any excess hit points regained become temporary hit points."
+                                        ],
+                                        [
+                                            "4",
+                                            "Wild Ace: This card morphs suits depending on the dealer’s wishes. Choose Blade, Shackle, or Heart. The card then immediately gains the suit’s respective effect."
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Shifting the Odds",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "DepthsofMelokir",
+            "level": 9,
+            "entries": [  
+                "Starting at 9th level, you are acutely aware of how to quit when you’re ahead, vanishing in a flash when the odds begin to turn against you. As a bonus action, you can disappear with a dramatic flourish. Each creature within 10 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Charisma modifier), taking 4d10 force damage on a failed save or half as much on a successful one.",
+                "You then teleport yourself to an unoccupied space that you can see within 120 feet of your original location. Once you have used this ability, you cannot use it again until you have finished a short or long rest."
+            ]
+        },
+        {
+            "name": "Twist of Fate",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "DepthsofMelokir",
+            "level": 13,
+            "entries": [  
+                "At 13th level, your mastery over the game table hones your speed and cunning in combat. After rolling initiative but before the first turn of combat, you can choose to swap places in the initiative order with one creature you can see. If the creature is one of your allies, that ally must agree to swapping initiative with you."
+            ]
+        },
+        {
+            "name": "Joker Wild",
+            "source": "DepthsofMelokir",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "DepthsofMelokir",
+            "level": 17,
+            "entries": [  
+                "At 17th level, your mastery over chance encompasses even your own form, allowing you to exist between potential realities. As a bonus action on your turn, you can take on an incorporeal form, during which you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type":"item",
+                            "entries":[
+                                "You regain expended power for your Wild Card’s Gambit feature:",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "type":"item",
+                                            "entry":"Cards. You regain all spent uses of that feature."
+                                        },
+                                        {
+                                            "type":"item",
+                                            "entry":"Dragonchess. You regain all spent uses of that feature."
+                                        },
+                                        {
+                                            "type":"item",
+                                            "entry":"Dice. You regain all spent dice."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"item",
+                            "entry":"Your movement speed is doubled."
+                        },
+                        {
+                            "type":"item",
+                            "entry":"You gain resistance to all damage, and are immune to the grappled, paralyzed, stunned, and restrained conditions."
+                        },
+                        {
+                            "type":"item",
+                            "entry":"You can move through objects and creatures as if they were difficult terrain. If you end your turn inside a creature, the creature takes 1d10 force damage and is shunted into an adjacent space within 5 feet of their original location."
+                        }
+
+                    ]
+                },
+                "This incorporeal state lasts for one minute, or until you are incapacitated. Once you use this feature, you cannot use it again until you complete a long rest"
+            ]
+        },
+        {
+            "name": "Veildancer",
+            "source": "DepthsofMelokir",
+            "className": "Ranger",
+            "classSource": "PHB",
+            "subclassShortName": "Veildancer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Mirage weavers and blade spinners",
+                    "entries": [
+                        "This conclave of rangers originate from large spaces where the horizon doesn’t provide much cover, except for mirages. They often hail from sand deserts, their steamy dunes and their secret oasis providing safe haven; but other places, like swamps or sea can be full of misty visions and illusions.",
+                        "These rangers have learned to take advantage of these natural effects, and use them as a tool to hide, disguise or blur themselves and their allies. They weave the appearance of the world around them to get the upper hand and provide protection, mobility and increased offensive prowess to their allies."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Veil Dancer Magic",
+                    "entries": [
+                        "At 3rd level, your bond with mirage and illusions shows in your magic abilities. you learn the Minor Illusion cantrip.",
+                        "You also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Veil Dancer Spells table bellow. Each spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.",
+                        {
+                            "type": "table",
+                            "caption": "Veildancer Magic",
+                            "colLabels": [
+                                "Ranger Level",
+                                "Spell"
+                            ],
+                            "colStyles": [
+                                "col-2 text-center",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "3rd",
+                                    "{@spell silent image}, {@spell minor illusion}"
+                                ],
+                                [
+                                    "5th",
+                                    "{@spell mirror image}"
+                                ],
+                                [
+                                    "9th",
+                                    "{@spell hypnotic pattern}"
+                                ],
+                                [
+                                    "13th",
+                                    "{@spell hallucinatory terrain}"
+                                ],
+                                [
+                                    "17th",
+                                    "{@spell mislead}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name":"",
+                    "entries": [
+                        "Also at 3rd level, you have learned to quickly weave a cloak of illusions around you or your allies, called a Veil. As a bonus action, you target a willing creature that you can see within 30 ft. (including you) and give it one of the following Veils. A Veil lasts for its whole duration, until you use this ability again or until magic dispels it.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "item",
+                                    "entry":"Deceiving Veil: you change the way a willing creature looks for 1 hour, as per the spell Disguise Self. This effect ceases if the creature stops to be willing."
+                                },
+                                {
+                                    "type": "item",
+                                    "entry":"Concealing Veil: your veil provides camouflage. For 1 hour, the target has advantage to its Dexterity (Stealth) checks."
+                                },
+                                {
+                                    "type": "item",
+                                    "entry":"Shimmering Veil: you blur the image of a creature, whose silhouette seems to shift quickly and undulate. For 1 minute, all attacks against the target are made with disadvantage, unless they are incapacitated, restrained or otherwise unable to move."
+                                }
+                            ]
+                        },
+                        "These Veils are perfect tools for a deadly ambush. When a creature benefiting from this feature hits a creature with a weapon during the first round of a combat, they can deal an extra 1d6 damage to the target, which can take this extra damage only once during this fight. This damage goes up to 2d6 at 7th level and to 3d6 at 11th level.",
+                        "If the creature that benefit from one of these Veils takes damage, the feature ceases to function until the start of their next turn.",
+                        "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Elusive Shrouds",
+            "source": "DepthsofMelokir",
+            "className": "Ranger",
+            "classSource": "PHB",
+            "subclassShortName": "Veildancer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 7,
+            "entries": [  
+                "At 7th level, you have mastered the art of weaving fast and confusing illusions, as your veils now embrace each of your whims and movements with a disorienting grace. You gain the following features:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "entry": "You can use an action to change the appearance of your Deceiving Veil at will without expending another use of this ability, as long as the target is willing and in range. This doesn’t change the Veil’s total duration."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "Creatures under the effect of your Concealing Veil can attempt to hide even while directly observed."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "Creatures under the effect of your Shimmering Veil don’t trigger attacks of opportunity when they move, as each step taken seems to make them blink in and out of sight for a second."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Vaporous Dodge",
+            "source": "DepthsofMelokir",
+            "className": "Ranger",
+            "classSource": "PHB",
+            "subclassShortName": "Veildancer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "entries": [  
+                "At 11th level, those affected by your mirages are never truly where they seem to be. Whenever a creature under the effect of one of your Veils receives damage, they can use their reaction to teleport up to 30 ft. in an unoccupied space they can either see or have occupied in the last minute."
+            ]
+        },
+        {
+            "name": "Misty Warriors",
+            "source": "DepthsofMelokir",
+            "className": "Ranger",
+            "classSource": "PHB",
+            "subclassShortName": "Veildancer",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "entries": [  
+                "At 15th level, your mirages can target more creatures and even affect the material plane. You can create one of the following effects as a bonus action while you are under the effect of one of your Veils or as part of the bonus action used to activate your Veil of Mirages. Once you have used this feature, you cannot do so again until you take a short or long rest:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "entry": "You summon tangible and identical illusions of you. You can summon a number of doubles equal to your Wisdom modifier in points of your choice that you can see within 30ft. of you. Each double benefits from your Veil and makes an attack against a target of your choice when it appears, as if you were making an attack with the weapon you have in hand. After each double has attacked, you can choose to swap places with one of your doubles. The doubles last until the start of your next turn, they share your AC, are immune to poison and psychic damage, and they disappear if they take at least 1 point of damage."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You target a number of willing creatures that you can see within 30 ft. of you inferior or equal to your Wisdom modifier. Each creature benefits from the current Veil of Mirages that you have chosen for its entire duration or until you lose your concentration, as if you were concentrating on a spell. If you lose your concentration, you don’t lose your own Veil, only the other targets do. If you apply your Deceiving Veil in this way you can choose a different appearance for each individual target. A target of this feature loses its benefits if they start or end their turns more than 60ft. from you."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
