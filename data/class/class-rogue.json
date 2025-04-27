@@ -206,30 +206,6 @@
 								"type": "dice",
 								"toRoll": [
 									{
-										"number": 3,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 3,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
 										"number": 4,
 										"faces": 6
 									}
@@ -387,6 +363,30 @@
 								"toRoll": [
 									{
 										"number": 10,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 11,
+										"faces": 6
+									}
+								],
+								"rollable": true
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 11,
 										"faces": 6
 									}
 								],
@@ -931,7 +931,8 @@
 					"source": "DepthsofMelokir",
 					"name": "Depths of Melokir Variant",
 					"entries": [
-						"At level 5, the amount of die dealt by your Sneak Attack increases to 4d6. Other increases of your class progression occur as normal: the damage increases to 5d6 at level 7, 6d6 at level 9, 7d6 at level 11, 8d6 at level 13, 9d6 at level 15, 10d6 at level 17, and 11d6 at level 19"
+						"At level 5, the amount of die dealt by your Sneak Attack increases to 4d6. Other increases of your class progression occur as normal: the damage increases to 5d6 at level 7, 6d6 at level 9, 7d6 at level 11, 8d6 at level 13, 9d6 at level 15, 10d6 at level 17, and 11d6 at level 19",
+						"The Sneak Attack Column of the Rogue Table has been altered to reflect this change"
 					]
 				}
 			]
