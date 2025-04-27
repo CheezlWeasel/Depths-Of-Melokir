@@ -10,7 +10,6 @@
 					"page": 54
 				}
 			],
-			"edition": "classic",
 			"hd": {
 				"number": 1,
 				"faces": 8
@@ -496,7 +495,6 @@
 					"page": 58
 				}
 			],
-			"edition": "classic",
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -538,7 +536,6 @@
 			"className": "Artificer",
 			"classSource": "TCE",
 			"page": 15,
-			"edition": "classic",
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -586,7 +583,6 @@
 					"page": 59
 				}
 			],
-			"edition": "classic",
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -634,7 +630,6 @@
 					"page": 60
 				}
 			],
-			"edition": "classic",
 			"additionalSpells": [
 				{
 					"prepared": {
