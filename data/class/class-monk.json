@@ -113,7 +113,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 4
+										"faces": 6
 									}
 								],
 								"rollable": true
@@ -130,7 +130,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 4
+										"faces": 6
 									}
 								],
 								"rollable": true
@@ -147,7 +147,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 4
+										"faces": 6
 									}
 								],
 								"rollable": true
@@ -164,7 +164,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 4
+										"faces": 6
 									}
 								],
 								"rollable": true
@@ -181,7 +181,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 6
+										"faces": 8
 									}
 								],
 								"rollable": true
@@ -198,7 +198,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 6
+										"faces": 8
 									}
 								],
 								"rollable": true
@@ -215,7 +215,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 6
+										"faces": 8
 									}
 								],
 								"rollable": true
@@ -232,7 +232,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 6
+										"faces": 8
 									}
 								],
 								"rollable": true
@@ -249,7 +249,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 6
+										"faces": 8
 									}
 								],
 								"rollable": true
@@ -266,7 +266,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 6
+										"faces": 8 
 									}
 								],
 								"rollable": true
@@ -283,7 +283,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 10
 									}
 								],
 								"rollable": true
@@ -300,7 +300,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 10
 									}
 								],
 								"rollable": true
@@ -317,7 +317,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 10
 									}
 								],
 								"rollable": true
@@ -334,7 +334,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 10
 									}
 								],
 								"rollable": true
@@ -351,7 +351,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 10
 									}
 								],
 								"rollable": true
@@ -368,7 +368,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 10
 									}
 								],
 								"rollable": true
@@ -385,7 +385,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 10
+										"faces": 12
 									}
 								],
 								"rollable": true
@@ -402,7 +402,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 10
+										"faces": 12
 									}
 								],
 								"rollable": true
@@ -419,7 +419,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 10
+										"faces": 12
 									}
 								],
 								"rollable": true
@@ -436,7 +436,7 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 10
+										"faces": 12
 									}
 								],
 								"rollable": true
@@ -758,8 +758,23 @@
 					"type": "list",
 					"items": [
 						"You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.",
-						"You can roll a {@dice d4} in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.",
-						"When you use the {@action Attack} action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the {@action Attack} action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn."
+						"You can roll a {@dice d4} in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table."
+					]
+				},
+				{
+					"type": "entries",
+					"source": "DepthsofMelokir",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"{@i This is not the base version of Martial Arts, However the Variant used in Depths of Melokir is Mandatory when playing this class}",
+						"The third ability of Martial Arts (the one that allows you to make an unarmed strike as a bonus action if you took the attack action) is replaced with the following:",
+						{
+							"type": "list",
+							"items": [
+								"You can make an Unarmed Strike as a Bonus Action."
+							]				
+						},
+						"Additionally, your Martial Arts Die is increased by 1 tier: you start with a 1d6, increasing to 1d8 at 5th level, 1d10 at 11th level, and 1d12 at 17th level."
 					]
 				},
 				"Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama)."
@@ -849,6 +864,27 @@
 						{
 							"type": "refClassFeature",
 							"classFeature": "Step of the Wind|Monk||2"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"source": "DepthsofMelokir",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Ki feature is replaced with the following ability:",
+						{
+							"type": "entries",
+							"name": "Monk’s Focus",
+							"items": [
+								"Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.",
+								"You can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.",
+								"When you expend a Focus Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.",
+								"Some features that use Focus Points require your target to make a saving throw. The save DC equals 8 plus your Wisdom modifier and Proficiency Bonus.",
+								"Flurry of Blows. You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.",
+								"Patient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.",
+								"Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn."
+							]				
 						}
 					]
 				}

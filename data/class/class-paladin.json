@@ -769,7 +769,24 @@
 				"Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
 				"As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
 				"Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
-				"This feature has no effect on undead and constructs."
+				"This feature has no effect on undead and constructs.",
+				{
+					"type": "entries",
+					"source": "DepthsofMelokir",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Lay on Hands feature has the following wording:",
+						{
+							"type": "list",
+							"items": [
+								"Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
+								"As a Bonus Action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
+								"Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
+								"This feature has no effect on undead and constructs."
+							]				
+						}
+					]
+				}
 			]
 		},
 		{
@@ -781,7 +798,15 @@
 			"classSource": "PHB",
 			"level": 2,
 			"entries": [
-				"Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is {@damage 2d8} for a 1st-level spell slot, plus {@damage 1d8} for each spell level higher than 1st, to a maximum of {@damage 5d8}. The damage increases by {@damage 1d8} if the target is an undead or a fiend, to a maximum of {@damage 6d8}."
+				{
+					"type": "entries",
+					"source": "DepthsofMelokir",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"{@i This is not in the base version of Divine Smite, However the Variant used in Depths of Melokir is Mandatory when playing this class and as such the base content being replaced has been entirely removed}",
+						"Starting at 2nd level, once per turn when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8."
+					]
+				}
 			]
 		},
 		{
