@@ -977,7 +977,7 @@
 			]
 		},
 		{
-			"name": "Steady Aim",
+			"name": "Lock On",
 			"source": "DoM",
 			"className": "Rogue",
 			"classSource": "PHB",
