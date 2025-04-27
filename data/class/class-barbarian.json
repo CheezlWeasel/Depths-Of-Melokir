@@ -517,6 +517,23 @@
 			]
 		},
 		{
+			"name": "Rage",
+			"source": "DepthsofMelokir",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"The 1st level feature Rage gains the additional properties:",
+				{
+					"type": "list",
+					"items": [
+						"When you take a short rest, you regain 1 use of Rage.",
+						"As a bonus action while raging, you may extend your rage so that it does not end that turn."
+					]
+				}
+			]
+		},
+		{
 			"name": "Unarmored Defense",
 			"source": "PHB",
 			"page": 46,
