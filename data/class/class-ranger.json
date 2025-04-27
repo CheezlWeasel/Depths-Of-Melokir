@@ -409,6 +409,7 @@
 				},
 				"Ability Score Improvement|Ranger||8",
 				"Land's Stride|Ranger||8",
+				"Effortless Mark|Ranger||9|DoM",
 				"Hide in Plain Sight|Ranger||10",
 				"Nature's Veil|Ranger||10|TCE",
 				"Natural Explorer improvement|Ranger||10",
@@ -839,6 +840,16 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"source": "DepthsofMelokir",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"Instead of choosing spells to know permanently, you instead Prepare spells that are available for you to cast, choosing from the Ranger spell list. When you do so, choose a number of ranger spells equal to the number of spells known for a ranger. The spells must be of a level for which you have spell slots.",
+						"For example, if you are a 5th-level ranger, you have four level 1 spell slots and 2 level 2 spell slots, with 4 known spells. Your list of prepared spells can include 4 spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.",
+						"You can change your list of prepared spells when you finish a long rest."
+					]
 				}
 			]
 		},
@@ -1033,6 +1044,18 @@
 			"entries": [
 				"Starting at 8th level, moving through nonmagical {@quickref difficult terrain||3} costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
 				"In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the {@spell entangle} spell."
+			]
+		},
+		{
+			"name": "Effortless Mark",
+			"source": "DoM",
+			"className": "Ranger",
+			"classSource": "PHB",
+			"level": 9,
+			"entries": [
+				"{@i This Feature is not part of base ranger}",
+				"Starting at level 9, the spell Hunter’s Mark no longer requires concentration. The casting time and transferring it are still the same.",
+				"If you have the feature Favoured Foe, you may instead make that feature not require concentration (this replaces applying this benefit to Hunter's Mark). Additionally, Favoured Foe if chosen gains the ability If the target drops to 0 hit points before 1 minute passes, you can mark a new target when you hit them with an attack roll without expending a use of this feature."	
 			]
 		},
 		{

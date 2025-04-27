@@ -613,47 +613,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "The Hexblade",
-			"shortName": "Hexblade",
-			"source": "XGE",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"page": 55,
-			"additionalSpells": [
-				{
-					"expanded": {
-						"s1": [
-							"shield",
-							"wrathful smite"
-						],
-						"s2": [
-							"blur",
-							"branding smite"
-						],
-						"s3": [
-							"blink",
-							"elemental weapon"
-						],
-						"s4": [
-							"phantasmal killer",
-							"staggering smite"
-						],
-						"s5": [
-							"banishing smite",
-							"cone of cold"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"The Hexblade|Warlock||Hexblade|XGE|1",
-				"Accursed Specter|Warlock||Hexblade|XGE|6",
-				"Armor of Hexes|Warlock||Hexblade|XGE|10",
-				"Master of Hexes|Warlock||Hexblade|XGE|14"
-			],
-			"hasFluffImages": true
-		},
-		{
 			"name": "The Fathomless",
 			"shortName": "Fathomless",
 			"source": "TCE",
@@ -940,7 +899,16 @@
 							"attributes": [
 								"cha"
 							]
+						},
+						{
+							"type": "entries",
+							"source": "DepthsofMelokir",
+							"name": "Depths of Melokir Variant",
+							"entries": [
+								"Warlocks can choose to use INT as their spellcasting attribute for features, also replacing their CHA saving throw proficiency with INT saving throw proficiency. If you plan to multiclass with this feature, DM permission is required."
+							]
 						}
+							
 					]
 				},
 				{
@@ -2381,151 +2349,6 @@
 			"entries": [
 				"Starting at 14th level, the radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to {@dice 2d8} + your Charisma modifier, and it is {@condition blinded} until the end of the current turn.",
 				"Once you use this feature, you can't use it again until you finish a long rest."
-			]
-		},
-		{
-			"name": "The Hexblade",
-			"source": "XGE",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE",
-			"level": 1,
-			"entries": [
-				"You have made your pact with a mysterious entity from the Shadowfell\u2014a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
-				"Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
-				{
-					"type": "entries",
-					"name": "Expanded Spell List",
-					"entries": [
-						"The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-						{
-							"type": "table",
-							"caption": "Hexblade Expanded Spells",
-							"colLabels": [
-								"Spell Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1st",
-									"{@spell shield}, {@spell wrathful smite}"
-								],
-								[
-									"2nd",
-									"{@spell blur}, {@spell branding smite}"
-								],
-								[
-									"3rd",
-									"{@spell blink}, {@spell elemental weapon}"
-								],
-								[
-									"4th",
-									"{@spell phantasmal killer}, {@spell staggering smite}"
-								],
-								[
-									"5th",
-									"{@spell banishing smite}, {@spell cone of cold}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Hexblade's Curse|Warlock||Hexblade|XGE|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Hex Warrior|Warlock||Hexblade|XGE|1"
-				}
-			]
-		},
-		{
-			"name": "Hex Warrior",
-			"source": "XGE",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons.",
-				"The influence of your patron also allows you to mystically channel your will through a particular weapon. Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon's type."
-			]
-		},
-		{
-			"name": "Hexblade's Curse",
-			"source": "XGE",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Starting at 1st level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are {@condition incapacitated}. Until the curse ends, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.",
-						"Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the {@dice d20}.",
-						"If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point)."
-					]
-				},
-				"You can't use this feature again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Accursed Specter",
-			"source": "XGE",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Starting at 6th level, you can curse the soul of a person you slay, temporarily binding it to your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a {@creature specter}, the statistics for which are in the Monster Manual. When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0).",
-				"The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife.",
-				"Once you bind a specter with this feature, you can't use the feature again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Armor of Hexes",
-			"source": "XGE",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an attack roll, you can use your reaction to roll a {@dice d6}. On a 4 or higher, the attack instead misses you, regardless of its roll."
-			]
-		},
-		{
-			"name": "Master of Hexes",
-			"source": "XGE",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Starting at 14th level, you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren't {@condition incapacitated}. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature."
 			]
 		}
 	]

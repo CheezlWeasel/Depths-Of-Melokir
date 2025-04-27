@@ -405,9 +405,10 @@
 					"classFeature": "Roguish Archetype|Rogue||3",
 					"gainSubclassFeature": true
 				},
-				"Steady Aim|Rogue||3|TCE",
+				"Lock On|Rogue||3|DoM",
 				"Ability Score Improvement|Rogue||4",
 				"Uncanny Dodge|Rogue||5",
+				"Cunning Strike|Rogue||5|DoM",
 				"Expertise|Rogue||6",
 				"Evasion|Rogue||7",
 				"Ability Score Improvement|Rogue||8",
@@ -417,12 +418,14 @@
 				},
 				"Ability Score Improvement|Rogue||10",
 				"Reliable Talent|Rogue||11",
+				"Improved Cunning Strike|Rogue||11|DoM",
 				"Ability Score Improvement|Rogue||12",
 				{
 					"classFeature": "Roguish Archetype feature|Rogue||13",
 					"gainSubclassFeature": true
 				},
 				"Blindsense|Rogue||14",
+				"Devious Strikes|Rogue||11|DoM",
 				"Slippery Mind|Rogue||15",
 				"Ability Score Improvement|Rogue||16",
 				{
@@ -922,7 +925,15 @@
 			"entries": [
 				"Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra {@damage 1d6} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.",
 				"You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't {@condition incapacitated}, and you don't have disadvantage on the attack roll.",
-				"The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+				"The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.",
+				{
+					"type": "entries",
+					"source": "DepthsofMelokir",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"At level 5, the amount of die dealt by your Sneak Attack increases to 4d6. Other increases of your class progression occur as normal: the damage increases to 5d6 at level 7, 6d6 at level 9, 7d6 at level 11, 8d6 at level 13, 9d6 at level 15, 10d6 at level 17, and 11d6 at level 19"
+					]
+				}
 			]
 		},
 		{
@@ -967,15 +978,14 @@
 		},
 		{
 			"name": "Steady Aim",
-			"source": "TCE",
-			"page": 62,
+			"source": "DoM",
 			"className": "Rogue",
 			"classSource": "PHB",
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level rogue {@variantrule optional class features|tce|optional feature}}",
-				"As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+				"{@i This Feature Replaces Steady Aim and is Mandatory when playing in Depths of Melokir}",
+				"As a bonus action, you can attempt to analyse an enemy's defences, probing for weaknesses. Make a Perception or Investigation check against one creature you can see within 60 feet of you with a DC equal to their AC. On a success, you gain advantage on the next attack roll you make against that creature."		
 			]
 		},
 		{
@@ -1003,6 +1013,33 @@
 			"level": 5,
 			"entries": [
 				"Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+			]
+		},
+		{
+			"name": "Cunning Strike",
+			"source": "DoM",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 5,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i This Feature is not part of base rogue}",
+				"You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.",
+				"If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entries": [
+								"Poison (Cost: 1d6). You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.",
+								"To use this effect, you must have a Poisoner's Kit on your person."
+							]
+						},
+						"Trip (Cost: 1d6). If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.",
+						"Withdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks."		
+					]
+				}
 			]
 		},
 		{
@@ -1086,6 +1123,18 @@
 			]
 		},
 		{
+			"name": "Improved Cunning Strike",
+			"source": "DoM",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 11,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i This Feature is not part of base rogue}",
+				"You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect."		
+			]
+		},
+		{
 			"name": "Ability Score Improvement",
 			"source": "PHB",
 			"page": 94,
@@ -1123,6 +1172,26 @@
 			"level": 14,
 			"entries": [
 				"Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or {@condition invisible} creature within 10 feet of you."
+			]
+		},
+		{
+			"name": "Devious Strikes",
+			"source": "DoM",
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 14,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i This Feature is not part of base rogue}",
+				"You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.",
+				{
+					"type":"list",
+					"items":[
+					"Daze (Cost: 2d6). The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.",
+					"Knock Out (Cost: 6d6). The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+					"Obscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn."	
+					]
+				}
 			]
 		},
 		{
