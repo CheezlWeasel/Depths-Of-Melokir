@@ -7754,18 +7754,6 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock",
 						"source": "PHB"
 					}
@@ -14496,15 +14484,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
 						"source": "PHB"
 					}
 				]
@@ -18272,19 +18252,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
 						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
 						"source": "PHB"
 					}
 				]
