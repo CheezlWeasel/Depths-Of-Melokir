@@ -263,15 +263,15 @@ export class SpellTag extends ConverterTaggerInitializable {
 						},
 					);
 					return ptrStack._
-						.replace(/{@spell (Resistance)\|XPHB}( to)/g, "$1$2")
-						.replace(/(bypasses ){@spell (Resistance)\|XPHB}/g, "$1$2")
+						.replace(/{@spell (Resistance)\|PHB}( to)/g, "$1$2")
+						.replace(/(bypasses ){@spell (Resistance)\|PHB}/g, "$1$2")
 
-						.replace(/{@spell (Darkvision)\|XPHB}( can't| \d+ (?:ft\.|feet))/g, "$1$2")
+						.replace(/{@spell (Darkvision)\|PHB}( can't| \d+ (?:ft\.|feet))/g, "$1$2")
 
-						.replace(/(Dim Light or ){@spell (Darkness)\|XPHB}/g, "$1$2")
-						.replace(/(magical ){@spell (Darkness)\|XPHB}/g, "$1$2")
+						.replace(/(Dim Light or ){@spell (Darkness)\|PHB}/g, "$1$2")
+						.replace(/(magical ){@spell (Darkness)\|PHB}/g, "$1$2")
 
-						.replace(/{@spell (Fly)\|XPHB}( \d+ (?:ft\.|feet))/g, "$1$2")
+						.replace(/{@spell (Fly)\|PHB}( \d+ (?:ft\.|feet))/g, "$1$2")
 					;
 				},
 			},
