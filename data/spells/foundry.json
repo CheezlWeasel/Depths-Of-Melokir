@@ -332,40 +332,6 @@
 			"migrationVersion": 3
 		},
 		{
-			"name": "Summon Aberration",
-			"source": "XPHB",
-			"activities": [
-				{
-					"type": "summon",
-					"profiles": [
-						{
-							"name": "Beholderkin",
-							"uuid": "@creature[aberrant spirit (beholderkin)|xphb]"
-						},
-						{
-							"name": "Slaad",
-							"uuid": "@creature[aberrant spirit (slaad)|xphb]"
-						},
-						{
-							"name": "Star Spawn",
-							"uuid": "@creature[aberrant spirit (star spawn)|xphb]"
-						}
-					],
-					"bonuses": {
-						"ac": "@item.level",
-						"hp": "10 * (@item.level - 4)",
-						"attackDamage": "@item.level"
-					},
-					"match": {
-						"proficiency": true,
-						"attacks": true,
-						"saves": true
-					}
-				}
-			],
-			"migrationVersion": 3
-		},
-		{
 			"name": "Summon Beast",
 			"source": "TCE",
 			"activities": [
