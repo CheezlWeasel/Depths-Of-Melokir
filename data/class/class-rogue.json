@@ -1503,7 +1503,30 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@status surprised} is a critical hit."
+				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@status surprised} is a critical hit.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"source" :"DoM",
+					"entries": [
+						"You're adept at ambushing a target, granting you the following benefits.",
+						{
+							"type":"list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Initiative",
+									"entry": "You have Advantage on Initiative rolls."
+								},
+								{
+									"type": "item",
+									"name": "Surprising Strikes",
+									"entry": "During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level."
+								}
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -1517,7 +1540,15 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|phb} and the {@item poisoner's kit|phb}."
+				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|phb} and the {@item poisoner's kit|phb}.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"source" :"DoM",
+					"entries": [
+						"You gain a {@item disguise kit|phb} and a {@item poisoner's kit|phb}, and have proficiency in them."
+					]
+				}
 			]
 		},
 		{
@@ -1532,7 +1563,30 @@
 			"header": 2,
 			"entries": [
 				"Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official-looking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.",
-				"Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to."
+				"Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"source" :"DoM",
+					"entries": [
+						"You are expert at the following techniques that aid your infiltrations.",
+						{
+							"type":"list",
+							"items": [
+								{
+									"type": "item",
+									"name": "Masterful Mimicry",
+									"entry": "You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them."
+								},
+								{
+									"type": "item",
+									"name": "Roving Aim",
+									"entry": "Your speed isn’t reduced to 0 by using Steady Aim."
+								}
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -1547,7 +1601,15 @@
 			"header": 2,
 			"entries": [
 				"At 13th level, you gain the ability to unerringly mimic another person's speech, writing, and behavior. You must spend at least three hours studying these three components of the person's behavior, listening to speech, examining handwriting, and observing mannerism.",
-				"Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma ({@skill Deception}) check you make to avoid detection."
+				"Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma ({@skill Deception}) check you make to avoid detection.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"source" :"DoM",
+					"entries": [
+						"When you hit with your sneak attack on the first round of combat, the target must succeed on a Constitution saving throw (DC 8 + DEX + PROF BONUS) or the attack’s damage is doubled against the target."
+					]
+				}
 			]
 		},
 		{
@@ -1561,7 +1623,15 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@status surprised}, it must make a Constitution saving throw ({@dc 8} + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
+				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@status surprised}, it must make a Constitution saving throw ({@dc 8} + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"source" :"DoM",
+					"entries": [
+						""
+					]
+				}
 			]
 		},
 		{
@@ -2202,6 +2272,10 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Survivalist|Rogue||Scout|XGE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Big Brain|Rogue||Scout|XGE|3"
 				}
 			]
 		},
@@ -2231,6 +2305,21 @@
 			"header": 1,
 			"entries": [
 				"When you choose this archetype at 3rd level, you gain proficiency in the {@skill Nature} and {@skill Survival} skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
+			]
+		},
+		{
+			"name": "Big Brain",
+			"source": "DoM",
+			"page": 47,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Scout",
+			"subclassSource": "XGE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i You may replace the Survivalist feature with the following:}",
+				"When you choose this archetype at 3rd level, you gain proficiency in the {@skill Arcana} and {@skill Religion} skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
 			]
 		},
 		{
