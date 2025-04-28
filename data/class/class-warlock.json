@@ -1512,7 +1512,7 @@
 		},
 		{
 			"name": "Clairvoyant Combatant",
-			"source": "PHB",
+			"source": "DoM",
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One",
