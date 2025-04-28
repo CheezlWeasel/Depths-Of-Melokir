@@ -949,21 +949,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Hellspeaker",
-			"shortName": "Hellspeaker",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassFeatures": [
-				"Hellspeaker|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|3",
-				"Moloch's Interdiction|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|7",
-				"Intransigent|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|11",
-				"Let's Make a Deal|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|11",
-				"Quid Pro Quo|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|15"
-			],
-			"hasFluffImages": true
-		},
-		{
 			"name": "Painkiller",
 			"shortName": "Painkiller",
 			"source": "IllriggerRevised",
@@ -1043,24 +1028,6 @@
 					"href": {
 						"type": "external",
 						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/IllriggerRevised/classes/Architect of Ruin 2.webp"
-					},
-					"width": 903,
-					"height": 1000
-				}
-			]
-		},
-		{
-			"name": "Hellspeaker",
-			"shortName": "Hellspeaker",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/IllriggerRevised/classes/Hellspeaker.webp"
 					},
 					"width": 903,
 					"height": 1000
@@ -1440,7 +1407,7 @@
 			"classSource": "IllriggerRevised",
 			"level": 7,
 			"entries": [
-				"You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Hellspeaker (Moloch), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+				"You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
 			]
 		},
 		{
@@ -1483,7 +1450,7 @@
 			"classSource": "IllriggerRevised",
 			"level": 11,
 			"entries": [
-				"You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Hellspeaker (Moloch), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+				"You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
 			]
 		},
 		{
@@ -1535,7 +1502,7 @@
 			"classSource": "IllriggerRevised",
 			"level": 15,
 			"entries": [
-				"You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Hellspeaker (Moloch), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+				"You sign a diabolic contract with an archdevil who welcomes you into the Order of Desolation. Choose between the Architect of Ruin (Asmodeus), Painkiller (Dispater), Sanguine Knight (Sutekh), or Shadowmaster (Belial) as your archdevil. Each of these subclasses is detailed after the class's description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
 			]
 		},
 		{
@@ -1944,242 +1911,6 @@
 					]
 				},
 				"Once you use one of these benefits, you can't use that benefit again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Charm Enemy",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 3,
-			"entries": [
-				"When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be {@condition charmed} by you for 1 hour or until you or your companions do anything harmful to them. While {@condition charmed}, the target regards you as a friendly acquaintance. When the {@condition charmed} condition ends, the target knows they were {@condition charmed} by you.",
-				"When you use this bonus action, you can additionally burn one or more seals on one or more other interdicted Humanoids within 30 feet of you, attempting to charm those targets as well. After taking damage from the burned seals, each of those targets must succeed on a Charisma saving throw or be under the same {@condition charmed} effect.",
-				"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Hellspeaker",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 3,
-			"entries": [
-				"{@i The charismatic and manipulative Hellspeakers serve Moloch as they slip about the battlefield, coercing enemies into becoming unwitting allies.}",
-				"Moloch rules Styx, the City of Lies, but his reach extends far beyond it. Hell's greatest politicians and diplomats rise to prominence through Moloch's subtle manipulations. They follow him with great loyalty, for they know they are nothing without him—and thus his power echoes through all of Hell.",
-				"Moloch's illriggers are silver-tongued enchanters, lulling his foes to complacency with sorcery and subterfuge until they wake and find themselves under the command of the Order of Desolation. These Hellspeakers train in the art known as the Red Cant or Hell's Cant. By understanding their enemy and through weaving subtle sorceries into normal speech, Hellspeakers can make their foes feel, think, or do nearly anything to accelerate Hell's victory.",
-				"Across the timescape, Hellspeakers enjoy a reputation as smiling rogues and swashbuckling villains. An asset in any negotiation, Hellspeakers know that in a world of lies, the truth can be as potent a weapon as steel.",
-				{
-					"type": "inset",
-					"name": "Content Warning",
-					"entries": [
-						"This subclass has themes of mental manipulation and mind control. Before choosing this subclass, please ensure everyone at the table is comfortable exploring these dark and harmful themes. And as always, we encourage the ongoing use of safety tools throughout your game."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Precepts of Deception",
-					"entries": [
-						"Hellspeakers swear an oath to Moloch when they join the Order of Desolation. By following these precepts, they infiltrate the farthest reaches of power and manipulate all under their influence.",
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"type": "entries",
-									"name": "My Voice Is a Weapon",
-									"entries": [
-										"Even when my enchantments fail, if my enemy can hear me, they are mine."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Doubt Is Certainty",
-									"entries": [
-										"I need not convince my enemy, only sow doubt and wait for it to bear fruit."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Trust Me",
-									"entries": [
-										"For each lie I utter, I tell the truth tenfold. One who always lies says nothing."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Never Tell the Same Lie Twice",
-									"entries": [
-										"An overused skill becomes too predictable. Keep moving, switch targets, keep them guessing."
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Moloch's Blessing|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Charm Enemy|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Invoke Hell|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|3"
-				}
-			]
-		},
-		{
-			"name": "Invoke Hell",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 3,
-			"entries": [
-				"You gain the following two Invoke Hell options:",
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Honey-Sweet Blades|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|3"
-						},
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Turncoat|Illrigger|IllriggerRevised|Hellspeaker|IllriggerRevised|3"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Moloch's Blessing",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 3,
-			"entries": [
-				"When Moloch accepts you as his illrigger, you gain proficiency in the {@skill Persuasion} or {@skill Deception} skill (your choice). If you already have proficiency in the skill of your choice, your proficiency bonus is doubled for any ability check you make with that skill.",
-				"In addition, your Forked Tongue feature grants you an additional language (for a total of three at 3rd level and four at 9th level). Whenever you speak in a language gained by this feature, your devilish influence is subconsciously felt by creatures who can hear and understand you, granting you advantage on Charisma checks to influence those creatures."
-			]
-		},
-		{
-			"name": "Honey-Sweet Blades",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 3,
-			"header": 2,
-			"consumes": {
-				"name": "Invoke Hell"
-			},
-			"entries": [
-				"When you make a weapon attack against an interdicted creature, you can gain advantage on that attack (no action required). If the attack hits, it becomes a critical hit."
-			]
-		},
-		{
-			"name": "Turncoat",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 3,
-			"header": 2,
-			"consumes": {
-				"name": "Invoke Hell"
-			},
-			"entries": [
-				"As an action, you wield your manipulative tongue against your enemies. You choose a number of enemy creatures up to your proficiency bonus within 60 feet of you who can hear you. Each target must succeed on a Charisma saving throw or use their reaction to make a weapon attack against a single target of your choice. A creature affected by this feature can't attack themself."
-			]
-		},
-		{
-			"name": "Moloch's Interdiction",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 7,
-			"entries": [
-				"You learn the following additional interdict boons at the noted illrigger levels. Once you learn an interdict boon granted by this feature, you always know it, and it doesn't count against the number of interdict boons you know.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Red Cant|IllriggerRevised",
-							"preserve": {
-								"prerequisite": true
-							}
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Slippery Ploy|IllriggerRevised",
-							"preserve": {
-								"prerequisite": true
-							}
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Incontrovertible (Passive)|IllriggerRevised",
-							"preserve": {
-								"prerequisite": true
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Intransigent",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 11,
-			"entries": [
-				"You and each creature of your choice within 10 feet of you are immune to the {@condition charmed} condition while you are conscious."
-			]
-		},
-		{
-			"name": "Let's Make a Deal",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 11,
-			"entries": [
-				"You can offer your allies a deal—at a price, of course. As a bonus action, you choose one willing ally within 60 feet of you who can hear you.",
-				"Once within the next 10 minutes, the creature can choose to gain advantage on one attack roll or saving throw they make and can add a bonus equal to your proficiency bonus to the same roll. If this attack hits or this saving throw succeeds, the creature gains temporary hit points equal to your illrigger level. If this attack misses or this saving throw fails, the creature has disadvantage on the next attack roll or saving throw they make. This disadvantage can't be canceled out with advantage in any way. A creature can strike only one deal with you at a time.",
-				"You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Quid Pro Quo",
-			"source": "IllriggerRevised",
-			"className": "Illrigger",
-			"classSource": "IllriggerRevised",
-			"subclassShortName": "Hellspeaker",
-			"subclassSource": "IllriggerRevised",
-			"level": 15,
-			"entries": [
-				"You can whisper to the legions of Hell, ensnaring enemies and calling allies. As an action, you can attempt to banish a creature you can see within 30 feet of you. The target must succeed on a Charisma saving throw. On a failed save, the target is banished to the wastes of Hell for 1 minute, after which they return to the unoccupied space nearest to the one they left. A target banished in this way can repeat the saving throw at the end of each of their turns, ending the effect early on a success. A creature who succeeds on a saving throw against this effect becomes immune to your Quid Pro Quo for 24 hours.",
-				"Additionally, when a target is banished in this way, a {@creature devil jurist|FleeMortals} (from MCDM's {@book Flee, Mortals!|FleeMortals}) or a {@creature horned devil} (from the core rules) appears in their place. This devil acts as an ally to you and follows your commands until the banished creature is no longer banished, at which time the devil disappears.",
-				"Once you successfully banish a creature in this way, you can't use this feature again until you finish a long rest."
 			]
 		},
 		{
