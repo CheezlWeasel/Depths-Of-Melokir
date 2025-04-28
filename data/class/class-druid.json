@@ -1660,6 +1660,44 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Circle Forms|Druid||Moon||2"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"Your primal connection to the lunar cycle and kinship with the animal kingdom grants you access to certain spells. You gain access to some spells when you reach certain levels in this class, as shown on the table below.",
+						"Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+						{
+							"type": "table",
+							"caption": " Spells",
+							"colLabels": [
+								" Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell dragon's breath}, {@spell spider climb}"
+								],
+								[
+									"5th",
+									"{@spell fear}, {@spell fly}"
+								],
+								[
+									"7th",
+									"{@spell storm sphere}, {@spell guardian of nature}"
+								],
+								[
+									"9th",
+									"{@spell flame strike}, {@spell far step}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
@@ -1927,7 +1965,14 @@
 						"Your melee weapon attacks deal an extra {@damage 1d6} necrotic damage to any target they hit."
 					]
 				},
-				"These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again."
+				"These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"Instead of an Action to activate the magic spores you now use your Bonus Action, the benefits of the magic spores no longer end when you lose the temporary hit points"
+					]
+				}
 			]
 		},
 		{
@@ -2551,6 +2596,44 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Balm of the Summer Court|Druid||Dreams|XGE|2"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"Your link to the fey courts and stewardship over the unconscious realms grants you access to certain spells. You gain access to some spells when you reach certain levels in this class, as shown on the table below.",
+						"Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you",
+						{
+							"type": "table",
+							"caption": " Spells",
+							"colLabels": [
+								" Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell blur}, {@spell crown of madness}"
+								],
+								[
+									"5th",
+									"{@spell clairvoyance}, {@spell mass healing word}"
+								],
+								[
+									"7th",
+									"{@spell greater invisibility}, {@spell banishment}"
+								],
+								[
+									"9th",
+									"{@spell dawn}, {@spell dream}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
@@ -2637,6 +2720,44 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Spirit Totem|Druid||Shepherd|XGE|2"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"Your stewardship over beasts and your ability to commune with nature grants you access to certain spells. You gain access to some spells when you reach certain levels in this class, as shown on the table below.",
+						"Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you",		
+						{
+							"type": "table",
+							"caption": "Shepherd Spells",
+							"colLabels": [
+								"Druid Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"3rd",
+									"{@spell summon beast}, {@spell prayer of healing}"
+								],
+								[
+									"5th",
+									"{@spell beacon of hope}, {@spell summon fey}"
+								],
+								[
+									"7th",
+									"{@spell summon elemental}, {@spell dominate beast}"
+								],
+								[
+									"9th",
+									"{@spell greater restoration}, {@spell wrath of nature}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
