@@ -2275,7 +2275,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Big Brain|Rogue||Scout|XGE|3"
+					"subclassFeature": "Big Brain|Rogue||Scout|XGE|3|DoM"
 				}
 			]
 		},
@@ -2310,7 +2310,6 @@
 		{
 			"name": "Big Brain",
 			"source": "DoM",
-			"page": 47,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Scout",
