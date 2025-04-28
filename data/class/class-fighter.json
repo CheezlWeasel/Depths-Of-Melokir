@@ -626,10 +626,14 @@
 				"Magic Arrow|Fighter||Arcane Archer|XGE|7",
 				"Curving Shot|Fighter||Arcane Archer|XGE|7",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|7",
+				"Bountiful Quiver|Fighter||Arcane Archer|XGE|7",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|10",
-				"Ever-Ready Shot|Fighter||Arcane Archer|XGE|15",
+				"Ever-Ready Shot|Fighter||Arcane Archer|XGE|10",
+				"Archer's Gait|Fighter||Arcane Archer|XGE|10",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|15",
-				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18"
+				"Further Arcane Study|Fighter||Arcane Archer|XGE|15",
+				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18",
+				"Magical Arrow Mastery|Fighter||Arcane Archer|XGE|18"
 			]
 		},
 		{
@@ -1872,7 +1876,15 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action."
+				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The War Magic feature for the Eldritch Knight replaced with the following:",
+						"When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action."
+					]
+				}
 			]
 		},
 		{
@@ -1886,7 +1898,22 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+				"At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Eldritch Strike feature for the Eldritch Knight replaced with the following:",
+						"At 10th level, you know how to make your weapon strikes undercut a creature’s resistance to your spells. When you hit a creature with a weapon attack, you can choose to gain one of the following:",
+						{
+							"type": "list",
+							"items": [
+								"That creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn",
+								"You have advantage on the next spell attack you make until the end of your next turn."
+							]
+						}
+					]
+				}
 			]
 		},
 		{
@@ -1937,6 +1964,20 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Rallying Cry|Fighter||Purple Dragon Knight (Banneret)|SCAG|3"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"You gain the following additional feature alongside the other features for the Banneret Subclass at level 3:",
+						{
+							"type": "entries",
+							"name":"Vainglorious Defiance",
+							"entries":[
+								"Starting at 3rd level when you choose this subclass, you now have a number of uses of the Second Wind feature equal to your proficiency bonus. You regain all uses of Second Wind on a long rest, but only a single use on a short rest. Additionally, when you use Second Wind, you may make a weapon attack with a weapon you are holding"
+							]
+						}
+					]
 				}
 			]
 		},
@@ -2516,7 +2557,15 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn magical theory or some of the secrets of nature\u2014typical for practitioners of this elven martial tradition. You choose to gain proficiency in either the {@skill Arcana} or the {@skill Nature} skill, and you choose to learn either the {@spell prestidigitation} or the {@spell druidcraft} cantrip."
+				"At 3rd level, you learn magical theory or some of the secrets of nature\u2014typical for practitioners of this elven martial tradition. You choose to gain proficiency in either the {@skill Arcana} or the {@skill Nature} skill, and you choose to learn either the {@spell prestidigitation} or the {@spell druidcraft} cantrip.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Arcane Archer Lore feature for the Arcane Archer is replaced with the following:",
+						"You learn 2 cantrips of your choice from the Wizard spell list. These cantrips cannot be spells that deal damage."
+					]
+				}
 			]
 		},
 		{
@@ -2532,7 +2581,15 @@
 			"entries": [
 				"At 3rd level, you learn to unleash special magical effects with some of your shots. When you gain this feature, you learn two Arcane Shot options of your choice (see \"Arcane Shot Options\" below).",
 				"Once per turn when you fire an arrow from a shortbow or longbow as part of the {@action Attack} action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn't involve an attack roll. You have two uses of this ability, and you regain all expended uses of it when you finish a short or long rest.",
-				"You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter."
+				"You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"Instead of only having 2 uses of Arcane Shot per short or long rest, you now have an amount of charges equal to your proficiency bonus per short or long rest",
+						"Additionally, at the end of a long rest you can swap an Arcane Shot option you have previously learned with another one from the list."
+					]
+				}
 			]
 		},
 		{
@@ -2556,6 +2613,14 @@
 					]
 				},
 				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Enfeebling Arrow Arcane Shot has been replaced with the Draining Arrow",
+						"All Arcane Arrow Options deal an extra 1d6 damage of its additional damage at 7th level which is now reflected within each of the arcane shot optional features"
+					]
+				},
+				{
 					"type": "options",
 					"count": 2,
 					"entries": [
@@ -2573,7 +2638,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Enfeebling Arrow|XGE"
+							"optionalfeature": "Draining Arrow|DoM"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -2634,7 +2699,29 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target."
+				"At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Magic Arrow feature is changed to work as follows",
+						"At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow/bolt from a shortbow, longbow, or crossbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bountiful Quiver",
+			"source": "DoM",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer",
+			"subclassSource": "XGE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You have built up your armoury to the point that you always have armaments at hand. Whenever",
+				"you land a critical hit with a ranged attack, you regain one use of your Arcane Shot."
 			]
 		},
 		{
@@ -2652,6 +2739,35 @@
 			]
 		},
 		{
+			"name": "Archer’s Gait",
+			"source": "DoM",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer",
+			"subclassSource": "XGE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i This feature is not a part of base Arcane Archer}",
+				"Starting at 10th level, your superior control over elven magic allows you to flow through the battlefield. As a bonus action, you can teleport to a space you can see within 60 feet. When you do so, you regain a use of Arcane Shot. This ability is usable a number of times equal to your proficiency bonus per long rest."
+			]
+		},
+		{
+			"name": "Ever-Ready Shot",
+			"source": "XGE",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer",
+			"subclassSource": "XGE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i This feature has been moved from 15th level to 10th level}",
+				"Starting at 10th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
+			]
+		},
+		{
 			"name": "Additional Arcane Shot Option",
 			"source": "XGE",
 			"page": 28,
@@ -2666,9 +2782,8 @@
 			]
 		},
 		{
-			"name": "Ever-Ready Shot",
-			"source": "XGE",
-			"page": 28,
+			"name": "Further Arcane Study",
+			"source": "DoM",
 			"className": "Fighter",
 			"classSource": "PHB",
 			"subclassShortName": "Arcane Archer",
@@ -2676,7 +2791,8 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
+				"{@i This feature is not a part of base Arcane Archer}",
+				"You learn an additional two non-damaging cantrips from the Wizard spell list."
 			]
 		},
 		{
@@ -2691,6 +2807,20 @@
 			"header": 2,
 			"entries": [
 				"You gain an additional Arcane Shot option of your choice when you reach 18th level. Each option also improves when you become an 18th-level fighter."
+			]
+		},
+		{
+			"name": "Magical Arrow Mastery",
+			"source": "DoM",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer",
+			"subclassSource": "XGE",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i This feature is not a part of base Arcane Archer}",
+				"When you create a magic arrow as part of the \"Magic Arrows\" feature those arrows deal a damage type of your choice, either: Acid, Cold, Fire, Necrotic or Radiant. You can change the type of damage that your arrows deal as part of a short rest."
 			]
 		},
 		{
@@ -2868,7 +2998,17 @@
 			"header": 1,
 			"entries": [
 				"Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.",
-				"You can use this feature three times, and you regain all expended uses of it when you finish a long rest."
+				"You can use this feature three times, and you regain all expended uses of it when you finish a long rest.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Fighting Spirit feature for the Samurai is replaced with the following:",
+						"Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points.",
+						"The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 7th level and 15 at 10th level.",
+						"You can use this feature a number of times equal to your wisdom modifier, and you regain all expended uses of it when you finish a short or long rest."
+					]
+				}
 			]
 		},
 		{
@@ -2897,7 +3037,15 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use."
+				"Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use.",
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"The Tireless Spirit feature for the Samurai replaced with the following:",
+						"Starting at 10th level, once per turn, when you score a critical hit with a weapon attack, you may regain one expended use of Fighting Spirit"
+					]
+				}
 			]
 		},
 		{
