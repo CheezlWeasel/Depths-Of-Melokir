@@ -1879,6 +1879,49 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Draconic Resilience|Sorcerer||Draconic||1"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"You gain the following feature in addition to your other subclass features.",
+						"{@b Draconic Spells}",
+						"You learn additional spells when you reach certain levels in this class, as shown on the Draconic Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. {@filter The new spell must be an evocation or transmutation spell from the sorcerer, warlock, or wizard spell list{@filter |spells|source=|level=1;2;3;4;5|class=sorcerer;wizard;warlock|components & miscellaneous=|school=v;t}.",
+						{
+							"type": "table",
+							"caption": "Draconic Spells",
+							"colLabels": [
+								"Sorcerer Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell chromatic orb}, {@spell command}"
+								],
+								[
+									"3rd",
+									"{@spell dragon's breath}, {@spell earthbind}"
+								],
+								[
+									"5th",
+									"{@spell fear}, {@spell fly}"
+								],
+								[
+									"7th",
+									"{@spell elemental bane}, {@spell fire shield}"
+								],
+								[
+									"9th",
+									"{@spell legend lore}, {@spell summon draconic spirit}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
@@ -2039,6 +2082,49 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Tides of Chaos|Sorcerer||Wild||1"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"You gain the following feature in addition to your other subclass features.",
+						"{@b Wild Spells}",
+						"You learn additional spells when you reach certain levels in this class, as shown on the Wild Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. {@filter The new spell must be an illusion or transmutation spell from the sorcerer, warlock, or wizard spell list|spells|source=|level=1;2;3;4;5|class=sorcerer;wizard;warlock|components & miscellaneous=|school=i;t}.",
+						{
+							"type": "table",
+							"caption": "Wild Spells",
+							"colLabels": [
+								"Sorcerer Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell chaos bolt}, {@spell jim's magic missile}"
+								],
+								[
+									"3rd",
+									"{@spell nathair's mischief}, {@spell mirror image}"
+								],
+								[
+									"5th",
+									"{@spell blink}, {@spell fly}"
+								],
+								[
+									"7th",
+									"{@spell confusion}, {@spell polymorph}"
+								],
+								[
+									"9th",
+									"{@spell mislead}, {@spell far step}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
@@ -3188,6 +3274,49 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Strength of the Grave|Sorcerer||Shadow|XGE|1"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"You gain the following feature in addition to your other subclass features.",
+						"{@b Shadow Spells}",
+						"You learn additional spells when you reach certain levels in this class, as shown on the Shadow Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. {@filter The new spell must be a necromancy or an illusion spell from the sorcerer, warlock, or wizard spell list|spells|source=|level=1;2;3;4;5|class=sorcerer;wizard;warlock|components & miscellaneous=|school=i;n}.",
+						{
+							"type": "table",
+							"caption": "Shadow Spells",
+							"colLabels": [
+								"Sorcerer Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell false life}, {@spell ray of sickness}"
+								],
+								[
+									"3rd",
+									"{@spell blur}, {@spell wither and bloom}"
+								],
+								[
+									"5th",
+									"{@spell summon shadowspawn}, {@spell fear}"
+								],
+								[
+									"7th",
+									"{@spell shadow of moil}, {@spell phantasmal killer}"
+								],
+								[
+									"9th",
+									"{@spell enervation}, {@spell mislead}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
@@ -3301,6 +3430,49 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Tempestuous Magic|Sorcerer||Storm|XGE|1"
+				},
+				{
+					"type": "entries",
+					"name": "Depths of Melokir Variant",
+					"entries": [
+						"You gain the following feature in addition to your other subclass features.",
+						"{@b Storm Spells}",
+						"You learn additional spells when you reach certain levels in this class, as shown on the Storm Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know. Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. {@filter The new spell must be an evocation or transmutation spell from the sorcerer, warlock, or wizard spell list|spells|level=1;2;3;4;5|class=sorcerer;wizard;warlock|components & miscellaneous=|school=v;t}.",
+						{
+							"type": "table",
+							"caption": "Storm Spells",
+							"colLabels": [
+								"Sorcerer Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell thunderwave}, {@spell thunderous smite}"
+								],
+								[
+									"3rd",
+									"{@spell shatter}, {@spell gust of wind}"
+								],
+								[
+									"5th",
+									"{@spell lightning bolt}, {@spell call lightning}"
+								],
+								[
+									"7th",
+									"{@spell storm sphere}, {@spell watery sphere}"
+								],
+								[
+									"9th",
+									"{@spell control winds}, {@spell maelstrom}"
+								]
+							]
+						}
+					]
 				}
 			]
 		},
