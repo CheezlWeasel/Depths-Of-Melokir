@@ -2871,23 +2871,23 @@
                     "rows": [
                         [
                             "2nd",
-                            "{@spell fog cloud}, {@spell zephyr strike}"
+                            "{@spell earth tremor}, {@spell ensnaring strike}"
                         ],
                         [
                             "3rd",
-                            "{@spell gust of wind}, {@spell warding wind}"
+                            "{@spell hold person}, {@spell spiritual weapon}"
                         ],
                         [
                             "5th",
-                            "{@spell thunder step}, {@spell wind wall}"
+                            "{@spell elemental weapon}, {@spell meld into stone}"
                         ],
                         [
                             "7th",
-                            "{@spell freedom of movement}, {@spell storm sphere}"
+                            "{@spell elemental bane}, {@spell stoneskin}"
                         ],
                         [
                             "9th",
-                            "{@spell control wind}, {@spell steel wind strike}"
+                            "{@spell banishing smite}, {@spell hold monster}"
                         ]
                     ]
                 }
