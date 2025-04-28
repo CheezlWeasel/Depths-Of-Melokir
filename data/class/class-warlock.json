@@ -503,7 +503,7 @@
 							"sending"
 						],
 						"s4": [
-							"dominate beast",
+							"summon abberation|TCE",
 							"Evard's black tentacles"
 						],
 						"s5": [
@@ -1513,7 +1513,6 @@
 		{
 			"name": "Clairvoyant Combatant",
 			"source": "PHB",
-			"page": 109,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One",

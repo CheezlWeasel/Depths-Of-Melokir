@@ -1561,12 +1561,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hunter's Magic|Ranger|PHB|Hunter|PHB|3|DoM"
+					"subclassFeature": "Hunter's Magic|Ranger||Hunter||3|DoM"
 				}
 			]
 		},
 		{
-			"name": "Hunter’s Magic",
+			"name": "Hunter's Magic",
 			"source": "DoM",
 			"className": "Ranger",
 			"classSource": "PHB",
