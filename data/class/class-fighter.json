@@ -2720,8 +2720,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You have built up your armoury to the point that you always have armaments at hand. Whenever",
-				"you land a critical hit with a ranged attack, you regain one use of your Arcane Shot."
+				"{@i This feature is not a part of base Arcane Archer}",
+				"You have built up your armoury to the point that you always have armaments at hand. Whenever you land a critical hit with a ranged attack, you regain one use of your Arcane Shot."
 			]
 		},
 		{
