@@ -595,6 +595,32 @@
 			"classSource": "PHB",
 			"page": 102,
 			"srd": true,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"chromatic orb",
+							"command"
+						],
+						"3": [
+							"dragon's breath|XGE",
+							"earthbind|XGE"
+						],
+						"5": [
+							"fear",
+							"fly"
+						],
+						"7": [
+							"elemental bane|XGE",
+							"fire shield"
+						],
+						"9": [
+							"legend lore",
+							"summon draconic spirit|FTD"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Draconic Bloodline|Sorcerer||Draconic||1",
 				"Elemental Affinity|Sorcerer||Draconic||6",
@@ -609,6 +635,32 @@
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"page": 103,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"chaos bolt|XGE",
+							"jim's magic missile|AI"
+						],
+						"3": [
+							"nathair's mischief|FTD",
+							"mirror image"
+						],
+						"5": [
+							"blink",
+							"fly"
+						],
+						"7": [
+							"confusion",
+							"polymorph"
+						],
+						"9": [
+							"mislead",
+							"far step|XGE"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Wild Magic|Sorcerer||Wild||1",
 				"Bend Luck|Sorcerer||Wild||6",
@@ -947,8 +999,26 @@
 			"additionalSpells": [
 				{
 					"known": {
+						"1": [
+							"false life",
+							"ray of sickness"
+						],
 						"3": [
+							"blur",
+							"wither and bloom|AI",
 							"darkness"
+						],
+						"5": [
+							"summon shadowspawn|TCE",
+							"fear"
+						],
+						"7": [
+							"shadow of moil|XGE",
+							"phantasmal killer"
+						],
+						"9": [
+							"envervation|XGE",
+							"mislead"
 						]
 					}
 				}
@@ -971,6 +1041,32 @@
 				{
 					"source": "SCAG",
 					"page": 137
+				}
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"thunderwave",
+							"thunderous smite"
+						],
+						"3": [
+							"shatter",
+							"gust of wind"
+						],
+						"5": [
+							"lightning bolt",
+							"call lightning"
+						],
+						"7": [
+							"storm sphere|XGE",
+							"watery sphere|XGE"
+						],
+						"9": [
+							"control winds|XGE",
+							"maelstrom|XGE"
+						]
+					}
 				}
 			],
 			"subclassFeatures": [

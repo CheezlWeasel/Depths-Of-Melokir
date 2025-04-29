@@ -758,6 +758,22 @@
 			"additionalSpells": [
 				{
 					"known": {
+						"3": [
+							"dragon's breath|XGE",
+							"spider climb"
+						],
+						"5": [
+							"fear",
+							"fly"
+						],
+						"7": [
+							"storm sphere|XGE",
+							"guardian of nature|XGE"
+						],
+						"9": [
+							"flame strike",
+							"far step|XGE"
+						],
 						"14": [
 							"alter self"
 						]
@@ -778,6 +794,28 @@
 			"className": "Druid",
 			"classSource": "PHB",
 			"page": 22,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"blur",
+							"crown of madness"
+						],
+						"5": [
+							"clairvoyance",
+							"mass healing word"
+						],
+						"7": [
+							"greater invisibility",
+							"banishment"
+						],
+						"9": [
+							"dawn|XGE",
+							"dream"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Circle of Dreams|Druid||Dreams|XGE|2",
 				"Hearth of Moonlight and Shadow|Druid||Dreams|XGE|6",
@@ -793,6 +831,28 @@
 			"className": "Druid",
 			"classSource": "PHB",
 			"page": 23,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"summon beast",
+							"prayer of healing"
+						],
+						"5": [
+							"beacon of hope",
+							"summon fey"
+						],
+						"7": [
+							"summon elemental",
+							"dominate beast"
+						],
+						"9": [
+							"greater restoration",
+							"wrath of nature"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Circle of the Shepherd|Druid||Shepherd|XGE|2",
 				"Mighty Summoner|Druid||Shepherd|XGE|6",

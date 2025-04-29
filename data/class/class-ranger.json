@@ -458,6 +458,27 @@
 			"classSource": "PHB",
 			"page": 93,
 			"srd": true,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"compelled duel"
+						],
+						"5": [
+							"find steed"
+						],
+						"9": [
+							"dispel magic"
+						],
+						"13": [
+							"death ward"
+						],
+						"17": [
+							"hold monster"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Hunter|Ranger||Hunter||3",
 				"Defensive Tactics|Ranger||Hunter||7",
