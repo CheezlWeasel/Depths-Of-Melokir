@@ -1,90 +1,21 @@
 {
 	"AAG": {
 		"Air Bubble": {
-			"class": [
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Ranger",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
+
 		},
 		"Create Spelljamming Helm": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
+
 		}
 	},
 	"AI": {
 		"Distort Value": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Fast Friends": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Gift of Gab": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Incite Greed": {
 			"class": [
@@ -103,12 +34,7 @@
 			]
 		},
 		"Jim's Glowing Coin": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Jim's Magic Missile": {
 			"class": [
@@ -269,12 +195,7 @@
 	},
 	"IDRotF": {
 		"Create Magen": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Frost Fingers": {
 			"class": [
@@ -437,16 +358,7 @@
 			]
 		},
 		"Animate Dead": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Animate Objects": {
 			"class": [
@@ -2198,16 +2110,7 @@
 			]
 		},
 		"Fabricate": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
+
 		},
 		"Faerie Fire": {
 			"class": [
@@ -2370,20 +2273,7 @@
 			]
 		},
 		"Finger of Death": {
-			"class": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Fire Bolt": {
 			"class": [
@@ -2568,20 +2458,7 @@
 			]
 		},
 		"Forcecage": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Foresight": {
 			"class": [
@@ -4210,28 +4087,7 @@
 			]
 		},
 		"Plane Shift": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Plant Growth": {
 			"class": [
@@ -4999,12 +4855,7 @@
 			]
 		},
 		"Simulacrum": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Sleep": {
 			"class": [
@@ -5928,60 +5779,13 @@
 	},
 	"SCC": {
 		"Borrowed Knowledge": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Kinetic Jaunt": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				},
-				{
-					"name": "Artificer",
-					"source": "TCE"
-				}
-			]
+
 		},
 		"Silvery Barbs": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Vortex Warp": {
 			"class": [
