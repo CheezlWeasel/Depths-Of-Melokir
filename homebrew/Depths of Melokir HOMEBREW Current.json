@@ -1039,6 +1039,9 @@
             "source": "DepthsofMelokir",
             "className": "Wizard",
             "classSource": "PHB",
+            "subclassSpells": [
+                "augury"
+            ],
             "subclassFeatures": [
                 "Necromancer Redux|Wizard|PHB|Necromancer Redux|DepthsofMelokir|2",
                 "Seance|Wizard|PHB|Necromancer Redux|DepthsofMelokir|6",
@@ -1066,6 +1069,14 @@
             "source": "DepthsofMelokir",
             "className": "Ranger",
             "classSource": "PHB",
+            "subclassSpells": [
+                "minor illusion",
+                "silent image",
+                "mirror image",
+                "hypnotic pattern",
+                "hallucinatory terrain",
+                "mislead"
+            ],
             "subclassFeatures": [
                 "Veildancer|Ranger|PHB|Veildancer|DepthsofMelokir|3",
                 "Elusive Shrouds|Ranger|PHB|Veildancer|DepthsofMelokir|7",
@@ -1106,6 +1117,18 @@
             "source": "DepthsofMelokir",
             "className": "Artificer",
             "classSource": "TCE",
+            "subclassSpells": [
+                "armour of agathys",
+                "shield of faith",
+                "spiritual weapon",
+                "warding bond",
+                "beacon of hope",
+                "remove curse",
+                "death ward",
+                "fire shield",
+                "banishing smite",
+                "wall of force"
+            ],
             "subclassFeatures": [
                 "Forge Adept|Artificer|TCE|Forge Adept|DepthsofMelokir|3",
                 "Extra Attack|Artificer|TCE|Forge Adept|DepthsofMelokir|5",
@@ -1119,6 +1142,18 @@
             "source": "DepthsofMelokir",
             "className": "Druid",
             "classSource": "PHB",
+            "subclassSpells": [
+                "earth tremor",
+                "ensnaring strike",
+                "hold person",
+                "spiritual weapon",
+                "elemental weapon",
+                "meld into stone",
+                "elemental bane",
+                "stoneskin",
+                "banishing smite",
+                "hold monster"
+            ],
             "subclassFeatures": [
                 "Circle of Stone|Druid|PHB|Stone|DepthsofMelokir|2",
                 "Extra Attack|Druid|PHB|Stone|DepthsofMelokir|6",
@@ -1158,6 +1193,18 @@
 					}
 				}
 			],
+            "subclassSpells": [
+                "fog cloud",
+                "zephyr strike",
+                "gust of wind",
+                "warding wind",
+                "thunder step",
+                "wind wall",
+                "freedom of movement",
+                "storm sphere",
+                "control winds",
+                "steel wind strike"
+            ],
             "subclassFeatures": [
                 "Oath of Liberty|Paladin|PHB|Liberty|DepthsofMelokir|3",
                 "Aura of Lethargy|Paladin|PHB|Liberty|DepthsofMelokir|7",
