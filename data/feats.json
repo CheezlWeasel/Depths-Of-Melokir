@@ -92,24 +92,6 @@
 							"You have horrific nightmares after you use your mark."
 						]
 					]
-				},
-				{
-					"type": "section",
-					"entries": [
-						{
-							"type": "entries",
-							"entries": [
-								{
-									"type": "entries",
-									"name": "Option: Greater Aberrant Powers",
-									"entries": [
-										"At the DM's option, a character who has the Aberrant Dragonmark feat has a chance of manifesting greater power. Upon reaching 10th level, such a character has a {@chance 10} chance of gaining an {@filter epic boon|rewards|type=boon} from among the options in chapter 7 of the {@book Dungeon Master's Guide|DMG}. If the character fails to gain a boon, they have a {@chance 10} chance the next time they gain a level.",
-										"If the character gains a boon, the DM chooses it or determines it randomly. The character also permanently loses one of their Hit Dice, and their hit point maximum is reduced by an amount equal to a roll of that die plus their Constitution modifier (minimum reduction of 1). This reduction can't be reversed by any means."
-									]
-								}
-							]
-						}
-					]
 				}
 			]
 		},
@@ -236,9 +218,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"feat": [
-						"initiate of high sorcery|dsotdq|initiate of high sorcery (nuitari)"
-					]
+					"other": "Bard, Cleric, Druid, Sorcerer, Wizard, Warlock"
 				}
 			],
 			"additionalSpells": [
@@ -255,7 +235,7 @@
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=2|school=E;N"
+										"choose": "level=2|school=E;N|class=Artificer;Bard;Cleric;Druid;Monk;Paladin;Ranger;Sorcerer;Wizard;Warlock"
 									}
 								]
 							}
@@ -273,7 +253,7 @@
 							"type": "item",
 							"name": "Ambitious Magic",
 							"entries": [
-								"You learn one 2nd-level spell of your choice. The {@filter 2nd-level spell|spells|level=2|school=E;N} must be from the enchantment or necromancy school of magic. You can cast this feat's 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. The spell's spellcasting ability is the one chosen when you gained the {@feat Initiate of High Sorcery|DSotDQ} feat."
+								"You learn one 2nd-level spell of your choice. The {@filter 2nd-level spell|spells|level=2|school=E;N} must be from the enchantment or necromancy school of magic. You can cast this feat's 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
 							]
 						},
 						{
@@ -295,9 +275,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"feat": [
-						"initiate of high sorcery|dsotdq|initiate of high sorcery (lunitari)"
-					]
+					"other": "Bard, Cleric, Druid, Sorcerer, Wizard, Warlock"
 				}
 			],
 			"additionalSpells": [
@@ -314,7 +292,7 @@
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=2|school=I;T"
+										"choose": "level=2|school=I;T|class=Artificer;Bard;Cleric;Druid;Monk;Paladin;Ranger;Sorcerer;Wizard;Warlock"
 									}
 								]
 							}
@@ -332,7 +310,7 @@
 							"type": "item",
 							"name": "Insightful Magic",
 							"entries": [
-								"You learn one 2nd-level spell of your choice. The {@filter 2nd-level spell|spells|level=2|school=I;T} must be from the illusion or transmutation school of magic. You can cast this feat's 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. The spell's spellcasting ability is the one chosen when you gained the {@feat Initiate of High Sorcery|DSotDQ} feat."
+								"You learn one 2nd-level spell of your choice. The {@filter 2nd-level spell|spells|level=2|school=I;T} must be from the illusion or transmutation school of magic. You can cast this feat's 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
 							]
 						},
 						{
@@ -354,9 +332,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"feat": [
-						"initiate of high sorcery|dsotdq|initiate of high sorcery (solinari)"
-					]
+					"other": "Bard, Cleric, Druid, Sorcerer, Wizard, Warlock"
 				}
 			],
 			"additionalSpells": [
@@ -373,7 +349,7 @@
 							"daily": {
 								"1e": [
 									{
-										"choose": "level=2|school=A;D"
+										"choose": "level=2|school=A;D|class=Artificer;Bard;Cleric;Druid;Monk;Paladin;Ranger;Sorcerer;Wizard;Warlock"
 									}
 								]
 							}
@@ -391,7 +367,7 @@
 							"type": "item",
 							"name": "Protective Magic",
 							"entries": [
-								"You learn one 2nd-level spell of your choice. The {@filter 2nd-level spell|spells|level=2|school=A;D} must be from the abjuration or divination school of magic. You can cast this feat's 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. The spell's spellcasting ability is the one chosen when you gained the {@feat Initiate of High Sorcery|DSotDQ} feat."
+								"You learn one 2nd-level spell of your choice. The {@filter 2nd-level spell|spells|level=2|school=A;D} must be from the abjuration or divination school of magic. You can cast this feat's 2nd-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using spell slots you have of the appropriate level. Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
 							]
 						},
 						{
@@ -424,50 +400,6 @@
 					"items": [
 						"The time it takes to create an item using your proficient skills or tools is halved.",
 						"If you fail to successfully craft the item and would lose the components, you retain the components instead."
-					]
-				}
-			]
-		},
-		{
-			"name": "Agent of Order",
-			"source": "SatO",
-			"page": 10,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"scion of the outer planes|sato|scion of the outer planes (lawful outer plane)"
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You can channel cosmic forces of order to gain these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Stasis Strike",
-							"entries": [
-								"Once per turn, when you damage a creature you can see within 60 feet of yourself, you can deal an extra {@damage 1d8} force damage to the target, and it must make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + the modifier of the spellcasting ability you chose for the Scion of the Outer Planes feat) as spectral bindings try to ensnare it. On a successful save, the target escapes. On a failed save, the target has the restrained condition until the start of your next turn. These bindings manifest as chains or some other symbol of stasis. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-							]
-						}
 					]
 				}
 			]
@@ -613,50 +545,6 @@
 					"name": "Jumping",
 					"entries": [
 						"You can make a running Long or High Jump after moving only 5 feet."
-					]
-				}
-			]
-		},
-		{
-			"name": "Baleful Scion",
-			"source": "SatO",
-			"page": 10,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"scion of the outer planes|sato|scion of the outer planes (evil outer plane)"
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You can channel cosmic forces of evil to gain these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Grasp of Avarice",
-							"entries": [
-								"Once per turn, when you damage a creature you can see within 60 feet of yourself, you can also deal necrotic damage to it. The necrotic damage equals {@damage 1d6} + your proficiency bonus, and you regain a number of hit points equal to this necrotic damage dealt. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-							]
-						}
 					]
 				}
 			]
@@ -848,80 +736,6 @@
 			]
 		},
 		{
-			"name": "Cohort of Chaos",
-			"source": "SatO",
-			"page": 10,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"scion of the outer planes|sato|scion of the outer planes (chaotic outer plane)"
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You can channel cosmic forces of chaos to gain these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Chaotic Flare",
-							"entries": [
-								"When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends.",
-								{
-									"type": "table",
-									"caption": "Chaotic Flares",
-									"colStyles": [
-										"col-2 text-center",
-										"col-10"
-									],
-									"colLabels": [
-										"d4",
-										"Flare"
-									],
-									"rows": [
-										[
-											"1",
-											"{@b Battle Fury.} A creature of your choice that you can see is filled with reckless fury. It has advantage on attack rolls and disadvantage on ability checks."
-										],
-										[
-											"2",
-											"{@b Disruption Field.} Waves of energy ripple around you. Every creature that starts its turn within 5 feet of you, or that moves into that area for the first time on a turn, takes {@damage 1d8} force damage."
-										],
-										[
-											"3",
-											"{@b Unbound.} When you move, you can use some or all of your walking speed to teleport yourself once, along with any equipment you're wearing or carrying, up to the distance used to an unoccupied space that you can see."
-										],
-										[
-											"4",
-											"{@b Wailing Winds.} Winds swirl in a 15-foot-radius sphere centered on you. You and any other creatures in that area have disadvantage on Wisdom saving throws."
-										]
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Crossbow Expert",
 			"source": "XPHB",
 			"page": 203,
@@ -964,24 +778,6 @@
 						"When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage."
 					]
 				}
-			]
-		},
-		{
-			"name": "Cruel",
-			"source": "TDCSR",
-			"page": 190,
-			"entries": [
-				"The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others. You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are {@dice d6|d6s}. You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it.",
-				"You can roll a cruelty die under any of the following circumstances, with the indicated result:",
-				{
-					"type": "list",
-					"items": [
-						"When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll.",
-						"When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll.",
-						"When you make a Charisma ({@skill Intimidation}) check, spend one cruelty die and add the roll to your check."
-					]
-				},
-				"You regain all spent cruelty dice when you finish a {@quickref resting|PHB|2|0|long rest}."
 			]
 		},
 		{
@@ -1051,144 +847,6 @@
 						"If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn."
 					]
 				}
-			]
-		},
-		{
-			"name": "Divinely Favored",
-			"source": "DSotDQ",
-			"page": 32,
-			"prerequisite": [
-				{
-					"level": 4,
-					"campaign": [
-						"Dragonlance"
-					]
-				}
-			],
-			"additionalSpells": [
-				{
-					"name": "Evil",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Cleric",
-								"count": 1
-							}
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									"augury",
-									{
-										"choose": "level=1|class=warlock"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Good",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Cleric",
-								"count": 1
-							}
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									"augury",
-									{
-										"choose": "level=1|class=cleric"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Neutral",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Cleric",
-								"count": 1
-							}
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									"augury",
-									{
-										"choose": "level=1|class=druid"
-									}
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				"A god chose you to carry a spark of their power.",
-				"You learn one cantrip of your choice from the {@filter cleric spell list|spells|level=0|class=cleric} and one 1st-level spell based on the alignment of your character, as specified in the Alignment Spells table below. You also learn the {@spell augury} spell.",
-				{
-					"type": "table",
-					"caption": "Alignment Spells",
-					"colLabels": [
-						"Alignment",
-						"1st-Level Spell"
-					],
-					"colStyles": [
-						"col-2",
-						"col-10"
-					],
-					"rows": [
-						[
-							"Evil",
-							"Choose one {@filter 1st-level warlock spell|spells|level=1|class=warlock}"
-						],
-						[
-							"Good",
-							"Choose one {@filter 1st-level cleric spell|spells|level=1|class=cleric}"
-						],
-						[
-							"Neutral",
-							"Choose one {@filter 1st-level druid spell|spells|level=1|class=druid}"
-						]
-					]
-				},
-				"You can cast the chosen 1st-level spell and the {@spell augury} spell without a spell slot, and you must finish a long rest before you can cast either of these spells in this way again. You can also cast these spells using spell slots you have of the appropriate level.",
-				"Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
-				"In addition, you can use a holy symbol as a spellcasting focus for any spell you cast that uses the spellcasting ability you choose when you select this feat."
 			]
 		},
 		{
@@ -1754,29 +1412,6 @@
 			]
 		},
 		{
-			"name": "Flash Recall",
-			"source": "TDCSR",
-			"page": 190,
-			"prerequisite": [
-				{
-					"spellcastingPrepared": true
-				}
-			],
-			"entries": [
-				"You've developed the ability to instantly recall an unprepared spell in moments of sudden necessity.",
-				"As a bonus action, you prepare a spell of 1st level or higher from your spellbook (if you're a {@class wizard}) or from your class spell list (if you're not a {@class wizard}). This spell must be of a level for which you have spell slots, and it replaces another spell of an equal or higher level that you had previously prepared.",
-				"Once you use this feat to recall a spell, you can't do so again until you complete a {@quickref resting|PHB|2|0|short or long rest}.",
-				{
-					"type": "inset",
-					"name": "Rules Tip: Prepared Spells",
-					"page": 190,
-					"entries": [
-						"The Flash Recall feat requires you to be a spellcaster who prepares spells. This includes classes such as {@class cleric||clerics}, {@class druid||druids}, and {@class paladin||paladins}, who prepare spells each day from their class list, and {@class wizard||wizards}, who prepare spells from a spellbook. Classes such as {@class bard||bards} and {@class sorcerer||sorcerers}, who inherently know their spells rather than preparing them, can't benefit from this feat."
-					]
-				}
-			]
-		},
-		{
 			"name": "Fury of the Frost Giant",
 			"source": "BGG",
 			"page": 17,
@@ -2237,191 +1872,6 @@
 			]
 		},
 		{
-			"name": "Initiate of High Sorcery",
-			"source": "DSotDQ",
-			"page": 32,
-			"prerequisite": [
-				{
-					"campaign": [
-						"Dragonlance"
-					],
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Sorcerer",
-							"visible": true
-						}
-					}
-				},
-				{
-					"campaign": [
-						"Dragonlance"
-					],
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Wizard",
-							"visible": true
-						}
-					}
-				},
-				{
-					"campaign": [
-						"Dragonlance"
-					],
-					"background": [
-						{
-							"name": "Mage of High Sorcery",
-							"displayEntry": "{@background Mage of High Sorcery|DSotDQ}"
-						}
-					]
-				}
-			],
-			"additionalSpells": [
-				{
-					"name": "Nuitari",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Wizard"
-							}
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									{
-										"choose": {
-											"from": [
-												"dissonant whispers",
-												"false life",
-												"hex",
-												"ray of sickness"
-											],
-											"count": 2
-										}
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Lunitari",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Wizard"
-							}
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									{
-										"choose": {
-											"from": [
-												"color spray",
-												"disguise self",
-												"feather fall",
-												"longstrider"
-											],
-											"count": 2
-										}
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Solinari",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							{
-								"choose": "level=0|class=Wizard"
-							}
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									{
-										"choose": {
-											"from": [
-												"comprehend languages",
-												"detect evil and good",
-												"protection from evil and good",
-												"shield"
-											],
-											"count": 2
-										}
-									}
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				"You've received training from magic-users affiliated with the Mages of High Sorcery.",
-				"Choose one of the three moons of Krynn to influence your magic: the black moon, Nuitari; the red moon, Lunitari; or the white moon, Solinari. You learn one cantrip of your choice from the wizard spell list and two 1st-level spells based on the moon you choose, as specified in the Lunar Spells table.",
-				{
-					"type": "table",
-					"caption": "Lunar Spells",
-					"colLabels": [
-						"Moon",
-						"1st-Level Spell"
-					],
-					"colStyles": [
-						"col-1",
-						"col-11"
-					],
-					"rows": [
-						[
-							"Nuitari",
-							"Choose two from {@spell dissonant whispers}, {@spell false life}, {@spell hex}, and {@spell ray of sickness}"
-						],
-						[
-							"Lunitari",
-							"Choose two from {@spell color spray}, {@spell disguise self}, {@spell feather fall}, and {@spell longstrider}"
-						],
-						[
-							"Solinari",
-							"Choose two from {@spell comprehend languages}, {@spell detect evil and good}, {@spell protection from evil and good}, and {@spell shield}"
-						]
-					]
-				},
-				"You can cast each of the chosen 1st-level spells without a spell slot, and you must finish a long rest before you can cast them in this way again. You can also cast the spells using any spell slots you have.",
-				"Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
-			],
-			"hasFluffImages": true
-		},
-		{
 			"name": "Inspiring Leader",
 			"source": "XPHB",
 			"page": 204,
@@ -2576,9 +2026,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"feat": [
-						"squire of solamnia|dsotdq"
-					]
+					"other": "Barbarian, Fighter, Monk, Paladin, Ranger, Rogue"
 				}
 			],
 			"ability": [
@@ -2624,9 +2072,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"feat": [
-						"squire of solamnia|dsotdq"
-					]
+					"other": "Barbarian, Fighter, Monk, Paladin, Ranger, Rogue"
 				}
 			],
 			"ability": [
@@ -2672,9 +2118,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"feat": [
-						"squire of solamnia|dsotdq"
-					]
+					"other": "Barbarian, Fighter, Monk, Paladin, Ranger, Rogue"
 				}
 			],
 			"ability": [
@@ -3364,34 +2808,6 @@
 			]
 		},
 		{
-			"name": "Mystic Conflux",
-			"source": "TDCSR",
-			"page": 190,
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"daily": {
-								"1e": [
-									"identify"
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				"You possess an intuitive understanding of the way magic ebbs and flows within enchanted items. Such items attune easily to you, and you are able to sound out their secrets. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You can attune to up to four magic items at once.",
-						"You can cast the {@spell identify} spell without expending a spell slot or material components. You must finish a {@quickref resting|PHB|2|0|long rest} before you can do so again."
-					]
-				}
-			]
-		},
-		{
 			"name": "Observant",
 			"source": "XPHB",
 			"page": 205,
@@ -3489,50 +2905,6 @@
 			]
 		},
 		{
-			"name": "Outlands Envoy",
-			"source": "SatO",
-			"page": 10,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"scion of the outer planes|sato|scion of the outer planes (the outlands)"
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You have spent significant time in Sigil or the Outlands, the crossroads of the multiverse. Being steeped in converging planar energies grants you these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Crossroads Emissary",
-							"entries": [
-								"You learn the {@spell misty step} and {@spell tongues} spells. You can cast each spell once using this feat without a spell slot, and you must finish a long rest before you can cast that spell in this way again. When you cast {@spell tongues} using this feat, you require no material components. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the one chosen when you gained the Scion of the Outer Planes feat."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Piercer",
 			"source": "XPHB",
 			"page": 206,
@@ -3569,53 +2941,6 @@
 					]
 				}
 			]
-		},
-		{
-			"name": "Planar Wanderer",
-			"source": "SatO",
-			"page": 11,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"scion of the outer planes|sato"
-					]
-				}
-			],
-			"traitTags": [
-				"Damage Resistance"
-			],
-			"entries": [
-				"You can draw on the forces of the multiverse to survive cosmic extremes and to traverse its infinite realms, granting you these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Planar Adaptation",
-							"entries": [
-								"When you finish a long rest, you gain resistance to either acid, cold, or fire damage (your choice) until you finish your next long rest."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Portal Cracker",
-							"entries": [
-								"Your experience with portals allows you to open them without a portal key. As an action, you can concentrate on a portal you're aware of that is within 5 feet of yourself and make a {@dc 20} Intelligence ({@skill Arcana}) check. On a failed check, you take {@damage 3d8} psychic damage and can't use this benefit on that portal again until you finish a long rest. On a successful check, you can force the portal open or closed for 1 hour. For that duration, the portal doesn't respond to its portal key unless a creature employing the key succeeds on a {@dc 20} Intelligence ({@skill Arcana}) check as an action."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Portal Sense",
-							"entries": [
-								"You know the direction to the last planar portal you used while you and the portal are on the same plane of existence. Moreover, as an action, you can detect the location of any portals within 30 feet of you that aren't behind {@quickref Cover||3||total cover}. Once you detect a portal with this action, you can't use the action again until you finish a long rest."
-							]
-						}
-					]
-				}
-			],
-			"hasFluffImages": true
 		},
 		{
 			"name": "Poisoner",
@@ -3843,26 +3168,6 @@
 			]
 		},
 		{
-			"name": "Remarkable Recovery",
-			"source": "TDCSR",
-			"page": 190,
-			"ability": [
-				{
-					"con": 1
-				}
-			],
-			"entries": [
-				"Your body has the ability to recover quickly from terrible injuries, and is unusually receptive to healing magic. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you are successfully stabilized while dying, you regain hit points equal to your Constitution modifier (minimum of 1).",
-						"Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to your Constitution modifier (minimum of 1)."
-					]
-				}
-			]
-		},
-		{
 			"name": "Resilient",
 			"source": "XPHB",
 			"page": 206,
@@ -3909,85 +3214,6 @@
 					"name": "Saving Throw Proficiency",
 					"entries": [
 						"You gain saving throw proficiency with the chosen ability."
-					]
-				}
-			]
-		},
-		{
-			"name": "Revenant Blade",
-			"source": "ERLW",
-			"page": 22,
-			"prerequisite": [
-				{
-					"race": [
-						{
-							"name": "elf"
-						}
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You are descended from a master of the {@item double-bladed scimitar|ERLW}, and some of that mastery has passed on to you. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"While you are holding a double-bladed scimitar with two hands, you gain a +1 bonus to Armor Class.",
-						"A double-bladed scimitar has the finesse property when you wield it."
-					]
-				}
-			]
-		},
-		{
-			"name": "Righteous Heritor",
-			"source": "SatO",
-			"page": 11,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"scion of the outer planes|sato|scion of the outer planes (good outer plane)"
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You can channel cosmic forces of good to gain these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Soothe Pain",
-							"entries": [
-								"When you or a creature within 30 feet of you takes damage, you can use your reaction to reduce that damage by {@dice 1d10} + your proficiency bonus. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-							]
-						}
 					]
 				}
 			]
@@ -4096,14 +3322,6 @@
 			"prerequisite": [
 				{
 					"spellcastingFeature": true
-				},
-				{
-					"background": [
-						{
-							"name": "Rune Carver",
-							"displayEntry": "{@background Rune Carver|BGG}"
-						}
-					]
 				}
 			],
 			"additionalSpells": [
@@ -4232,151 +3450,6 @@
 			"category": "O",
 			"entries": [
 				"You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target."
-			]
-		},
-		{
-			"name": "Scion of the Outer Planes",
-			"source": "SatO",
-			"page": 12,
-			"prerequisite": [
-				{
-					"campaign": [
-						"Planescape"
-					]
-				}
-			],
-			"resist": [
-				{
-					"choose": {
-						"from": [
-							"poison",
-							"necrotic",
-							"radiant",
-							"force",
-							"psychic"
-						]
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"name": "Chaotic Outer Plane",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"minor illusion#c"
-						]
-					}
-				},
-				{
-					"name": "Evil Outer Plane",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"chill touch#c"
-						]
-					}
-				},
-				{
-					"name": "Good Outer Plane",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"sacred flame#c"
-						]
-					}
-				},
-				{
-					"name": "Lawful Outer Plane",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"guidance#c"
-						]
-					}
-				},
-				{
-					"name": "The Outlands",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"mage hand#c"
-						]
-					}
-				}
-			],
-			"entries": [
-				"Your connection to an Outer Plane infuses you with the energy there. Choose a type of plane listed in the Planar Infusion table. Your choice gives you resistance to a damage type and the ability to cast a cantrip, as specified in the table. You can cast this cantrip without material components, and your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
-				{
-					"type": "table",
-					"colStyles": [
-						"col-4",
-						"col-4",
-						"col-4"
-					],
-					"colLabels": [
-						"Plane",
-						"Damage Resistance",
-						"Cantrip"
-					],
-					"rows": [
-						[
-							"Chaotic Outer Plane",
-							"Poison",
-							"{@spell Minor illusion}"
-						],
-						[
-							"Evil Outer Plane",
-							"Necrotic",
-							"{@spell Chill touch}"
-						],
-						[
-							"Good Outer Plane",
-							"Radiant",
-							"{@spell Sacred flame}"
-						],
-						[
-							"Lawful Outer Plane",
-							"Force",
-							"{@spell Guidance}"
-						],
-						[
-							"The Outlands",
-							"Psychic",
-							"{@spell Mage hand}"
-						]
-					]
-				}
 			]
 		},
 		{
@@ -4948,29 +4021,6 @@
 			]
 		},
 		{
-			"name": "Spelldriver",
-			"source": "TDCSR",
-			"page": 190,
-			"prerequisite": [
-				{
-					"level": 11,
-					"spellcasting2020": true
-				}
-			],
-			"entries": [
-				"Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting.",
-				"When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher.",
-				{
-					"type": "inset",
-					"name": "Rules Tip: Casting Multiple Spells",
-					"page": 190,
-					"entries": [
-						"Normally, when you cast a spell as a bonus action, you can't use your action to also cast a spell that turn unless that spell is a cantrip\u2014{@note see {@book PHB p202|PHB|10|Bonus Action}.} The Spelldriver feat removes that restriction, but the focus necessary to channel multiple spells in the same round still limits the overall power of those spells."
-					]
-				}
-			]
-		},
-		{
 			"name": "Squat Nimbleness",
 			"source": "XGE",
 			"page": 75,
@@ -5021,78 +4071,6 @@
 			]
 		},
 		{
-			"name": "Squire of Solamnia",
-			"source": "DSotDQ",
-			"page": 34,
-			"prerequisite": [
-				{
-					"campaign": [
-						"Dragonlance"
-					],
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Fighter",
-							"visible": true
-						}
-					}
-				},
-				{
-					"campaign": [
-						"Dragonlance"
-					],
-					"level": {
-						"level": 1,
-						"class": {
-							"name": "Paladin",
-							"visible": true
-						}
-					}
-				},
-				{
-					"campaign": [
-						"Dragonlance"
-					],
-					"background": [
-						{
-							"name": "Knight of Solamnia",
-							"displayEntry": "{@background Knight of Solamnia|DSotDQ}"
-						}
-					]
-				}
-			],
-			"entries": [
-				"Your training in the ways of the Knights of Solamnia grants you these benefits:",
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Mount Up",
-							"entries": [
-								"Mounting or dismounting costs you only 5 feet of movement."
-							]
-						},
-						{
-							"type": "item",
-							"name": "Precise Strike",
-							"entries": [
-								"Once per turn, when you make a weapon attack roll against a creature, you can cause the attack roll to have advantage. If the attack hits, you roll a {@dice d8} and add the number rolled as a bonus to the attack's damage roll. You can use this benefit a number of times equal to your proficiency bonus, but a use is expended only if the attack hits. You regain all expended uses when you finish a long rest."
-							]
-						}
-					]
-				},
-				{
-					"type": "inset",
-					"name": "Membership in Knightly Orders",
-					"entries": [
-						"Knights of Solamnia are only ever members of one of their organization's orders. In the course of their training, most knights begin as members of the Knights of the Crown and then move on to join other orders. Whether a character follows this path or another, they retain what they learned as a member of an order even if they join another. Characters can change what knightly order they're a part of, but they always have access to any Knight of Solamnia feats they've acquired."
-					]
-				}
-			]
-		},
-		{
 			"name": "Strike of the Giants",
 			"source": "BGG",
 			"page": 19,
@@ -5101,14 +4079,6 @@
 					"proficiency": [
 						{
 							"weaponGroup": "martial"
-						}
-					]
-				},
-				{
-					"background": [
-						{
-							"name": "Giant Foundling",
-							"displayEntry": "{@background Giant Foundling|BGG}"
 						}
 					]
 				}
@@ -5157,500 +4127,6 @@
 						"The target takes an extra {@damage 1d6} lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has disadvantage on attack rolls until the start of your next turn.",
 						"The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier.",
 						"You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-					]
-				}
-			]
-		},
-		{
-			"name": "Strixhaven Initiate",
-			"source": "SCC",
-			"page": 36,
-			"additionalSpells": [
-				{
-					"name": "Lorehold 1",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"light#c",
-							"sacred flame#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=cleric;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Lorehold 2",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"light#c",
-							"thaumaturgy#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=cleric;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Lorehold 3",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"sacred flame#c",
-							"thaumaturgy#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=cleric;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Prismari 1",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"fire bolt#c",
-							"prestidigitation#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=bard;sorcerer"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Prismari 2",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"fire bolt#c",
-							"ray of frost#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=bard;sorcerer"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Prismari 3",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"prestidigitation#c",
-							"ray of frost#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=bard;sorcerer"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Quandrix 1",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"druidcraft#c",
-							"guidance#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=druid;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Quandrix 2",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"druidcraft#c",
-							"mage hand#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=druid;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Quandrix 3",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"guidance#c",
-							"mage hand#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=druid;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Silverquill 1",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"sacred flame#c",
-							"thaumaturgy#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=bard;cleric"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Silverquill 2",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"sacred flame#c",
-							"vicious mockery#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=bard;cleric"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Silverquill 3",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"thaumaturgy#c",
-							"vicious mockery#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=bard;cleric"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Witherbloom 1",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"chill touch#c",
-							"druidcraft#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=druid;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Witherbloom 2",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"chill touch#c",
-							"spare the dying#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=druid;wizard"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-					"name": "Witherbloom 3",
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"_": [
-							"druidcraft#c",
-							"spare the dying#c"
-						]
-					},
-					"innate": {
-						"_": {
-							"daily": {
-								"1": [
-									{
-										"choose": "level=1|class=druid;wizard"
-									}
-								]
-							}
-						}
-					}
-				}
-			],
-			"entries": [
-				"You have studied some magical theory and have learned a few spells associated with Strixhaven University.",
-				"Choose one of Strixhaven's colleges: Lorehold, Prismari, Quandrix, Silverquill, or Witherbloom. You learn two cantrips and one 1st-level spell based on the college you choose, as specified in the Strixhaven Spells table.",
-				"You can cast the chosen 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
-				"Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
-				{
-					"type": "table",
-					"caption": "Strixhaven Spells",
-					"colLabels": [
-						"College",
-						"Cantrips",
-						"1st-Level Spell"
-					],
-					"colStyles": [
-						"col-2",
-						"col-5",
-						"col-5"
-					],
-					"rows": [
-						[
-							"Lorehold",
-							"Choose two from {@spell light}, {@spell sacred flame}, and {@spell thaumaturgy}.",
-							"Choose one 1st-level {@filter cleric or wizard spell|spells|level=1|class=cleric;wizard}."
-						],
-						[
-							"Prismari",
-							"Choose two from {@spell fire bolt}, {@spell prestidigitation}, and {@spell ray of frost}.",
-							"Choose one 1st-level {@filter bard or sorcerer spell|spells|level=1|class=bard;sorcerer}."
-						],
-						[
-							"Quandrix",
-							"Choose two from {@spell druidcraft}, {@spell guidance}, and {@spell mage hand}.",
-							"Choose one 1st-level {@filter druid or wizard spell|spells|level=1|class=druid;wizard}."
-						],
-						[
-							"Silverquill",
-							"Choose two from {@spell sacred flame}, {@spell thaumaturgy}, and {@spell vicious mockery}.",
-							"Choose one 1st-level {@filter bard or cleric spell|spells|level=1|class=bard;cleric}."
-						],
-						[
-							"Witherbloom",
-							"Choose two from {@spell chill touch}, {@spell druidcraft}, and {@spell spare the dying}.",
-							"Choose one 1st-level {@filter druid or wizard spell|spells|level=1|class=druid;wizard}."
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Strixhaven Mascot",
-			"source": "SCC",
-			"page": 37,
-			"prerequisite": [
-				{
-					"level": 4,
-					"feat": [
-						"strixhaven initiate|scc"
-					]
-				}
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": {
-							"ritual": [
-								"find familiar"
-							]
-						}
-					}
-				}
-			],
-			"entries": [
-				"You have learned how to summon a Strixhaven mascot to assist you, granting you these benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You can cast the {@spell find familiar} spell as a ritual. Your familiar can take the form of the mascot associated with the college you chose for the Strixhaven Initiate feat: a {@creature spirit statue mascot|scc} (Lorehold), an {@creature art elemental mascot|scc} (Prismari), a {@creature fractal mascot|scc} (Quandrix), an {@creature inkling mascot|scc} (Silverquill), or a {@creature pest mascot|scc} (Witherbloom).",
-						"When you take the {@action Attack} action on your turn, you can forgo one attack to allow your mascot familiar to make one attack of its own with its reaction.",
-						"If your mascot familiar is within 60 feet of you, you can teleport as an action, swapping places with the familiar. If your destination space is too small for you to occupy, the teleportation fails and is wasted. Once you teleport in this way, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to do it again."
 					]
 				}
 			]
@@ -5848,33 +4324,6 @@
 			]
 		},
 		{
-			"name": "Thrown Arms Master",
-			"source": "TDCSR",
-			"page": 191,
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You've honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.",
-						"Weapons that already have the thrown property increase their short range by 20 feet and their long range by 40 feet for you.",
-						"When you miss with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way."
-					]
-				}
-			]
-		},
-		{
 			"name": "Tough",
 			"source": "XPHB",
 			"page": 202,
@@ -5949,24 +4398,6 @@
 			]
 		},
 		{
-			"name": "Vital Sacrifice",
-			"source": "TDCSR",
-			"page": 191,
-			"entries": [
-				"You've learned secrets of {@variantrule hemocraft|TDCSR} that grant you esoteric power at the price of your own life force. As a bonus action, you can choose to take {@damage 1d6} necrotic damage to gain a blood boon. Your blood boon lasts for 1 hour or until expended.",
-				"You can expend this blood boon to gain one of the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you make an attack roll, you roll {@dice 1d6} and add it to the total.",
-						"When you hit with an attack or spell, you deal an additional {@damage 2d6} necrotic damage.",
-						"When you cause a creature to make a Strength, Dexterity, or Constitution {@quickref saving throws|PHB|2|1|saving throw}, roll a {@dice d4} and reduce their save by the amount rolled."
-					]
-				},
-				"The damage you take to gain a blood boon can't be reduced in any way."
-			]
-		},
-		{
 			"name": "War Caster",
 			"source": "XPHB",
 			"page": 209,
@@ -6012,38 +4443,6 @@
 					]
 				}
 			]
-		},
-		{
-			"name": "Weapon Master",
-			"source": "XPHB",
-			"page": 209,
-			"category": "G",
-			"prerequisite": [
-				{
-					"level": 4
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex"
-						]
-					}
-				}
-			],
-			"entries": [
-				"You gain the following benefits.",
-				{
-					"type": "entries",
-					"name": "Mastery Property",
-					"entries": [
-						"Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind."
-					]
-				}
-			],
-			"hasFluffImages": true
 		},
 		{
 			"name": "Wood Elf Magic",
