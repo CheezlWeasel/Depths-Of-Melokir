@@ -1,3 +1,27 @@
+# v1.2.0
+*The Great Cull*
+
+## The following Source Books have had their content removed from the FEATS, BACKGROUNDS and RACES tab
+- DSoTDQ (Some feats still exist with modified prerequisites)
+- AI
+- EGW
+- GGR
+- EEPC
+- SCC
+- MOT
+- WBtW
+- AAG
+- TDCSR
+- XPHB (Species only, the feats remain and the backgrounds were previously removed)
+###  Other Modifications
+- Races with permanent Flying Speeds have been removed
+- Variant Human has been removed
+- Custom Lineage has been removed
+- Mark Subraces have been removed
+- The Aberrant Dragonmark feat has had some of its text removed regarding boons
+- Revenant Blade, while not being banned, has been removed due to its reliance on a banned item (double bladed scimitar)
+- Races with the "Magic Resistance" trait have had the rules text altered to reflect gnomish cunning as specified in the *Depths of Melokir* rules
+
 # v1.1.0
 Spell Source Update
 
