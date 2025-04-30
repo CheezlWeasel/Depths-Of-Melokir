@@ -21,6 +21,7 @@
 - The Aberrant Dragonmark feat has had some of its text removed regarding boons
 - Revenant Blade, while not being banned, has been removed due to its reliance on a banned item (double bladed scimitar)
 - Races with the "Magic Resistance" trait have had the rules text altered to reflect gnomish cunning as specified in the *Depths of Melokir* rules
+- Banned spells with references outside of base classes have now had those references removed.
 
 # v1.1.0
 Spell Source Update
