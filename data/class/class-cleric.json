@@ -1179,7 +1179,6 @@
 							"protection from energy"
 						],
 						"7": [
-							"fabricate",
 							"wall of fire"
 						],
 						"9": [
@@ -4867,7 +4866,7 @@
 						],
 						[
 							"7th",
-							"{@spell fabricate}, {@spell wall of fire}"
+							"{@spell wall of fire}"
 						],
 						[
 							"9th",
@@ -4875,6 +4874,7 @@
 						]
 					]
 				},
+				"{@i {@spell fabricate} is a banned spell in Depths of Melokir",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Bonus Proficiency|Cleric||Forge|XGE|1"
