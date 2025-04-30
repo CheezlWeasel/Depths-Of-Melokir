@@ -6873,14 +6873,16 @@ Renderer.class = class {
 
 	static getDisplayNamedClassFeatureEntry (ent, {styleHint = null} = {}) {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
-
+		// trying to force the class feature entry to load features in the "one" style
+		styleHint = "one";
 		if (styleHint === "classic" || !ent.level || !ent.name) return ent;
 		return {_displayName: `Level ${ent.level}: ${ent._displayName || ent.name}`, ...ent};
 	}
 
 	static getDisplayNamedSubclassFeatureEntry (ent, {styleHint = null, isEditionMismatch = false} = {}) {
 		styleHint ||= VetoolsConfig.get("styleSwitcher", "style");
-
+		// trying to force the subclass feature entry to load features in the "one" style
+		styleHint = "one";
 		// N.b.: enabled for "classic" style to support viewing "one" classes in "classic" view...
 		if (/* styleHint === "classic" || */!ent.level || !ent.entries?.length) return ent;
 		// ...unless edition mismatch, as this suggests (a) existing text, and (b), features which may have
