@@ -887,7 +887,7 @@
 							"gentle repose"
 						],
 						"5": [
-							"animate dead",
+							"summon undead|TCE",
 							"gaseous form"
 						],
 						"7": [
@@ -1963,7 +1963,7 @@
 						],
 						[
 							"5th",
-							"{@spell animate dead}, {@spell gaseous form}"
+							"{@spell summon undead|TCE}, {@spell gaseous form}"
 						],
 						[
 							"7th",
@@ -1974,7 +1974,8 @@
 							"{@spell cloudkill}, {@spell contagion}"
 						]
 					]
-				}
+				},
+				"{@i {@spell Animate Dead} is a banned spell in Depths of Melokir, features that grant it now grant the spell {@spell summon undead|TCE}. Features that would have worked with Animate Dead now instead work with Summon Undead}"
 			]
 		},
 		{

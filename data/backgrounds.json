@@ -9759,7 +9759,7 @@
 							"spider climb"
 						],
 						"s3": [
-							"animate dead",
+							"summon undead|TCE",
 							"plant growth"
 						],
 						"s4": [
@@ -9842,7 +9842,7 @@
 								],
 								[
 									"3rd",
-									"{@spell animate dead}, {@spell plant growth}"
+									"{@spell summon undead|TCE}, {@spell plant growth}"
 								],
 								[
 									"4th",
@@ -9854,7 +9854,8 @@
 								]
 							]
 						},
-						"Golgari magic is often accompanied by a sickly green glow and a rotting stench."
+						"Golgari magic is often accompanied by a sickly green glow and a rotting stench.",
+						"{@i {@spell Animate Dead} is a banned spell in Depths of Melokir, features that grant it now grant the spell {@spell summon undead|TCE}}"
 					]
 				},
 				{

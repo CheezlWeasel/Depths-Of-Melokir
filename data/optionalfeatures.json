@@ -3433,7 +3433,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"animate dead"
+									"summon undead|TCE"
 								]
 							}
 						}
@@ -3441,7 +3441,8 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell animate dead} without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest."
+				"You can cast {@spell summon undead|TCE} without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest.",
+				"{@i {@spell Animate Dead} is a banned spell in Depths of Melokir, features that grant it now grant the spell {@spell summon undead|TCE}}"
 			]
 		},
 		{

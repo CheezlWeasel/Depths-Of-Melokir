@@ -840,7 +840,7 @@
 							"ray of enfeeblement"
 						],
 						"5": [
-							"animate dead",
+							"summon undead|TCE",
 							"vampiric touch"
 						],
 						"7": [
@@ -1858,7 +1858,7 @@
 						],
 						[
 							"5th",
-							"{@spell animate dead}, {@spell vampiric touch}"
+							"{@spell summon undead|TCE}, {@spell vampiric touch}"
 						],
 						[
 							"7th",
@@ -1870,6 +1870,7 @@
 						]
 					]
 				},
+				"{@i {@spell Animate Dead} is a banned spell in Depths of Melokir, features that grant it now grant the spell {@spell summon undead|TCE}}",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Bonus Proficiency|Cleric||Death|DMG|1"

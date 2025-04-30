@@ -469,7 +469,7 @@
 							"darkness"
 						],
 						"9": [
-							"animate dead",
+							"summon undead|TCE",
 							"bestow curse"
 						],
 						"13": [
@@ -1282,7 +1282,7 @@
 						],
 						[
 							"9th",
-							"{@spell animate dead}, {@spell bestow curse}"
+							"{@spell summon undead|TCE}, {@spell bestow curse}"
 						],
 						[
 							"13th",
@@ -1293,7 +1293,8 @@
 							"{@spell contagion}, {@spell dominate person}"
 						]
 					]
-				}
+				},
+				"{@i {@spell Animate Dead} is a banned spell in Depths of Melokir, features that grant it now grant the spell {@spell summon undead|TCE}}"
 			]
 		},
 		{
