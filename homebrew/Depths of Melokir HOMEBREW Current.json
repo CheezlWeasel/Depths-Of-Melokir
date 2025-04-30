@@ -1649,7 +1649,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
-            "header": 2,
             "entries": [
                 "You can move through other creatures as if they were difficult terrain, and creatures gain no benefit from half-cover or shields against your melee attack rolls.",
                 "At the start of your turn, you can become incorporeal, able to move through objects of size Large or smaller, including doors or windows but not solid walls. You can do so a number of times equal to your proficiency bonus, and regain all expended uses upon completing a short rest. You take 1d10 force damage if you end your turn inside an object or creature and are shunted to the nearest safe empty space."
@@ -1663,7 +1662,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
-            "header": 2,
             "entries": [
                 "As an Apparition you may disperse your spectral self to view another area, haunting the surroundings. You can spend one minute concentrating on an object or creature within 100 feet of you that you are familiar with, and on completion you begin haunting the object/creature. While haunting, your are blind to your own senses, but gain the following benefits:",
                 {
@@ -1685,7 +1683,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "header": 2,
             "entries": [
                 "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 20 feet of you must succeed on a Wisdom saving throw or take 2d6 psychic damage and fall prone, being unable to stand until the end of your next turn. A creature that fails its save by 5 or more is also frightened of you until the start of your next turn.",
                 "This feature's damage increases to 2d8 at 6th level, 2d10 at 10th level, and 2d12 at 15th level."
@@ -1699,7 +1696,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "header": 2,
             "entries": [
                 "You gain an additional way to regain Necrotic Charges:",
                 "Once per round, whenever a creature you can see rolls a 1 or 2 on a D20, you can gain a Necrotic Charge."
@@ -1713,7 +1709,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 6,
-            "header": 2,
             "entries": [
                 
                 "Once per turn when you move through a creature, you can cause that creature to take 1d8+PROF cold damage.",
@@ -1729,7 +1724,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 11,
-            "header": 2,
             "entries": [
                 
                 "Your melee weapon attacks can now deal psychic or cold damage (your choice), instead of their usual damage type.",
@@ -1745,7 +1739,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 15,
-            "header": 2,
             "entries": [
                 
                 "You are able to tap into your ethereal nature, shifting between the ethereal and material plane at will. As a bonus action, you may loosen your connection to your current plane of existence for 1 minute. As part of this action and as a bonus action on subsequent turns while under this effect, you may vanish from your current plane of existence and appear in the Ethereal Plane.",
@@ -1762,7 +1755,6 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 18,
-            "header": 2,
             "entries": [
                 "You gain the following benefits:",
                 {
@@ -1803,7 +1795,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
-            "header": 2,
             "entries": [
                 "Yours is the office of war, and you have armed accordingly for your cursed crusade. You gain proficiency with heavy armor.",
                 "Additionally, you take an additional fighting style from the Lictor Fighting Style list. You cannot take a fighting style you already have."
@@ -1817,7 +1808,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
-            "header": 2,
             "entries": [
                 
                 "You bear a dark likeness of a paladin's power. You have a pool of negative energy equal to 5 x your lictor level that replenishes when you take a long rest.",
@@ -1832,7 +1822,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "header": 2,
             "entries": [
                 
                 "You release a revelation of dark flame that explodes around you. Each creature of your choice within 10 feet of you must succeed on a Dexterity saving throw or take 2d6+PROF fire damage and reduces their AC by 2 until the start of your next turn. On a successful save, a creature takes half as much damage and doesn't reduce their AC. If a creature fails its save by 5 or more, you treat results of 1 or 2 on the damage die as a 3.",
@@ -1847,7 +1836,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "header": 2,
             "entries": [
                 
                 "You gain an additional way to regain Necrotic Charges:",
@@ -1862,7 +1850,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 6,
-            "header": 2,
             "entries": [
                 
                 "You have lost none of the gravitas in your grave commands. You are immune to being frightened. Additionally, as a bonus action you may command a willing allied creature within 30ft of you to do one of the following:",
@@ -1884,7 +1871,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 11,
-            "header": 2,
             "entries": [
                 
                 "As a death knight, the powers of death hone your edge. Your weapon attacks deal an additional 1d8 fire or necrotic damage (your choice).",
@@ -1899,7 +1885,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 15,
-            "header": 2,
             "entries": [
                 
                 "You may channel your undead energy into an aura of menace, inverting a Paladin's aegis. You may expend two Necrotic Charges as an action to create an aura with a 30ft radius centered on yourself, lasting for 1 minute. Whenever creatures of your choice roll a 1 or 2 on a damage roll they make for a weapon attack, they can reroll the die and must use the new roll, even if it is a 1 or a 2."
@@ -1913,7 +1898,6 @@
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
             "level": 18,
-            "header": 2,
             "entries": [
                 "You have reached the apex of undead command. Your various abilities gain the following benefits:",
                 {
@@ -1955,7 +1939,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
-            "header": 2,
             "entries": [
                 
                 "Due to your soul being reinforced by strong emotion, you have a high threshold for pain, which is equal to half your Lictor level rounded down + your proficiency bonus. If a source of damage dealing bludgeoning, piercing or slashing damage deals damage equal to your pain threshold or less, you take no damage instead. The damage considered for this feature must be before resistance is applied, and not afterwards.",
@@ -1970,7 +1953,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
-            "header": 2,
             "entries": [
                 
                 "With intense fervour that fuels strength beyond the grave, you pull down your foes. You have advantage on checks made to resist someone escaping a grapple."
@@ -1984,7 +1966,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "header": 2,
             "entries": [
                 
                 "You issue forth a wave of weakness to enemies around you. Creatures of your choice within 10 feet of you must succeed on a Constitution saving throw or become poisoned until the end of your next turn. A creature can be immune to this poison only if it is also immune to disease. A creature that fails its save by 5 or more is poisoned for 1 minute, and the damage of its weapon attacks is halved until the end of your next turn.",
@@ -1999,7 +1980,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "header": 2,
             "entries": [
                 
                 "You gain an additional way to regain Necrotic Charges:",
@@ -2014,7 +1994,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 6,
-            "header": 2,
             "entries": [
                 
                 "Whenever you successfully grapple a creature, you can choose to immediately attempt to shove it prone as part of the same attack.",
@@ -2029,7 +2008,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 11,
-            "header": 2,
             "entries": [
                 
                 "A creature grappled by you must make a Constitution saving throw against your Wrack Save DC upon successfully escaping your grapple. On a failed save, you can move to remain adjacent to them as they move without provoking opportunity attacks."
@@ -2043,7 +2021,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 15,
-            "header": 2,
             "entries": [
                 
                 "Whenever you take damage, you can use your reaction to make a Constitution saving throw with a DC of 5 + half the damage taken, unless the damage is radiant or from a critical hit. On a success, you halve the damage taken; if this reduces the damage taken to below your pain threshold, you ignore it entirely.",
@@ -2058,7 +2035,6 @@
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
             "level": 18,
-            "header": 2,
             "entries": [
                 
                 "You have reached the apex of your Office, becoming a herculean undead with strength only matched by the spirit that flows through your core. You gain the following benefits:",
