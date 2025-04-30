@@ -1,3 +1,62 @@
+# v1.1.0
+Spell Source Update
+
+## Added Spells
+The following Subclasses gain spells as part of their progression. This is now reflected in the spells themselves when filtering in the spells.html section of the site
+### Wizard
+- Necromancer Redux
+### Ranger
+- Veildancer
+- Hunter
+### Artificer
+- Forge Adept
+### Paladin
+- Oath of Liberty
+### Druid
+- Circle of Stone
+- Circle of Dreams
+- Circle of the Moon
+- Circle of the Shepherd
+### Sorcerer
+- Draconic
+- Storm
+- Wild Magic
+- Shadow
+
+## Changed Spells
+Pact of the Great Old One with its major rework also saw changes in its spells able to be learned, this is now reflected in the mirror
+
+## Removed spells
+17 spells have had class sources removed and will no longer show up when filtering by any of the classes, they are as follows:
+### AAG
+- Air Bubble
+- Create Spelljamming Helm
+###  AI
+- Distort Value
+- Fast Friends
+- Gift of Gab
+- Jim's Glowing Coin
+### GGR
+- Encode Thoughts
+### IDRotF
+- Create Magen
+### PHB
+- Animate Dead
+- Fabricate
+- Finger of Death
+- Forcecage
+- Plane Shift
+- Simulacrum
+### SCC
+- Borrowed Knowledge
+- Kinetic Jaunt
+- Silvery Barbs
+
+The reason these spells were not outright deleted is that while these spells are banned usage for **players** the DM's are still able to have NPC's and Monsters utilise these spells. As such they are simply no longer considered valid for any class.
+
+If a background, species, subclass or feat references one of these spells it will still show up. Animate Dead is one of these spells
+
+
 # Release v1.0.0
 The following content has been added/altered
 ### Classes:
