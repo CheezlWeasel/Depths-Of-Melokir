@@ -430,24 +430,6 @@
 			]
 		},
 		{
-			"name": "Archery",
-			"source": "XPHB",
-			"page": 209,
-			"srd52": true,
-			"basicRules2024": true,
-			"category": "FS",
-			"prerequisite": [
-				{
-					"feature": [
-						"Fighting Style"
-					]
-				}
-			],
-			"entries": [
-				"You gain a +2 bonus to attack rolls you make with Ranged weapons."
-			]
-		},
-		{
 			"name": "Artificer Initiate",
 			"source": "TCE",
 			"page": 79,
