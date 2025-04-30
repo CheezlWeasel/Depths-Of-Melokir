@@ -113,7 +113,7 @@
 								{
 									"type": "item",
 									"name": "Ingenious",
-									"entry": "You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence, WisDepthsofMelokir, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+									"entry": "You know one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
 								},
 								{
 									"type": "item",
@@ -367,7 +367,7 @@
                     "type":"entries",
                     "name":"Alien Mind",
                     "entries": [
-                        "When you are required to make an Intelligence, WisDepthsofMelokir or Charisma saving throw, you can add 1d4 to it. If you choose to do this, it does not stack with other spells or magical resistance effects (this includes bless, magical resistance and resistance)."
+                        "When you are required to make an Intelligence, Wisdom or Charisma saving throw, you can add 1d4 to it. If you choose to do this, it does not stack with other spells or magical resistance effects (this includes bless, magical resistance and resistance)."
                     ]
                 },
                 {
@@ -434,7 +434,7 @@
                     "type": "entries",
                     "name": "Haunted Magic",
                     "entries": [
-                        "You learn a {@filter cantrip of your choice from the Bard spell list.|spells|level=0|class=Bard} Intelligence, WisDepthsofMelokir, or Charisma is your spellcasting modifier for this (choose when you select this subrace). When you reach 3rd level, you can cast a 1st-level spell from the Necromancy or Illusion schools of magic (choose a single spell when you reach this level) with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 1st level or higher."
+                        "You learn a {@filter cantrip of your choice from the Bard spell list.|spells|level=0|class=Bard} Intelligence, Wisdom, or Charisma is your spellcasting modifier for this (choose when you select this subrace). When you reach 3rd level, you can cast a 1st-level spell from the Necromancy or Illusion schools of magic (choose a single spell when you reach this level) with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 1st level or higher."
                     ] 
                 },
                 {
@@ -1228,6 +1228,7 @@
             "classSource": "DepthsofMelokir",  
             "level": 1,
             "entries": [
+                "{@i 1st-level Lictor Feature}",
                 "The manner of your undeath left you equipped for specific duties beyond the grave. Choose the office that your are equipped for, Your choice grants you features at 3rd level, and again at 6th, 11th, 15th, and 18th level."
             ]          
         },
@@ -1238,6 +1239,7 @@
             "classSource": "DepthsofMelokir",
             "level": 1,
             "entries": [
+                "{@i 1st-level Lictor Feature}",
                 "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
                 {
                     "type": "options",
@@ -1298,6 +1300,7 @@
             "classSource": "DepthsofMelokir",
             "level": 2,
             "entries": [
+                "{@i 2nd-level Lictor Feature}",
                 "You are now kept alive - after a fashion - by the necromanticmagic that turns within you. You don't need to eat, drink, or breathe.",
                 "The energy of nearby death also refuels your ongoing quest for vindication. You have three Necrotic Charges. You can never have more Necrotic charges than shown on the table for your level. You regain all spent Necrotic Charges when you finish a long rest. Additionally, you gain a charge whenever a creature of size Small or larger within 30ft of you dies, and in the other way determined by your office at 3rd level.",
                 "On your turn while you are not incapacitated, you can expend one or more Necrotic charges as a bonus action to gain 2d4 temporary hit points, plus an additional die for each additional charge. Alternatively, you can expend a charge when you successfully hit with a melee attack to deal an additional 2d4 necrotic damage.",
@@ -1311,6 +1314,7 @@
             "classSource": "DepthsofMelokir",
             "level": 2,
             "entries": [
+                "{@i 2nd-level Lictor Feature}",
                 "The fact that your mind and morality have endured the process of becoming undead is a testament to your resolve, unwilling to bend. You have advantage on saving throws against effects that would cause you to be charmed or frightened."  
             ]
         },
@@ -1321,6 +1325,7 @@
             "classSource": "DepthsofMelokir",  
             "level": 3,
             "entries": [
+                "{@i 3rd-level Lictor Feature}",
                 "Your Accursed Office grants you two Features at this level"
             ]          
         },
@@ -1331,6 +1336,7 @@
             "classSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
+                "{@i 3rd-level Lictor Feature}",
                 "You gain the ability to extend the foul powers that fuel you, temporarily, using that energy to inflict various woes upon your enemies. You can create two such effects: Wrack With Pain and an effect determined by your office. Once per turn when you take the Attack action on your turn, you can expend a Necrotic Charge to replace one of the attacks with a use of this feature. When you do so, you choose which effect to create out of those available to you. The Save DC of your Wrack Foes is:",
                 {
                     "type": "abilityDc",
@@ -1359,6 +1365,7 @@
             "classSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
+                "{@i 3rd-level Lictor Feature}",
                 "By virtue of your exhumed nature, you are able to ignore some attacks that would fell living peers. When using medium armour, you may use your Constitution modifier instead of your Dexterity modifier for calculating your AC, still up to the maximum the armour allows."
             ]
         },
@@ -1369,6 +1376,7 @@
             "classSource": "DepthsofMelokir",
             "level": 4,
             "entries": [
+                "{@i 4th-level Lictor Feature}",
                 "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
             ]
@@ -1380,6 +1388,7 @@
             "classSource": "DepthsofMelokir",
             "level": 5,
             "entries": [
+                "{@i 5th-level Lictor Feature}",
                 "You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
             ]
         },
@@ -1390,6 +1399,7 @@
             "classSource": "DepthsofMelokir",
             "level": 5,
             "entries": [
+                "{@i 5th-level Lictor Feature}",
                 "You died. You got better. Regardless of the circumstances of your resurrection, you were laid to rest and awoke in a world removed from your own. Whether it be a distance of years or centuries, you've got access to knowledge from a dead time.",
                 "Pick two skills or tool proficiencies that require intelligence. You become proficient in them if you are not already, and gain the ability to use your constitution in place of intelligence for those skills."
             ]
@@ -1401,6 +1411,7 @@
             "classSource": "DepthsofMelokir",  
             "level": 6,
             "entries": [
+                "{@i 6th-level Lictor Feature}",
                 "Your Accursed Office grants you a Feature at this level"
             ]          
         },
@@ -1411,6 +1422,7 @@
             "classSource": "DepthsofMelokir",
             "level": 7,
             "entries": [
+                "{@i 7th-level Lictor Feature}",
                 "Your restless body no longer feels the effects of decay, and you cannot be aged magically. Additionally, the first time you gain a level of exhaustion, you may ignore it. This ability resets on a short rest.",
                 "Moreover, when you are reduced to 0 hit points, you can expend a Necrotic Charge to sustain your body with a surge of magic. If you do so, you are not knocked unconscious. You still must make death saving throws as normal, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until this effect expires. While under this effect, you cannot gain any necrotic charges. This effect lasts until the end of your next turn, and may be extended by expending more charges.",
                 "When you reach level 14, you can gain necrotic charges while under the effect of Necrotic Animus."
@@ -1423,6 +1435,7 @@
             "classSource": "DepthsofMelokir",
             "level": 8,
             "entries": [
+                "{@i 8th-level Lictor Feature}",
                 "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."
             ]
@@ -1434,6 +1447,7 @@
             "classSource": "DepthsofMelokir",
             "level": 9,
             "entries": [
+                "{@i 9th-level Lictor Feature}",
                 "Your exhumed nature makes you easier to bring back from beyond the veil of death. If you are targeted by a spell such as Revivify, with sole effect of restoring you to life after dying, the caster does not need material components.",
                 "Additionally, you are a valid target for these types of spells for up to an additional hour after your death. Furthermore, you are able to expend your withered vitality to more swiftly recover. When you are healed or stabilised while at 0 hit points, you may expend an amount of hit die equal to your proficiency bonus and regain that much HP, becoming conscious in the process.",
                 "Once you use this feature, you must finish a long rest before you can use it again. Starting at 13th level, you can use it twice before a long rest."
@@ -1446,12 +1460,18 @@
             "classSource": "DepthsofMelokir",
             "level": 9,
             "entries": [
+                "{@i 9th-level Lictor Feature}",
                 "Even a small part of you is infused with the pallor of death, which is handy in a pinch.",
                 "As a bonus action, you can harmlessly remove a part of yourself (e.g a nail, tooth, lock of hair, small bone). This reliquary is imbued with magic until you finish a long rest.",
                 "While the reliquary is imbued this way, you can give it one of these features:",
-                "- You can spend an action to see and hear from the reliquary, blinding and deafening yourself until you dismiss the viewing or until 1 minute passes.",
-                "- Someone holding the reliquary can cast Thaumaturgy, Prestidigitation or Druidcraft centred on the reliquary.",
-                "- A creature holding the reliquary can understand and speak a language of your choice that you know.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can spend an action to see and hear from the reliquary, blinding and deafening yourself until you dismiss the viewing or until 1 minute passes.",
+                        "Someone holding the reliquary can cast Thaumaturgy, Prestidigitation or Druidcraft centred on the reliquary.",
+                        "A creature holding the reliquary can understand and speak a language of your choice that you know."
+                    ]
+                },
                 "Once you create a token using this feature, you can't do so again until you finish a long rest."
             ]
         },
@@ -1462,6 +1482,7 @@
             "classSource": "DepthsofMelokir",
             "level": 10,
             "entries": [
+                "{@i 10th-level Lictor Feature}",
                 "Whenever a creature of size small or larger within 30 feet of you is reduced to below half of its hit point maximum for the first time since its last long rest, you become aware of this fact, and your necrotic engine gains a charge."
             ]
         },
@@ -1472,6 +1493,7 @@
             "classSource": "DepthsofMelokir",
             "level": 11,
             "entries": [
+                "{@i 11th-level Lictor Feature}",
                 "As a reaction to a saving throw being imposed on you, you may spend a necrotic charge and add your constitution modifier to the roll. This occurs before you roll."
             ]
         },
@@ -1482,6 +1504,7 @@
             "classSource": "DepthsofMelokir",  
             "level": 11,
             "entries": [
+                "{@i 11th-level Lictor Feature}",
                 "Your Accursed Office grants you a Feature at this level"
             ]          
         },
@@ -1492,6 +1515,7 @@
             "classSource": "DepthsofMelokir",
             "level": 12,
             "entries": [
+                "{@i 12th-level Lictor Feature}",
                 "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."   
             ]
@@ -1503,6 +1527,7 @@
             "classSource": "DepthsofMelokir",
             "level": 13,
             "entries": [
+                "{@i 13th-level Lictor Feature}",
                 "You can use Revenant Tenacity's ability to expend hit die to heal after being healed or stabilised at 0 hit points twice between long rests."
             ]
         },
@@ -1513,10 +1538,16 @@
             "classSource": "DepthsofMelokir",
             "level": 14,
             "entries": [
+                "{@i 14th-level Lictor Feature}",
                 "Although nothing has come easy, you have reclaimed some of your old identity through immense work. You gain one of the following benefits of your choice as befitting your former life.",
-                "- you learn one 1st-level spell from any spell list. This spell when you use it uses Charisma for its Save DC and Spell Attack rolls, and you can cast it once per short rest.",
-                "- You learn an additional Fighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.",
-                "- You learn one language and gain one proficiency in one skill of your choice. Additionally, pick one skill you are proficient in. When you make an ability check using the chosen skill, you can roll 1d4 and add the result to the check."
+                {
+                    "type":"list",
+                    "items":[
+                        "- you learn one {@filter 1st-level spell from any spell list|spells|level=1|class=druid;ranger;sorcerer;wizard;artificer;bard;warlock;cleric;paladin;monk}. This spell when you use it uses Charisma for its Save DC and Spell Attack rolls, and you can cast it once per short rest.",
+                        "- You learn an additional {@filterFighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.|optionalfeatures|feature type=fs:f;fs:r;fs:p} ",
+                        "- You learn one language and gain one proficiency in one skill of your choice. Additionally, pick one skill you are proficient in. When you make an ability check using the chosen skill, you can roll 1d4 and add the result to the check."
+                    ]    
+                }
             ]
         },
         {
@@ -1526,6 +1557,7 @@
             "classSource": "DepthsofMelokir",  
             "level": 15,
             "entries": [
+                "{@i 15th-level Lictor Feature}",
                 "Your Accursed Office grants you a Feature at this level"
             ]          
         },
@@ -1536,6 +1568,7 @@
             "classSource": "DepthsofMelokir",
             "level": 16,
             "entries": [
+                "{@i 16th-level Lictor Feature}",
                 "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead."   
             ]
@@ -1547,6 +1580,7 @@
             "classSource": "DepthsofMelokir",
             "level": 17,
             "entries": [
+                "{@i 17th-level Lictor Feature}",
                 "You cannot be killed instantly by massive damage, or have your body altered or destroyed by effects that would do so after reducing you to 0 hit points."
             ]
         },
@@ -1557,6 +1591,7 @@
             "classSource": "DepthsofMelokir",  
             "level": 18,
             "entries": [
+                "{@i 18th-level Lictor Feature}",
                 "Your Accursed Office grants you a Feature at this level"
             ]          
         },
@@ -1567,6 +1602,7 @@
             "classSource": "DepthsofMelokir",
             "level": 19,
             "entries": [
+                "{@i 19th-level Lictor Feature}",
                 "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
                 "Using the optional feats rule, you can forgo taking this feature to take a {@5etools feat|feats.html} of your choice instead." 
             ]
@@ -1578,6 +1614,7 @@
             "classSource": "DepthsofMelokir",
             "level": 20,
             "entries": [
+                "{@i 20th-level Lictor Feature}",
                 "You are now immune to necrotic and poison damage. In addition, whenever you roll initiative, your Necrotic Engine's charges are set to their maximum amount."
             ]
         }
@@ -1629,10 +1666,15 @@
             "header": 2,
             "entries": [
                 "As an Apparition you may disperse your spectral self to view another area, haunting the surroundings. You can spend one minute concentrating on an object or creature within 100 feet of you that you are familiar with, and on completion you begin haunting the object/creature. While haunting, your are blind to your own senses, but gain the following benefits:",
-                "You can see and hear through a point above the object/creature haunted.",
-                "You can speak from a point within 30ft of the object/creature at any volume ranging from faint whispers to thunderous shouts, either from one location within it or several simultaneously.",
-                "You can move objects within it other than the object/creature you are haunting as if by the mage hand cantrip as an action. This version of the hand can carry/move up to 10 x Lictor level pounds.",
-                "You can end your haunting as an action. You cannot begin haunting another object/creature while haunting anobject/creature."
+                {
+                    "type": "list",
+                    "items": [
+                        "You can see and hear through a point above the object/creature haunted.",
+                        "You can speak from a point within 30ft of the object/creature at any volume ranging from faint whispers to thunderous shouts, either from one location within it or several simultaneously.",
+                        "You can move objects within it other than the object/creature you are haunting as if by the mage hand cantrip as an action. This version of the hand can carry/move up to 10 x Lictor level pounds.",
+                        "You can end your haunting as an action. You cannot begin haunting another object/creature while haunting anobject/creature."
+                    ]
+                }
             ]
         },
         {
@@ -1645,7 +1687,7 @@
             "level": 3,
             "header": 2,
             "entries": [
-                "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 20 feet of you must succeed on a WisDepthsofMelokir saving throw or take 2d6 psychic damage and fall prone, being unable to stand until the end of your next turn. A creature that fails its save by 5 or more is also frightened of you until the start of your next turn.",
+                "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 20 feet of you must succeed on a Wisdom saving throw or take 2d6 psychic damage and fall prone, being unable to stand until the end of your next turn. A creature that fails its save by 5 or more is also frightened of you until the start of your next turn.",
                 "This feature's damage increases to 2d8 at 6th level, 2d10 at 10th level, and 2d12 at 15th level."
             ]
         },
@@ -1723,9 +1765,14 @@
             "header": 2,
             "entries": [
                 "You gain the following benefits:",
-                "- Creatures you have damaged with Painful Presence have their AC reduced by 2 until the start of your next turn, and you gain 5ft of movement after using Painful Presence.",
-                "- Your Apparition features ignore resistance to pyschic and cold damage, and treat immunity to psychic and cold damage as resistance.",
-                "- You add an additional 1d6 necrotic or psychic (your choice) damage to damage rolls against a creature that has taken damage from Painful Presence this turn."
+                {
+                    "type": "list",
+                    "items": [                
+                        "Creatures you have damaged with Painful Presence have their AC reduced by 2 until the start of your next turn, and you gain 5ft of movement after using Painful Presence.",
+                        "Your Apparition features ignore resistance to pyschic and cold damage, and treat immunity to psychic and cold damage as resistance.",
+                        "You add an additional 1d6 necrotic or psychic (your choice) damage to damage rolls against a creature that has taken damage from Painful Presence this turn."
+                    ]
+                }
             ]
         },
         {
@@ -1819,9 +1866,14 @@
             "entries": [
                 
                 "You have lost none of the gravitas in your grave commands. You are immune to being frightened. Additionally, as a bonus action you may command a willing allied creature within 30ft of you to do one of the following:",
-                "- Move: The creature expends their reaction to move up to half their movement speed without provoking opportunity attacks.",
-                "- Reinforce: The creature expends their reaction to gain the benefits of half cover until the start of their next turn.",
-                "- Hold the line: until the start of your next turn, the creature can use their reaction to make an opportunity attack against an enemy that comes within their reach. This ability may be used an amount of times equal to twice your proficiency bonus per long rest."
+                {
+                    "type": "list",
+                    "items": [
+                        "Move: The creature expends their reaction to move up to half their movement speed without provoking opportunity attacks.",
+                        "Reinforce: The creature expends their reaction to gain the benefits of half cover until the start of their next turn.",
+                        "Hold the line: until the start of your next turn, the creature can use their reaction to make an opportunity attack against an enemy that comes within their reach. This ability may be used an amount of times equal to twice your proficiency bonus per long rest."
+                    ]
+                }
             ]
         },
         {
@@ -1863,11 +1915,15 @@
             "level": 18,
             "header": 2,
             "entries": [
-                
                 "You have reached the apex of undead command. Your various abilities gain the following benefits:",
-                "- Your Wrack Foes and weapon attacks ignore resistance to necrotic and fire damage, and treat immunity as resistance.",
-                "- Whenever you use Command Macabre, you can target up to three creatures at a time using the one bonus action.",
-                "- Your Aura of Vulnerability also applies to attack rolls. You gain a second Extra Attack."
+                {
+                    "type": "list",
+                    "items": [
+                        "- Your Wrack Foes and weapon attacks ignore resistance to necrotic and fire damage, and treat immunity as resistance.",
+                        "- Whenever you use Command Macabre, you can target up to three creatures at a time using the one bonus action.",
+                        "- Your Aura of Vulnerability also applies to attack rolls. You gain a second Extra Attack."
+                    ]
+                }
             ]
         },
         {
@@ -2006,9 +2062,14 @@
             "entries": [
                 
                 "You have reached the apex of your Office, becoming a herculean undead with strength only matched by the spirit that flows through your core. You gain the following benefits:",
-                "You can grapple up to three creatures, regardless of how many hands you have free.","Your Wrack Foes ignores resistance to poison damage,and treats immunity as resistance.",
-                "You deal 1d8+STR bludgeoning damage against your target whenever you make a successful grapple check or shove check, or an enemy fails their escape check against you.",
-                "Your movement speed is not reduced from grappling a creature."
+                {
+                    "type": "list",
+                    "items": [
+                        "You can grapple up to three creatures, regardless of how many hands you have free.","Your Wrack Foes ignores resistance to poison damage,and treats immunity as resistance.",
+                        "You deal 1d8+STR bludgeoning damage against your target whenever you make a successful grapple check or shove check, or an enemy fails their escape check against you.",
+                        "Your movement speed is not reduced from grappling a creature."
+                    ]
+                }
             ]
         },
         {
@@ -2069,7 +2130,7 @@
             "level": 3,
             "entries": [
                 
-                "You utter a curse of doom upon those that transgress against you. hostile creatures within 10ft of you must make a WisDepthsofMelokir saving throw or take 1d6 force damage and cannot take movement that would move them more than 30ft away from you until the end of your next turn. If they fail the save by 5 or more, whenever they attack one of your allies they take 1d6 force damage for the same duration. This feature's damage increases to 1d8 at 6th level, 1d10 at 10th level, and 1d12 at 15th level."
+                "You utter a curse of doom upon those that transgress against you. hostile creatures within 10ft of you must make a Wisdom saving throw or take 1d6 force damage and cannot take movement that would move them more than 30ft away from you until the end of your next turn. If they fail the save by 5 or more, whenever they attack one of your allies they take 1d6 force damage for the same duration. This feature's damage increases to 1d8 at 6th level, 1d10 at 10th level, and 1d12 at 15th level."
             ]
         },
         {
@@ -2097,9 +2158,14 @@
             "entries": [
                 
                 "Immediately after you hit a creature with a melee weapon attack, you can use a bonus action to mark the target with sapping magic to prevent its escape. The target is marked for 1 minute. The mark ends early if you use this feature again. Until the effect ends, you gain the following benefits:",
-                "Once per round, you can make an opportunity attack against the marked target without using your reaction.",
-                "You can make opportunity attacks against the target if it moves while within the reach of your melee attacks, even if that movement does not take it out of your reach. ",
-                "If the marked creature tries to cast a spell of 3rd level or lower, its magic is disrupted. The creature must make a Constitution saving throw against your Wrack Save DC. On a failed save, it takes 1d4 necrotic damage per level of the spell, the spell fails and has no effect. The creature may still make another action that isn't casting a spell. On a success, the creature is able to cast the spell as normal.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Once per round, you can make an opportunity attack against the marked target without using your reaction.",
+                        "You can make opportunity attacks against the target if it moves while within the reach of your melee attacks, even if that movement does not take it out of your reach. ",
+                        "If the marked creature tries to cast a spell of 3rd level or lower, its magic is disrupted. The creature must make a Constitution saving throw against your Wrack Save DC. On a failed save, it takes 1d4 necrotic damage per level of the spell, the spell fails and has no effect. The creature may still make another action that isn't casting a spell. On a success, the creature is able to cast the spell as normal."
+                    ]
+                },
                 "You can't use this feature again until you finish a long rest, unless you expend a Necrotic Charge to do so again."
             ]
         },
@@ -2141,10 +2207,14 @@
             "subclassSource": "DepthsofMelokir",
             "level": 18,
             "entries": [
-                
                 "You have reached the apex of your office, becoming the ultimate guardian of those laid to rest. You gain the following benefits:",
-                "- You have an additional reaction.",
-                "- Creatures of your choice within 20ft of you have advantage on WisDepthsofMelokir and Intelligence saving throws. You deal an additional die of weapon damage on successful opportunity attacks."
+                {
+                    "type": "list",
+                    "items": [
+                        "You have an additional reaction.",
+                        "Creatures of your choice within 20ft of you have advantage on Wisdom and Intelligence saving throws. You deal an additional die of weapon damage on successful opportunity attacks."
+                    ]
+                }
             ]
         },
         {
@@ -2274,8 +2344,13 @@
             "entries": [
                 
                 "You have risen to be the apex of your Office, an exemplar of the decayed that leads hordes into damnation. You gain the following benefits:",
-                "The radius of Withering Aura increases to 20 feet. Office of the Tribute features ignore resistance to poison, necrotic, and piercing damage, and treat immunity as resistance.",
-                "You can reroll 1s on damage rolls for Office of the Tribute features an unlimited amount of times."
+                {
+                    "type": "list",
+                    "items": [
+                        "The radius of Withering Aura increases to 20 feet. Office of the Tribute features ignore resistance to poison, necrotic, and piercing damage, and treat immunity as resistance.",
+                        "You can reroll 1s on damage rolls for Office of the Tribute features an unlimited amount of times."
+                    ]
+                }
             ]
         },
         {
@@ -2397,9 +2472,14 @@
                 
                 "When you kill a Challenged creature on your turn, you can then Challenge another creature within 30 feet of you (no action required).",
                 "As an action you may darken the day as it flees your vampiric power. The area within 30 feet of you becomes dim light, and confers the following bonuses within the area:",
-                "Allies become immune to fear.",
-                "Enemies must make a wisDepthsofMelokir saving throw equal to your wrack save DC when starting their turn or entering this space for the first time during their turn, falling prone and becoming frightened of you until the end of their next turn. This effect does not work against your Challenged Target.",
-                "You reroll 1s on damage rolls against your Challenged target.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Allies become immune to fear.",
+                        "Enemies must make a Wisdom saving throw equal to your wrack save DC when starting their turn or entering this space for the first time during their turn, falling prone and becoming frightened of you until the end of their next turn. This effect does not work against your Challenged Target.",
+                        "You reroll 1s on damage rolls against your Challenged target."
+                    ]
+                },
                 "This effect lasts for 1 minute. You may use this a number of times equal to your proficiency bonus per long rest."
             ]
         },
@@ -2414,8 +2494,13 @@
             "entries": [
                 
                 "You have reached the apex of your office, becoming the ultimate vampiric elite. you gain the following benefits:",
-                "When you grant an ally temporary HP by spending a necrotic charge, you may target up to three allies within 30 feet of you.",
-                "You take (2x prof bonus) less damage from creatures that are not your challenged target. Your wracks ignore resistance to psychic or necrotic damage, and treat immunity as resistance."
+                {
+                    "type": "list",
+                    "items": [
+                        "When you grant an ally temporary HP by spending a necrotic charge, you may target up to three allies within 30 feet of you.",
+                        "You take (2x prof bonus) less damage from creatures that are not your challenged target. Your wracks ignore resistance to psychic or necrotic damage, and treat immunity as resistance."
+                    ]    
+                }
             ]
         },
         {
@@ -2551,9 +2636,14 @@
             "entries": [
                 
                 "You have reached the apex of your office, becoming a calamitous harbinger of the End. You gain the following benefits:",
-                "You can target up to two creatures with the ability check / attack roll / saving throw reduction inflicted by Wailing at the same time.",
-                "Your Office of the Wailer features ignore resistance to thunder and necrotic damage, and treat immunity as resistance.",
-                "The radius of your Wailing while kept conscious by Unrelenting Animus is doubled."
+                {
+                    "type": "list",
+                    "items": [
+                        "You can target up to two creatures with the ability check / attack roll / saving throw reduction inflicted by Wailing at the same time.",
+                        "Your Office of the Wailer features ignore resistance to thunder and necrotic damage, and treat immunity as resistance.",
+                        "The radius of your Wailing while kept conscious by Unrelenting Animus is doubled."
+                    ]
+                }
             ]
         },
         {
@@ -2659,7 +2749,7 @@
                                 {
                                     "type": "item",
                                     "name": "Spook ‘em!",
-                                    "entry": " The target of your attack must make a WisDepthsofMelokir saving throw or be frightened of you until the end of your next turn."
+                                    "entry": " The target of your attack must make a Wisdom saving throw or be frightened of you until the end of your next turn."
                                 },
                                 {
                                     "type": "item",
@@ -3118,7 +3208,7 @@
             "subclassSource": "DepthsofMelokir",
             "level": 10,
             "entries": [  
-                "At 10th level, you can command the earth to shield yourself and your allies. When you, or a creature you can see within 30ft of you is about to take damage, you may use your reaction to expend one spell slot to grant that creature a number of temporary hit points equal to twice the level of the spell slot plus your wisDepthsofMelokir modifier before they take the damage.",
+                "At 10th level, you can command the earth to shield yourself and your allies. When you, or a creature you can see within 30ft of you is about to take damage, you may use your reaction to expend one spell slot to grant that creature a number of temporary hit points equal to twice the level of the spell slot plus your Wisdom modifier before they take the damage.",
                 {
                     "type":"entries",
                     "name":"Earthen Form Improvement",
@@ -3133,7 +3223,7 @@
                                 },
                                 {
                                     "type":"item",
-                                    "entry":"Once during each of your turns when you hit with an attack roll with a melee weapon, you can deal extra thunder damage to the target equal to your WisDepthsofMelokir modifier"
+                                    "entry":"Once during each of your turns when you hit with an attack roll with a melee weapon, you can deal extra thunder damage to the target equal to your Wisdom modifier"
                                 }
                             ]
                         }
@@ -3227,7 +3317,7 @@
                     "type":"entries",
                     "name":"Fathomless Rage",
                     "entries":[
-                        "Your speed increases by 10 feet, and you have a bonus to Intelligence, WisDepthsofMelokir, and Charisma saving throws equal to your Constitution Modifier (minimum of +0)."
+                        "Your speed increases by 10 feet, and you have a bonus to Intelligence, Wisdom, and Charisma saving throws equal to your Constitution Modifier (minimum of +0)."
                     ]
                 }
             ]
@@ -3730,11 +3820,11 @@
                     "items": [
                         {
                             "type": "item",
-                            "entry": "You summon tangible and identical illusions of you. You can summon a number of doubles equal to your WisDepthsofMelokir modifier in points of your choice that you can see within 30ft. of you. Each double benefits from your Veil and makes an attack against a target of your choice when it appears, as if you were making an attack with the weapon you have in hand. After each double has attacked, you can choose to swap places with one of your doubles. The doubles last until the start of your next turn, they share your AC, are immune to poison and psychic damage, and they disappear if they take at least 1 point of damage."
+                            "entry": "You summon tangible and identical illusions of you. You can summon a number of doubles equal to your Wisdom modifier in points of your choice that you can see within 30ft. of you. Each double benefits from your Veil and makes an attack against a target of your choice when it appears, as if you were making an attack with the weapon you have in hand. After each double has attacked, you can choose to swap places with one of your doubles. The doubles last until the start of your next turn, they share your AC, are immune to poison and psychic damage, and they disappear if they take at least 1 point of damage."
                         },
                         {
                             "type": "item",
-                            "entry": "You target a number of willing creatures that you can see within 30 ft. of you inferior or equal to your WisDepthsofMelokir modifier. Each creature benefits from the current Veil of Mirages that you have chosen for its entire duration or until you lose your concentration, as if you were concentrating on a spell. If you lose your concentration, you don’t lose your own Veil, only the other targets do. If you apply your Deceiving Veil in this way you can choose a different appearance for each individual target. A target of this feature loses its benefits if they start or end their turns more than 60ft. from you."
+                            "entry": "You target a number of willing creatures that you can see within 30 ft. of you inferior or equal to your Wisdom modifier. Each creature benefits from the current Veil of Mirages that you have chosen for its entire duration or until you lose your concentration, as if you were concentrating on a spell. If you lose your concentration, you don’t lose your own Veil, only the other targets do. If you apply your Deceiving Veil in this way you can choose a different appearance for each individual target. A target of this feature loses its benefits if they start or end their turns more than 60ft. from you."
                         }
                     ]
                 }
