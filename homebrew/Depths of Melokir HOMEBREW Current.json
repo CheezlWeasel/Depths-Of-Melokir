@@ -1143,13 +1143,13 @@
             "className": "Druid",
             "classSource": "PHB",
             "subclassSpells": [
-                "earth tremor",
+                "earth tremor|XGE",
                 "ensnaring strike",
                 "hold person",
                 "spiritual weapon",
                 "elemental weapon",
                 "meld into stone",
-                "elemental bane",
+                "elemental bane|XGE",
                 "stoneskin",
                 "banishing smite",
                 "hold monster"
@@ -1194,16 +1194,16 @@
 				}
 			],
             "subclassSpells": [
-                "fog cloud",
-                "zephyr strike",
-                "gust of wind",
-                "warding wind",
-                "thunder step",
-                "wind wall",
-                "freedom of movement",
-                "storm sphere",
-                "control winds",
-                "steel wind strike"
+                "Fog Cloud",
+                "Zephyr Strike|XGE",
+                "Gust of Wind",
+                "Warding Wind|XGE",
+                "Thunder Step|XGE",
+                "Wind Wall",
+                "Freedom of Movement",
+                "Storm Sphere|XGE",
+                "Control Winds|XGE",
+                "Steel Wind Strike|XGE"
             ],
             "subclassFeatures": [
                 "Oath of Liberty|Paladin|PHB|Liberty|DepthsofMelokir|3",
