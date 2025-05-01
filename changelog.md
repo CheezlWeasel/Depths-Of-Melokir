@@ -5,8 +5,6 @@ The fluff for the 2024 class and subclasses have been removed, so has the fluff 
 
 Banned Spells have had *all* potential sources removed
 
-The error that was showing up in the classes page should be fixed now
-
 # v1.2.1
 *Lictor gets a reformat*
 
