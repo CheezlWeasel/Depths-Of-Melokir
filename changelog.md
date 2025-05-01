@@ -1,3 +1,10 @@
+# v1.2.1
+*Lictor gets a reformat*
+
+When making lictor i did not know what options there were for entries. Thus i have gone back and redone many of the features to be in line with how most other classes have theirs formatted
+
+Also the DoM source is now purple in memory of Byron's old Role Color
+
 # v1.2.0
 *The Great Cull*
 
