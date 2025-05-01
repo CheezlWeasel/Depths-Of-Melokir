@@ -1174,7 +1174,7 @@
                             "wind wall"
 						],
 						"13": [
-							"freeDepthsofMelokir of movement",
+							"freedom of movement",
                             "storm sphere"
 						],
 						"17": [
@@ -1191,7 +1191,7 @@
                 "Warding Wind|XGE",
                 "Thunder Step|XGE",
                 "Wind Wall",
-                "FreeDepthsofMelokir of Movement",
+                "Freedom of Movement",
                 "Storm Sphere|XGE",
                 "Control Winds|XGE",
                 "Steel Wind Strike|XGE"
@@ -2708,7 +2708,7 @@
             "subclassSource": "DepthsofMelokir",
             "level": 6,
             "entries": [   
-                "At 6th level, you add the Speak with Dead and Augury spells to your spellbook and they both count as necromancy wizard spells for you. Furthermore you may cast Augury twice between long rests instead of once before the spell begins to risk providing a ranDepthsofMelokir result.",
+                "At 6th level, you add the Speak with Dead and Augury spells to your spellbook and they both count as necromancy wizard spells for you. Furthermore you may cast Augury twice between long rests instead of once before the spell begins to risk providing a random result.",
                 {
                     "type": "entries",
                     "name": "Friends on the Other Side",
@@ -2978,7 +2978,7 @@
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
-                "Those who take the Oath of Liberty draw their power from the winds and the freeDepthsofMelokir they represent. They believe in the inherent right of all beings to live unburdened, unrestricted, and unrestrained. With a focus on breaking chains and upholding personal freeDepthsofMelokir, these paladins become agents of liberation, seeking to bring justice and equality to those oppressed by tyranny and injustice. Known as wind speakers, stormbound or grey knights, these paladins seek to liberate those from under the thumbs of the powerful.",
+                "Those who take the Oath of Liberty draw their power from the winds and the freedom they represent. They believe in the inherent right of all beings to live unburdened, unrestricted, and unrestrained. With a focus on breaking chains and upholding personal freeDepthsofMelokir, these paladins become agents of liberation, seeking to bring justice and equality to those oppressed by tyranny and injustice. Known as wind speakers, stormbound or grey knights, these paladins seek to liberate those from under the thumbs of the powerful.",
                 {
                     "type": "entries",
                     "name": "Channel Divinity",
@@ -3044,7 +3044,7 @@
 						],
 						[
 							"13th",
-							"{@spell freeDepthsofMelokir of movement}, {@spell storm sphere}"
+							"{@spell freedom of movement}, {@spell storm sphere}"
 						],
 						[
 							"17th",
@@ -3534,7 +3534,7 @@
             "level": 3,
             "entries": [  
                 "Some rogues favor honing their skill and precision, others perfect a silver tongue, but you — well, you’ve always gotten a kick out of leaving things up to chance.",
-                "Rogues of the Wild Card variety thrive on the high stakes and ranDepthsofMelokir thrill of the game table. Armed with cunning cheats and no small amount of luck, these sly gamblers live and die by their rules, never keen to simply accept the hand fate deals them.",
+                "Rogues of the Wild Card variety thrive on the high stakes and random thrill of the game table. Armed with cunning cheats and no small amount of luck, these sly gamblers live and die by their rules, never keen to simply accept the hand fate deals them.",
                 {
                     "type": "entries",
                     "name": "Tricks Up the Sleeve",
@@ -3586,7 +3586,7 @@
                             "type": "entries",
                             "name": "Playing Cards",
                             "entries": [
-                                "You have developed a fighting style based around the cartomancy of the Serpent Isles. You have your own deck of enchanted cards, and can make their edges razor-sharp with a flick of your wrist. If you have not yet used your Sneak Attack this turn, you can use your action to take one of these cards and attack a creature within 30 feet with it. The attack roll for this feature uses your Dexterity modifier, and on a hit, it deals slashing damage equal 1d4 + your Dexterity modifier. When you roll for damage, look at the number rolled on the d4. The attack gains a ranDepthsofMelokir effect based on the number rolled, as detailed in the Wild Card Suit table below. You can attack using a card in this manner a number of times equal to your Charisma modifier (minimum of once), and regain all uses after a long rest.",
+                                "You have developed a fighting style based around the cartomancy of the Serpent Isles. You have your own deck of enchanted cards, and can make their edges razor-sharp with a flick of your wrist. If you have not yet used your Sneak Attack this turn, you can use your action to take one of these cards and attack a creature within 30 feet with it. The attack roll for this feature uses your Dexterity modifier, and on a hit, it deals slashing damage equal 1d4 + your Dexterity modifier. When you roll for damage, look at the number rolled on the d4. The attack gains a random effect based on the number rolled, as detailed in the Wild Card Suit table below. You can attack using a card in this manner a number of times equal to your Charisma modifier (minimum of once), and regain all uses after a long rest.",
                                 {
                                     "type": "table",
                                     "caption": "Wild Card Suit Table",
