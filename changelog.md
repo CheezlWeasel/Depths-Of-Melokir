@@ -1,3 +1,21 @@
+# v1.2.3
+Spell Descriptions
+
+## The following Spells have had their description changed to be in line with the Depths of Melokir Rules
+### One Summon
+- Conjure Animals 
+- Conjure Minor Elementals
+- Conjure Woodland Beings
+- Summon Lesser Demons
+- Animate Objects
+### Non Humanoid Corpse Targetting
+- Danse Macabre
+- Create Undead
+### Steeds may not attack when summoned this way
+- Find Steed
+- Phantom Steed
+- Find Greater Steed
+
 # v1.2.2
 *XPHB-Gone*
 

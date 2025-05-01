@@ -172,8 +172,13 @@
                     "name": "Regenerating Form",
                     "entries": [
                         "Your body is laced with regenerative potential, manifesting in the following benefits:",
-                        "- You gain a +1 bonus to your Armour Class, as your constantly regenerating body is harder to wound.",
-                        "- Once per long rest, when you start your turn while bloodied, you can push your regeneration to its limits. At the start of each of your turns while this ability is active, you regain hit points equal to your proficiency bonus and can repeat a saving throw against any effect that would allow you to make a saving throw against it at the end of your turn. You cannot heal yourself above half your hit points with this feature. This burst of regenerative energy lasts for one minute or until you are incapacitated."
+                        {
+                            "type": "list",
+                            "items": [
+                                "You gain a +1 bonus to your Armour Class, as your constantly regenerating body is harder to wound.",
+                                "Once per long rest, when you start your turn while bloodied, you can push your regeneration to its limits. At the start of each of your turns while this ability is active, you regain hit points equal to your proficiency bonus and can repeat a saving throw against any effect that would allow you to make a saving throw against it at the end of your turn. You cannot heal yourself above half your hit points with this feature. This burst of regenerative energy lasts for one minute or until you are incapacitated."
+                            ]
+                        }
                     ]
                 },
                 {
@@ -1540,9 +1545,9 @@
                 {
                     "type":"list",
                     "items":[
-                        "- you learn one {@filter 1st-level spell from any spell list|spells|level=1|class=druid;ranger;sorcerer;wizard;artificer;bard;warlock;cleric;paladin;monk}. This spell when you use it uses Charisma for its Save DC and Spell Attack rolls, and you can cast it once per short rest.",
-                        "- You learn an additional {@filter Fighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.|optionalfeatures|feature type=fs:f;fs:r;fs:p} ",
-                        "- You learn one language and gain one proficiency in one skill of your choice. Additionally, pick one skill you are proficient in. When you make an ability check using the chosen skill, you can roll 1d4 and add the result to the check."
+                        "You learn one {@filter 1st-level spell from any spell list|spells|level=1|class=druid;ranger;sorcerer;wizard;artificer;bard;warlock;cleric;paladin;monk}. This spell when you use it uses Charisma for its Save DC and Spell Attack rolls, and you can cast it once per short rest.",
+                        "You learn an additional {@filter Fighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.|optionalfeatures|feature type=fs:f;fs:r;fs:p} ",
+                        "You learn one language and gain one proficiency in one skill of your choice. Additionally, pick one skill you are proficient in. When you make an ability check using the chosen skill, you can roll 1d4 and add the result to the check."
                     ]    
                 }
             ]
@@ -1915,9 +1920,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "- Your Wrack Foes and weapon attacks ignore resistance to necrotic and fire damage, and treat immunity as resistance.",
-                        "- Whenever you use Command Macabre, you can target up to three creatures at a time using the one bonus action.",
-                        "- Your Aura of Vulnerability also applies to attack rolls. You gain a second Extra Attack."
+                        "Your Wrack Foes and weapon attacks ignore resistance to necrotic and fire damage, and treat immunity as resistance.",
+                        "Whenever you use Command Macabre, you can target up to three creatures at a time using the one bonus action.",
+                        "Your Aura of Vulnerability also applies to attack rolls. You gain a second Extra Attack."
                     ]
                 }
             ]

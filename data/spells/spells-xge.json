@@ -1128,7 +1128,8 @@
 				}
 			],
 			"entries": [
-				"Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie||zombies} and {@creature skeleton||skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
+				"{@i This spell has been modified to fit the rules of Depths of Melokir.}",
+				"Threads of dark power leap from your fingers to pierce up to five Small or Medium beast or non-humanoid monstrosity corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie||zombies} and {@creature skeleton||skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.",
 				"You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
 				"The creatures are under your control until the spell ends, after which they become inanimate once more."
 			],
@@ -1844,7 +1845,8 @@
 				}
 			],
 			"entries": [
-				"You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form you choose: a {@creature griffon}, a {@creature pegasus}, a {@creature peryton}, a {@creature dire wolf}, a {@creature rhinoceros}, or a {@creature saber-toothed tiger}. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.",
+				"{@i This spell has been modified to fit the rules of Depths of Melokir.}",
+				"You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form you choose: a {@creature griffon}, a {@creature pegasus}, a {@creature peryton}, a {@creature dire wolf}, a {@creature rhinoceros}, or a {@creature saber-toothed tiger}. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak. Steeds summoned in this way cannot be commanded to Attack other creatures.",
 				"You control the mount in combat. While the mount is within 1 mile of you, you can communicate with it telepathically. While mounted on it, you can make any spell you cast that targets only you also target the mount.",
 				"The mount disappears temporarily when it drops to 0 hit points or when you dismiss it as an action. Casting this spell again re-summons the bonded mount, with all its hit points restored and any conditions removed.",
 				"You can't have more than one mount bonded by this spell or {@spell find steed} at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.",
@@ -4536,60 +4538,18 @@
 				}
 			],
 			"entries": [
-				"You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.",
-				{
-					"type": "table",
-					"colLabels": [
-						"{@dice d6}",
-						"Demons Summoned"
-					],
-					"colStyles": [
-						"col-1 text-center",
-						"col-11"
-					],
-					"rows": [
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 1,
-									"max": 2
-								}
-							},
-							"Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 3,
-									"max": 4
-								}
-							},
-							"Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"
-						],
-						[
-							{
-								"type": "cell",
-								"roll": {
-									"min": 5,
-									"max": 6
-								}
-							},
-							"Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"
-						]
-					]
-				},
-				"The DM chooses the demons, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
-				"The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.",
-				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
+				"{@i This spell has been modified to fit the rules of Depths of Melokir}",
+				"You utter foul words, summoning a demon from the chaos of the Abyss. You summon a {@filter demon of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}",
+				"The DM chooses the demon, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied space you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.",
+				"The demon is hostile to all creatures, including you. Roll initiative for the summoned demon, which has its own turns. The demon pursues and attacks the nearest non-demons to the best of it's ability.",
+				"As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."
+						"When you cast this spell using a spell slot of 4th or higher level, you may increase the challenge rating by 1 per spell level (e.g. cr2 at 4th level, cr 3 at 5th level)"
 					]
 				}
 			],
