@@ -304,44 +304,6 @@
 					"height": 1000
 				}
 			]
-		},
-		{
-			"name": "Ranger",
-			"source": "XPHB",
-			"entries": [
-				{
-					"type": "section",
-					"name": "Ranger",
-					"source": "XPHB",
-					"page": 118,
-					"entries": [
-						"Far from bustling cities, amid the trees of trackless forests and across wide plains, Rangers keep their unending watch in the wilderness. Rangers learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble.",
-						"Thanks to their connection with nature, Rangers can also cast spells that harness primal powers of the wilderness. A Ranger's talents and magic are honed with deadly focus to protect the world from the ravages of monsters and tyrants."
-					]
-				}
-			],
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/XPHB/Ranger.webp"
-					},
-					"credit": "Chris Rallis",
-					"width": 1700,
-					"height": 2259
-				},
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/XPHB/093-04-008.ranger-and-deer.webp"
-					},
-					"credit": "Mike Pape",
-					"width": 540,
-					"height": 1440
-				}
-			]
 		}
 	],
 	"subclassFluff": [
@@ -396,82 +358,6 @@
 					},
 					"width": 850,
 					"height": 1015
-				}
-			]
-		},
-		{
-			"name": "Beast Master",
-			"shortName": "Beast Master",
-			"source": "XPHB",
-			"className": "Ranger",
-			"classSource": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/XPHB/Beast Master Ranger.webp"
-					},
-					"credit": "Alditha Siregar",
-					"width": 850,
-					"height": 1863
-				}
-			]
-		},
-		{
-			"name": "Fey Wanderer",
-			"shortName": "Fey Wanderer",
-			"source": "XPHB",
-			"className": "Ranger",
-			"classSource": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/XPHB/Fey Wanderer Ranger.webp"
-					},
-					"credit": "John Grello",
-					"width": 850,
-					"height": 2199
-				}
-			]
-		},
-		{
-			"name": "Gloom Stalker",
-			"shortName": "Gloom Stalker",
-			"source": "XPHB",
-			"className": "Ranger",
-			"classSource": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/XPHB/Gloom Stalker Ranger.webp"
-					},
-					"credit": "Polar Engine",
-					"width": 850,
-					"height": 2146
-				}
-			]
-		},
-		{
-			"name": "Hunter",
-			"shortName": "Hunter",
-			"source": "XPHB",
-			"className": "Ranger",
-			"classSource": "XPHB",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "classes/XPHB/Hunter Ranger.webp"
-					},
-					"credit": "Katerina Ladon",
-					"width": 850,
-					"height": 1752
 				}
 			]
 		}

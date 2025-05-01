@@ -2118,7 +2118,7 @@
 					"known": {
 						"_": [
 							{
-								"choose": "level=0",
+								"choose": "level=0|class=druid;ranger;sorcerer;wizard;artificer;bard;warlock;cleric;paladin;monk",
 								"count": 3
 							}
 						]
