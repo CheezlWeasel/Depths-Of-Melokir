@@ -14,7 +14,8 @@
             }
         ],
         "optionalFeatureTypes": {
-            "FS:L": "Fighting Style: Lictor" 
+            "FS:L": "Fighting Style: Lictor",
+            "NecroEng": "Necrotic Engine"
         }
     },    
     "optionalfeature": [
@@ -92,7 +93,7 @@
                 },
                 {
                     "type": "entries",
-                    "name": "InDepthsofMelokiritable Human spirit.",
+                    "name": "Indomitable human spirit.",
                     "entries": [
                         "Once per long rest, if you are bloodied (Reduced to below half your hit point maximum), you may immediately use your reaction to roll a d12 plus your constitution modifier and gain that many hit points."
                     ]
@@ -472,10 +473,6 @@
             "proficiency": [
                 "con","cha"
             ],
-
-            "optionalFeatureTypes": {
-                "NecroEng": "Necrotic Engine"
-            },
             "optionalfeatureProgression": [
 				{
 					"name": "Necrotic Charges",
@@ -1544,7 +1541,7 @@
                     "type":"list",
                     "items":[
                         "- you learn one {@filter 1st-level spell from any spell list|spells|level=1|class=druid;ranger;sorcerer;wizard;artificer;bard;warlock;cleric;paladin;monk}. This spell when you use it uses Charisma for its Save DC and Spell Attack rolls, and you can cast it once per short rest.",
-                        "- You learn an additional {@filterFighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.|optionalfeatures|feature type=fs:f;fs:r;fs:p} ",
+                        "- You learn an additional {@filter Fighting Style of your choice from those available to the Fighter, Paladin, or Ranger classes.|optionalfeatures|feature type=fs:f;fs:r;fs:p} ",
                         "- You learn one language and gain one proficiency in one skill of your choice. Additionally, pick one skill you are proficient in. When you make an ability check using the chosen skill, you can roll 1d4 and add the result to the check."
                     ]    
                 }
@@ -1648,6 +1645,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 "You can move through other creatures as if they were difficult terrain, and creatures gain no benefit from half-cover or shields against your melee attack rolls.",
@@ -1661,6 +1659,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 "As an Apparition you may disperse your spectral self to view another area, haunting the surroundings. You can spend one minute concentrating on an object or creature within 100 feet of you that you are familiar with, and on completion you begin haunting the object/creature. While haunting, your are blind to your own senses, but gain the following benefits:",
@@ -1682,6 +1681,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 20 feet of you must succeed on a Wisdom saving throw or take 2d6 psychic damage and fall prone, being unable to stand until the end of your next turn. A creature that fails its save by 5 or more is also frightened of you until the start of your next turn.",
@@ -1695,6 +1695,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 "You gain an additional way to regain Necrotic Charges:",
@@ -1709,8 +1710,8 @@
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
             "level": 6,
+            "header": 2,
             "entries": [
-                
                 "Once per turn when you move through a creature, you can cause that creature to take 1d8+PROF cold damage.",
                 "This damage increases to 2d8 at 11th level, and 3d8 at 15th level.",
                 "Additionally, you do not provoke opportunity attacks and your speed increases by 10ft."
@@ -1723,6 +1724,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 
@@ -1738,6 +1740,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -1754,6 +1757,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Apparition",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 "You gain the following benefits:",
@@ -1794,6 +1798,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 "Yours is the office of war, and you have armed accordingly for your cursed crusade. You gain proficiency with heavy armor.",
@@ -1807,6 +1812,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -1821,6 +1827,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -1835,6 +1842,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -1849,6 +1857,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 6,
             "entries": [
                 
@@ -1870,6 +1879,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 
@@ -1884,6 +1894,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -1897,6 +1908,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Death Knight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 "You have reached the apex of undead command. Your various abilities gain the following benefits:",
@@ -1938,6 +1950,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -1952,6 +1965,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -1965,6 +1979,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -1979,6 +1994,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -1993,6 +2009,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 6,
             "entries": [
                 
@@ -2007,6 +2024,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 
@@ -2020,6 +2038,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -2034,6 +2053,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wight",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 
@@ -2076,6 +2096,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2089,6 +2110,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2103,6 +2125,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2116,6 +2139,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2130,6 +2154,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 6,
             "entries": [
                 
@@ -2152,6 +2177,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 "Those who would take what you guard must reckon with an abjuring curse. When a divination spell is cast on a target within 60 feet of you, you become aware of it and can use your reaction to cause it to fail or provide misleading results.",
@@ -2166,6 +2192,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -2180,6 +2207,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 "You have reached the apex of your office, becoming the ultimate guardian of those laid to rest. You gain the following benefits:",
@@ -2219,6 +2247,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2232,6 +2261,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2246,6 +2276,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2260,6 +2291,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2274,6 +2306,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 6,
             "entries": [
                 
@@ -2288,6 +2321,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 
@@ -2301,6 +2335,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -2315,6 +2350,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Tribute",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 
@@ -2357,6 +2393,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2371,6 +2408,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2384,6 +2422,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2400,6 +2439,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2414,6 +2454,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 6,
             "entries": [
                 
@@ -2428,6 +2469,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 
@@ -2442,6 +2484,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -2465,6 +2508,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Vampire",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 
@@ -2506,11 +2550,12 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
                 "You can demoralize others by giving voice to the discordant negative energy reverberating through your body. You can use a bonus action to start Wailing, which lasts for 1 minute. The sounds are audible up to 120 feet away, and can be heard on the Ethereal Plane. Your Wailing ends early if you are incapacitated, end your turn entirely within an area of sunlight, or are rendered unable to speak. You can also cease Wailing at any time (no action required). While you are Wailing, you have advantage on Charisma (Intimidation) checks and disadvantage on Charisma (Performance) checks, and creatures of your choice within 20 feet of you are subject to the following effects: In order to cast a spell with a verbal component, they must succeed on a DC 5 concentration saving throw. If they fail, they can take another action but are unable to cast a spell that turn.",
-                "In order to move within 5ft of you, they must make a DC 5 constitution saving throw. On a failure they instead move 5ft in a ranDepthsofMelokir direction away from you. Only triggers once per turn.",
+                "In order to move within 5ft of you, they must make a DC 5 constitution saving throw. On a failure they instead move 5ft in a ranDoM direction away from you. Only triggers once per turn.",
                 "On the turn you begin Wailing, and as a bonus action on subsequent turns while your Wailing persists, you can choose one creature that is subject to these effects. The chosen creature subtracts 1d6 from the first ability check, attack roll, or saving throw it makes before the end of your next turn.",
                 "You can use this feature once, and cannot do so again until you complete a short rest or long rest, unless you expend a Necrotic Charge to do so again. ",
                 "The saving throws imposed by this feature is increased to 8 at 6th level, 11 at 11th level, 14 at 15th level, and 17 at 18th level."                
@@ -2523,6 +2568,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 1,
             "level": 1,
             "entries": [
                 
@@ -2536,6 +2582,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2550,6 +2597,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 3,
             "entries": [
                 
@@ -2563,6 +2611,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 6,
             "entries": [
                 
@@ -2578,6 +2627,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 11,
             "entries": [
                 
@@ -2592,6 +2642,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 15,
             "entries": [
                 
@@ -2607,6 +2658,7 @@
             "classSource": "DepthsofMelokir",
             "subclassShortName": "Wailer",
             "subclassSource": "DepthsofMelokir",
+            "header": 2,
             "level": 18,
             "entries": [
                 
