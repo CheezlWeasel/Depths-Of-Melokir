@@ -1,3 +1,6 @@
+# v1.2.2
+fixed multiple bugs related to improper index of search function, no errors should be thrown when on the class page anymore
+
 # v1.2.1
 *Lictor gets a reformat*
 

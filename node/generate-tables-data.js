@@ -5,6 +5,7 @@ import "../js/render.js";
 import * as ut from "./util.js";
 import "../js/utils-dataloader.js";
 import "../js/hist.js";
+import "../js/utils-brew.js";
 import {UtilGenTables} from "../js/generate-tables-data/generate-tables-data-utils.js";
 
 class GenTables {
