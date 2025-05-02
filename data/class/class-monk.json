@@ -1544,7 +1544,7 @@
 				"You know the Elemental Attunement discipline and one other elemental discipline of your choice. You learn one additional elemental discipline of your choice at 6th, 11th, and 17th level.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Disciple of the Elements Optional Variant",
 					"entries": [
 						"{@i The following Variant Feature Replaces the feature text ABOVE this, the rest of the feature text remains the same}",
 						"You learn magical disciplines that harness the power of the four elements. A discipline requires you to spend ki points each time you use it.",
