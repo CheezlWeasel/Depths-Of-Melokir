@@ -452,7 +452,7 @@
 					"classFeature": "Arcane Tradition|Wizard||2",
 					"gainSubclassFeature": true
 				},
-				"Scholar|Wizard||2|DoM",
+				"Scholar: Additional Feature|Wizard||2|DoM",
 				"Cantrip Formulas|Wizard||3|TCE",
 				"Ability Score Improvement|Wizard||4",
 				{
@@ -866,7 +866,7 @@
 			]
 		},
 		{
-			"name": "Scholar",
+			"name": "Scholar: Additional Feature",
 			"source": "DoM",
 			"className": "Wizard",
 			"classSource": "PHB",

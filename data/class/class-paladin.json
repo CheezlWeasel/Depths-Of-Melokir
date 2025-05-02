@@ -773,7 +773,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Lay on Hands Optional Variant: Feature Replacement",
 					"entries": [
 						"The Lay on Hands feature has the following wording:",
 						{
@@ -801,7 +801,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Divine Smite Mandatory Variant: Feature Replacement",
 					"entries": [
 						"{@i This is not in the base version of Divine Smite, However the Variant used in Depths of Melokir is Mandatory when playing this class and as such the base content being replaced has been entirely removed}",
 						"Starting at 2nd level, once per turn when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8."

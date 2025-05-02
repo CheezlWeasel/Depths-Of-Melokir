@@ -409,7 +409,7 @@
 				},
 				"Ability Score Improvement|Ranger||8",
 				"Land's Stride|Ranger||8",
-				"Effortless Mark|Ranger||9|DoM",
+				"Effortless Mark: Additional Feature|Ranger||9|DoM",
 				"Hide in Plain Sight|Ranger||10",
 				"Nature's Veil|Ranger||10|TCE",
 				"Natural Explorer improvement|Ranger||10",
@@ -588,7 +588,7 @@
 				"Monster Slayer|Ranger||Monster Slayer|XGE|3",
 				"Supernatural Defense|Ranger||Monster Slayer|XGE|7",
 				"Magic-User's Nemesis|Ranger||Monster Slayer|XGE|11",
-				"Quarry’s Bane|Ranger||Monster Slayer|XGE|11|DoM",
+				"Quarry’s Bane: Additional Feature|Ranger||Monster Slayer|XGE|11|DoM",
 				"Slayer's Counter|Ranger||Monster Slayer|XGE|15"
 			]
 		},
@@ -866,7 +866,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Ranger Spellcasting Optional Variant: Modified Properties",
 					"entries": [
 						"Instead of choosing spells to know permanently, you instead Prepare spells that are available for you to cast, choosing from the Ranger spell list. When you do so, choose a number of ranger spells equal to the number of spells known for a ranger. The spells must be of a level for which you have spell slots.",
 						"For example, if you are a 5th-level ranger, you have four level 1 spell slots and 2 level 2 spell slots, with 4 known spells. Your list of prepared spells can include 4 spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.",
@@ -1069,7 +1069,7 @@
 			]
 		},
 		{
-			"name": "Effortless Mark",
+			"name": "Effortless Mark: Additional Feature",
 			"source": "DoM",
 			"className": "Ranger",
 			"classSource": "PHB",
@@ -1582,12 +1582,12 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hunter's Magic|Ranger||Hunter||3|DoM"
+					"subclassFeature": "Hunter's Magic: Additional Feature|Ranger||Hunter||3|DoM"
 				}
 			]
 		},
 		{
-			"name": "Hunter's Magic",
+			"name": "Hunter's Magic: Additional Feature",
 			"source": "DoM",
 			"className": "Ranger",
 			"classSource": "PHB",
@@ -1663,7 +1663,7 @@
 				"At 3rd level, you gain one of the following features of your choice.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Hunter's Prey Optional Variant: Additional Properties",
 					"entries": [
 						"you can change this choice at the end of a long rest."
 					]
@@ -1751,7 +1751,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Defensive Tactics Optional Variant: Additional Properties",
 					"entries": [
 						"Whenever you roll initiative, you can swap which Hunter's Prey and Defensive Tactics option you are currently using. You do not have to swap both.",
 						"When you gain Multiattack at 11th level, this feature also allows for switching which option you are using for that feature."
@@ -1864,7 +1864,7 @@
 			]
 		},
 		{
-			"name": "Hunter’s Mastery",
+			"name": "Hunter’s Mastery: Additional Feature",
 			"source": "DoM",
 			"className": "Ranger",
 			"classSource": "PHB",
@@ -2752,7 +2752,7 @@
 				"This benefit lasts until you finish a short or long rest. It ends early if you designate a different creature.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Slayer's Prey Optional Variant: Modified Properties",
 					"entries": [
 						"This feature deals 1d8 damage instead at level 7, 1d10 at level 11, and 1d12 at level 15."
 					]
@@ -2789,7 +2789,7 @@
 			]
 		},
 		{
-			"name": "Quarry’s Bane",
+			"name": "Quarry’s Bane: Additional Feature",
 			"source": "DoM",
 			"className": "Ranger",
 			"classSource": "PHB",

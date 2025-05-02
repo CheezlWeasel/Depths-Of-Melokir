@@ -780,7 +780,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Bardic Inspiration Optional Variant: Modified Properties",
 					"entries": [
 						"You may use Bardic inspiration as reaction to ally failing skill check INSTEAD of as a Bonus action on your turn."
 					]
@@ -1003,7 +1003,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Countercharm Optional Variant: Feature Replacement",
 					"entries": [
 						"You may replace the “Countercharm” feature with the following:",
 						{

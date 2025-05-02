@@ -1978,7 +1978,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Draconic Bloodline Optional Variant: Additional Spells",
 					"entries": [
 						"You gain the following feature in addition to your other subclass features.",
 						"{@b Draconic Spells}",
@@ -2181,7 +2181,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Wild Magic Optional Variant: Additional Spells",
 					"entries": [
 						"You gain the following feature in addition to your other subclass features.",
 						"{@b Wild Spells}",
@@ -3373,7 +3373,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Shadow Magic Optional Variant: Additional Spells",
 					"entries": [
 						"You gain the following feature in addition to your other subclass features.",
 						"{@b Shadow Spells}",
@@ -3529,7 +3529,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Storm Sorcery Optional Variant: Additional Spells",
 					"entries": [
 						"You gain the following feature in addition to your other subclass features.",
 						"{@b Storm Spells}",

@@ -626,14 +626,14 @@
 				"Magic Arrow|Fighter||Arcane Archer|XGE|7",
 				"Curving Shot|Fighter||Arcane Archer|XGE|7",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|7",
-				"Bountiful Quiver|Fighter||Arcane Archer|XGE|7|DoM",
+				"Bountiful Quiver: Additional Feature|Fighter||Arcane Archer|XGE|7|DoM",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|10",
 				"Ever-Ready Shot|Fighter||Arcane Archer|XGE|10",
-				"Archer’s Gait|Fighter||Arcane Archer|XGE|10|DoM",
+				"Archer’s Gait: Additional Feature|Fighter||Arcane Archer|XGE|10|DoM",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|15",
-				"Further Arcane Study|Fighter||Arcane Archer|XGE|15|DoM",
+				"Further Arcane Study: Additional Feature|Fighter||Arcane Archer|XGE|15|DoM",
 				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18",
-				"Magical Arrow Mastery|Fighter||Arcane Archer|XGE|18|DoM"
+				"Magical Arrow Mastery: Additional Feature|Fighter||Arcane Archer|XGE|18|DoM"
 			]
 		},
 		{
@@ -824,7 +824,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Second Wind Optional Variant: Additional Properties",
 					"entries": [
 						"The Second Wind feature gains the additional ability:",
 						{
@@ -968,7 +968,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Indomitable Optional Variant: Feature Replacement",
 					"entries": [
 						"The Indomitable feature is replaced with the following ability:",
 						{
@@ -1879,7 +1879,7 @@
 				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "War Magic Optional Variant: Feature Replacement",
 					"entries": [
 						"The War Magic feature for the Eldritch Knight replaced with the following:",
 						"When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action."
@@ -1901,7 +1901,7 @@
 				"At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Eldritch Strike Optional Variant: Feature Replacement",
 					"entries": [
 						"The Eldritch Strike feature for the Eldritch Knight replaced with the following:",
 						"At 10th level, you know how to make your weapon strikes undercut a creature’s resistance to your spells. When you hit a creature with a weapon attack, you can choose to gain one of the following:",
@@ -1967,7 +1967,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Purple Dragon Knight (Banneret) Optional Variant: Additional Feature",
 					"entries": [
 						"You gain the following additional feature alongside the other features for the Banneret Subclass at level 3:",
 						{
@@ -2560,7 +2560,7 @@
 				"At 3rd level, you learn magical theory or some of the secrets of nature\u2014typical for practitioners of this elven martial tradition. You choose to gain proficiency in either the {@skill Arcana} or the {@skill Nature} skill, and you choose to learn either the {@spell prestidigitation} or the {@spell druidcraft} cantrip.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Arcane Archer Lore Optional Feature: Feature Replacement",
 					"entries": [
 						"The Arcane Archer Lore feature for the Arcane Archer is replaced with the following:",
 						"You learn 2 cantrips of your choice from the Wizard spell list. These cantrips cannot be spells that deal damage."
@@ -2584,7 +2584,7 @@
 				"You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Arcane Archer Lore Optional Feature: Modified Properties",
 					"entries": [
 						"Instead of only having 2 uses of Arcane Shot per short or long rest, you now have an amount of charges equal to your proficiency bonus per short or long rest",
 						"Additionally, at the end of a long rest you can swap an Arcane Shot option you have previously learned with another one from the list."
@@ -2614,10 +2614,11 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Arcane Shot Options, Optional Feature: Modified Properties",
 					"entries": [
+						"{@i The modified versions of the Arcane Archer Shot Options deal more inherent damage, as such they are now the versions reflected below}",
 						"The Enfeebling Arrow Arcane Shot has been replaced with the Draining Arrow",
-						"All Arcane Arrow Options deal an extra 1d6 damage of its additional damage at 7th level which is now reflected within each of the arcane shot optional features"
+						"All Arcane Arrow Options deal an extra 1d6 damage of its additional damage at 7th level"
 					]
 				},
 				{
@@ -2702,7 +2703,7 @@
 				"At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Magic Arrow Optional Variant: Modified Properties",
 					"entries": [
 						"The Magic Arrow feature is changed to work as follows",
 						"At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow/bolt from a shortbow, longbow, or crossbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target."
@@ -2711,7 +2712,7 @@
 			]
 		},
 		{
-			"name": "Bountiful Quiver",
+			"name": "Bountiful Quiver: Additional Feature",
 			"source": "DoM",
 			"className": "Fighter",
 			"classSource": "PHB",
@@ -2739,7 +2740,7 @@
 			]
 		},
 		{
-			"name": "Archer’s Gait",
+			"name": "Archer’s Gait: Additional Feature",
 			"source": "DoM",
 			"className": "Fighter",
 			"classSource": "PHB",
@@ -2782,7 +2783,7 @@
 			]
 		},
 		{
-			"name": "Further Arcane Study",
+			"name": "Further Arcane Study: Additional Feature",
 			"source": "DoM",
 			"className": "Fighter",
 			"classSource": "PHB",
@@ -2810,7 +2811,7 @@
 			]
 		},
 		{
-			"name": "Magical Arrow Mastery",
+			"name": "Magical Arrow Mastery: Additional Feature",
 			"source": "DoM",
 			"className": "Fighter",
 			"classSource": "PHB",
@@ -3001,7 +3002,7 @@
 				"You can use this feature three times, and you regain all expended uses of it when you finish a long rest.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Fighting Spirit Optional Variant: Feature Replacement",
 					"entries": [
 						"The Fighting Spirit feature for the Samurai is replaced with the following:",
 						"Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points.",
@@ -3040,7 +3041,7 @@
 				"Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Tireless Spirit Optional Variant: Feature Replacement",
 					"entries": [
 						"The Tireless Spirit feature for the Samurai replaced with the following:",
 						"Starting at 10th level, once per turn, when you score a critical hit with a weapon attack, you may regain one expended use of Fighting Spirit"

@@ -515,9 +515,9 @@
 			],
 			"subclassFeatures": [
 				"The Great Old One|Warlock||Great Old One||1",
-				"Clairvoyant Combatant|Warlock||Great Old One||6|DoM",
-				"Thought Shield|Warlock||Great Old One||10",
-				"Create Thrall|Warlock||Great Old One||14"
+				"Entropic Ward Mandatory Variant: Feature Replacement, Clairvoyant Combatant|Warlock||Great Old One||6|DoM",
+				"Thought Shield Mandatory Variant: Feature Replacement|Warlock||Great Old One||10",
+				"Create Thrall Variant: Feature Replacement|Warlock||Great Old One||14"
 			]
 		},
 		{
@@ -912,7 +912,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Pact Magic Optional Variant: Modified Properties",
 					"entries": [
 						"Warlocks can choose to use INT as their spellcasting attribute for features, also replacing their CHA saving throw proficiency with INT saving throw proficiency. If you plan to multiclass with this feature, DM permission is required."
 					]
@@ -1231,7 +1231,7 @@
 				"Once you use this feature, you can't use it again until you finish a short or long rest.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Fey Presence Optional Variant: Feature Replacement",
 					"entries": [
 						"The subclass feature for the Archfey Warlock, Fey Presence, at 1st level is replaced with the following:",
 						"{@b Fey Presence}",
@@ -1256,7 +1256,7 @@
 				"Once you use this feature, you can't use it again until you finish a short or long rest.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Misty Escape Optional Variant: Feature Replacement",
 					"entries": [
 						"The subclass feature for the Archfey Warlock, Fey Presence, at 1st level is replaced with the following:",
 						"{@b Misty Escape}",
@@ -1428,10 +1428,12 @@
 			"subclassSource": "PHB",
 			"level": 1,
 			"entries": [
+				"{@i This entire subclass has recieved a mandatory rework. \"We took a look at the Great Old One warlock, and realised that. Er. the 14th level feature is permanently turning someone into a thrall! That's not gonna fly.\"}",
 				"Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it. Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Expanded Spell List Mandatory Variant: Feature Replacement",
+					"source": "DepthsofMelokir",
 					"entries": [
 						"{@i This feature has mandatory changes required for the Depths of Melokir campaign and as such no longer reflects the original version}",
 						"The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
@@ -1473,7 +1475,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Awakened Mind|Warlock||Great Old One||1"
+					"subclassFeature": "Awakened Mind Mandatory Variant: Feature Replacement|Warlock||Great Old One||1"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -1482,7 +1484,7 @@
 			]
 		},
 		{
-			"name": "Awakened Mind",
+			"name": "Awakened Mind Mandatory Variant: Feature Replacement",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -1511,7 +1513,7 @@
 			]
 		},
 		{
-			"name": "Clairvoyant Combatant",
+			"name": "Entropic Ward Mandatory Variant: Feature Replacement, Clairvoyant Combatant",
 			"source": "DoM",
 			"className": "Warlock",
 			"classSource": "PHB",
@@ -1526,7 +1528,7 @@
 			]
 		},
 		{
-			"name": "Thought Shield",
+			"name": "Thought Shield Mandatory Variant: Feature Replacement",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",
@@ -1554,12 +1556,11 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i This feature is not a part of base Pact of the Great old One}",
 				"Your power over thought has manifested into the physical realm. You learn the spell {@spell Bigby's Hand}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest."
 			]
 		},
 		{
-			"name": "Create Thrall",
+			"name": "Create Thrall Variant: Feature Replacement",
 			"source": "PHB",
 			"page": 109,
 			"className": "Warlock",

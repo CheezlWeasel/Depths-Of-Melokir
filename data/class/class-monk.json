@@ -765,7 +765,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Martial Arts Mandatory Variant: SubFeature Replacement",
 					"entries": [
 						"{@i This is not in the base version of Martial Arts, However the Variant used in Depths of Melokir is Mandatory when playing this class and as such the base content being replaced has been entirely removed}",
 						"The third ability of Martial Arts (the one that allows you to make an unarmed strike as a bonus action if you took the attack action) is replaced with the following:",
@@ -870,7 +870,7 @@
 				{
 					"type": "entries",
 					"source": "DepthsofMelokir",
-					"name": "Depths of Melokir Variant",
+					"name": "Ki Optional Feature: Feature Replacement",
 					"entries": [
 						"The Ki feature is replaced with the following ability:",
 						{

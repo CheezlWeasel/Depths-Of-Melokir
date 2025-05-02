@@ -1723,7 +1723,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Circle of the Moon Optional Variant: Additional Spells",
 					"entries": [
 						"Your primal connection to the lunar cycle and kinship with the animal kingdom grants you access to certain spells. You gain access to some spells when you reach certain levels in this class, as shown on the table below.",
 						"Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.",
@@ -2029,7 +2029,7 @@
 				"These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again.",
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Symbiotic Entity Optional Feature: Modified Properties",
 					"entries": [
 						"Instead of an Action to activate the magic spores you now use your Bonus Action, the benefits of the magic spores no longer end when you lose the temporary hit points"
 					]
@@ -2660,7 +2660,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Circle of Dreams Optional Variant: Additional Spells",
 					"entries": [
 						"Your link to the fey courts and stewardship over the unconscious realms grants you access to certain spells. You gain access to some spells when you reach certain levels in this class, as shown on the table below.",
 						"Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you",
@@ -2784,7 +2784,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Depths of Melokir Variant",
+					"name": "Circle of the Shepherd Optional Variant: Additional Spells",
 					"entries": [
 						"Your stewardship over beasts and your ability to commune with nature grants you access to certain spells. You gain access to some spells when you reach certain levels in this class, as shown on the table below.",
 						"Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you",		
