@@ -3,7 +3,7 @@ Reformatting variant class features
 
 All of the modified class features from the base classes have had title updates. No longer are they all "Depths of Melokir Variant"s, Now they have actual information within them
 
-Also Shillelagh and Magic Stone have had updates
+Also Shillelagh and Magic Stone have had updates to bring them in line with the Depths of Melokir Rules
 
 # v1.2.3
 Spell Descriptions
