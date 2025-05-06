@@ -13,7 +13,14 @@ async function poll() {
             method: 'GET'      // HTTP method to use
         })
     })
-    .then(response => response.json())
+    .then(async response => {
+        const text = await response.text(); // get raw body
+        console.log('Raw response text:', text); // inspect it
+        if (!text) {
+            throw new Error('Empty response body');
+        }
+        return JSON.parse(text); // manually parse so we can inspect first
+    })
     .then(data => console.log('Data from own backend:', data))
     .catch(error => console.error('Error:', error));
 }
