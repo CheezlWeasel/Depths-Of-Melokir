@@ -1,5 +1,5 @@
 function continuous_poll() {
-    setTimeout(poll, 3000+(Math.random()*(10000-10000)-10000))
+    setTimeout(poll, 30000+(Math.random()*(10000-10000)-10000))
 };
 
 async function poll() {
