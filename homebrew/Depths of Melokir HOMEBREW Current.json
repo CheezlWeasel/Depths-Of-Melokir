@@ -936,7 +936,7 @@
 					"source": "DepthsofMelokir",
 					"type": "section",
 					"entries": [
-                        "broad-shouldered woman in a long coat stands at a grave, seeing for the first time the withered flowers that were lain there for her long ago. Those she was stolen from now lie in graves of their own nearby. Slowly, she shuffles out through the gates. As she passes the caretaker, he starts in shock before mumbling an apology: taken aback by the grisly wound that will never close upon her face. A translucent gnomish teen drifts between the walls and through the doors of an empty house. Though she is no longer tethered to this place, she is not yet sure where she ought to go. She hides in the rafters as a group of newly assembled adventurers, tasked to investigate the local hauntings, approach the house. Perhaps, instead of playing tricks this time, she could ask them what to do...",
+                        "A broad-shouldered woman in a long coat stands at a grave, seeing for the first time the withered flowers that were lain there for her long ago. Those she was stolen from now lie in graves of their own nearby. Slowly, she shuffles out through the gates. As she passes the caretaker, he starts in shock before mumbling an apology: taken aback by the grisly wound that will never close upon her face. A translucent gnomish teen drifts between the walls and through the doors of an empty house. Though she is no longer tethered to this place, she is not yet sure where she ought to go. She hides in the rafters as a group of newly assembled adventurers, tasked to investigate the local hauntings, approach the house. Perhaps, instead of playing tricks this time, she could ask them what to do...",
                         "Pale even for an elf, a slim man watches the streets of a damp city from the lip of a rooftop. He eyes the setting sun with trepidation. At last, he hears the shout of his prey. Leaping into the alley below, he interrupts the robbery with shocking strength, tossing thugs away from their intended victim. The poor child's screams risk attracting the attention of other things of the night, so the man calms him with an enchanting gaze before sending him off home. He does not linger, lest his sire come sniffing for recompense. Each of these individuals is a lictor, a being that was once risen to serve another as an undead. But where most such beings remain bound as slaves from death until destruction, a lictor has grasped hold of a rare opportunity to escape their chains and reclaim their soul."
                     ]
                 },
@@ -3029,6 +3029,10 @@
                 "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",
                 "Those who take the Oath of Liberty draw their power from the winds and the freedom they represent. They believe in the inherent right of all beings to live unburdened, unrestricted, and unrestrained. With a focus on breaking chains and upholding personal freedom, these paladins become agents of liberation, seeking to bring justice and equality to those oppressed by tyranny and injustice. Known as wind speakers, stormbound or grey knights, these paladins seek to liberate those from under the thumbs of the powerful.",
                 {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Liberty|Paladin|PHB|Liberty|DepthsofMelokir|3"
+				},
+                {
                     "type": "entries",
                     "name": "Channel Divinity",
                     "entries": [
@@ -3099,6 +3103,66 @@
 							"17th",
 							"{@spell control wind}, {@spell steel wind strike}"
 						]
+					]
+				}
+			]
+		},
+        {
+			"name": "Tenets of Liberty",
+			"source": "DepthsofMelokir",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Liberty",
+			"subclassSource": "DepthsofMelokir",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Freedom Above All.",
+							"entries": [
+								"There exists no greater existence than a life unfettered by chains. All souls should be free to chart their own path without the weight of oppression. Those who would wield their power to dominate others shall be smote by the tempest of justice. "
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Whispers of the Zephyr.",
+							"entries": [
+								"I place my trust in the guidance carried upon the gentle breeze. I heed the murmurs of the winds, the rumbling of gathering storms. Nature, the source of portent and council, grants me insight and wisdom in my pursuit of liberation."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Unyielding Currents.",
+							"entries": [
+								"I embrace the adaptive nature of the wind, forever shifting and finding its way past any obstacle. Like the ever-changing currents, I carve new paths and reveal hidden truths, unyielding in the face of adversity. To embrace the boundless flexibility of the storm is to stand prepared for any trial that obstructs the path to freedom."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Into the Storm.",
+							"entries": [
+								"The world is uncharted, brimming with secrets waiting to be revealed. Through the pursuit of these enigmatic quests, I unveil those who shroud their sinister deeds in shadows, ensuring they face rightful judgment. In this journey, I not only discover justice but also find the tempest's path to greatness."
+							]
+						}
 					]
 				}
 			]
