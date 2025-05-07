@@ -182,7 +182,10 @@
 						"simple",
 						"martial"
 					]
-				}
+				},
+				"entries": [
+                    "{@i When playing in the Depths of Melokir campaign you may not multiclass into or out of this class}"
+                ]
 			},
 			"classTableGroups": [
 				{

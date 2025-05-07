@@ -410,7 +410,10 @@
 					"weapons": [
 						"improvised weapons"
 					]
-				}
+				},
+				"entries": [
+                    "{@i When playing in the Depths of Melokir campaign you may not multiclass into or out of this class}"
+                ]
 			},
 			"subclassTitle": "Fight Club",
 			"hasFluff": true,

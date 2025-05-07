@@ -77,6 +77,7 @@
             ],
             "speed": 30,
             "entries": [
+                "{@i Written by: @honeycombm}",
                 {
                     "type": "entries",
                     "name": "Languages",
@@ -153,6 +154,7 @@
             ],
             "speed": 30,
             "entries": [
+                "{@i Written by: @corronnicolla}",
                 {
                     "type": "entries",
                     "name": "Ancestral Legacy",
@@ -216,6 +218,7 @@
             ],
             "speed": 30,
             "entries": [
+                "{@i Written by: @maplecrepe}",
                 {
                     "type": "entries",
                     "name": "Bite",
@@ -279,6 +282,7 @@
             ],
             "speed": 30,
             "entries": [
+                "{@i Written by: @mitt_exists}",
                 {
                     "type": "entries",
                     "name": "Claws",
@@ -348,6 +352,7 @@
             ],
             "speed": 35,
             "entries":[
+                "{@i Written by: @dndhater}",
                 {
                     "type":"entries",
                     "name":"Languages",
@@ -458,6 +463,7 @@
             "raceName": "Goliath",
             "raceSource": "MPMM",
             "entries": [
+                "{@i Written by: @mitt_exists}",
                 {
                     "type": "entries",
                     "name": "Stone Throw",
@@ -863,7 +869,10 @@
 						"simple",
 						"martial"
 					]
-				}
+				},
+                "entries": [
+                    "{@i When playing in the Depths of Melokir campaign you may not multiclass into or out of this class}"
+                ]
 			},
             "classFeatures": [
                 {
@@ -912,9 +921,36 @@
 				"Ability Score Improvement|Lictor|DepthsofMelokir|19",
 				"Become Death|Lictor|DepthsofMelokir|20"
 			],
-			"subclassTitle": "Accursed Office"
+			"subclassTitle": "Accursed Office",
+            "hasFluff": true
         }
-        
+    ],
+    "classFluff": [
+        {
+			"name": "Lictor",
+			"source": "DepthsofMelokir",
+			"entries": [
+                "{@i This Class was written by @brandonno.2}",
+				{
+					"name": "The Lictor",
+					"source": "DepthsofMelokir",
+					"type": "section",
+					"entries": [
+                        "broad-shouldered woman in a long coat stands at a grave, seeing for the first time the withered flowers that were lain there for her long ago. Those she was stolen from now lie in graves of their own nearby. Slowly, she shuffles out through the gates. As she passes the caretaker, he starts in shock before mumbling an apology: taken aback by the grisly wound that will never close upon her face. A translucent gnomish teen drifts between the walls and through the doors of an empty house. Though she is no longer tethered to this place, she is not yet sure where she ought to go. She hides in the rafters as a group of newly assembled adventurers, tasked to investigate the local hauntings, approach the house. Perhaps, instead of playing tricks this time, she could ask them what to do...",
+                        "Pale even for an elf, a slim man watches the streets of a damp city from the lip of a rooftop. He eyes the setting sun with trepidation. At last, he hears the shout of his prey. Leaping into the alley below, he interrupts the robbery with shocking strength, tossing thugs away from their intended victim. The poor child's screams risk attracting the attention of other things of the night, so the man calms him with an enchanting gaze before sending him off home. He does not linger, lest his sire come sniffing for recompense. Each of these individuals is a lictor, a being that was once risen to serve another as an undead. But where most such beings remain bound as slaves from death until destruction, a lictor has grasped hold of a rare opportunity to escape their chains and reclaim their soul."
+                    ]
+                },
+                {
+					"type": "entries",
+					"name": "The Emancipated Dead",
+					"entries": [
+						"To be a lictor means more than having become undead. In their remaking by a necromancer or other powerful force, these beings were granted the office of some form of greater horror: possessed of uncanny intellect, strength, or other useful attributes to be enhanced in the service of their new master. But what truly sets a lictor apart is that they have escaped their bondage.","Through some strange circumstance and sheer force of will, a lictor has managed to rediscover and rekindle a spark of their humanity. Their very souls, as real and alive as any other, have returned and reclaimed their cursed bodies. Why exactly this has happened is hard to say: perhaps they had an encounter with a higher celestial, or an artifact of unknown magic. Perhaps a vestige of their old self had always remained, only to be awoken by a mission that clashed with their past. The chance to be unstitched from the bonds of necromantic thraldom is the stuff of miracles. And even when presented with such an opportunity, not every soul can champion their own struggle for liberty from under such tragic circumstances — nor can every will weather all the trials a new life will hold for them after freedom is won.",
+                        "Every lictor's soul is humanoid: subject to all the same emotions, magics, and variations as any other living being. No longer must they be counted among the vile ranks of undeath. But each lictor still bears with them the marks of their office. They stand out from a crowd, and they are likely to suffer its fear.",
+                        "However, by combining their refound humanity with the dark powers now ingrained in them, they each have a chance for redemption and vindication. A lictor refuses to be defined by what was done to them. Their new life is a constant quest to find out who they were before, and, indeed, who they are now and wish to be."
+					]
+				}
+            ]
+        }
     ],
     "subclass": [
         {
@@ -2687,6 +2723,8 @@
             "subclassSource": "DepthsofMelokir",
             "level": 2,
             "entries": [
+                "{@i This subclass was written by: @honeycombm}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",
                 {
                     "type": "entries",
                     "name": "Necromancy Savant",
@@ -2757,6 +2795,8 @@
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
+                "{@i This subclass was written by: @maplecrepe}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",
                 "You hone your skill in the less subtle aspects of being a rogue. You’re less worried about being hidden, and care more about making an impact on your foes. Bouncers and ruffians belong to this archetype.",
                 {
                     "type": "entries",
@@ -2861,6 +2901,8 @@
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
+                "{@i This subclass was written by: @honeycombm}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",
                 {
                     "type": "entries",
                     "name": "Bodyguard",
@@ -2983,6 +3025,8 @@
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
+                "{@i This subclass was written by: @ping.u}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",
                 "Those who take the Oath of Liberty draw their power from the winds and the freedom they represent. They believe in the inherent right of all beings to live unburdened, unrestricted, and unrestrained. With a focus on breaking chains and upholding personal freedom, these paladins become agents of liberation, seeking to bring justice and equality to those oppressed by tyranny and injustice. Known as wind speakers, stormbound or grey knights, these paladins seek to liberate those from under the thumbs of the powerful.",
                 {
                     "type": "entries",
@@ -3123,7 +3167,9 @@
             "subclassShortName": "Stone",
             "subclassSource": "DepthsofMelokir",
             "level": 2,
-            "entries": [  
+            "entries": [
+                "{@i This subclass was written by: @maplecrepe}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",  
                 "Druids of the Circle of Stone draw their power from stone and metal. Casting aside their aversion to metallic armour, these druids understand its purpose in the natural world. Members of the Circle of Stone act as stalwart guardians of nature, and their allies.",
                 {
                     "type":"entries",
@@ -3283,7 +3329,9 @@
             "subclassShortName": "Thrashing Monster",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "entries": [  
+            "entries": [
+                "{@i This subclass was written by: @dndhater}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",  
                 "At 3rd level, you gain the ability to affect those around you. When you take the Attack action on your turn, you can replace one or more of your attacks to create a special effect. You cannot replace more attacks than you have available and can only use this ability once per turn. The effect’s area is a sphere with a radius equal to the number of attacks you replace x 5 feet.",
                 "Each creature within that area must make a saving throw (the DC is 8 + your proficiency bonus + your Strength modifier), taking the effect’s damage on a failure or half as much on a success. Choose the nature of this effect from the following: the DC is 8 + your proficiency bonus + your Strength modifier:",
                 {
@@ -3362,7 +3410,9 @@
             "subclassShortName": "Forge Adept",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "entries": [  
+            "entries": [
+                "{@i This subclass was originally published in: Exploring Eberron, And has been modified by @corronnicolla}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",  
                 "As a Forge Adept, you carry on these ancient traditions, creating mystical weapons and armor, strengthening allies on the battlefield, and bringing down enemies with weapons imbued with your own soul energy. If you’re dar, you learned these techniques from the masters of your clan. Are you content to follow ancient traditions, or do you want to add your own innovations? If you’re not Dhakaani, did you learn these techniques from a daashor mentor? Did you steal this knowledge? Or are you replicating these traditions on your own?",
                 {
                     "type": "entries",
@@ -3537,7 +3587,9 @@
             "subclassShortName": "Wild Card",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
-            "entries": [  
+            "entries": [
+                "{@i This subclass was originally published in: Legends of Runeterra: Dark Tides of Bilgewater}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",  
                 "Some rogues favor honing their skill and precision, others perfect a silver tongue, but you — well, you’ve always gotten a kick out of leaving things up to chance.",
                 "Rogues of the Wild Card variety thrive on the high stakes and random thrill of the game table. Armed with cunning cheats and no small amount of luck, these sly gamblers live and die by their rules, never keen to simply accept the hand fate deals them.",
                 {
@@ -3717,6 +3769,8 @@
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "entries": [
+                "{@i This subclass was written by: @thefantasticemporium}",
+                "{@i When playing in the Depths of Melokir campaign you may not Multiclass into or out of this class if you have selected this Subclass, nor can you select this Subclass if you are already Multiclassing}",
                 {
                     "type": "entries",
                     "name": "Mirage weavers and blade spinners",
