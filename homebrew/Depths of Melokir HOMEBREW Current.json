@@ -3085,23 +3085,23 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell fog cloud}, {@spell zephyr strike}"
+							"{@spell fog cloud}, {@spell zephyr strike|XGE}"
 						],
 						[
 							"5th",
-							"{@spell gust of wind}, {@spell warding wind}"
+							"{@spell gust of wind}, {@spell warding wind|XGE}"
 						],
 						[
 							"9th",
-							"{@spell thunder step}, {@spell wind wall}"
+							"{@spell thunder step|XGE}, {@spell wind wall}"
 						],
 						[
 							"13th",
-							"{@spell freedom of movement}, {@spell storm sphere}"
+							"{@spell freedom of movement}, {@spell storm sphere|XGE}"
 						],
 						[
 							"17th",
-							"{@spell control wind}, {@spell steel wind strike}"
+							"{@spell control wind|XGE}, {@spell steel wind strike|XGE}"
 						]
 					]
 				}
