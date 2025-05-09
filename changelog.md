@@ -1,3 +1,15 @@
+# v1.2.5
+Credits
+
+All of the Homebrew Subclasses, Species and the Lictor Class have had Credits for which individuals wrote what or where they were sourced from. 
+All of the Homebrew Classes and Subclasses have had notes attached indicating that multiclassing in any form is not allowed with them (With Lictor, Pugilist and Illrigger this has been added in the Multiclassing Prerequisite Tab on the left side of the page)
+Oath of Liberty has had its Tenets Added
+Lictor has had its Flavor Text at the start of the class added
+
+Variant Class Features will not have credits added as they are more often than not a collaborative effort between people and it is quite honestly a hastle to track down each individual feature's writers
+
+An External Service is now pinging the website every couple minutes. It should no longer spin down
+
 # v1.2.4
 Reformatting variant class features
 
