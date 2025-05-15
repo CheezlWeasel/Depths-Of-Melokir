@@ -2751,7 +2751,7 @@
             "subclassSource": "DepthsofMelokir",
             "level": 6,
             "entries": [   
-                "At 6th level, you add the Speak with Dead and Augury spells to your spellbook and they both count as necromancy wizard spells for you. Furthermore you may cast Augury twice between long rests instead of once before the spell begins to risk providing a random result.",
+                "At 6th level, you add the {@spell speak with dead} and {@spell augury} spells to your spellbook and they both count as necromancy wizard spells for you. Furthermore you may cast Augury twice between long rests instead of once before the spell begins to risk providing a random result.",
                 {
                     "type": "entries",
                     "name": "Friends on the Other Side",
