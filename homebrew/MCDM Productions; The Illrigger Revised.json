@@ -509,6 +509,7 @@
 					"gainSubclassFeature": true
 				},
 				"Invoke Hell|Illrigger|IllriggerRevised|3",
+				"Faustian Recovery|Illrigger|IllriggerRevised|3",
 				"Ability Score Improvement|Illrigger|IllriggerRevised|4",
 				"Extra Attack|Illrigger|IllriggerRevised|5",
 				"Infernal Conduit|Illrigger|IllriggerRevised|6",
@@ -1349,6 +1350,17 @@
 				"Your diabolic connection allows you to channel infernal energy to empower magical effects. Your chosen diabolic contract grants you two Invoke Hell options and describes how to use each.",
 				"When you use your Invoke Hell, you choose which option to use. You must then finish a short or long rest to use your Invoke Hell again.",
 				"Some Invoke Hell effects require a saving throw. When you use such an effect, the DC equals your interdict save DC."
+			]
+		},
+		{
+			"name": "Faustian Recovery",
+			"source": "IllriggerRevised",
+			"className": "Illrigger",
+			"classSource": "IllriggerRevised",
+			"level": 3,
+			"entries": [
+				"{@i This Feature is from Depths of Melokir and not part of the Base Illrigger}",
+				"Once per long rest as a bonus action you may expend your use of Invoke Hell and regain a number of seals equal to your proficiency bonus."
 			]
 		},
 		{

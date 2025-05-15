@@ -1,5 +1,6 @@
 # v1.2.6
 Divine Magic optional variant addition
+Illrigger 3rd Level additional Feature
 
 *its exactly what it says*
 
