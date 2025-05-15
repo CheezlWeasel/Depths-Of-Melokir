@@ -1,3 +1,8 @@
+# v1.2.6
+Divine Magic optional variant addition
+
+*its exactly what it says*
+
 # v1.2.5
 Credits
 
