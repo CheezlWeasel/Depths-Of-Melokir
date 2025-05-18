@@ -1,4 +1,4 @@
-import {RenderItems} from "./render-items.js";
+import {RenderShop} from "./render-shop.js";
 
 class ItemsSublistManager extends SublistManager {
 	constructor () {
@@ -259,10 +259,9 @@ class ItemsPage extends ListPage {
 						href: `#${hash}`,
 						clazz: "lst__row-border lst__row-inner",
 						children: [
-							e_({tag: "span", clazz: `ve-col-3-5 pl-0 pr-1 bold`, text: item.name}),
-							e_({tag: "span", clazz: `ve-col-4-5 px-1`, text: type}),
-							e_({tag: "span", clazz: `ve-col-1-5 px-1 ve-text-center`, text: item._l_value}),
-							e_({tag: "span", clazz: `ve-col-1-5 px-1 ve-text-center`, text: item._l_weight}),
+							e_({tag: "span", clazz: `ve-col-4-5 pl-0 pr-1 bold`, text: item.name}),
+							e_({tag: "span", clazz: `ve-col-5-5 px-1`, text: type}),
+							e_({tag: "span", clazz: `ve-col-2-5 px-1 ve-text-center`, text: item._l_value}),
 							e_({
 								tag: "span",
 								clazz: `ve-col-1 ve-text-center ${Parser.sourceJsonToSourceClassname(item.source)} pl-1 pr-0`,
@@ -305,9 +304,9 @@ class ItemsPage extends ListPage {
 						href: `#${hash}`,
 						clazz: "lst__row-border lst__row-inner",
 						children: [
-							e_({tag: "span", clazz: `ve-col-3-5 pl-0 bold`, text: item.name}),
+							e_({tag: "span", clazz: `ve-col-4-5 pl-0 bold`, text: item.name}),
 							e_({tag: "span", clazz: `ve-col-4`, text: type}),
-							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: item._l_weight}),
+							e_({tag: "span", clazz: `ve-col-1-5 ve-text-center`, text: item._1_value}),
 							e_({tag: "span", clazz: `ve-col-0-6 ve-text-center`, text: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT ? "×" : ""}),
 							e_({
 								tag: "span",
@@ -357,7 +356,7 @@ class ItemsPage extends ListPage {
 	_tabTitleStats = "Item";
 
 	_renderStats_doBuildStatsTab ({ent}) {
-		this._$pgContent.empty().append(RenderItems.$getRenderedItem(ent));
+		this._$pgContent.empty().append(RenderShop.$getRenderedItem(ent));
 	}
 
 	async _pOnLoad_pInitPrimaryLists () {

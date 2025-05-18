@@ -938,6 +938,14 @@ class _DataTypeLoaderItemFluff extends _DataTypeLoaderSingleSource {
 	_filename = "fluff-items.json";
 }
 
+class _DataTypeLoaderShopFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["shopFluff"];
+	static PAGE = UrlUtil.PG_SHOP;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-shop.json";
+}
+
 class _DataTypeLoaderLanguageFluff extends _DataTypeLoaderSingleSource {
 	static PROPS = ["languageFluff"];
 	static PAGE = UrlUtil.PG_LANGUAGES;

@@ -3506,6 +3506,7 @@ UrlUtil.PG_BESTIARY = "bestiary.html";
 UrlUtil.PG_SPELLS = "spells.html";
 UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
 UrlUtil.PG_ITEMS = "items.html";
+UrlUtil.PG_SHOP = "shop.html";
 UrlUtil.PG_CLASSES = "classes.html";
 UrlUtil.PG_CONDITIONS_DISEASES = "conditionsdiseases.html";
 UrlUtil.PG_FEATS = "feats.html";
@@ -3560,6 +3561,7 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = it => UrlUtil.encodeArrayForHash(it.name, SourceUtil.getEntitySource(it));
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SHOP] = it => UrlUtil.encodeArrayForHash(it.name, SourceUtil.getEntitySource(it));
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS] = UrlUtil.URL_TO_HASH_GENERIC;
@@ -3603,6 +3605,10 @@ UrlUtil.URL_TO_HASH_BUILDER["item"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITE
 UrlUtil.URL_TO_HASH_BUILDER["itemGroup"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
 UrlUtil.URL_TO_HASH_BUILDER["baseitem"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
 UrlUtil.URL_TO_HASH_BUILDER["magicvariant"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
+UrlUtil.URL_TO_HASH_BUILDER["shop"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SHOP];
+UrlUtil.URL_TO_HASH_BUILDER["shopGroup"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SHOP];
+UrlUtil.URL_TO_HASH_BUILDER["shopbaseitem"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SHOP];
+UrlUtil.URL_TO_HASH_BUILDER["shopmagicvariant"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SHOP];
 UrlUtil.URL_TO_HASH_BUILDER["class"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES];
 UrlUtil.URL_TO_HASH_BUILDER["condition"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES];
 UrlUtil.URL_TO_HASH_BUILDER["disease"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES];
@@ -3649,6 +3655,11 @@ UrlUtil.URL_TO_HASH_BUILDER["itemProperty"] = (it) => UrlUtil.encodeArrayForHash
 UrlUtil.URL_TO_HASH_BUILDER["itemType"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
 UrlUtil.URL_TO_HASH_BUILDER["itemTypeAdditionalEntries"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["itemMastery"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["shopEntry"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["shopProperty"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["shopType"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["shopTypeAdditionalEntries"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["shopMastery"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["skill"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["sense"] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER["raceFeature"] = (it) => UrlUtil.encodeArrayForHash(it.name, it.raceName, it.raceSource, it.source);
@@ -3679,6 +3690,7 @@ UrlUtil.PG_TO_NAME[UrlUtil.PG_BESTIARY] = "Bestiary";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_SPELLS] = "Spells";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_BACKGROUNDS] = "Backgrounds";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_ITEMS] = "Items";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_SHOP] = "Shop";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_CLASSES] = "Classes";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_CONDITIONS_DISEASES] = "Conditions & Diseases";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_FEATS] = "Feats";
@@ -3727,6 +3739,7 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CREATURE] = UrlUtil.PG_BESTIARY;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SPELL] = UrlUtil.PG_SPELLS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_BACKGROUND] = UrlUtil.PG_BACKGROUNDS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ITEM] = UrlUtil.PG_ITEMS;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SHOP] = UrlUtil.PG_SHOP;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_CLASSES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS_FEATURE] = UrlUtil.PG_CLASSES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SUBCLASS] = UrlUtil.PG_CLASSES;
@@ -3780,6 +3793,7 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SKILLS] = "skill";
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SENSES] = "sense";
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_LEGENDARY_GROUP] = "legendaryGroup";
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ITEM_MASTERY] = "itemMastery";
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SHOP_MASTERY] = "shopMastery";
 
 UrlUtil.CAT_TO_HOVER_PAGE = {};
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_CLASS_FEATURE] = "classfeature";
@@ -3789,6 +3803,7 @@ UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SKILLS] = "skill";
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SENSES] = "sense";
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_LEGENDARY_GROUP] = "legendaryGroup";
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_ITEM_MASTERY] = "itemMastery";
+UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SHOP_MASTERY] = "shopMastery";
 
 UrlUtil.HASH_START_CREATURE_SCALED = `${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}`;
 UrlUtil.HASH_START_CREATURE_SCALED_SPELL_SUMMON = `${VeCt.HASH_SCALED_SPELL_SUMMON}${HASH_SUB_KV_SEP}`;
@@ -3799,6 +3814,7 @@ UrlUtil.SUBLIST_PAGES = {
 	[UrlUtil.PG_SPELLS]: true,
 	[UrlUtil.PG_BACKGROUNDS]: true,
 	[UrlUtil.PG_ITEMS]: true,
+	[UrlUtil.PG_SHOP]: true,
 	[UrlUtil.PG_CONDITIONS_DISEASES]: true,
 	[UrlUtil.PG_FEATS]: true,
 	[UrlUtil.PG_OPT_FEATURES]: true,
@@ -3831,6 +3847,7 @@ UrlUtil.FAUX_PAGES = {
 UrlUtil.PAGE_TO_PROPS = {};
 UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_SPELLS] = ["spell"];
 UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_ITEMS] = ["item", "itemGroup", "itemType", "itemEntry", "itemProperty", "itemTypeAdditionalEntries", "itemMastery", "baseitem", "magicvariant"];
+UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_SHOP] = ["shop", "shopGroup", "shopType", "shopEntry", "shopProperty", "shopTypeAdditionalEntries", "shopMastery", "shopbaseitem", "shopmagicvariant"];
 UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_RACES] = ["race", "subrace"];
 UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_ACTIONS] = ["action"];
 UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_BACKGROUNDS] = ["background"];
@@ -3849,6 +3866,7 @@ UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_VARIANTRULES] = ["variantrule"];
 UrlUtil.PROP_TO_PAGE = {};
 UrlUtil.PROP_TO_PAGE["spell"] = UrlUtil.PG_SPELLS;
 UrlUtil.PROP_TO_PAGE["item"] = UrlUtil.PG_ITEMS;
+UrlUtil.PROP_TO_PAGE["shop"] = UrlUtil.PG_SHOP;
 UrlUtil.PROP_TO_PAGE["baseitem"] = UrlUtil.PG_ITEMS;
 
 if (!IS_DEPLOYED && !globalThis.IS_VTT && typeof window !== "undefined") {
@@ -6350,6 +6368,148 @@ globalThis.DataUtil = {
 
 	itemProperty: class extends _DataUtilPropConfig {
 		static _PAGE = "itemProperty";
+
+		/**
+		 * @param uid
+		 * @param [opts]
+		 * @param [opts.isLower] If the returned values should be lowercase.
+		 */
+		static unpackUid (uid, opts) {
+			opts = opts || {};
+			if (opts.isLower) uid = uid.toLowerCase();
+			let [abbreviation, source] = uid.split("|").map(it => it.trim());
+			source ||= opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB;
+			return {
+				abbreviation,
+				source,
+			};
+		}
+
+		static getUid (ent, {isMaintainCase = false, displayName = null, isRetainDefault = false} = {}) {
+			// <abbreviation>|<source>
+			const sourceDefault = Parser.SRC_PHB;
+			const out = [
+				ent.abbreviation,
+				!isRetainDefault && (ent.source || "").toLowerCase() === sourceDefault.toLowerCase() ? "" : ent.source,
+				displayName || "",
+			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
+			if (isMaintainCase) return out;
+			return out.toLowerCase();
+		}
+	},
+	shop: class extends _DataUtilPropConfigCustom {
+		static _MERGE_REQUIRES_PRESERVE = {
+			lootTables: true,
+			tier: true,
+		};
+		static _PAGE = UrlUtil.PG_ITEMS;
+
+		static async loadRawJSON () {
+			if (DataUtil.item._loadedRawJson) return DataUtil.item._loadedRawJson;
+
+			DataUtil.item._pLoadingRawJson = (async () => {
+				const urlItems = `${Renderer.get().baseUrl}data/shop.json`;
+				const urlItemsBase = `${Renderer.get().baseUrl}data/shop-base.json`;
+				const urlVariants = `${Renderer.get().baseUrl}data/shopmagicvariants.json`;
+
+				const [dataItems, dataItemsBase, dataVariants] = await Promise.all([
+					DataUtil.loadJSON(urlItems),
+					DataUtil.loadJSON(urlItemsBase),
+					DataUtil.loadJSON(urlVariants),
+				]);
+
+				DataUtil.item._loadedRawJson = {
+					item: MiscUtil.copyFast(dataItems.item),
+					itemGroup: MiscUtil.copyFast(dataItems.itemGroup),
+					magicvariant: MiscUtil.copyFast(dataVariants.magicvariant),
+					baseitem: MiscUtil.copyFast(dataItemsBase.baseitem),
+				};
+			})();
+			await DataUtil.item._pLoadingRawJson;
+
+			return DataUtil.item._loadedRawJson;
+		}
+
+		static async loadJSON () {
+			return {item: await Renderer.item.pBuildListShop()};
+		}
+
+		static async loadPrerelease () {
+			return {item: await Renderer.item.pGetShopItemsFromPrerelease()};
+		}
+
+		static async loadBrew () {
+			return {item: await Renderer.item.pGetShopItemsFromBrew()};
+		}
+	},
+
+	shopGroup: class extends _DataUtilPropConfig {
+		static _MERGE_REQUIRES_PRESERVE = {
+			lootTables: true,
+			tier: true,
+		};
+		static _PAGE = UrlUtil.PG_ITEMS;
+
+		static async pMergeCopy (...args) { return DataUtil.item.pMergeCopy(...args); }
+		static async loadRawJSON (...args) { return DataUtil.item.loadRawJSON(...args); }
+	},
+
+	shopbaseitem: class extends _DataUtilPropConfig {
+		static _PAGE = UrlUtil.PG_ITEMS;
+
+		static async pMergeCopy (...args) { return DataUtil.item.pMergeCopy(...args); }
+		static async loadRawJSON (...args) { return DataUtil.item.loadRawJSON(...args); }
+	},
+
+	shopmagicvariant: class extends _DataUtilPropConfig {
+		static _MERGE_REQUIRES_PRESERVE = {
+			lootTables: true,
+			tier: true,
+		};
+		static _PAGE = "magicvariant";
+
+		static async loadRawJSON (...args) { return DataUtil.item.loadRawJSON(...args); }
+	},
+
+	shopFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_ITEMS;
+		static _FILENAME = "fluff-shop.json";
+	},
+
+	shopType: class extends _DataUtilPropConfig {
+		static _PAGE = "shopType";
+
+		/**
+		 * @param uid
+		 * @param [opts]
+		 * @param [opts.isLower] If the returned values should be lowercase.
+		 */
+		static unpackUid (uid, opts) {
+			opts = opts || {};
+			if (opts.isLower) uid = uid.toLowerCase();
+			let [abbreviation, source] = uid.split("|").map(it => it.trim());
+			source ||= opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB;
+			return {
+				abbreviation,
+				source,
+			};
+		}
+
+		static getUid (ent, {isMaintainCase = false, displayName = null, isRetainDefault = false} = {}) {
+			// <abbreviation>|<source>
+			const sourceDefault = Parser.SRC_PHB;
+			const out = [
+				ent.abbreviation,
+				!isRetainDefault && (ent.source || "").toLowerCase() === sourceDefault.toLowerCase() ? "" : ent.source,
+				displayName || "",
+			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
+			if (isMaintainCase) return out;
+			return out.toLowerCase();
+		}
+	},
+
+	shopProperty: class extends _DataUtilPropConfig {
+		static _PAGE = "shopProperty";
 
 		/**
 		 * @param uid

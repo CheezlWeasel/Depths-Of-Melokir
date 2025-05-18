@@ -11897,7 +11897,9 @@ Renderer.item = class {
 	static async pBuildList () {
 		return DataLoader.pCacheAndGetAllSite(UrlUtil.PG_ITEMS);
 	}
-
+	static async pBuildListShop () {
+		return DataLoader.pCacheAndGetAllSite(UrlUtil.PG_SHOP);
+	}
 	static async _pGetAndProcBaseItems (baseItemData) {
 		Renderer.item._addBasePropertiesAndTypes(baseItemData);
 		await Renderer.item._pAddPrereleaseBrewPropertiesAndTypes();
@@ -12633,6 +12635,14 @@ Renderer.item = class {
 		return DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_ITEMS);
 	}
 
+		static async pGetShopItemsFromPrerelease () {
+		return DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_SHOP);
+	}
+
+	static async pGetShopItemsFromBrew () {
+		return DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_SHOP);
+	}
+
 	static _pPopulatePropertyAndTypeReference = null;
 	static pPopulatePropertyAndTypeReference () {
 		Renderer.item._pPopulatePropertyAndTypeReference ||= (async () => {
@@ -12688,7 +12698,6 @@ Renderer.item = class {
 
 		return false;
 	}
-
 	/* -------------------------------------------- */
 
 	static getFlatAttachedSpells (item) {

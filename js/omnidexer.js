@@ -627,6 +627,111 @@ class IndexableFileMagicVariants extends IndexableFile {
 	}
 }
 
+// -----------------------------------
+class IndexableFileShopBase extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_SHOP,
+			file: "shop-base.json",
+			listProp: "baseshop",
+			fluffBaseListProp: "shop",
+			baseUrl: "shop.html",
+			isHover: true,
+		});
+	}
+}
+
+class IndexableFileShopMasteries extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_SHOP_MASTERY,
+			file: "shop-base.json",
+			listProp: "shopMastery",
+			baseUrl: "shopMastery",
+			isHover: true,
+			isFauxPage: true,
+		});
+	}
+}
+
+class IndexableShopItems extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_SHOP,
+			file: "shop.json",
+			listProp: "shop",
+			baseUrl: "shop.html",
+			isHover: true,
+		});
+	}
+}
+
+class IndexableFileShopGroups extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_SHOP,
+			file: "shop.json",
+			listProp: "shopGroup",
+			fluffBaseListProp: "shop",
+			baseUrl: "shop.html",
+			isHover: true,
+		});
+	}
+}
+
+class IndexableFileShopMagicVariants extends IndexableFile {
+	constructor () {
+		super({
+			category: Parser.CAT_ID_SHOP,
+			file: "shopmagicvariants.json",
+			source: "inherits.source",
+			page: "inherits.page",
+			listProp: "shopmagicvariant",
+			fluffBaseListProp: "shop",
+			baseUrl: "shop.html",
+			hashBuilder: (it) => {
+				return UrlUtil.encodeForHash([it.name, it.inherits.source]);
+			},
+			additionalIndexes: {
+				item: async (indexer, rawVariants) => {
+					const specVars = await (async () => {
+						const baseItemJson = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop-base.json`);
+						const rawBaseItems = {...baseItemJson, baseitem: [...baseItemJson.baseitem]};
+
+						const prerelease = typeof PrereleaseUtil !== "undefined" ? await PrereleaseUtil.pGetBrewProcessed() : {};
+						if (prerelease.baseitem) rawBaseItems.baseitem.push(...prerelease.baseitem);
+
+						const brew = typeof BrewUtil2 !== "undefined" ? await BrewUtil2.pGetBrewProcessed() : {};
+						if (brew.baseitem) rawBaseItems.baseitem.push(...brew.baseitem);
+
+						return Renderer.item.getAllIndexableShopItems(rawVariants, rawBaseItems);
+					})();
+					return specVars.map(sv => {
+						const out = {
+							c: Parser.CAT_ID_SHOP,
+							u: UrlUtil.encodeForHash([sv.name, sv.source]),
+							s: indexer.getMetaId("s", sv.source),
+							n: sv.name,
+							h: 1,
+							p: sv.page,
+						};
+						if (sv.genericVariant) {
+							// use z-prefixed as "other data" properties
+							out.zg = {
+								n: indexer.getMetaId("n", sv.genericVariant.name),
+								s: indexer.getMetaId("s", sv.genericVariant.source),
+							};
+						}
+						return out;
+					});
+				},
+			},
+			isHover: true,
+		});
+	}
+} 
+// -----------------------------------------
+
 class IndexableFileConditions extends IndexableFile {
 	constructor () {
 		super({

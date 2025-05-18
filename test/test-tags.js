@@ -588,6 +588,126 @@ class ItemDataCheck extends GenericDataCheck {
 	}
 }
 
+class ShopDataCheck extends GenericDataCheck {
+	static _checkArrayDuplicates (file, name, source, arr, prop, tag) {
+		const asUrls = arr
+			.map(it => {
+				if (it.item) it = it.item;
+				if (it.uid) it = it.uid;
+				if (it.special) return null;
+
+				return getEncoded(it, tag);
+			})
+			.filter(Boolean);
+
+		if (asUrls.length !== new Set(asUrls).size) {
+			this._addMessage(`Duplicate ${prop} in ${file} for ${source}, ${name}: ${asUrls.filter(s => asUrls.filter(it => it === s).length > 1).join(", ")}\n`);
+		}
+	}
+
+	static _checkArrayItemsExist (file, name, source, arr, prop, tag) {
+		arr.forEach(it => {
+			if (it.item) it = it.item;
+			if (it.uid) it = it.uid;
+			if (it.special) return;
+
+			if (tag === "spell") it = this._getCleanSpellUid(it);
+
+			const url = getEncoded(it, tag);
+			if (!TagTestUrlLookup.hasUrl(url)) this._addMessage(`Missing link: ${it} in file ${file} (evaluates to "${url}") in "${prop}"\n${TagTestUtil.getLogPtSimilarUrls({url})}`);
+		});
+	}
+
+	static _checkReqAttuneTags (file, root, name, source, prop) {
+		const tagsArray = root[prop];
+
+		tagsArray.forEach(tagBlock => {
+			Object.entries(tagBlock)
+				.forEach(([prop, val]) => {
+					switch (prop) {
+						case "background":
+						case "race":
+						case "class": {
+							const url = getEncoded(val, prop);
+							if (!TagTestUrlLookup.hasUrl(url)) this._addMessage(`Missing link: ${val} in file ${file} "${prop}" (evaluates to "${url}")\n${TagTestUtil.getLogPtSimilarUrls({url})}`);
+						}
+					}
+				});
+		});
+	}
+
+	static _checkRoot (file, root, name, source) {
+		if (!root) return;
+
+		if (root.attachedSpells) {
+			ItemDataCheck._checkArrayItemsExist(file, name, source, Renderer.item.getFlatAttachedSpells(root), "attachedSpells", "spell");
+		}
+
+		if (root.optionalfeatures) {
+			ItemDataCheck._checkArrayDuplicates(file, name, source, root.optionalfeatures, "optionalfeatures", "optfeature");
+			ItemDataCheck._checkArrayItemsExist(file, name, source, root.optionalfeatures, "optionalfeatures", "optfeature");
+		}
+
+		if (root.items) {
+			ItemDataCheck._checkArrayDuplicates(file, name, source, root.items, "items", "item");
+			ItemDataCheck._checkArrayItemsExist(file, name, source, root.items, "items", "item");
+		}
+
+		if (root.packContents) {
+			ItemDataCheck._checkArrayDuplicates(file, name, source, root.packContents, "packContents", "item");
+			ItemDataCheck._checkArrayItemsExist(file, name, source, root.packContents, "packContents", "item");
+		}
+
+		if (root.containerCapacity && root.containerCapacity.item) {
+			root.containerCapacity.item.forEach(itemToCount => {
+				ItemDataCheck._checkArrayItemsExist(file, name, source, Object.keys(itemToCount), "containerCapacity", "item");
+			});
+		}
+
+		if (root.ammoType) {
+			ItemDataCheck._checkArrayItemsExist(file, name, source, [root.ammoType], "ammoType", "item");
+		}
+
+		if (root.baseItem) {
+			const url = `${Renderer.tag.getPage("item")}#${UrlUtil.encodeForHash(root.baseItem.split("|"))}`
+				.toLowerCase()
+				.trim()
+				.replace(/%5c/gi, "");
+
+			if (!TagTestUrlLookup.hasUrl(url)) {
+				this._addMessage(`Missing link: ${root.baseItem} in file ${file} (evaluates to "${url}")\n${TagTestUtil.getLogPtSimilarUrls({url})}`);
+			}
+		}
+
+		this._doCheckSeeAlso({entity: root, prop: "seeAlsoDeck", tag: "deck", file});
+		this._doCheckSeeAlso({entity: root, prop: "seeAlsoVehicle", tag: "vehicle", file});
+
+		if (root.reqAttuneTags) this._checkReqAttuneTags(file, root, name, source, "reqAttuneTags");
+		if (root.reqAttuneAltTags) this._checkReqAttuneTags(file, root, name, source, "reqAttuneAltTags");
+
+		if (root.mastery) {
+			ItemDataCheck._checkArrayDuplicates(file, name, source, root.mastery, "mastery", "itemMastery");
+			ItemDataCheck._checkArrayItemsExist(file, name, source, root.mastery, "mastery", "itemMastery");
+		}
+
+		if (root.lootTables) {
+			ItemDataCheck._checkArrayItemsExist(file, name, source, root.lootTables, "lootTables", "table");
+		}
+	}
+
+	static pRun () {
+		const basicItems = ut.readJson(`./data/shop-base.json`);
+		basicItems.baseitem.forEach(it => this._checkRoot("data/shop-base.json", it, it.name, it.source));
+
+		const items = ut.readJson(`./data/shop.json`);
+		items.item.forEach(it => this._checkRoot("data/shop.json", it, it.name, it.source));
+		items.itemGroup.forEach(it => this._checkRoot("data/shop.json", it, it.name, it.source));
+
+		const magicVariants = ut.readJson(`./data/shopmagicvariants.json`);
+		magicVariants.magicvariant.forEach(va => this._checkRoot("data/shopmagicvariants.json", va, va.name, va.source) || (va.inherits && this._checkRoot("data/shopmagicvariants.json", va.inherits, `${va.name} (inherits)`, va.source)));
+	}
+}
+
 class ActionDataCheck extends GenericDataCheck {
 	static pRun () {
 		const file = `data/actions.json`;
