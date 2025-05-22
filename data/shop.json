@@ -1,0 +1,308 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"shop"
+		]
+	},
+	"shop": [
+		{
+			"name": "Maul",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"edition": "classic",
+			"type": "M",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true
+		},
+		{
+			"name": "Shield",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"type": "S",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"ac": 2,
+			"entries": [
+				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+			]
+		},
+		{
+			"name": "Fan Shield",
+			"source": "DoM",
+			"type": "S",
+			"rarity": "none",
+			"value": 10000,
+			"ac": 2,
+			"baseItem": "shield|phb",
+			"entries": [
+				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.",
+				"This shield functions like a folding fan, rotating metal plates spin out to give it form. The strange alloy it is made from is both lightweight and durable. ",
+				"While this shield is equipped it can be either deployed or stowed as a bonus action. While stowed the hand it is held in is considered “free” but you do not benefit from its bonus to AC"
+			],
+			"seller": "Arthak"
+		},
+		{
+			"name": "Arbalest",
+			"source": "DoM",
+			"type": "R",
+			"rarity": "none",
+			"value": 10000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H",
+				"A"
+			],
+			"range": "100/400",
+			"dmg1": "2d10",
+			"dmgType": "P",
+			"entries": [
+				"This weapon can only be wielded by those with a 15 Strength or higher.",
+				"It does 2d10 + Your Strength modifier piercing damage, and can only be fired once per turn.",
+				"Having this weapon in hand reduces your speed by 10ft.",
+				"This weapon uses strength instead of dexterity for attack rolls and damage."
+			],
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 All-Purpose Tool",
+			"source": "TCE",
+			"page": 119,
+			"rarity": "uncommon",
+			"reqAttune": "by an artificer",
+			"reqAttuneTags": [
+				{
+					"class": "artificer|tce"
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Artificer"
+			],
+			"entries": [
+				"This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|PHB}). Whatever form the tool takes, you are proficient with it.",
+				"While holding this tool, you gain a +1 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.",
+				"As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Amulet of the Devout",
+			"source": "TCE",
+			"page": 119,
+			"rarity": "uncommon",
+			"reqAttune": "by a cleric or paladin",
+			"reqAttuneTags": [
+				{
+					"class": "cleric"
+				},
+				{
+					"class": "paladin"
+				}
+			],
+			"wondrous": true,
+			"weight": 1,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"entries": [
+				"This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +1 bonus to spell attack rolls and the saving throw DCs of your spells.",
+				"While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Arcane Grimoire",
+			"source": "TCE",
+			"page": 120,
+			"rarity": "uncommon",
+			"reqAttune": "by a wizard",
+			"reqAttuneTags": [
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"weight": 3,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Wizard"
+			],
+			"entries": [
+				"While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.",
+				"You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Bloodwell Vial",
+			"source": "TCE",
+			"page": 122,
+			"rarity": "uncommon",
+			"reqAttune": "by a sorcerer",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Sorcerer"
+			],
+			"entries": [
+				"To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
+				"In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Dragonhide Belt",
+			"source": "FTD",
+			"page": 23,
+			"rarity": "uncommon",
+			"reqAttune": "by a monk",
+			"reqAttuneTags": [
+				{
+					"class": "monk"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"This finely detailed belt is made of dragonhide. While wearing it, you gain a +1 bonus to the saving throw DCs of your ki features. In addition, you can use an action to regain ki points equal to a roll of your Martial Arts die. You can't use this action again until the next dawn."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Moon Sickle",
+			"source": "TCE",
+			"page": 133,
+			"baseItem": "sickle|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"reqAttune": "by a druid or ranger",
+			"reqAttuneTags": [
+				{
+					"class": "druid"
+				},
+				{
+					"class": "ranger"
+				}
+			],
+			"weight": 2,
+			"weaponCategory": "simple",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"focus": [
+				"Druid",
+				"Ranger"
+			],
+			"entries": [
+				"This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a +1 bonus to attack and damage rolls made with it, and you gain a +1 bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
+				"When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Rhythm-Maker's Drum",
+			"source": "TCE",
+			"page": 134,
+			"type": "INS",
+			"rarity": "uncommon",
+			"reqAttune": "by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				}
+			],
+			"wondrous": true,
+			"weight": 3,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"entries": [
+				"While holding this {@item drum|PHB}, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
+				"As an action, you can play the {@item drum|PHB} to regain one use of your Bardic Inspiration feature. This property of the {@item drum|PHB} can't be used again until the next dawn."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Rod of the Pact Keeper",
+			"source": "DMG",
+			"page": 197,
+			"type": "RD|DMG",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": "by a warlock",
+			"reqAttuneTags": [
+				{
+					"class": "warlock"
+				}
+			],
+			"weight": 2,
+			"bonusSpellAttack": "+1",
+			"bonusSpellSaveDc": "+1",
+			"entries": [
+				"While holding this rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your warlock spells.",
+				"In addition, you can regain one warlock spell slot as an action while holding the rod. You can't use this property again until you finish a long rest."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Wand of the War Mage",
+			"source": "DMG",
+			"page": 212,
+			"srd": true,
+			"type": "WD|DMG",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 1,
+			"bonusSpellAttack": "+1",
+			"entries": [
+				"While you are holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore {@quickref Cover||3||half cover} when making a spell attack."
+			],
+			"lootTables": [
+				"Magic Item Table F"
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		}
+	]
+}
