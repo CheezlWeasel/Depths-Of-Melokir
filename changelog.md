@@ -1,3 +1,9 @@
+# v1.3.0
+The Shop
+
+The Shop tab has been added to the front of the home page
+The backend JSON is at this point in time incomplete but the major backend intergration is complete
+
 # v1.2.6
 Divine Magic optional variant addition
 Illrigger 3rd Level additional Feature
