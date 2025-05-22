@@ -11771,7 +11771,6 @@ Renderer.item = class {
 	static _ERRORS_LOGGED_MISSING_TYPE = {};
 	static getType (uid, {isIgnoreMissing = false} = {}) {
 		const {abbreviation, source} = DataUtil.itemType.unpackUid(uid || "", {isLower: true});
-
 		const out = this._typeMap?.[source]?.[abbreviation]
 			// TODO(Future; 2025-Q2) remove once all prerelease/homebrew migrated
 			// Fall back on sourceless tag
@@ -11885,6 +11884,28 @@ Renderer.item = class {
 		};
 	}
 
+	static async _pGetSiteUnresolvedRefShopItems_pLoadShopItems () {
+		const itemData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop.json`);
+		const items = itemData.item;
+		itemData.itemGroup.forEach(it => it._isItemGroup = true);
+		return [...items, ...itemData.itemGroup];
+	}
+
+	static async pGetSiteUnresolvedRefShopItems () {
+		const itemList = await Renderer.item._pGetSiteUnresolvedRefShopItems_pLoadShopItems();
+		const baseItemsJson = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop.json`);
+		const baseItems = await Renderer.item._pGetAndProcBaseItems(baseItemsJson);
+		const {genericVariants, linkedLootTables} = await Renderer.item._pGetCacheSiteGenericVariants();
+		const specificVariants = Renderer.item._createSpecificVariants(baseItems, genericVariants, {linkedLootTables});
+		const allItems = [...itemList, ...baseItems, ...genericVariants, ...specificVariants];
+		Renderer.item._enhanceItems(allItems);
+
+		return {
+			item: allItems,
+			itemEntry: baseItemsJson.itemEntry,
+		};
+	}
+
 	static _pGettingSiteGenericVariants = null;
 	static async _pGetCacheSiteGenericVariants () {
 		Renderer.item._pGettingSiteGenericVariants = Renderer.item._pGettingSiteGenericVariants || (async () => {
@@ -11895,7 +11916,12 @@ Renderer.item = class {
 	}
 
 	static async pBuildList () {
-		return DataLoader.pCacheAndGetAllSite(UrlUtil.PG_ITEMS);
+		if (`${Renderer.get().baseUrl}data/items.json` == `${Renderer.get().url}`) {
+			return DataLoader.pCacheAndGetAllSite(UrlUtil.PG_ITEMS);
+		}
+		else {
+			return DataLoader.pCacheAndGetAllSite(UrlUtil.PG_SHOP)
+		}
 	}
 
 	static async _pGetAndProcBaseItems (baseItemData) {
@@ -12633,11 +12659,24 @@ Renderer.item = class {
 		return DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_ITEMS);
 	}
 
+	static async pGetShopItemsFromPrerelease () {
+		return DataLoader.pCacheAndGetAllPrerelease(UrlUtil.PG_SHOP);
+	}
+
+	static async pGetShopItemsFromBrew () {
+		return DataLoader.pCacheAndGetAllBrew(UrlUtil.PG_SHOP);
+	}
+
 	static _pPopulatePropertyAndTypeReference = null;
 	static pPopulatePropertyAndTypeReference () {
 		Renderer.item._pPopulatePropertyAndTypeReference ||= (async () => {
-			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/items-base.json`);
-
+			console.log(Renderer.get().baseUrl)
+			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/items-base.json`)
+			if (`${Renderer.get().baseUrl}data/shop.json` == `${Renderer.get().url}`) {
+				const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop.json`);
+				console.log("Shop")
+			}
+			
 			data.itemProperty.forEach(p => Renderer.item._addProperty(p));
 			data.itemType.forEach(t => Renderer.item._addType(t));
 			data.itemEntry.forEach(it => Renderer.item._addEntry(it));

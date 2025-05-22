@@ -898,6 +898,24 @@ class _DataTypeLoaderItemMastery extends _DataTypeLoaderSingleSource {
 	}
 }
 
+class _DataTypeLoaderShopItemEntry extends _DataTypeLoaderSingleSource {
+	static PROPS = ["shopEntry"];
+
+	_filename = "shop.json";
+}
+
+class _DataTypeLoaderShopItemMastery extends _DataTypeLoaderSingleSource {
+	static PROPS = ["shopMastery"];
+
+	_filename = "shop.json";
+
+	async _pPrePopulate ({data, isPrerelease, isBrew}) {
+		// Ensure properties are loaded
+		await Renderer.item.pGetSiteUnresolvedRefShopItems();
+		Renderer.item.addPrereleaseBrewPropertiesAndTypesFrom({data});
+	}
+}
+
 class _DataTypeLoaderBackgroundFluff extends _DataTypeLoaderSingleSource {
 	static PROPS = ["backgroundFluff"];
 	static PAGE = UrlUtil.PG_BACKGROUNDS;
@@ -1413,7 +1431,11 @@ class _DataTypeLoaderCustomItem extends _DataTypeLoader {
 	_getSiteIdent ({pageClean, sourceClean}) { return this.constructor.name; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
-		return Renderer.item.pGetSiteUnresolvedRefItems();
+		if (`${Renderer.get().baseUrl}data/items.json` === `${Renderer.get().url}`) {
+			return Renderer.item.pGetSiteUnresolvedRefItems();
+		} else {
+			return Renderer.item.pGetSiteUnresolvedRefShopItems()
+		}
 	}
 
 	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
@@ -1760,6 +1782,33 @@ class _DataTypeLoaderCitation extends _DataTypeLoader {
 
 // endregion
 
+class _DataLoaderShop extends _DataTypeLoader {
+	static PAGE = "shop.html"; // only loads on this page
+	static IS_FLUFF = false;
+	static PROPS = ["shop"];
+	static hasCustomCacheStrategy () {
+		return false; // or true if you implement custom cache
+	}
+	static async pGetSiteData () {
+		const json = await DataUtil.loadJSON(`data/shop.json`);
+		return { shop: json.shop };
+	}
+
+	static async pGetPrereleaseData () {
+		return { shop: [] };
+	}
+
+	static async pGetBrewData () {
+		return BrewUtil2.getPageProps("shop") ?? { shop: [] };
+	}
+	static async pGetStoredPrereleaseData () {
+		return [];
+	}
+	static async pGetStoredBrewData () {
+		return [];
+	}
+}
+
 /* -------------------------------------------- */
 
 // region Data loader
@@ -1771,6 +1820,7 @@ class DataLoader {
 		"class": UrlUtil.PG_CLASSES,
 		"subclass": UrlUtil.PG_CLASSES,
 		"item": UrlUtil.PG_ITEMS,
+		"shop": UrlUtil.PG_SHOP,
 		"background": UrlUtil.PG_BACKGROUNDS,
 		"psionic": UrlUtil.PG_PSIONICS,
 		"object": UrlUtil.PG_OBJECTS,
@@ -1840,6 +1890,14 @@ class DataLoader {
 
 	static _registerDataTypeLoaders () {
 		const fnRegister = this._registerDataTypeLoader.bind(this);
+
+
+		// Your new loader registration added near the top (or anywhere appropriate)
+		fnRegister({
+			page: "shop.html",
+			loader: _DataLoaderShop,
+			props: ["shop"],
+		});
 
 		// region Multi-file
 		_DataTypeLoaderCustomMonster.register({fnRegister});
@@ -2225,6 +2283,24 @@ class DataLoader {
 		}
 	}
 
+	static async pGetStoredPrereleaseData () {
+		if (!this._isPrereleaseAvailable()) return {};
+		return this._pGetStoredPrereleaseData();
+	}
+
+	static async pGetStoredBrewData () {
+		if (!this._isBrewAvailable()) return {};
+		return this._pGetStoredBrewData();
+	}
+
+	static async _pGetStoredPrereleaseData () {
+		return this._pGetStoredPrereleaseBrewData({brewUtil: PrereleaseUtil, isPrerelease: true});
+	}
+
+	static async _pGetStoredBrewData () {
+		return this._pGetStoredPrereleaseBrewData({brewUtil: BrewUtil2, isBrew: true});
+	}
+
 	static async _pCache ({pageClean, sourceClean, dataLoader}) {
 		// region Fetch from site data
 		const siteData = await dataLoader.pGetSiteData({pageClean, sourceClean});
@@ -2238,8 +2314,9 @@ class DataLoader {
 		// region Fetch from already-stored prerelease/brew data
 		//   As we have preloaded missing prerelease/brew earlier in the flow, we know that a prerelease/brew is either
 		//   present, or unavailable
+
 		if (typeof PrereleaseUtil !== "undefined") {
-			const prereleaseData = await dataLoader.pGetStoredPrereleaseData();
+			const prereleaseData = await dataLoader.pGetStoredPrereleaseData()
 			this._pCache_addToCache({allDataMerged: prereleaseData, propAllowlist: dataLoader.phase1CachePropAllowlist || new Set(dataLoader.constructor.PROPS)});
 			out.prereleaseData = prereleaseData;
 		}
