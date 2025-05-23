@@ -1,3 +1,7 @@
+# v1.3.1
+More items have been added to the shop
+The Illrigger additional spells have has their fromClassListVariant tags removed, they will no longer show up when filtering for other classes ever
+
 # v1.3.0
 The Shop
 
