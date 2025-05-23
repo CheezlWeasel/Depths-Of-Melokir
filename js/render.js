@@ -11916,7 +11916,7 @@ Renderer.item = class {
 	}
 
 	static async pBuildList () {
-		if (`${Renderer.get().baseUrl}data/items.json` == `${Renderer.get().url}`) {
+		if (`${window.location.pathname}` == `/items.html`) {
 			return DataLoader.pCacheAndGetAllSite(UrlUtil.PG_ITEMS);
 		}
 		else {
@@ -12670,13 +12670,10 @@ Renderer.item = class {
 	static _pPopulatePropertyAndTypeReference = null;
 	static pPopulatePropertyAndTypeReference () {
 		Renderer.item._pPopulatePropertyAndTypeReference ||= (async () => {
-			console.log(Renderer.get().baseUrl)
 			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/items-base.json`)
-			if (`${Renderer.get().baseUrl}data/shop.json` == `${Renderer.get().url}`) {
+			if (`${window.location.pathname}` === `/shop.html`) {
 				const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop.json`);
-				console.log("Shop")
 			}
-			
 			data.itemProperty.forEach(p => Renderer.item._addProperty(p));
 			data.itemType.forEach(t => Renderer.item._addType(t));
 			data.itemEntry.forEach(it => Renderer.item._addEntry(it));

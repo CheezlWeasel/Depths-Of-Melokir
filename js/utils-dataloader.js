@@ -1431,7 +1431,7 @@ class _DataTypeLoaderCustomItem extends _DataTypeLoader {
 	_getSiteIdent ({pageClean, sourceClean}) { return this.constructor.name; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
-		if (`${Renderer.get().baseUrl}data/items.json` === `${Renderer.get().url}`) {
+		if (`${window.location.pathname}` === `/items.html`) {
 			return Renderer.item.pGetSiteUnresolvedRefItems();
 		} else {
 			return Renderer.item.pGetSiteUnresolvedRefShopItems()
