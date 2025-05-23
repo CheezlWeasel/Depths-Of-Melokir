@@ -6,44 +6,91 @@
 	},
 	"shop": [
 		{
-			"name": "Maul",
-			"source": "PHB",
-			"page": 149,
-			"srd": true,
-			"basicRules": true,
-			"edition": "classic",
+			"name": "Katar",
+			"page": 0,
 			"type": "M",
+			"weapon": true,
+			"weaponCategory": "simple",
 			"rarity": "none",
-			"weight": 10,
-			"value": 1000,
-			"weaponCategory": "martial",
+			"value": 300,
+			"weight": 3,
+			"dmg1": "1d4",
+			"dmgType": "P",
 			"property": [
-				"H",
-				"2H"
+				"L",
+				"UN"
 			],
-			"dmg1": "2d6",
-			"dmgType": "B",
-			"hammer": true,
-			"weapon": true
+			"source": "SterlingVermin",
+			"seller": "Arthak"
 		},
 		{
-			"name": "Shield",
-			"source": "PHB",
-			"page": 144,
-			"srd": true,
-			"basicRules": true,
-			"type": "S",
+			"name": "Knuckledusters",
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "simple",
 			"rarity": "none",
-			"weight": 6,
-			"value": 1000,
-			"ac": 2,
-			"entries": [
-				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
-			]
+			"value": 300,
+			"weight": 2,
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"property": [
+				"L",
+				"UN"
+			],
+			"source": "DepthsofMelokir",
+			"seller": "Arthak"
+		},
+		{
+			"name": "Knuckle Knives",
+			"page": 0,
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "simple",
+			"rarity": "none",
+			"value": 300,
+			"weight": 2,
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"property": [
+				"L",
+				"UN"
+			],
+			"source": "SterlingVermin",
+			"seller": "Arthak"
+		},
+		{
+			"name": "Wicked Sickle",
+			"page": 0,
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 2500,
+			"dmg1": "2d4",
+			"dmgType": "P",
+			"source": "DepthsofMelokir",
+			"seller": "Arthak"
+		},
+		{
+			"name": "Bestial Caestus",
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "simple",
+			"rarity": "none",
+			"value": 300,
+			"weight": 2,
+			"dmg1": "1",
+			"dmgType": "B",
+			"property": [
+				"F",
+				"UN"
+			],
+			"source": "DepthsofMelokir",
+			"seller": "Arthak"
 		},
 		{
 			"name": "Fan Shield",
-			"source": "DoM",
+			"source": "DepthsofMelokir",
 			"type": "S",
 			"rarity": "none",
 			"value": 10000,
@@ -58,7 +105,7 @@
 		},
 		{
 			"name": "Arbalest",
-			"source": "DoM",
+			"source": "DepthsofMelokir",
 			"type": "R",
 			"rarity": "none",
 			"value": 10000,
@@ -77,6 +124,304 @@
 				"Having this weapon in hand reduces your speed by 10ft.",
 				"This weapon uses strength instead of dexterity for attack rolls and damage."
 			],
+			"seller": "Arthak"
+		},
+		{
+			"name": "Candle of the Deep",
+			"source": "XGE",
+			"page": 136,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"The flame of this candle is not extinguished when immersed in water. It gives off light and heat like a normal candle."
+			],
+			"value": 200,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Potion of Healing",
+			"source": "DMG",
+			"page": 187,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 153
+				}
+			],
+			"type": "P",
+			"tier": "minor",
+			"rarity": "common",
+			"weight": 0.5,
+			"entries": [
+				"You regain {@dice 2d4 + 2} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"value": 2500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Potion of Comprehension",
+			"source": "WDMM",
+			"page": 62,
+			"type": "P",
+			"rarity": "common",
+			"entries": [
+				"When you drink this potion, you gain the effect of a {@spell comprehend languages} spell for 1 hour. This liquid is a clear concoction with bits of salt and soot swirling in it."
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"value": 3000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Spell Scroll of Cure Wounds (1st Level)",
+			"source": "DMG",
+			"page": 200,
+			"srd": true,
+			"basicRules": true,
+			"type": "SC|DMG",
+			"tier": "minor",
+			"rarity": "common",
+			"entries": [
+				"This spell scroll allows the user to cast {@spell cure wounds} ({@dice 1d8 + 3}) once before disintegrating. You do not need to have the spell casting feature to use this item."
+			],
+			"spellScrollLevel": 1,
+			"miscTags": [
+				"CNS"
+			],
+			"value": 4500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Potion of Climbing",
+			"source": "DMG",
+			"page": 187,
+			"srd": true,
+			"type": "P",
+			"tier": "minor",
+			"rarity": "common",
+			"modifySpeed": {
+				"equal": {
+					"climb": "walk"
+				}
+			},
+			"entries": [
+				"When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength ({@skill Athletics}) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"value": 6000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Wand of Smiles",
+			"source": "XGE",
+			"page": 140,
+			"type": "WD|DMG",
+			"tier": "minor",
+			"rarity": "common",
+			"weight": 1,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"This wand has 3 charges. While holding it, you can use an action to expend 1 of its charges and target a humanoid you can see within 30 feet of you. The target must succeed on a {@dc 10} Charisma saving throw or be forced to smile for 1 minute.",
+				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of scowls|xge}."
+			],
+			"value": 500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Enduring Spellbook",
+			"source": "XGE",
+			"page": 137,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This spellbook, along with anything written on its pages, can't be damaged by fire or immersion in water. In addition, the spellbook doesn't deteriorate with age."
+			],
+			"value": 500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Cloak of Billowing",
+			"source": "XGE",
+			"page": 136,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"While wearing this cloak, you can use a bonus action to make it billow dramatically."
+			],
+			"value": 1000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Cloak of Many Fashions",
+			"source": "XGE",
+			"page": 136,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"While wearing this cloak, you can use a bonus action to change the style, color, and apparent quality of the garment. The cloak's weight doesn't change. Regardless of its appearance, the cloak can't be anything but a cloak. Although it can duplicate the appearance of other magic cloaks, it doesn't gain their magical properties."
+			],
+			"hasFluffImages": true,
+			"value": 1000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Hat of Wizardry",
+			"source": "XGE",
+			"page": 137,
+			"tier": "minor",
+			"rarity": "common",
+			"reqAttune": "by a wizard",
+			"reqAttuneTags": [
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"focus": [
+				"Wizard"
+			],
+			"entries": [
+				"This antiquated, cone\u2014shaped hat is adorned with gold crescent moons and stars. While you are wearing it, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can use the hat as a spellcasting focus for your wizard spells.",
+						"You can try to cast a cantrip that you don't know. The cantrip must be on the wizard spell list, and you must make a {@dc 10} Intelligence ({@skill Arcana}) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can't use this property again until you finish a long rest."
+					]
+				}
+			],
+			"value": 7500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Hat of Vermin",
+			"source": "XGE",
+			"page": 137,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"This hat has 3 charges. While holding the hat, you can use an action to expend 1 of its charges and speak a command word that summons your choice of a {@creature bat}, a {@creature frog}, or a {@creature rat}. The summoned creature magically appears in the hat and tries to get away from you as quickly as possible. The creature is neither friendly nor hostile, and it isn't under your control. It behaves as an ordinary creature of its kind and disappears after 1 hour or when it drops to 0 hit points. The hat regains all expended charges daily at dawn."
+			],
+			"value": 5000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Pole of Angling",
+			"source": "XGE",
+			"page": 138,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"While holding this 10-foot pole, you can speak a command word and transform it into a fishing pole with a hook, a line, and a reel. Speaking the command word again changes the fishing pole back into a normal 10-foot pole."
+			],
+			"value": 7500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Pole of Collapsing",
+			"source": "XGE",
+			"page": 138,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"While holding this 10-foot pole, you can use an action to speak a command word and cause it to collapse into a 1-foot-long rod, for ease of storage. The pole's weight doesn't change. You can use an action to speak a different command word and cause the rod to revert to a pole; however, the rod will elongate only as far as the surrounding space allows."
+			],
+			"hasFluffImages": true,
+			"value": 7500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Tankard of Sobriety",
+			"source": "XGE",
+			"page": 139,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This tankard has a stern face sculpted into one side. You can drink ale, wine, or any other nonmagical alcoholic beverage poured into it without becoming inebriated. The tankard has no effect on magical liquids or harmful substances such as poison."
+			],
+			"value": 1000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Pipe of Smoke Monsters",
+			"source": "XGE",
+			"page": 138,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"While smoking this pipe, you can use an action to exhale a puff of smoke that takes the form of a single creature, such as a dragon, a flumph, or a froghemoth. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke."
+			],
+			"hasFluffImages": true,
+			"value": 2000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Instrument of Illusions",
+			"source": "XGE",
+			"page": 137,
+			"type": "INS",
+			"tier": "minor",
+			"rarity": "common",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While you are playing this musical instrument, you can create harmless, illusory visual effects within a 5-foot-radius sphere centered on the instrument. If you are a bard, the radius increases to 15 feet. Sample visual effects include luminous musical notes, a spectral dancer, butterflies, and gently falling snow. The magical effects have neither substance nor sound, and they are obviously illusory. The effects end when you stop playing."
+			],
+			"value": 2000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Rope of Mending",
+			"source": "XGE",
+			"page": 138,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"You can cut this 50-foot coil of hempen rope into any number of smaller pieces, and then use an action to speak a command word and cause the pieces to knit back together. The pieces must be in contact with each other and not otherwise in use. A rope of mending is forever shortened if a section of it is lost or destroyed."
+			],
+			"value": 2000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Pot of Awakening",
+			"source": "XGE",
+			"page": 138,
+			"otherSources": [
+				{
+					"source": "IMR",
+					"page": 95
+				}
+			],
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"If you plant an ordinary shrub in this 10-pound clay pot and let it grow for 30 days, the shrub magically transforms into an {@creature awakened shrub} at the end of that time. When the shrub awakens, its roots break the pot, destroying it.",
+				"The awakened shrub is friendly toward you. Absent commands from you, it does nothing."
+			],
+			"value": 1000,
 			"seller": "Arthak"
 		},
 		{
@@ -298,8 +643,187 @@
 			"entries": [
 				"While you are holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore {@quickref Cover||3||half cover} when making a spell attack."
 			],
-			"lootTables": [
-				"Magic Item Table F"
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Wand of the Ritualist",
+			"source": "DepthsofMelokir",
+			"srd": true,
+			"type": "WD|DMG",
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 1,
+			"bonusSpellSaveDc": "+1",
+			"entries": [
+				"While you are holding this wand, you gain a +1 to your spell save DCs"
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Armour of Gleaming",
+			"source": "XGE",
+			"type": "GV|DMG",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"entries": [
+				"This armour never gets dirty.",
+				"The 5gp price of this item is in addition to the price of the armor", 
+				"You can provide the armour as part of purchasing this to discount this item by the Armour Price."
+			],
+			"value": 500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Cast-off Armour",
+			"source": "XGE",
+			"type": "GV|DMG",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"entries": [
+				"You can doff this armor as an action.",
+				"The 10gp price of this item is in addition to the price of the armor", 
+				"You can provide the armour as part of purchasing this to discount this item by the Armour Price."
+			],
+			"value": 1000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Weapon",
+			"type": "M",
+			"source": "DMG",
+			"page": 213,
+			"srd": true,
+			"basicRules": true,
+			"tier": "major",
+			"rarity": "uncommon",
+			"bonusWeapon": "+1",
+			"entries": [
+				"Weapon (Any)",
+				"You have a +1 bonus to attack and damage rolls made with this magic weapon."
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Insignia of Claws",
+			"source": "HotDQ",
+			"page": 94,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 178
+				}
+			],
+			"rarity": "uncommon",
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"The jewels in the insignia of the Cult of the Dragon flare with purple light when you enter combat, empowering your natural fists or natural weapons.",
+				"While wearing the insignia you gain a +1 bonus to the attack rolls and the damage rolls you make with unarmed strikes and natural weapons. Such attacks are considered to be magical."
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Nature's Mantle",
+			"source": "TCE",
+			"page": 133,
+			"rarity": "uncommon",
+			"reqAttune": "by a druid or ranger",
+			"reqAttuneTags": [
+				{
+					"class": "druid"
+				},
+				{
+					"class": "ranger"
+				}
+			],
+			"wondrous": true,
+			"weight": 2,
+			"focus": [
+				"Druid",
+				"Ranger"
+			],
+			"entries": [
+				"This cloak shifts color and texture to blend with the terrain surrounding you. While wearing the cloak, you can use it as a spellcasting focus for your druid and ranger spells.",
+				"While you are in an area that is lightly obscured, you can {@action Hide} as a bonus action even if you are being directly observed."
+			],
+			"hasFluffImages": true,
+			"value": 15000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Selfish Solo Broach",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				}
+			],
+			"wondrous": true,
+			"weight": 2,
+			"entries": [
+				"Whilst attuned to this item, you can choose to give yourself a bardic inspiration. Additionally once per short rest as a reaction to an ally rolling a natural 1, you can choose to mock them, regaining one use of your Bardic Inspiration."
+			],
+			"hasFluffImages": true,
+			"value": 20000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Rage Object",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a barbarian",
+			"reqAttuneTags": [
+				{
+					"class": "barbarian"
+				}
+			],
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"This weapon has a +1 to attack and damage rolls.",
+				"Twice per short rest, whilst wielding this weapon, you can use your strength modifier for the listed skill checks instead of any other ability score:",
+				"- Acrobatics",
+				"- Perception",
+				"- Stealth",
+				"- Survival",
+				"- Intimidation"
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Endurant Weapon",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "M",
+			"reqAttune": "by a fighter",
+			"reqAttuneTags": [
+				{
+					"class": "fighter"
+				}
+			],
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"This weapon has a +1 to attack and damage rolls.",
+				"Twice per short rest, whilst wielding this weapon, you can use your strength modifier for the listed skill checks instead of any other ability score:",
+				"- Acrobatics",
+				"- Perception",
+				"- Stealth",
+				"- Survival",
+				"- Intimidation"
 			],
 			"value": 75000,
 			"seller": "Arthak"
