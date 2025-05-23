@@ -1,3 +1,6 @@
+# v1.3.1.2
+Fixed a formatting issue with death knight's Command Macabre
+
 # v1.3.1.1
 Re-implemented the weapon property Esoteric as a replacement property to the SVM Unarmed Property (Pugilist Homebrew)
 
