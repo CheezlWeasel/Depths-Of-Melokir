@@ -3499,20 +3499,6 @@
 			"entries": [
 				"Life-defiling energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Whenever creatures of your choice enter the area for the first time on a turn or start their turn there, they must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d6} necrotic damage and can't regain hit points until the start of their next turn. On a successful save, a creature takes half as much damage and suffers no other effect."
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Cleric",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"necrotic"
 			],
@@ -3570,25 +3556,6 @@
 					]
 				}
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"fire"
 			],
@@ -3639,25 +3606,6 @@
 					]
 				}
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"fire",
 				"necrotic"
@@ -3706,15 +3654,6 @@
 				"You offer a creature a compelling challenge. If you have no allies within 5 feet of you, choose one creature within range who can see and hear you. They must succeed on a Charisma saving throw or answer your challenge and fight you. For the duration, you gain a +2 bonus to AC, the target has disadvantage on attack rolls against creatures other than you, and the first time the target tries to move away from you on a turn, they must succeed on a Charisma saving throw or their speed becomes 0 until the start of their next turn.",
 				"This spell ends if you end your turn more than 30 feet away from the target."
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Paladin",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"savingThrow": [
 				"charisma"
 			],
@@ -3758,15 +3697,6 @@
 				"You imbue a weapon you touch with an infernal blessing. Until the spell ends, the weapon extinguishes any mundane sources of light in a 30-foot radius. In addition, attacks made with the weapon deal an extra {@damage 2d6} necrotic damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.",
 				"As a bonus action on your turn while holding this weapon, you can end the spell early and cause the weapon to emit a burst of dark energy. Each creature of your choice who you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature takes {@damage 4d6} necrotic damage and is {@condition frightened} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition frightened}. At the end of each of their turns, a {@condition frightened} creature can make a Wisdom saving throw, ending the effect on themself on a success."
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Paladin",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"necrotic"
 			],
@@ -3819,25 +3749,6 @@
 				"You manifest a pocket of Hell. A 15-foot-radius sphere of darkness, brimstone, and blasting heat appears, centered on a point within range and lasting for the duration. The cloud of hellfire echoes with the cries of damned souls that can be heard by creatures within 30 feet of it. No light, even magical light, can illuminate the cloud, and any creatures fully within that area are {@condition blinded}.",
 				"The cloud warps the timescape, making the cloud's area difficult terrain. A creature who starts their turn in that area takes {@damage 3d6} fire damage. A creature who ends their turn in that area must succeed on a Wisdom saving throw or take {@damage 3d6} psychic damage as the voices of the damned crowd their mind."
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"fire",
 				"psychic"
@@ -3880,25 +3791,6 @@
 				"You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes {@damage 1d8} necrotic damage and the spell ends.",
 				"This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to {@dice 2d8}. Both damage rolls increase by {@dice 1d8} at 11th level ({@dice 2d8} and {@dice 3d8}) and again at 17th level ({@dice 3d8} and {@dice 4d8})."
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"necrotic"
 			],
@@ -3946,25 +3838,6 @@
 				"One side of the wall, selected by you when you cast this spell, deals {@damage 4d8} necrotic damage to each creature who ends their turn within 10 feet of that side or inside the wall. A creature takes the same damage when they enter the wall for the first time on a turn or end their turn there. The other side of the wall deals no damage.",
 				"Whenever a creature takes damage from the wall, you can use your reaction to gain temporary hit points equal to the amount of damage dealt."
 			],
-			"classes": {
-				"fromClassListVariant": [
-					{
-						"name": "Druid",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB",
-						"definedInSource": "IllriggerRevised"
-					}
-				]
-			},
 			"damageInflict": [
 				"necrotic"
 			],
