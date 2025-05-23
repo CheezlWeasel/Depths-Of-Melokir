@@ -495,9 +495,9 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Unarmed",
+					"name": "Esoteric",
 					"entries": [
-						"When you make an unarmed attack you can choose to deal the damage of this weapon instead of your normal unarmed attack damage."
+						"Attacks made with this weapon are considered to be both unarmed strikes and weapon attacks for features and effects that require them"
 					]
 				}
 			]
