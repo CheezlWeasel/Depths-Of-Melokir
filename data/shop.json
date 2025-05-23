@@ -817,13 +817,9 @@
 			"wondrous": true,
 			"bonusWeapon": "+1",
 			"entries": [
-				"This weapon has a +1 to attack and damage rolls.",
-				"Twice per short rest, whilst wielding this weapon, you can use your strength modifier for the listed skill checks instead of any other ability score:",
-				"- Acrobatics",
-				"- Perception",
-				"- Stealth",
-				"- Survival",
-				"- Intimidation"
+				"Weapon (any simple or martial weapon)",
+				"While attuned, you have a +1 bonus to attack and damage rolls with this weapon.",
+				"Furthermore, you gain an additional use of the \"Second Wind\" feature, and gain a +1 bonus to the amount of hit points recovered when you use the second wind feature."
 			],
 			"value": 75000,
 			"seller": "Arthak"
