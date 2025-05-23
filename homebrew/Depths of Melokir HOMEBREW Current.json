@@ -1908,9 +1908,10 @@
                     "items": [
                         "Move: The creature expends their reaction to move up to half their movement speed without provoking opportunity attacks.",
                         "Reinforce: The creature expends their reaction to gain the benefits of half cover until the start of their next turn.",
-                        "Hold the line: until the start of your next turn, the creature can use their reaction to make an opportunity attack against an enemy that comes within their reach. This ability may be used an amount of times equal to twice your proficiency bonus per long rest."
+                        "Hold the line: until the start of your next turn, the creature can use their reaction to make an opportunity attack against an enemy that comes within their reach."
                     ]
-                }
+                },
+                "This ability may be used an amount of times equal to twice your proficiency bonus per long rest."
             ]
         },
         {
