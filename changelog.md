@@ -1,3 +1,6 @@
+# v1.3.1.3
+Fixed errors within Arcane Archer's Arcane Shot feature in which the wrong feature was referenced in the additional properties text and a property that was previously missing has been added
+
 # v1.3.1.2
 Fixed a formatting issue with death knight's Command Macabre
 

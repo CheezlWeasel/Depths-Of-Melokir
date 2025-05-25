@@ -2584,8 +2584,9 @@
 				"You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.",
 				{
 					"type": "entries",
-					"name": "Arcane Archer Lore Optional Feature: Modified Properties",
+					"name": "Arcane Shot Optional Feature: Modified Properties",
 					"entries": [
+						"You may also trigger an Arcane Shot when firing from a crossbow as part of the {@action Attack} action",
 						"Instead of only having 2 uses of Arcane Shot per short or long rest, you now have an amount of charges equal to your proficiency bonus per short or long rest",
 						"Additionally, at the end of a long rest you can swap an Arcane Shot option you have previously learned with another one from the list."
 					]
