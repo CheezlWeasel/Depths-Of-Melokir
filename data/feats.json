@@ -1843,48 +1843,9 @@
 			"prerequisite": [
 				{
 					"level": {
+						"level": 4,
 						"class": {
-							"name": "Sorcerer",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"class": {
-							"name": "Wizard",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"class": {
-							"name": "Warlock",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"class": {
-							"name": "Bard",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"class": {
-							"name": "Cleric",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"class": {
-							"name": "Druid",
+							"name": "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard",
 							"visible": true
 						}
 					}
