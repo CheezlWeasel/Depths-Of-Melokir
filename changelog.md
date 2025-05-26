@@ -1,3 +1,6 @@
+# v1.3.1.4
+Fixed issues related to the DSotDQ feats and their prerequisites
+
 # v1.3.1.3
 Fixed errors within Arcane Archer's Arcane Shot feature in which the wrong feature was referenced in the additional properties text and a property that was previously missing has been added
 

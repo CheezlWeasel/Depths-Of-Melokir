@@ -195,7 +195,9 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "Bard, Cleric, Druid, Sorcerer, Wizard, Warlock"
+					"feat": [
+						"initiate of high sorcery|dsotdq|initiate of high sorcery (solinari)"
+					]
 				}
 			],
 			"additionalSpells": [
@@ -252,7 +254,9 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "Bard, Cleric, Druid, Sorcerer, Wizard, Warlock"
+					"feat": [
+						"initiate of high sorcery|dsotdq|initiate of high sorcery (solinari)"
+					]
 				}
 			],
 			"additionalSpells": [
@@ -309,7 +313,9 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "Bard, Cleric, Druid, Sorcerer, Wizard, Warlock"
+					"feat": [
+						"initiate of high sorcery|dsotdq|initiate of high sorcery (solinari)"
+					]
 				}
 			],
 			"additionalSpells": [
@@ -1831,6 +1837,210 @@
 			]
 		},
 		{
+			"name": "Initiate of High Sorcery",
+			"source": "DSotDQ",
+			"page": 32,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Sorcerer",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Wizard",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Warlock",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Bard",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Cleric",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Druid",
+							"visible": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"name": "Nuitari",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					},
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									{
+										"choose": {
+											"from": [
+												"dissonant whispers",
+												"false life",
+												"hex",
+												"ray of sickness"
+											],
+											"count": 2
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Lunitari",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					},
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									{
+										"choose": {
+											"from": [
+												"color spray",
+												"disguise self",
+												"feather fall",
+												"longstrider"
+											],
+											"count": 2
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Solinari",
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Wizard"
+							}
+						]
+					},
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									{
+										"choose": {
+											"from": [
+												"comprehend languages",
+												"detect evil and good",
+												"protection from evil and good",
+												"shield"
+											],
+											"count": 2
+										}
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"You've received training from magic-users affiliated with the Mages of High Sorcery.",
+				"Choose one of the three moons of Krynn to influence your magic: the black moon, Nuitari; the red moon, Lunitari; or the white moon, Solinari. You learn one cantrip of your choice from the wizard spell list and two 1st-level spells based on the moon you choose, as specified in the Lunar Spells table.",
+				{
+					"type": "table",
+					"caption": "Lunar Spells",
+					"colLabels": [
+						"Moon",
+						"1st-Level Spell"
+					],
+					"colStyles": [
+						"col-1",
+						"col-11"
+					],
+					"rows": [
+						[
+							"Nuitari",
+							"Choose two from {@spell dissonant whispers}, {@spell false life}, {@spell hex}, and {@spell ray of sickness}"
+						],
+						[
+							"Lunitari",
+							"Choose two from {@spell color spray}, {@spell disguise self}, {@spell feather fall}, and {@spell longstrider}"
+						],
+						[
+							"Solinari",
+							"Choose two from {@spell comprehend languages}, {@spell detect evil and good}, {@spell protection from evil and good}, and {@spell shield}"
+						]
+					]
+				},
+				"You can cast each of the chosen 1st-level spells without a spell slot, and you must finish a long rest before you can cast them in this way again. You can also cast the spells using any spell slots you have.",
+				"Your spellcasting ability for this feat's spells is Intelligence, Wisdom, or Charisma (choose when you select this feat)."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Inspiring Leader",
 			"source": "XPHB",
 			"page": 204,
@@ -1985,7 +2195,9 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "Barbarian, Fighter, Monk, Paladin, Ranger, Rogue"
+					"feat": [
+						"squire of solamnia|dsotdq"
+					]
 				}
 			],
 			"ability": [
@@ -2031,7 +2243,9 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "Barbarian, Fighter, Monk, Paladin, Ranger, Rogue"
+					"feat": [
+						"squire of solamnia|dsotdq"
+					]
 				}
 			],
 			"ability": [
@@ -2077,7 +2291,9 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "Barbarian, Fighter, Monk, Paladin, Ranger, Rogue"
+					"feat": [
+						"squire of solamnia|dsotdq"
+					]
 				}
 			],
 			"ability": [
@@ -4025,6 +4241,106 @@
 						"Increase your walking speed by 5 feet.",
 						"You gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice).",
 						"You have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to escape from being {@condition grappled}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Squire of Solamnia",
+			"source": "DSotDQ",
+			"page": 34,
+			"prerequisite": [
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Fighter",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Paladin",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Barbarian",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Artificer",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Monk",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Ranger",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"level": 4,
+						"class": {
+							"name": "Rogue",
+							"visible": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your training in the ways of the Knights of Solamnia grants you these benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Mount Up",
+							"entries": [
+								"Mounting or dismounting costs you only 5 feet of movement."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Precise Strike",
+							"entries": [
+								"Once per turn, when you make a weapon attack roll against a creature, you can cause the attack roll to have advantage. If the attack hits, you roll a {@dice d8} and add the number rolled as a bonus to the attack's damage roll. You can use this benefit a number of times equal to your proficiency bonus, but a use is expended only if the attack hits. You regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Membership in Knightly Orders",
+					"entries": [
+						"Knights of Solamnia are only ever members of one of their organization's orders. In the course of their training, most knights begin as members of the Knights of the Crown and then move on to join other orders. Whether a character follows this path or another, they retain what they learned as a member of an order even if they join another. Characters can change what knightly order they're a part of, but they always have access to any Knight of Solamnia feats they've acquired."
 					]
 				}
 			]
