@@ -1842,42 +1842,51 @@
 			"page": 32,
 			"prerequisite": [
 				{
-					"level": 4
-				},
-				{
-					"class": {
-						"name": "Sorcerer",
-						"visible": true
+					"level": {
+						"class": {
+							"name": "Sorcerer",
+							"visible": true
+						}
 					}
 				},
 				{
-					"class": {
-						"name": "Wizard",
-						"visible": true
-					}	
-				},
-				{
-					"class": {
-						"name": "Warlock",
-						"visible": true
+					"level": {
+						"class": {
+							"name": "Wizard",
+							"visible": true
+						}
 					}
 				},
 				{
-					"class": {
-						"name": "Bard",
-						"visible": true
+					"level": {
+						"class": {
+							"name": "Warlock",
+							"visible": true
+						}
 					}
 				},
 				{
-					"class": {
-						"name": "Cleric",
-						"visible": true
+					"level": {
+						"class": {
+							"name": "Bard",
+							"visible": true
+						}
 					}
 				},
 				{
-					"class": {
-						"name": "Druid",
-						"visible": true
+					"level": {
+						"class": {
+							"name": "Cleric",
+							"visible": true
+						}
+					}
+				},
+				{
+					"level": {
+						"class": {
+							"name": "Druid",
+							"visible": true
+						}
 					}
 				}
 			],
