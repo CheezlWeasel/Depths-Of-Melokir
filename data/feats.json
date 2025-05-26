@@ -1845,8 +1845,7 @@
 					"level": {
 						"level": 4,
 						"class": {
-							"name": "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard",
-							"visible": true
+							"name": "Bard, Cleric, Druid, Sorcerer, Warlock or Wizard"
 						}
 					}
 				}
