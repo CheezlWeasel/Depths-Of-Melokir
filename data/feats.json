@@ -4209,61 +4209,7 @@
 					"level": {
 						"level": 4,
 						"class": {
-							"name": "Fighter",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Paladin",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Barbarian",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Artificer",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Monk",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Ranger",
-							"visible": true
-						}
-					}
-				},
-				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "Rogue",
+							"name": "At least one level of Artificer, Barbarian, Fighter, Monk, Paladin, Ranger or Rogue",
 							"visible": true
 						}
 					}
