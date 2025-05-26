@@ -1843,7 +1843,7 @@
 			"prerequisite": [
 				{
 					"level": 4,
-					"other": "At least one level of Bard, Cleric, Druid, Sorcerer, Warlock or Wizard",
+					"other": "At least one level of Bard, Cleric, Druid, Sorcerer, Warlock or Wizard"
 				}
 			],
 			"additionalSpells": [
