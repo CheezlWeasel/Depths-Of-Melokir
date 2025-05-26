@@ -1842,13 +1842,8 @@
 			"page": 32,
 			"prerequisite": [
 				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "At least one level of Bard, Cleric, Druid, Sorcerer, Warlock or Wizard",
-							"visible": true
-						}
-					}
+					"level": 4,
+					"other": "At least one level of Bard, Cleric, Druid, Sorcerer, Warlock or Wizard",
 				}
 			],
 			"additionalSpells": [
@@ -4206,13 +4201,8 @@
 			"page": 34,
 			"prerequisite": [
 				{
-					"level": {
-						"level": 4,
-						"class": {
-							"name": "At least one level of Artificer, Barbarian, Fighter, Monk, Paladin, Ranger or Rogue",
-							"visible": true
-						}
-					}
+					"level": 4,
+					"other": "At least one level of Artificer, Barbarian, Fighter, Monk, Paladin, Ranger or Rogue"
 				}
 			],
 			"entries": [
