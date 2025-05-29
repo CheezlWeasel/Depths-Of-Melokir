@@ -124,6 +124,7 @@
 				"Having this weapon in hand reduces your speed by 10ft.",
 				"This weapon uses strength instead of dexterity for attack rolls and damage."
 			],
+			"weapon": true,
 			"seller": "Arthak"
 		},
 		{
@@ -673,6 +674,7 @@
 			"type": "GV|DMG",
 			"tier": "minor",
 			"rarity": "uncommon",
+			"armor": true,
 			"entries": [
 				"This armour never gets dirty.",
 				"The 5gp price of this item is in addition to the price of the armor", 
@@ -687,6 +689,7 @@
 			"type": "GV|DMG",
 			"tier": "minor",
 			"rarity": "uncommon",
+			"armor": true,
 			"entries": [
 				"You can doff this armor as an action.",
 				"The 10gp price of this item is in addition to the price of the armor", 
@@ -697,6 +700,7 @@
 		},
 		{
 			"name": "+1 Weapon",
+			"weapon": true,
 			"type": "M",
 			"source": "DMG",
 			"page": 213,
@@ -781,6 +785,7 @@
 		},
 		{
 			"name": "+1 Rage Object",
+			"weapon": true,
 			"source": "DepthsofMelokir",
 			"rarity": "uncommon",
 			"reqAttune": "by a barbarian",
@@ -805,6 +810,7 @@
 		},
 		{
 			"name": "+1 Endurant Weapon",
+			"weapon": true,
 			"source": "DepthsofMelokir",
 			"rarity": "uncommon",
 			"type": "M",
@@ -863,6 +869,7 @@
 		},
 		{
 			"name": "Oathbound Duty",
+			"weapon": true,
 			"source": "DepthsofMelokir",
 			"rarity": "uncommon",
 			"type": "M",
@@ -903,6 +910,7 @@
 		},
 		{
 			"name": "+1 Wanderer's Weapon",
+			"weapon": true,
 			"source": "DepthsofMelokir",
 			"rarity": "uncommon",
 			"type": "OTH",
@@ -1025,6 +1033,319 @@
 				}
 			],
 			"value": 40000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "True Name Weapon",
+			"weapon": true,
+			"source": "IllriggerRevised",
+			"rarity": "uncommon",
+			"reqAttune": "by an illrigger",
+			"reqAttuneTags": [
+				{
+					"class": "illrigger|IllriggerRevised"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Weapon (Any)",
+				"This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your true name to it. The name sears across the weapon in Infernal runes, then fades.",
+				"The typical True Name, an uncommon item, empowers an illrigger’s Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature"
+			],
+			"value": 40000,
+			"bonusWeapon": "+1",
+			"seller": "Arthak"
+		},
+		{
+			"name": "Amulet of the Hellish Knight",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by an illrigger",
+			"reqAttuneTags": [
+				{
+					"class": "illrigger|IllriggerRevised"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Weapon (Any)",
+				"This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your true name to it. The name sears across the weapon in Infernal runes, then fades.",
+				"The typical True Name, an uncommon item, empowers an illrigger’s Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature"
+			],
+			"value": 40000,
+			"bonusWeapon": "+1",
+			"seller": "Arthak"
+		},
+		{
+			"name": "Blunt, Force, Trauma",
+			"weapon": true,
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a Pugilist",
+			"reqAttuneTags": [
+				{
+					"class": "pugilist|SterlingVermin"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Weapon (Any)",
+				"This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your true name to it. The name sears across the weapon in Infernal runes, then fades.",
+				"The typical True Name, an uncommon item, empowers an illrigger’s Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature"
+			],
+			"value": 40000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Grit Armour",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "GV|DMG",
+			"reqAttune": true,
+			"armor": true,
+			"wondrous": true,
+			"entries": [
+				"Any clothes / light armour / medium armour / heavy armour",
+				"A measure of protection reinforced with scales. While attuned, you can use a bonus action to enter a defensive stance, losing half your movement speed from any source and taking 2 less damage from all sources. This stance lasts until the start of your next turn. Usable proficiency bonus times per long rest.",
+				"If the user has the Heavy Armour Master feat, they must choose between applying Grit reduction and Heavy Armour Master reduction to a given source of damage. They do not stack.",
+				"The 500gp price of this item is in addition to the price of the armor",
+				"You can provide the armour as part of purchasing this to discount this item by the Armour Price."
+			],
+			"value": 50000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Hookshot Armour",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "GV|DMG",
+			"wondrous": true,
+			"armor": true,
+			"entries": [
+				"Any light armour / medium armour",
+				"This armour has a grappling hook built into one of the plates. While wearing this set of armour you can cast the *Thorn Whip* spell without components and with 40ft of range, using Strength or Dexterity as the spellcasting attribute. If it targets a wall/ceiling, it can instead pull you up to 20ft closer to the wall/ceiling.",
+				"The 150gp price of this item is in addition to the price of the armor",
+				"You can provide the armour as part of purchasing this to discount this item by the Armour Price."
+			],
+			"value": 15000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Aegis  Armour",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "GV|DMG",
+			"wondrous": true,
+			"armor": true,
+			"reqAttune": true,
+			"entries": [
+				"Any light armour / medium armour / heavy armour",
+				"This armour has been enchanted to assist its user in shielding their allies.",
+				"As a reaction to a hostile creature targeting you or an ally within 20ft with an attack, you can move up to half your movement speed towards the attacker. If the attack was towards an ally, you may instead move towards the ally and force yourself to be the target of that attack if you get within 5ft of them. Usable proficiency bonus times per long rest.",
+				"The 300gp price of this item is in addition to the price of the armor",
+				"You can provide the armour as part of purchasing this to discount this item by the Armour Price."
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Magical Arrows/Bolts",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "A",
+			"wondrous": true,
+			"entries": [
+				"These arrows can be shot from any ranged weapon, when used any creature within 10ft of the target needs to make a DC 13 dexterity saving throw or take 2d4 damage listed in the below options. Once used these arrows lose their magical abilities.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "Lightning"
+						},
+						{
+							"type": "item",
+							"name": "Fire"
+						},
+						{
+							"type": "item",
+							"name": "Acid"
+						},
+						{
+							"type": "item",
+							"name": "Cold"
+						}
+					]
+				},
+				"Listed price is per piece of Ammunition"
+			],
+			"value": 2000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Crushers Delight",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "M",
+			"wondrous": true,
+			"entries": [
+				"This maul’s head is incredibly heavy for its size",
+				"When you would push a creature as the result of an attack using this weapon, or with the shove action while holding it, you may push them an additional 5ft."
+			],
+			"value": 15000,
+			"seller": "Arthak",
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true
+		},
+		{
+			"name": "Arcanists Weapon",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "GV|DMG",
+			"wondrous": true,
+			"entries": [
+				"A number of times equal to your proficiency bonus per long rest you may use your action to enter a stance. As part of entering this stance you may forgo any amount of attacks you may make this turn to make one. This attack deals 2d8 + Strength or Dexterity, and an additional 1d8 per attack you could make. If this attack hits an enemy they need to make a constitution saving throw equal to 8 + Proficiency bonus + Strength or Dexterity. If they fail, all attacks have advantage to hit them until the start of their next turn, as your mighty strike breaks their composure."
+			],
+			"value": 15000,
+			"seller": "Arthak",
+			"weapon": true
+		},
+		{
+			"name": "Goggles of Night",
+			"source": "DMG",
+			"page": 172,
+			"srd": true,
+			"basicRules": true,
+			"tier": "minor",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"While wearing these dark lenses, you have {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision}, wearing the goggles increases its range by 60 feet."
+			],
+			"hasFluffImages": true,
+			"value": 10000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Bracers of Archery",
+			"source": "DMG",
+			"page": 156,
+			"srd": true,
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"grantsProficiency": true,
+			"bonusWeaponDamage": "+2",
+			"entries": [
+				"While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons."
+			],
+			"hasFluffImages": true,
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Cloak of Elvenkind",
+			"source": "DMG",
+			"page": 158,
+			"srd": true,
+			"basicRules": true,
+			"tier": "major",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While you wear this cloak with its hood up, Wisdom ({@skill Perception}) checks made to see you have disadvantage, and you have advantage on Dexterity ({@skill Stealth}) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action."
+			],
+			"hasFluffImages": true,
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Bag of Holding",
+			"source": "DMG",
+			"page": 153,
+			"srd": true,
+			"basicRules": true,
+			"tier": "minor",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"weight": 15,
+			"entries": [
+				"This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.",
+				"If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.",
+				"Placing a bag of holding inside an extradimensional space created by a {@item Heward's handy haversack}, {@item portable hole}, or similar item instantly destroys both items and their contents"
+			],
+			"containerCapacity": {
+				"weight": [
+					500
+				],
+				"weightless": true
+			},
+			"hasFluffImages": true,
+			"value": 50000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Titan-Wrestler’s Gauntlets",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"These silver-lined gauntlets feel a bit too big for your hands.",
+				"The gauntlets have a number of charges equal to the wearer's proficiency bonus, and regain all expended charges at dawn.",
+				"On your turn, you can activate the gauntlets by expending a charge (no action required). Until the end of this turn, you can attempt to grapple creatures up to two sizes larger than yourself, and can continue to grapple them after this turn, however you move at 1/4 of the speed while grappling them, and they have advantage on checks made to escape your grapple."
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Amulet of Unending Fear",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"Whilst attuned this item, if you use an ability or spell to attempt to give a creature the frightened condition they have disadvantage on the required saving throw. Additionally if a creature would be immune to the frightened condition instead they have advantage on the required saving throw."
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Summoners Compendium",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"Whilst attuned to this item, creatures created by a subclass feature such as wildfire spirit, drake companion or hound of ill omen have the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "Once per turn, they deal an additional 1d4 damage when they hit with an attack."
+						},
+						{
+							"type": "item",
+							"entry": "At the start of a session or when the summon first appears, they have a number of temporary hit points equal to your level."
+						},
+						{
+							"type": "item",
+							"entry": "If they would die, they may instead choose to explode within 10ft dealing 3d6 force damage unless they make a constitution save equal to your spell casting DC."
+						}
+					]
+				}
+			],
+			"value": 75000,
 			"seller": "Arthak"
 		}
 	]
