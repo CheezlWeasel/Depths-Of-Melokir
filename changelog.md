@@ -1,6 +1,6 @@
 # v1.3.2.0
 The currently available contents of Arthak's wares (uncommons & commons) now exist within the shop tab
-An Index of all of the major content has been added
+An Index of all of the major content has been added to the front page
 
 # v1.3.1.4
 Fixed issues related to the DSotDQ feats and their prerequisites
