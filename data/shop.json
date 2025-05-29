@@ -823,6 +823,209 @@
 			],
 			"value": 75000,
 			"seller": "Arthak"
+		},
+		{
+			"name": "Paladin’s Elemental Binding Ring",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "RG|DMG",
+			"reqAttune": "by a Paladin",
+			"reqAttuneTags": [
+				{
+					"class": "paladin"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Whilst attuned to this ring, when you use the divine smite feature you may choose to change the damage type from radiant to one of the following options, fire, cold, lightning, thunder or poison.",
+				"Additionally twice per short rest when you use lay on hands, you may choose to extend the range of the ability from touch, to any creature within 30ft."
+			],
+			"value": 35000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Oathbound Resilience",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a Paladin",
+			"reqAttuneTags": [
+				{
+					"class": "paladin"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"A number of times equal to your proficiency bonus per long rest, you may extend the range of your lay on hands. The range is increased to 30ft. (It still requires a bonus action)",
+				"As a bonus action on your turn you may expend a divine sense to gain advantage on one attack roll against fiends, celestials and undead."
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Oathbound Duty",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "M",
+			"reqAttune": "by a Paladin",
+			"reqAttuneTags": [
+				{
+					"class": "paladin"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Weapon (any simple or martial weapon)",
+				"Whilst attuned to this weapon, you have +1 to attack and damage rolls made with it.",
+				"Whilst attuned to this weapon your lay on hands pool is increased by 10."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Bandit Ring",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "RG|DMG",
+			"reqAttune": "by a Rogue",
+			"reqAttuneTags": [
+				{
+					"class": "rogue"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"When you take the dash action you gain a climbing speed equal to your walking speed.",
+				"After you take the hide action you can teleport to an unoccupied space within 15ft.",
+				"When you take the disengage action, you can have an allied creature within 30ft of you, move 5ft without provoking opportunity attacks as a reaction."
+			],
+			"value": 35000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Wanderer's Weapon",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"type": "OTH",
+			"reqAttune": "by a Ranger",
+			"reqAttuneTags": [
+				{
+					"class": "ranger"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Weapon (any simple or martial weapon)",
+				"Whilst you are wielding this weapon, you cannot be suprised. Additionally, when you roll initiative you can grant any friendly ally within 60ft an additional 1d6 to that roll. This benefit can be used once per short rest."
+			],
+			"bonusWeapon": "+1",
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Artifice Life Support System",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by an artificer",
+			"reqAttuneTags": [
+				{
+					"class": "artificer|tce"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Whilst attuned to this tool, if an ally is attuned to or wearing one of your infusions and is hit by an attack, as a reaction you may choose to give them a number of temporary hit points equal to your level. Once this has occurred your infusion immediately fades."
+			],
+			"value": 37500,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+1 Shadebound Brooch",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a lictor",
+			"reqAttuneTags": [
+				{
+					"class": "lictor|DepthsofMelokir"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"This pitch-black gem is set in a strange metal. While wearing it, you gain a +1 to the saving throw DCs of your Wrack feature. In addition, when using the *Necrotic Engine feature* to gain temporary HP or deal additional necrotic damage, you reroll 1s on the dice, even if the new result is a 1."
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Amulet of Unliving Fervour",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a lictor",
+			"reqAttuneTags": [
+				{
+					"class": "lictor|DepthsofMelokir"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"When you expend a charge of your necrotic engine to either gain temporary hp or deal additional damage you add a +1 to the result of the temporary hp/damage roll.",
+				"Once per short rest, if you fail a constitution saving throw, you may expend a necrotic charge to gain an additional 1d4 to the save"
+			],
+			"value": 30000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Lictor's [] Reserve",
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": "by a lictor",
+			"type": "GV|DMG",
+			"reqAttuneTags": [
+				{
+					"class": "lictor|DepthsofMelokir"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"This Brass-embossed container seems to be chill to the touch, even to your hands.",
+				"Once per long rest, this item fully restores your necrotic charges if the right conditions are met. This item can be purchased in a number of variations:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"name": "[Bloodied]" ,
+							"entry": "you become bloodied (Reduced to below half HP)"
+						},
+						{
+							"type": "item",
+							"name": "[Exemplary]" ,
+							"entry": "When you land a critical hit on a hostile creature."
+						},
+						{
+							"type": "item",
+							"name": "[Slippery]" ,
+							"entry": "When you succeed on a physical (STR, DEX, CON) saving throw by 6 or more."
+						},
+						{
+							"type": "item",
+							"name": "[Resilient]" ,
+							"entry": "When you succeed on a spiritual [INT, WIS, CHA] saving throw by 6 or more."
+						},
+						{
+							"type": "item",
+							"name": "[Desperate]" ,
+							"entry": "Upon starting your turn with no necrotic charges."
+						},
+						{
+							"type": "item",
+							"name": "[Ruinous]" ,
+							"entry": "Upon three or more hostile creatures failing your wrack save."
+						}
+					]
+				}
+			],
+			"value": 40000,
+			"seller": "Arthak"
 		}
 	]
 }
