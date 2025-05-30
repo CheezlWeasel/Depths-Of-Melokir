@@ -1,3 +1,11 @@
+# v1.4.0.0
+The Amulet of Unending Fear has had a minor nerf that is now reflected in the shop
+
+THE SHOP MAKEBREW IS HERE
+*This is still incredibly jank and probably missing specific features
+
+A proper "Guide" will be sent out as to how this can be used to make items
+
 # v1.3.2.1
 Lictor now displays it's hit dice (because it didn't for whatever reason?????)
 

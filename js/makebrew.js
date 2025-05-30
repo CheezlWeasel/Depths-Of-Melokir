@@ -5,6 +5,7 @@ import {LegendaryGroupBuilder} from "./makebrew/makebrew-legendarygroup.js";
 import {PageUiUtil} from "./makebrew/makebrew-builderui.js";
 import {TagCondition, TaggerUtils} from "./converter/converterutils-tags.js";
 import {SITE_STYLE__CLASSIC} from "./consts.js";
+import {ShopBuilder} from "./makebrew/makebrew-shop.js";
 
 class PageUi {
 	constructor () {
@@ -36,6 +37,7 @@ class PageUi {
 	set creatureBuilder (creatureBuilder) { this._builders.creatureBuilder = creatureBuilder; }
 	set legendaryGroupBuilder (legendaryGroupBuilder) { this._builders.legendaryGroupBuilder = legendaryGroupBuilder; }
 	set spellBuilder (spellBuilder) { this._builders.spellBuilder = spellBuilder; }
+	set shopBuilder (shopBuilder) { this._builders.shopBuilder = shopBuilder; }
 
 	get creatureBuilder () { return this._builders.creatureBuilder; }
 
@@ -193,6 +195,7 @@ class PageUi {
 				<option value="creatureBuilder">Creature</option>
 				<option value="legendaryGroupBuilder">Legendary Group</option>
 				<option value="spellBuilder">Spell</option>
+				<option value="shopBuilder">Shop</option>
 				<option value="none" class="italic">Everything Else?</option>
 			</select>
 		`)
@@ -404,6 +407,10 @@ creatureBuilder.ui = ui;
 const legendaryGroupBuilder = new LegendaryGroupBuilder();
 ui.legendaryGroupBuilder = legendaryGroupBuilder;
 legendaryGroupBuilder.ui = ui;
+
+const shopBuilder = new ShopBuilder();
+ui.shopBuilder = shopBuilder;
+shopBuilder.ui = ui;
 
 window.addEventListener("load", async () => {
 	await Makebrew.doPageInit();

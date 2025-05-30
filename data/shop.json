@@ -1314,7 +1314,8 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Whilst attuned this item, if you use an ability or spell to attempt to give a creature the frightened condition they have disadvantage on the required saving throw. Additionally if a creature would be immune to the frightened condition instead they have advantage on the required saving throw."
+				"Whilst attuned this item, when you attempt to give a creature the frightened condition they have disadvantage on the first saving throw they make against that instance of the frightened condition, unless they have immunity to the condition.",
+				"Additionally, whenever you expend a limited resource that allows you to apply the frightened condition, such as a spell slot or a charge, you can bypass a creature's lack of fear. When you attempt to frighten a creature, if they are immune to the frightened condition and this is the first time you have attempted to frighten them since you expended said resource, you can ignore their immunity and they instead receive advantage on their saving throw. If they fail, any additional saves they would make to remove this instance of the frightened condition ignores their immunity and instead they receive advantage on their saving throw."
 			],
 			"value": 30000,
 			"seller": "Arthak"
@@ -1347,6 +1348,17 @@
 			],
 			"value": 75000,
 			"seller": "Arthak"
+		},
+		{
+			"uniqueId": "3210ff7e-6d68-45df-8391-80e1c1f64f97",
+			"name": "Scarlet Mist Scarf",
+			"rarity": "rare",
+			"seller": "Arthak",
+			"source": "DepthsofMelokir",
+			"reqAttune": true,
+			"entries": [
+				"Whilst wearing this item once per short rest you can activate this item and start concentrating, as a bonus action. Whilst active you and allies within 15ft gain the benefit half cover. When this aura first appears, if you or an ally is below half hp, they gain a number of temporary hit points equal to your level + your proficiency bonus. These effects last for 1 minute or until you lose your concentration (as if you were concentrating on a spell)."
+			]
 		}
 	]
 }
