@@ -1348,17 +1348,6 @@
 			],
 			"value": 75000,
 			"seller": "Arthak"
-		},
-		{
-			"uniqueId": "3210ff7e-6d68-45df-8391-80e1c1f64f97",
-			"name": "Scarlet Mist Scarf",
-			"rarity": "rare",
-			"seller": "Arthak",
-			"source": "DepthsofMelokir",
-			"reqAttune": true,
-			"entries": [
-				"Whilst wearing this item once per short rest you can activate this item and start concentrating, as a bonus action. Whilst active you and allies within 15ft gain the benefit half cover. When this aura first appears, if you or an ally is below half hp, they gain a number of temporary hit points equal to your level + your proficiency bonus. These effects last for 1 minute or until you lose your concentration (as if you were concentrating on a spell)."
-			]
 		}
 	]
 }
