@@ -1,3 +1,6 @@
+# v1.3.2.1
+Lictor now displays it's hit dice (because it didn't for whatever reason?????)
+
 # v1.3.2.0
 The currently available contents of Arthak's wares (uncommons & commons) now exist within the shop tab
 An Index of all of the major content has been added to the front page

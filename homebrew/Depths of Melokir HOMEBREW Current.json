@@ -481,6 +481,10 @@
         {
             "name": "Lictor",
             "source": "DepthsofMelokir",
+            "hd": {
+				"number": 1,
+				"faces": 8
+			},
             "proficiency": [
                 "con","cha"
             ],
