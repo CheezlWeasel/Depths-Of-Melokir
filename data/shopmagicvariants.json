@@ -235,7 +235,8 @@
 				],
                 "valueExpression": "15000",
 			    "seller": "Arthak"
-			}
+			},
+            "value": 15000
 		},
 		{
 			"name": "Blunt, Force, Trauma",
