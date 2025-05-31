@@ -5,6 +5,7 @@
 			"edition": "classic",
 			"type": "GV|DMG",
             "source": "XGE",
+            "value": 500,
 			"requires": [
 				{
 					"type": "HA"
@@ -15,15 +16,15 @@
 			],
 			"inherits": {
 				"nameSuffix": " of Gleaming",
-                "wondrous": true,
 				"source": "XGE",
 				"page": 136,
 				"tier": "minor",
 				"rarity": "common",
 				"entries": [
 					"This armor never gets dirty."
-				]
-			}
+				],
+                "valueExpression": "[[baseItem.value]] + 500"		
+            }
 		},
         {
 			"name": "Cast-Off Armor",
@@ -34,6 +35,7 @@
 					"armor": true
 				}
 			],
+            "value": 1000,
 			"inherits": {
 				"namePrefix": "Cast-Off ",
 				"source": "XGE",
@@ -42,8 +44,87 @@
 				"rarity": "common",
 				"entries": [
 					"You can doff this armor as an action."
-				]
+				],
+                "valueExpression": "[[baseItem.value]] + 1000"	
 			}
+		},
+        {
+			"name": "True Name Weapon",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "True Name ",
+				"source": "IllriggerRevised",
+				"page": 38,
+				"rarity": "uncommon",
+				"reqAttune": "by a illrigger",
+				"entries": [
+					"This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your true name to it. The name sears across the weapon in Infernal runes, then fades.",
+					"The typical True Name, an uncommon item, empowers an illrigger's Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature."
+				],
+                "value": 40000,
+			    "seller": "Arthak"
+			},
+			"hasFluff": true
+		},
+        {
+			"name": "+1 Weapon",
+			"edition": "classic",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+            "value": 30000,
+			"inherits": {
+				"namePrefix": "+1 ",
+				"source": "DMG",
+				"page": 213,
+				"srd": true,
+				"basicRules": true,
+				"tier": "major",
+				"rarity": "uncommon",
+				"bonusWeapon": "+1",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon."
+				],
+                "valueExpression": "30000"
+			}
+		},
+		{
+			"name": "+1 Wanderer's Weapon",
+            "edition": "classic",
+            "type": "GV|DMG",
+            "requires": [
+                {
+                    "weapon": true
+                }
+            ],
+			"inherits": {
+                "source": "DepthsofMelokir",
+                "rarity": "uncommon",
+                "reqAttune": "by a Ranger",
+                "reqAttuneTags": [
+                    {
+                        "class": "ranger"
+                    }
+                ],
+			    "wondrous": true,
+                "entries": [
+                    "Whilst you are wielding this weapon, you cannot be suprised. Additionally, when you roll initiative you can grant any friendly ally within 60ft an additional 1d6 to that roll. This benefit can be used once per short rest."
+                ],
+                "bonusWeapon": "+1",
+                "value": 75000,
+                "seller": "Arthak"
+            }
 		}
     ]
 }

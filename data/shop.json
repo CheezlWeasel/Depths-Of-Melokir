@@ -547,39 +547,6 @@
 			"seller": "Arthak"
 		},
 		{
-			"name": "Cast-off Armour",
-			"source": "XGE",
-			"type": "GV|DMG",
-			"tier": "minor",
-			"rarity": "uncommon",
-			"armor": true,
-			"entries": [
-				"You can doff this armor as an action.",
-				"The 10gp price of this item is in addition to the price of the armor", 
-				"You can provide the armour as part of purchasing this to discount this item by the Armour Price."
-			],
-			"value": 1000,
-			"seller": "Arthak"
-		},
-		{
-			"name": "+1 Weapon",
-			"weapon": true,
-			"type": "M",
-			"source": "DMG",
-			"page": 213,
-			"srd": true,
-			"basicRules": true,
-			"tier": "major",
-			"rarity": "uncommon",
-			"bonusWeapon": "+1",
-			"entries": [
-				"Weapon (Any)",
-				"You have a +1 bonus to attack and damage rolls made with this magic weapon."
-			],
-			"value": 30000,
-			"seller": "Arthak"
-		},
-		{
 			"name": "+1 Insignia of Claws",
 			"source": "HotDQ",
 			"page": 94,
@@ -772,27 +739,6 @@
 			"seller": "Arthak"
 		},
 		{
-			"name": "+1 Wanderer's Weapon",
-			"weapon": true,
-			"source": "DepthsofMelokir",
-			"rarity": "uncommon",
-			"type": "OTH",
-			"reqAttune": "by a Ranger",
-			"reqAttuneTags": [
-				{
-					"class": "ranger"
-				}
-			],
-			"wondrous": true,
-			"entries": [
-				"Weapon (any simple or martial weapon)",
-				"Whilst you are wielding this weapon, you cannot be suprised. Additionally, when you roll initiative you can grant any friendly ally within 60ft an additional 1d6 to that roll. This benefit can be used once per short rest."
-			],
-			"bonusWeapon": "+1",
-			"value": 75000,
-			"seller": "Arthak"
-		},
-		{
 			"name": "Artifice Life Support System",
 			"source": "DepthsofMelokir",
 			"rarity": "uncommon",
@@ -896,27 +842,6 @@
 				}
 			],
 			"value": 40000,
-			"seller": "Arthak"
-		},
-		{
-			"name": "True Name Weapon",
-			"weapon": true,
-			"source": "IllriggerRevised",
-			"rarity": "uncommon",
-			"reqAttune": "by an illrigger",
-			"reqAttuneTags": [
-				{
-					"class": "illrigger|IllriggerRevised"
-				}
-			],
-			"wondrous": true,
-			"entries": [
-				"Weapon (Any)",
-				"This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your true name to it. The name sears across the weapon in Infernal runes, then fades.",
-				"The typical True Name, an uncommon item, empowers an illrigger’s Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature"
-			],
-			"value": 40000,
-			"bonusWeapon": "+1",
 			"seller": "Arthak"
 		},
 		{
