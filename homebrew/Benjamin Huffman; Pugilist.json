@@ -2209,23 +2209,6 @@
 	],
 	"baseitem": [
 		{
-			"name": "Brass Knuckles",
-			"page": 0,
-			"type": "M",
-			"weapon": true,
-			"weaponCategory": "simple",
-			"rarity": "none",
-			"value": 100,
-			"weight": 1,
-			"dmg1": "1d4",
-			"dmgType": "B",
-			"property": [
-				"L",
-				"UN"
-			],
-			"source": "SterlingVermin"
-		},
-		{
 			"name": "Katar",
 			"page": 0,
 			"type": "M",

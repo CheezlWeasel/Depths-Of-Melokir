@@ -185,22 +185,45 @@ class ShopSublistManager extends SublistManager {
 	}
 }
 
-class Shop extends DataUtil.item {
-	static _PAGE = UrlUtil.PG_SHOP;
+class Shop {
+	static _loadedRawJson = null;
+	static _pLoadingRawJson = null;
+
 	static async loadRawJSON () {
-		if (Shop._loadedRawJson) return Shop._loadedRawJson;
+		if (this._loadedRawJson) return this._loadedRawJson;
+		if (this._pLoadingRawJson) return this._pLoadingRawJson;
 
-		Shop._pLoadingRawJson = (async () => {
-			const urlShop = `${Renderer.get().baseUrl}data/shop.json`;
-			const data = await Shop.loadJSON(urlShop);
+		this._pLoadingRawJson = (async () => {
+			const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop.json`);
+			const baseItemsData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shop-base.json`);
+			const magicVariantsData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/shopmagicvariants.json`);
 
-			Shop._loadedRawJson = {
+			let brewBaseItems = [];
+			let brewMagicVariants = [];
+			if (typeof BrewUtil2 !== "undefined" && BrewUtil2.pGetBrewProcessed) {
+				const brew = await BrewUtil2.pGetBrewProcessed();
+				brewBaseItems = brew.baseitem || [];
+				brewMagicVariants = brew.magicvariant || [];
+			}
+
+			this._loadedRawJson = {
 				shop: MiscUtil.copyFast(data.shop),
+				baseitem: [...(baseItemsData.baseitem || []), ...brewBaseItems],
+				magicvariant: [...(magicVariantsData.magicvariant || []), ...brewMagicVariants],
 			};
+			return this._loadedRawJson;
 		})();
-		await Shop._pLoadingRawJson;
+		return this._pLoadingRawJson;
+	}
 
-		return Shop._loadedRawJson;
+	static async getAllBaseItems() {
+		const raw = await this.loadRawJSON();
+		return raw.baseitem || [];
+	}
+
+	static async getAllMagicVariants() {
+		const raw = await this.loadRawJSON();
+		return raw.magicvariant || [];
 	}
 
 	static async loadJSON () {
@@ -209,20 +232,29 @@ class Shop extends DataUtil.item {
 	}
 
 	static async loadPrerelease () {
-		const items = await Renderer.item.pGetShopItemsFromPrerelease?.() || [];
+		const items = (await Renderer.item.pGetShopItemsFromPrerelease?.()) || [];
 		return { shop: items };
 	}
 
 	static async loadBrew () {
-		const items = await Renderer.item.pGetShopItemsFromBrew?.() || [];
+		const items = (await Renderer.item.pGetShopItemsFromBrew?.()) || [];
 		return { shop: items };
 	}
-}
 
+	// Utility to get all merged data for use elsewhere
+	static async getMergedShopData() {
+		return await this.loadRawJSON();
+	}
+}
 globalThis.Shop = Shop
 
 class ShopPage extends ListPage {
 	constructor () {
+		// Load all shop-related data, including baseitem and magicvariant
+		Shop.loadRawJSON().then(raw => {
+			this._baseItems = raw.baseitem || [];
+			this._magicVariants = raw.magicvariant || [];
+		});
 		Renderer.item.pPopulatePropertyAndTypeReference(Shop.loadJSON());
 		const pFnGetFluff = Renderer.item.pGetFluff.bind(Renderer.item);
 		super({
@@ -279,6 +311,8 @@ class ShopPage extends ListPage {
 	get primaryLists () { return [this._mundaneList, this._magicList]; }
 
 	getListItem (item, itI, isExcluded) {
+		// Ensure every item has a source property
+		if (!item.source) item.source = "HB";
 		const hash = UrlUtil.autoEncodeHash(item);
 
 		if (Renderer.item.isExcluded(item, {hash})) return null;
@@ -404,6 +438,24 @@ class ShopPage extends ListPage {
 		this._$pgContent.empty().append(RenderItems.$getRenderedItem(ent));
 	}
 
+	_renderMagicVariantsSection() {
+		const $section = $("<div class='ve-flex-col my-3'></div>");
+		$section.append(`<h3>Magic Variants (magicvariants.json + shopmagicvariants.json + homebrew)</h3>`);
+		if (!this._magicVariants?.length) {
+			$section.append(`<div>No magic variants found.</div>`);
+			return $section;
+		}
+		this._magicVariants.forEach(variant => {
+			const $item = RenderItems.$getRenderedItem(variant);
+			$section.append($item);
+		});
+		return $section;
+	}
+
+	async pOnLoad(...args) {
+		await super.pOnLoad(...args);
+	}
+
 	async _pOnLoad_pInitPrimaryLists () {
 		const $iptSearch = $("#lst__search");
 		const $btnReset = $("#reset");
@@ -501,6 +553,30 @@ class ShopPage extends ListPage {
 	}
 
 	_addData (data) {
+		// Merge base items into the main shop list
+		if (this._baseItems?.length) {
+			if (!data.shop) data.shop = [];
+			const existing = new Set(data.shop.map(it => `${it.name}|${it.source}`));
+			for (const baseItem of this._baseItems) {
+				const key = `${baseItem.name}|${baseItem.source}`;
+				if (!existing.has(key)) {
+					data.shop.push(baseItem);
+					existing.add(key);
+				}
+			}
+		}
+		// Merge magic variants into the main shop list
+		if (this._magicVariants?.length) {
+			if (!data.shop) data.shop = [];
+			const existing = new Set(data.shop.map(it => `${it.name}|${it.source}`));
+			for (const variant of this._magicVariants) {
+				const key = `${variant.name}|${variant.source}`;
+				if (!existing.has(key)) {
+					data.shop.push(variant);
+					existing.add(key);
+				}
+			}
+		}
 		super._addData(data);
 
 		// populate table labels

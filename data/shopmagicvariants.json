@@ -1,0 +1,49 @@
+{
+    "magicvariant": [
+        {
+			"name": "Armor of Gleaming",
+			"edition": "classic",
+			"type": "GV|DMG",
+            "source": "XGE",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Gleaming",
+                "wondrous": true,
+				"source": "XGE",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"This armor never gets dirty."
+				]
+			}
+		},
+        {
+			"name": "Cast-Off Armor",
+			"edition": "classic",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Cast-Off ",
+				"source": "XGE",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"You can doff this armor as an action."
+				]
+			}
+		}
+    ]
+}
