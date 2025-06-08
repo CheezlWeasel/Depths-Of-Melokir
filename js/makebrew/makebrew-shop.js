@@ -11,14 +11,12 @@ export class ShopBuilder extends BuilderBase {
 			titleSelectDefaultSource: "(Same as Shop)",
 		});
 		this._renderOutputDebounced = MiscUtil.debounce(() => this._renderOutput(), 50);
-		// Add entry type selector: shop, baseitem, magicvariant
-		this._entryTypes = [
-			{label: "Shop Item", value: "shop"},
-			{label: "Base Item", value: "baseitem"},
-			{label: "Magic Variant", value: "magicvariant"},
+		// Only one entry type: shop
+		this._tabTypes = [
+			{label: "Shop Items", value: "shop"},
 		];
-		this._entryType = "shop";
-		// Add all possible type values from Parser.js (static list)
+		this._activeTab = "shop";
+		// Item type options (no baseitem)
 		this._itemTypeOptions = [
 			{value: "A", label: "Armor"},
 			{value: "M", label: "Melee Weapon"},
@@ -33,7 +31,6 @@ export class ShopBuilder extends BuilderBase {
 			{value: "RD", label: "Rod"},
 			{value: "RG", label: "Ring"},
 			{value: "W", label: "Wand"},
-			{value: "WD", label: "Wondrous Item"},
 			{value: "VEH", label: "Vehicle"},
 			{value: "EXP", label: "Explosive"},
 			{value: "AMMO", label: "Ammunition"},
@@ -41,12 +38,44 @@ export class ShopBuilder extends BuilderBase {
 			{value: "POI", label: "Poison"},
 			{value: "CON", label: "Container"},
 			{value: "OTH", label: "Other"},
-			{value: "GV|DMG", label: "Generic Variant (for magicvariant)"},
-			// Add more as needed from Parser.js
+			{value: "GV|DMG", label: "Generic Variant"},
+			{value: "EMB", label: "Emblem"},
+			{value: "EHMT", label: "Enhancement"},
 		];
 		this._itemTypeVals = this._itemTypeOptions.map(it => it.value);
 		this._itemTypeLabels = {};
 		this._itemTypeOptions.forEach(it => this._itemTypeLabels[it.value] = it.label);
+		// Item property options (manually listed, similar to itemTypeOptions)
+		this._itemPropertyOptions = [
+			{value: "2H", label: "2H - Two-Handed"},
+			{value: "A", label: "A - Ammunition"},
+			{value: "F", label: "F - Finesse"},
+			{value: "H", label: "H - Heavy"},
+			{value: "L", label: "L - Light"},
+			{value: "LD", label: "LD - Loading"},
+			{value: "R", label: "R - Reach"},
+			{value: "RLD", label: "RLD - Reload"},
+			{value: "S", label: "S - Special"},
+			{value: "T", label: "T - Thrown"},
+			{value: "V", label: "V - Versatile"},
+		];
+		this._itemPropertyVals = this._itemPropertyOptions.map(it => it.value);
+		this._itemPropertyLabels = {};
+		this._itemPropertyOptions.forEach(it => this._itemPropertyLabels[it.value] = it.label);
+		// Rarity options
+		this._rarityOptions = [
+			{value: "common", label: "Common"},
+			{value: "uncommon", label: "Uncommon"},
+			{value: "rare", label: "Rare"},
+			{value: "very rare", label: "Very Rare"},
+			{value: "legendary", label: "Legendary"},
+			{value: "artifact", label: "Artifact"},
+			{value: "varies", label: "Varies"},
+			{value: "none", label: "None"},
+		];
+		this._rarityVals = this._rarityOptions.map(it => it.value);
+		this._rarityLabels = {};
+		this._rarityOptions.forEach(it => this._rarityLabels[it.value] = it.label);
 	}
 
 	async pHandleSidebarLoadExistingClick () {
@@ -73,13 +102,12 @@ export class ShopBuilder extends BuilderBase {
 		return {
 			...super._getInitialState(),
 			name: "New Shop Item",
-			type: "M",
+			type: "OTH",
 			value: 0,
 			weight: 0,
 			rarity: "none",
 			seller: "",
 			source: this._ui ? this._ui.source : "",
-			// Add other default shop fields as needed
 		};
 	}
 
@@ -96,13 +124,12 @@ export class ShopBuilder extends BuilderBase {
 	_renderInputImpl () {
 		this.doCreateProxies();
 		this.renderInputControls();
-		this._renderInputMain();
+		this._renderInputMainTabs();
 	}
 
-	_renderInputMain () {
+	_renderInputMainTabs () {
 		this._sourcesCache = MiscUtil.copy(this._ui.allSources);
 		const $wrp = this._ui.$wrpInput.empty();
-		// Remove debounce for immediate rendering
 		const cb = () => {
 			this.renderOutput();
 			this.doUiSave();
@@ -110,104 +137,117 @@ export class ShopBuilder extends BuilderBase {
 		};
 		this._cbCache = cb;
 		this._resetTabs({tabGroup: "input"});
-		const tabs = this._renderTabs([
-			new TabUiUtil.TabMeta({name: "Info", hasBorder: true}),
-			new TabUiUtil.TabMeta({name: "Weapon Details", hasBorder: true}),
-			new TabUiUtil.TabMeta({name: "Armor Details", hasBorder: true}),
-			new TabUiUtil.TabMeta({name: "Item Details", hasBorder: true}),
-		], {
+		const tabs = this._renderTabs(this._tabTypes.map(t => new TabUiUtil.TabMeta({name: t.label, hasBorder: true})), {
 			tabGroup: "input",
-			cbTabChange: this.doUiSave.bind(this),
+			cbTabChange: () => {}, // No-op, only one tab
 		});
-		const [infoTab, weaponTab, armorTab, itemTab] = tabs;
 		$$`<div class="ve-flex-v-center w-100 no-shrink ui-tab__wrp-tab-heads--border">${tabs.map(it => it.$btnTab)}</div>`.appendTo($wrp);
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
+		const [shopTab] = tabs;
+		this._renderShopInput(shopTab.$wrpTab, cb);
+	}
 
-		// Entry type selector
-		const $selType = $(`<select class="form-control input-xs mr-2"></select>`)
-			.change(() => {
-				this._entryType = $selType.val();
-				this.renderInput();
-				this.renderOutput();
-			})
-			.append(this._entryTypes.map(t => `<option value="${t.value}"${t.value === this._entryType ? " selected" : ""}>${t.label}</option>`));
-		$$`<div class="mb-2">Entry Type: ${$selType}</div>`.prependTo($wrp);
+	_renderShopInput($tab, cb) {
+		BuilderUi.$getStateIptString("Name", cb, this._state, {nullable: false, callback: () => this.pRenderSideMenu()}, "name").appendTo($tab);
+		this._$selSource = this.$getSourceInput(cb).appendTo($tab);
+		BuilderUi.$getStateIptEnum(
+			"Type",
+			cb,
+			this._state,
+			{
+				vals: this._itemTypeVals,
+				labels: this._itemTypeLabels,
+				fnDisplay: v => this._itemTypeLabels[v] || v
+			},
+			"type",
+		).on("change", () => {
+			renderWeaponFields();
+		}).appendTo($tab);
+		BuilderUi.$getStateIptNumber("Value", cb, this._state, {}, "value").appendTo($tab);
+		BuilderUi.$getStateIptNumber("Weight", cb, this._state, {}, "weight").appendTo($tab);
+		BuilderUi.$getStateIptEnum(
+			"Rarity",
+			cb,
+			this._state,
+			{
+				vals: this._rarityVals,
+				labels: this._rarityLabels,
+				fnDisplay: v => this._rarityLabels[v] || v,
+			},
+			"rarity",
+		).appendTo($tab);
+		BuilderUi.$getStateIptString("Seller", cb, this._state, {}, "seller").appendTo($tab);
+		// --- Dynamic Properties Dropdowns ---
+		const $wrpPropertiesHeader = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`).appendTo($tab);
+		$wrpPropertiesHeader.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Property</span>`);
+		const $wrpProperties = $(`<div class="ve-flex-col w-100"></div>`).appendTo($wrpPropertiesHeader);
+		const updatePropertiesState = () => {
+			const vals = $wrpProperties.find("select").map(function() { return $(this).val(); }).get().filter(Boolean);
+			this._state.property = [...new Set(vals)];
+			cb();
+		};
+		const renderPropertyDropdowns = () => {
+			$wrpProperties.empty();
+			const selected = this._state.property && Array.isArray(this._state.property) ? this._state.property : [];
+			const dropdownCount = selected.length ? selected.length + 1 : 1;
+			for (let i = 0; i < dropdownCount; ++i) {
+				const val = selected[i] || "";
+				const $row = $(`<div class="mb-1"></div>`);
+				const $sel = $(`<select class="form-control input-xs form-control--minimal w-100" style="min-width:0;"></select>`);
+				$sel.append($(`<option value="">(Select Property)</option>`));
+				this._itemPropertyOptions.forEach(opt => {
+					$sel.append($(`<option></option>`).val(opt.value).text(opt.label));
+				});
+				$sel.val(val);
+				$sel.change(() => {
+					if (!$sel.val()) {
+						this._state.property = selected.slice(0, i);
+					} else {
+						const newSelected = selected.slice(0, i);
+						if ($sel.val()) newSelected.push($sel.val());
+						this._state.property = newSelected;
+					}
+					renderPropertyDropdowns();
+					updatePropertiesState();
+					renderWeaponFields(); // Call weapon fields update on property change
+				});
+				$row.append($sel);
+				$wrpProperties.append($row);
+			}
+		};
+		if (!Array.isArray(this._state.property)) this._state.property = [];
+		renderPropertyDropdowns();
 
-		// INFO
-		BuilderUi.$getStateIptString("Name", cb, this._state, {nullable: false, callback: () => this.pRenderSideMenu()}, "name").appendTo(infoTab.$wrpTab);
-		this._$selSource = this.$getSourceInput(cb).appendTo(infoTab.$wrpTab);
-		if (this._entryType === "shop" || this._entryType === "baseitem") {
-			BuilderUi.$getStateIptEnum(
-				"Type",
-				cb,
-				this._state,
-				{
-					vals: this._itemTypeVals,
-					labels: this._itemTypeLabels,
-					fnDisplay: v => this._itemTypeLabels[v] || v
-				},
-				"type"
-			).appendTo(infoTab.$wrpTab);
-			BuilderUi.$getStateIptNumber("Value", cb, this._state, {}, "value").appendTo(infoTab.$wrpTab);
-			BuilderUi.$getStateIptNumber("Weight", cb, this._state, {}, "weight").appendTo(infoTab.$wrpTab);
-			BuilderUi.$getStateIptString("Rarity", cb, this._state, {}, "rarity").appendTo(infoTab.$wrpTab);
-			BuilderUi.$getStateIptString("Seller", cb, this._state, {}, "seller").appendTo(infoTab.$wrpTab);
-		}
-		if (this._entryType === "magicvariant") {
-			BuilderUi.$getStateIptEnum(
-				"Type (e.g. GV|DMG)",
-				cb,
-				this._state,
-				{
-					vals: this._itemTypeVals,
-					labels: this._itemTypeLabels,
-					fnDisplay: v => this._itemTypeLabels[v] || v
-				},
-				"type"
-			).appendTo(infoTab.$wrpTab);
-			BuilderUi.$getStateIptString("Edition", cb, this._state, {}, "edition").appendTo(infoTab.$wrpTab);
-		}
-
-		// WEAPON DETAILS
-		if (this._entryType === "shop" || this._entryType === "baseitem") {
-			// Weapon fields
-			BuilderUi.$getStateIptBoolean("Weapon", cb, this._state, {}, "weapon").appendTo(weaponTab.$wrpTab);
-			BuilderUi.$getStateIptString("Weapon Category", cb, this._state, {}, "weaponCategory").appendTo(weaponTab.$wrpTab);
-			BuilderUi.$getStateIptString("Damage (dmg1)", cb, this._state, {}, "dmg1").appendTo(weaponTab.$wrpTab);
-			BuilderUi.$getStateIptString("Damage Type", cb, this._state, {}, "dmgType").appendTo(weaponTab.$wrpTab);
-			BuilderUi.$getStateIptString("Damage (dmg2)", cb, this._state, {}, "dmg2").appendTo(weaponTab.$wrpTab);
-			BuilderUi.$getStateIptString("Range", cb, this._state, {}, "range").appendTo(weaponTab.$wrpTab);
-			BuilderUi.$getStateIptNumber("Bonus Weapon", cb, this._state, {}, "bonusWeapon").appendTo(weaponTab.$wrpTab);
-		}
-		// ARMOR DETAILS
-		if (this._entryType === "shop" || this._entryType === "baseitem") {
-			// Armor fields
-			BuilderUi.$getStateIptString("Armor Category", cb, this._state, {}, "armorCategory").appendTo(armorTab.$wrpTab);
-			BuilderUi.$getStateIptString("Strength Requirement", cb, this._state, {}, "strength").appendTo(armorTab.$wrpTab);
-			BuilderUi.$getStateIptBoolean("Disadvantage on Stealth", cb, this._state, {}, "stealth").appendTo(armorTab.$wrpTab);
-			BuilderUi.$getStateIptNumber("Bonus AC", cb, this._state, {}, "bonusAc").appendTo(armorTab.$wrpTab);
-		}
-		// ITEM DETAILS
-		if (this._entryType === "shop" || this._entryType === "baseitem") {
-			BuilderUi.$getStateIptStringArray("Properties", cb, this._state, {shortName: "Property"}, "property").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptString("Charges", cb, this._state, {}, "charges").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Other Tags", cb, this._state, {shortName: "Tag"}, "otherTags").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Properties (Additional)", cb, this._state, {shortName: "Property"}, "properties").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Resistances", cb, this._state, {shortName: "Resistance"}, "resist").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Immunities", cb, this._state, {shortName: "Immunity"}, "immune").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Vulnerabilities", cb, this._state, {shortName: "Vulnerability"}, "vulnerable").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Condition Immunities", cb, this._state, {shortName: "Condition"}, "conditionImmune").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptStringArray("Spellcasting Ability", cb, this._state, {shortName: "Ability"}, "spellcastingAbility").appendTo(itemTab.$wrpTab);
-		}
-		// MAGIC VARIANT DETAILS
-		if (this._entryType === "magicvariant") {
-			BuilderUi.$getStateIptStringArray("Requires (e.g. {type: 'HA'})", cb, this._state, {shortName: "Require", placeholder: '{"type": "HA"}'}, "requires").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptObject("Inherits (object)", cb, this._state, {placeholder: '{"nameSuffix": " of Gleaming", "source": "XGE", ...}'}, "inherits").appendTo(itemTab.$wrpTab);
-			BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo(itemTab.$wrpTab);
-		}
+		// --- Weapon-specific fields ---
+		const renderWeaponFields = () => {
+			$tab.find(`#weapon-fields`).remove();
+			const isWeapon = this._state.type === "M" || this._state.type === "R";
+			const isVersatile = this._state.property.includes("V");
+			if (isWeapon) {
+				const $wrpWeaponFields = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center" id="weapon-fields"></div>`).insertAfter($wrpPropertiesHeader);
+				$wrpWeaponFields.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Damage</span>`);
+				const $wrpWeaponInputs = $(`<div class="ve-flex-col w-100"></div>`).appendTo($wrpWeaponFields);
+				BuilderUi.$getStateIptString("Dice (e.g. 1d8)", cb, this._state, {}, "dmg1").appendTo($wrpWeaponInputs);
+				BuilderUi.$getStateIptEnum(
+					"Type",
+					cb,
+					this._state,
+					{
+						vals: this._damageTypeOptions.map(it => it.value),
+						labels: Object.fromEntries(this._damageTypeOptions.map(it => [it.value, it.label])),
+						fnDisplay: v => (this._damageTypeOptions.find(it => it.value === v)?.label || v)
+					},
+					"dmgType"
+				).appendTo($wrpWeaponInputs);
+				if (isVersatile) {
+					BuilderUi.$getStateIptString("Alternate Dice (e.g. 1d10)", cb, this._state, {}, "dmg2").appendTo($wrpWeaponInputs);
+				}
+			}
+		};
+		renderWeaponFields();
+		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo($tab);
+		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
+		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo($tab);
 	}
 
 	renderOutput () {
@@ -218,18 +258,10 @@ export class ShopBuilder extends BuilderBase {
 		// Clone state to avoid mutating the builder state
 		const item = MiscUtil.copy(this._state);
 
-		// --- Normalize attunement ---
-		// Only set attunement if reqAttune is true (boolean) or a non-empty string (not 'false')
-		if (item.reqAttune === true) {
-			item.attunement = true;
-		} else if (typeof item.reqAttune === "string") {
-			const trimmed = item.reqAttune.trim().toLowerCase();
-			if (trimmed && trimmed !== "false") {
-				item.attunement = trimmed === "true" ? true : item.reqAttune.trim();
-			}
+		// --- Normalize property to always be an array ---
+		if (item.property && !Array.isArray(item.property)) {
+			item.property = [item.property];
 		}
-		// Do not set attunement if reqAttune is false/null/undefined or string 'false'
-		// Do not delete reqAttune so it is preserved for saving
 
 		// --- Normalize entries ---
 		if (typeof item.entries === "string") {
@@ -302,24 +334,14 @@ export class ShopBuilder extends BuilderBase {
 	}
 
 	_renderOutput () {
-		const $wrp = this._ui.$wrpOutput.empty();
 		this._resetTabs({tabGroup: "output"});
-		const tabs = this._renderTabs([
-			new TabUiUtil.TabMeta({name: this._entryTypes.find(t => t.value === this._entryType).label}),
-		], {tabGroup: "output"});
-		const [infoTab] = tabs;
+		const $wrp = this._ui.$wrpOutput.empty();
+		const tabs = this._renderTabs(this._tabTypes.map(t => new TabUiUtil.TabMeta({name: t.label})), {tabGroup: "output"});
 		$$`<div class="ve-flex-v-center w-100 no-shrink ui-tab__wrp-tab-heads--border">${tabs.map(it => it.$btnTab)}</div>`.appendTo($wrp);
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
-		const renderableItem = this._getRenderableItem();
-		if (RenderItems && typeof RenderItems.$getRenderedItem === "function" && this._entryType === "shop") {
-			const $item = RenderItems.$getRenderedItem(renderableItem, {isEditable: true});
-			$item.appendTo(infoTab.$wrpTab);
-		} else {
-			$$`<div class="veapp__msg ve-flex-vh-center">${this._entryType === "baseitem" ? "Base Item JSON Preview" : this._entryType === "magicvariant" ? "Magic Variant JSON Preview" : "Unable to render item: RenderItems is not available."}</div>`.appendTo(infoTab.$wrpTab);
-			$$`<pre class="ui-pre w-100">${JSON.stringify(renderableItem, null, 2)}</pre>`.appendTo(infoTab.$wrpTab);
-		}
-		// --- Download JSON button ---
-		const $btnDownload = $(`<button class="btn btn-xs btn-primary mt-2">Download JSON</button>`)
+		const [shopTab] = tabs;
+		this._renderShopOutput(shopTab.$wrpTab);
+		const $btnDownload = $("<button class=\"btn btn-xs btn-primary mt-2\">Download JSON</button>")
 			.click(() => {
 				const item = this._getRenderableItem();
 				const jsonStr = JSON.stringify(item, null, 2);
@@ -334,5 +356,36 @@ export class ShopBuilder extends BuilderBase {
 				URL.revokeObjectURL(url);
 			});
 		$btnDownload.appendTo($wrp);
+	}
+
+	_renderShopOutput($tab) {
+		const renderableItem = this._getRenderableItem();
+		if (RenderItems && typeof RenderItems.$getRenderedItem === "function") {
+			const $item = RenderItems.$getRenderedItem(renderableItem, {isEditable: true});
+			$item.appendTo($tab);
+		} else {
+			$$`<div class="veapp__msg ve-flex-vh-center">Shop Item JSON Preview</div>`.appendTo($tab);
+			$$`<pre class="ui-pre w-100">${JSON.stringify(renderableItem, null, 2)}</pre>`.appendTo($tab);
+		}
+	}
+
+	// Add this before _renderShopInput
+	get _damageTypeOptions() {
+		return [
+			{value: "bludgeoning", label: "Bludgeoning"},
+			{value: "piercing", label: "Piercing"},
+			{value: "slashing", label: "Slashing"},
+			{value: "acid", label: "Acid"},
+			{value: "cold", label: "Cold"},
+			{value: "fire", label: "Fire"},
+			{value: "force", label: "Force"},
+			{value: "lightning", label: "Lightning"},
+			{value: "necrotic", label: "Necrotic"},
+			{value: "poison", label: "Poison"},
+			{value: "psychic", label: "Psychic"},
+			{value: "radiant", label: "Radiant"},
+			{value: "thunder", label: "Thunder"},
+			{value: "", label: "(Other/Custom)"},
+		];
 	}
 }

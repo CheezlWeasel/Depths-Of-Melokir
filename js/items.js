@@ -475,3 +475,5 @@ itemsPage.sublistManager = new ItemsSublistManager();
 window.addEventListener("load", () => itemsPage.pOnLoad());
 
 globalThis.dbg_page = itemsPage;
+
+// In any logic that builds or displays item type text, add:

@@ -182,7 +182,7 @@ class MakeCards extends BaseComponent {
 				const isSel = $cbSelAll.prop("checked");
 				this._list.visibleItems.forEach(it => it.data.$cbSel.prop("checked", isSel));
 			});
-		$$`<div class="w-100 no-shrink ve-flex-v-center bold">
+		$$`<div class="w-100 no-shrink ve-flex-vcenter bold">
 			<div class="ve-col-1 mr-2 ve-flex-vh-center">${$cbSelAll}</div>
 			<div class="ve-col-3 mr-2 ve-flex-vh-center">Name</div>
 			<div class="ve-col-1-5 mr-2 ve-flex-vh-center">Source</div>
