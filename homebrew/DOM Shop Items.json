@@ -1,0 +1,118 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ArcaneAL",
+				"abbreviation": "AnA",
+				"full": "Arcane and Aluminium",
+				"authors": [
+					"corronnicolla"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color": "8f00ff"
+			},
+            {
+				"json": "SacredTree",
+				"abbreviation": "Tree",
+				"full": "The Sacred Tree",
+				"authors": [
+					"maplecrepe"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color": "628044"
+			},
+            {
+				"json": "Feywild",
+				"abbreviation": "Fey",
+				"full": "The Feywild",
+				"authors": [
+					"dndhater"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color": "8D021F"
+			},
+            {
+				"json": "Lands of Vita",
+				"abbreviation": "LoV",
+				"full": "The Beating Door",
+				"authors": [
+					"brandonno.2"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color": "FFA540"
+			},
+			{
+				"json": "VerdigrisRuins",
+				"abbreviation": "TVR",
+				"full": "The Verdigris Ruins",
+				"authors": [
+					"honeycombm"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color": "43B3A3"
+			}
+		],
+		"edition": "classic"
+	},
+	"itemType": [
+		{
+			"name": "Emblem",
+			"abbreviation": "EM",
+			"source": "SacredTree",
+			"entries": [
+				"You can only be attuned to one emblem at a time"
+			]
+		},
+		{
+			"name": "Enhancement",
+			"abbreviation": "EHMT",
+			"source": "ArcaneAL",
+			"entries": [
+				"Enhancements are a classification of magic item, which are constructed from fragments of much more powerful and advanced Arcanuminium constructions. These fragments can be fused onto an item of a certain type.",
+				"An item enhanced by Arcanuminium is considered magical if it was not already. An Enhancement can be added to, removed from or swapped with another Enhancement over the course of a long rest. An item can only have one enhancement at a time, unless it or the item has a feature that allows otherwise.",
+				"Fragments are made entirely of Arcanuminium, about the size of a clenched fist and appear as a fragment of some larger creation that you can't really understand. When they fuse onto an item, the fragment seems to melt into the fused item with golden light. How it changes the item is up to player interpretation, as Fragments seem to shift themselves to better suit their wielders. By default, Arcanuminium is a white/silver metal that seems to have golden, glowing inlays (Same as the Door to AnA)"
+			]		
+		}
+	],
+	"shop": [
+		{
+            "name": "Fragment N-001",
+            "rarity": "uncommon",
+            "source": "ArcaneAL",
+            "type": "EHMT",
+            "entries": [
+                "{@i This one is far older than any enhancement you’ve seen before…}",
+                "This enhancement can be fused to any non magical weapon. While fused to a weapon, you gain a +1 to attack and damage rolls made with said weapon. This bonus does not stack with any other +X feature. ",
+				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
+            ],
+            "reqAttune": true,
+            "wondrous": true,
+            "value": 45000,
+            "seller": "Bes' Selur"
+        },
+		{
+            "name": "Wrath Emblem",
+            "rarity": "uncommon",
+            "source": "SacredTree",
+            "type": "EM",
+            "entries": [
+                "Even looking at this makes your head fill with thoughts of violence",
+                "While attuned to this item and bloodied, your critical hit range increases by 2 (if you would score a critical hit on a natural 20, you can now score it on an 18 or higher, if you would score a critical hit on a 19 or higher, you instead score one on a 17 or higher)"
+            ],
+            "reqAttune": true,
+            "wondrous": true,
+            "value": 45000,
+            "seller": "Sought"
+        }
+	]
+}
