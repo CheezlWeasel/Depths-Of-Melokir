@@ -193,14 +193,16 @@ class Shop {
 
 			let brewBaseItems = [];
 			let brewMagicVariants = [];
+			let brewShopItems = [];
 			if (typeof BrewUtil2 !== "undefined" && BrewUtil2.pGetBrewProcessed) {
 				const brew = await BrewUtil2.pGetBrewProcessed();
 				brewBaseItems = brew.baseitem || [];
 				brewMagicVariants = brew.magicvariant || [];
+				brewShopItems = brew.shop || [];
 			}
 
 			this._loadedRawJson = {
-				shop: MiscUtil.copyFast(data.shop),
+				shop: MiscUtil.copyFast([...(data.shop || []), ...brewShopItems]),
 				baseitem: [...(baseItemsData.baseitem || []), ...brewBaseItems],
 				magicvariant: [...(magicVariantsData.magicvariant || []), ...brewMagicVariants],
 			};

@@ -956,7 +956,6 @@ Parser.ITM_PROP__SPECIAL = "S";
 Parser.ITM_PROP__THROWN = "T";
 Parser.ITM_PROP__VERSATILE = "V";
 Parser.ITM_PROP__VESTIGE_OF_DIVERGENCE = "Vst|TDCSR";
-
 Parser.ITM_PROP__ODND_TWO_HANDED = "2H|XPHB";
 Parser.ITM_PROP__ODND_AMMUNITION = "A|XPHB";
 Parser.ITM_PROP__ODND_FINESSE = "F|XPHB";
@@ -1731,7 +1730,7 @@ Parser.spSubclassesToFull = function (fromSubclassList, {isTextOnly = false, sub
 			const excludeClass = ExcludeUtil.isExcluded(UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES](mt.class), "class", mt.class.source);
 			if (excludeClass) return false;
 
-			return !ExcludeUtil.isExcluded(
+			const excludeSubclass = ExcludeUtil.isExcluded(
 				UrlUtil.URL_TO_HASH_BUILDER["subclass"]({
 					shortName: mt.subclass.name,
 					source: mt.subclass.source,
@@ -1742,6 +1741,9 @@ Parser.spSubclassesToFull = function (fromSubclassList, {isTextOnly = false, sub
 				mt.subclass.source,
 				{isNoCount: true},
 			);
+			if (excludeSubclass) return false;
+
+			return !Renderer.spell.isExcludedSubclassVariantSource({classDefinedInSource: mt.class.definedInSource});
 		})
 		.sort((a, b) => {
 			const byName = SortUtil.ascSort(a.class.name, b.class.name);
@@ -2653,7 +2655,7 @@ Parser.spClassesToCurrentAndLegacy = function (fromClassList) {
 };
 
 /**
- * Build a pair of strings; one with all current subclasses, one with all legacy subclasses
+ * Build a pair of strings; one with all current subclasses, one with all the legacy subclasses
  *
  * @param sp a spell
  * @param subclassLookup Data loaded from `generated/gendata-subclass-lookup.json`. Of the form: `{PHB: {Barbarian: {PHB: {Berserker: "Path of the Berserker"}}}}`
@@ -3769,7 +3771,6 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_LMoP,
 	Parser.SRC_HotDQ,
 	Parser.SRC_RoT,
-	Parser.SRC_RoTOS,
 	Parser.SRC_PotA,
 	Parser.SRC_OotA,
 	Parser.SRC_CoS,
@@ -3826,7 +3827,6 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_NRH_TLT,
 	Parser.SRC_NRH_AWoL,
 	Parser.SRC_NRH_AT,
-	Parser.SRC_SCC,
 	Parser.SRC_SCC_CK,
 	Parser.SRC_SCC_HfMT,
 	Parser.SRC_SCC_TMM,
@@ -3844,16 +3844,16 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_CoA,
 	Parser.SRC_PiP,
 	Parser.SRC_DitLCoT,
-	Parser.SRC_VNotEE,
-	Parser.SRC_LRDT,
-	Parser.SRC_UtHftLH,
-	Parser.SRC_ScoEE,
 	Parser.SRC_HFStCM,
 	Parser.SRC_GHLoE,
 	Parser.SRC_DoDk,
+	Parser.SRC_QftIS,
+	Parser.SRC_LRDT,
+	Parser.SRC_VEoR,
+	Parser.SRC_VNotEE,
+	Parser.SRC_UtHftLH,
+	Parser.SRC_ScoEE,
 	Parser.SRC_HBTD,
-
-	Parser.SRC_AWM,
 ]);
 Parser.SOURCES_CORE_SUPPLEMENTS = new Set(Object.keys(Parser.SOURCE_JSON_TO_FULL).filter(it => !Parser.SOURCES_ADVENTURES.has(it)));
 Parser.SOURCES_NON_STANDARD_WOTC = new Set([
@@ -3895,8 +3895,6 @@ Parser.SOURCES_NON_STANDARD_WOTC = new Set([
 	Parser.SRC_MCV4EC,
 	Parser.SRC_MisMV1,
 	Parser.SRC_LK,
-	Parser.SRC_AATM,
-	Parser.SRC_CoA,
 	Parser.SRC_PiP,
 	Parser.SRC_HFStCM,
 	Parser.SRC_UtHftLH,
@@ -4203,7 +4201,6 @@ Parser.getPropTag = function (prop) {
 	return prop;
 };
 
-// Note that ordering is important; we expect the "primary" prop to be first
 Parser.TAG_TO_PROPS = {
 	"creature": ["monster"],
 	"optfeature": ["optionalfeature"],

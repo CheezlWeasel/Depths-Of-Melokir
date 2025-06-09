@@ -7,7 +7,6 @@
 	"baseitem": [
 		{
 			"name": "Katar",
-			"page": 0,
 			"type": "M",
 			"weapon": true,
 			"weaponCategory": "simple",
@@ -42,7 +41,6 @@
 		},
 		{
 			"name": "Knuckle Knives",
-			"page": 0,
 			"type": "M",
 			"weapon": true,
 			"weaponCategory": "simple",
@@ -60,7 +58,6 @@
 		},
 		{
 			"name": "Wicked Sickle",
-			"page": 0,
 			"type": "M",
 			"weapon": true,
 			"weaponCategory": "martial",
