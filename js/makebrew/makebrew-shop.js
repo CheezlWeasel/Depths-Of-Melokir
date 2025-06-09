@@ -47,17 +47,17 @@ export class ShopBuilder extends BuilderBase {
 		this._itemTypeOptions.forEach(it => this._itemTypeLabels[it.value] = it.label);
 		// Item property options (manually listed, similar to itemTypeOptions)
 		this._itemPropertyOptions = [
-			{value: "2H", label: "2H - Two-Handed"},
-			{value: "A", label: "A - Ammunition"},
-			{value: "F", label: "F - Finesse"},
-			{value: "H", label: "H - Heavy"},
-			{value: "L", label: "L - Light"},
-			{value: "LD", label: "LD - Loading"},
-			{value: "R", label: "R - Reach"},
-			{value: "RLD", label: "RLD - Reload"},
-			{value: "S", label: "S - Special"},
-			{value: "T", label: "T - Thrown"},
-			{value: "V", label: "V - Versatile"},
+			{value: "2H", label: "Two-Handed"},
+			{value: "A", label: "Ammunition"},
+			{value: "F", label: "Finesse"},
+			{value: "H", label: "Heavy"},
+			{value: "L", label: "Light"},
+			{value: "LD", label: "Loading"},
+			{value: "R", label: "Reach"},
+			{value: "RLD", label: "Reload"},
+			{value: "S", label: "Special"},
+			{value: "T", label: "Thrown"},
+			{value: "V", label: "Versatile"},
 		];
 		this._itemPropertyVals = this._itemPropertyOptions.map(it => it.value);
 		this._itemPropertyLabels = {};
@@ -76,6 +76,34 @@ export class ShopBuilder extends BuilderBase {
 		this._rarityVals = this._rarityOptions.map(it => it.value);
 		this._rarityLabels = {};
 		this._rarityOptions.forEach(it => this._rarityLabels[it.value] = it.label);
+	}
+
+	// Add this before _renderShopInput
+
+	get _weaponCategoryOptions () {
+		return [
+			{value: "simple", label: "Simple"},
+			{value: "martial", label: "Martial"},
+		];
+	}
+
+	get _damageTypeOptions () {
+		return [
+			{value: "B", label: "Bludgeoning"},
+			{value: "P", label: "Piercing"},
+			{value: "S", label: "Slashing"},
+			{value: "A", label: "Acid"},
+			{value: "C", label: "Cold"},
+			{value: "F", label: "Fire"},
+			{value: "O", label: "Force"},
+			{value: "L", label: "Lightning"},
+			{value: "N", label: "Necrotic"},
+			{value: "I", label: "Poison"},
+			{value: "Y", label: "Psychic"},
+			{value: "R", label: "Radiant"},
+			{value: "T", label: "Thunder"},
+			{value: "", label: "(Other/Custom)"},
+		];
 	}
 
 	async pHandleSidebarLoadExistingClick () {
@@ -163,7 +191,7 @@ export class ShopBuilder extends BuilderBase {
 		).on("change", () => {
 			renderWeaponFields();
 		}).appendTo($tab);
-		BuilderUi.$getStateIptNumber("Value", cb, this._state, {}, "value").appendTo($tab);
+		BuilderUi.$getStateIptNumber("Value in CP", cb, this._state, {}, "value").appendTo($tab);
 		BuilderUi.$getStateIptNumber("Weight", cb, this._state, {}, "weight").appendTo($tab);
 		BuilderUi.$getStateIptEnum(
 			"Rarity",
@@ -223,13 +251,37 @@ export class ShopBuilder extends BuilderBase {
 			$tab.find(`#weapon-fields`).remove();
 			const isWeapon = this._state.type === "M" || this._state.type === "R";
 			const isVersatile = this._state.property.includes("V");
+			const isRanged = this._state.type === "R" || this._state.property.includes("T")
+			if (!isWeapon) {
+				this._state.dmg1 = "";
+				this._state.dmgType = "";
+				this._state.dmg2 = "";
+				this._state.range = "";
+			}
+			if (!isVersatile) {
+				this._state.dmg2 = "";
+			}
+			if (!isRanged) {
+				this._state.range = "";
+			}
 			if (isWeapon) {
 				const $wrpWeaponFields = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center" id="weapon-fields"></div>`).insertAfter($wrpPropertiesHeader);
-				$wrpWeaponFields.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Damage</span>`);
+				$wrpWeaponFields.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Weapon</span>`);
 				const $wrpWeaponInputs = $(`<div class="ve-flex-col w-100"></div>`).appendTo($wrpWeaponFields);
-				BuilderUi.$getStateIptString("Dice (e.g. 1d8)", cb, this._state, {}, "dmg1").appendTo($wrpWeaponInputs);
 				BuilderUi.$getStateIptEnum(
-					"Type",
+					"Weapon Category",
+					cb,
+					this._state,
+					{
+						vals: this._weaponCategoryOptions.map(it => it.value),
+						labels: Object.fromEntries(this._weaponCategoryOptions.map(it => [it.value, it.label])),
+						fnDisplay: v => (this._weaponCategoryOptions.find(it => it.value === v)?.label || v)
+					},
+					"weaponCategory",
+				).appendTo($wrpWeaponInputs);
+				BuilderUi.$getStateIptString("Damage Dice (e.g. 1d8)", cb, this._state, {}, "dmg1").appendTo($wrpWeaponInputs);
+				BuilderUi.$getStateIptEnum(
+					"Damage Type",
 					cb,
 					this._state,
 					{
@@ -237,10 +289,13 @@ export class ShopBuilder extends BuilderBase {
 						labels: Object.fromEntries(this._damageTypeOptions.map(it => [it.value, it.label])),
 						fnDisplay: v => (this._damageTypeOptions.find(it => it.value === v)?.label || v)
 					},
-					"dmgType"
+					"dmgType",
 				).appendTo($wrpWeaponInputs);
 				if (isVersatile) {
-					BuilderUi.$getStateIptString("Alternate Dice (e.g. 1d10)", cb, this._state, {}, "dmg2").appendTo($wrpWeaponInputs);
+					BuilderUi.$getStateIptString("Damage Dice 2 (e.g. 1d10)", cb, this._state, {}, "dmg2").appendTo($wrpWeaponInputs);
+				}
+				if (isRanged) {
+					BuilderUi.$getStateIptString("Range", cb, this._state, {}, "range").appendTo($wrpWeaponInputs);
 				}
 			}
 		};
@@ -254,9 +309,18 @@ export class ShopBuilder extends BuilderBase {
 		this._renderOutput();
 	}
 
-	_getRenderableItem() {
-		// Clone state to avoid mutating the builder state
+	_getRenderableItem () {
 		const item = MiscUtil.copy(this._state);
+
+		// --- Attunement normalization ---
+		// 5eTools expects reqAttune to be boolean true or a non-empty string (for specific requirements)
+		if (item.reqAttune) {
+			item.reqAttune = true;
+			item._attunement = "(requires attunement)";
+		} else {
+			delete item.reqAttune;
+			delete item._attunement;
+		}
 
 		// --- Normalize property to always be an array ---
 		if (item.property && !Array.isArray(item.property)) {
@@ -265,14 +329,12 @@ export class ShopBuilder extends BuilderBase {
 
 		// --- Normalize entries ---
 		if (typeof item.entries === "string") {
-			// If entries is a string, wrap in array
 			item.entries = [item.entries];
 		} else if (!Array.isArray(item.entries)) {
 			item.entries = [];
 		}
 
 		// --- Support lists in entries ---
-		// If any entry line starts with "- ", convert to a list object
 		if (Array.isArray(item.entries) && item.entries.length) {
 			let newEntries = [];
 			let currentList = null;
@@ -309,7 +371,6 @@ export class ShopBuilder extends BuilderBase {
 			item.rarity = undefined;
 		} else {
 			item.rarity = item.rarity.trim();
-			// Capitalize first letter for display (matches 5etools style)
 			item.rarity = item.rarity.charAt(0).toUpperCase() + item.rarity.slice(1).toLowerCase();
 		}
 
@@ -317,9 +378,6 @@ export class ShopBuilder extends BuilderBase {
 		if (!item.source) {
 			item.source = "Temp";
 		}
-
-		// --- Remove fields not expected by the renderer ---
-		if (this._entryType === "shop") delete item.seller;
 
 		// --- Remove undefined/empty fields ---
 		Object.keys(item).forEach(k => {
@@ -358,34 +416,16 @@ export class ShopBuilder extends BuilderBase {
 		$btnDownload.appendTo($wrp);
 	}
 
-	_renderShopOutput($tab) {
+	_renderShopOutput ($tab) {
 		const renderableItem = this._getRenderableItem();
 		if (RenderItems && typeof RenderItems.$getRenderedItem === "function") {
-			const $item = RenderItems.$getRenderedItem(renderableItem, {isEditable: true});
-			$item.appendTo($tab);
+			// Always use the standard 'nice' UI renderer
+			const $item = $(RenderItems.$getRenderedItem(renderableItem));
+			$tab.append($item);
 		} else {
+			// Fallback: just show JSON if renderer is missing (should not happen in production)
 			$$`<div class="veapp__msg ve-flex-vh-center">Shop Item JSON Preview</div>`.appendTo($tab);
 			$$`<pre class="ui-pre w-100">${JSON.stringify(renderableItem, null, 2)}</pre>`.appendTo($tab);
 		}
-	}
-
-	// Add this before _renderShopInput
-	get _damageTypeOptions() {
-		return [
-			{value: "bludgeoning", label: "Bludgeoning"},
-			{value: "piercing", label: "Piercing"},
-			{value: "slashing", label: "Slashing"},
-			{value: "acid", label: "Acid"},
-			{value: "cold", label: "Cold"},
-			{value: "fire", label: "Fire"},
-			{value: "force", label: "Force"},
-			{value: "lightning", label: "Lightning"},
-			{value: "necrotic", label: "Necrotic"},
-			{value: "poison", label: "Poison"},
-			{value: "psychic", label: "Psychic"},
-			{value: "radiant", label: "Radiant"},
-			{value: "thunder", label: "Thunder"},
-			{value: "", label: "(Other/Custom)"},
-		];
 	}
 }
