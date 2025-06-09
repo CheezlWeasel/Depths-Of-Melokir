@@ -113,6 +113,40 @@
             "wondrous": true,
             "value": 45000,
             "seller": "Sought"
-        }
+        },
+		{
+			"name": "Overloaded Lens",
+			"value": 50000,
+            "seller": "Arthak",
+			"weight": 3,
+			"rarity": "Uncommon",
+			"source": "DepthsofMelokir",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This is a circular crystal lens encased in iron. It brightens any light shone through it significantly, but it feels almost uncomfortably hot when you do so.",
+				"While attuned, when you impose an instantaneous AOE effect that deals damage originating from you, you can convert it to a line. (with both cones and radii originating from you, it becomes double the length and 5ft wide).",
+				"While attuned, whenever you impose an instantaneous AOE line originating from you and multiple creatures are in the line, you can overload the effect: the first creature in the line takes two more die of damage. Whenever you overload, take {@dice 1d4}+PROF radiant damage that can't be reduced or ignored. "
+			]
+		},
+		{
+			"name": "Gravebound Conduit",
+			"value": 40000,
+            "seller": "Arthak",
+			"weight": 1,
+			"rarity": "Uncommon",
+			"source": "DepthsofMelokir",
+			"reqAttune": "by a Lictor",
+			"reqAttuneTags": [
+				{
+					"class": "Lictor|DepthsofMelokir"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"This bundle of black strings seems unusually suited to transmitting deathly energies.",
+				"While attuned to this item, you can use the Wrack Foes ability more than once per turn. Additionally, you may reroll ones once on your Wrack Foes damage."
+			]
+		}
 	]
 }
