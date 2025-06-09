@@ -3567,11 +3567,11 @@
 								],
 								[
 									"7th",
-									"{@spell storm sphere}, {@spell watery sphere}"
+									"{@spell storm sphere|XGE}, {@spell watery sphere|XGE}"
 								],
 								[
 									"9th",
-									"{@spell control winds}, {@spell maelstrom}"
+									"{@spell control winds|XGE}, {@spell maelstrom|XGE}"
 								]
 							]
 						}

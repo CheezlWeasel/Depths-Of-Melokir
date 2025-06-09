@@ -11,6 +11,99 @@ export class ShopBuilder extends BuilderBase {
 			titleSelectDefaultSource: "(Same as Shop)",
 		});
 		this._renderOutputDebounced = MiscUtil.debounce(() => this._renderOutput(), 50);
+		// Only one entry type: shop
+		this._tabTypes = [
+			{label: "Shop Items", value: "shop"},
+		];
+		this._activeTab = "shop";
+		// Item type options (no baseitem)
+		this._itemTypeOptions = [
+			{value: "A", label: "Armor"},
+			{value: "M", label: "Melee Weapon"},
+			{value: "R", label: "Ranged Weapon"},
+			{value: "S", label: "Shield"},
+			{value: "G", label: "Adventuring Gear"},
+			{value: "SCF", label: "Spellcasting Focus"},
+			{value: "T", label: "Tool"},
+			{value: "INS", label: "Instrument"},
+			{value: "GS", label: "Gaming Set"},
+			{value: "P", label: "Potion"},
+			{value: "RD", label: "Rod"},
+			{value: "RG", label: "Ring"},
+			{value: "W", label: "Wand"},
+			{value: "VEH", label: "Vehicle"},
+			{value: "EXP", label: "Explosive"},
+			{value: "AMMO", label: "Ammunition"},
+			{value: "MNT", label: "Mount"},
+			{value: "POI", label: "Poison"},
+			{value: "CON", label: "Container"},
+			{value: "OTH", label: "Other"},
+			{value: "GV|DMG", label: "Generic Variant"},
+			{value: "EMB", label: "Emblem"},
+			{value: "EHMT", label: "Enhancement"},
+		];
+		this._itemTypeVals = this._itemTypeOptions.map(it => it.value);
+		this._itemTypeLabels = {};
+		this._itemTypeOptions.forEach(it => this._itemTypeLabels[it.value] = it.label);
+		// Item property options (manually listed, similar to itemTypeOptions)
+		this._itemPropertyOptions = [
+			{value: "2H", label: "Two-Handed"},
+			{value: "A", label: "Ammunition"},
+			{value: "F", label: "Finesse"},
+			{value: "H", label: "Heavy"},
+			{value: "L", label: "Light"},
+			{value: "LD", label: "Loading"},
+			{value: "R", label: "Reach"},
+			{value: "RLD", label: "Reload"},
+			{value: "S", label: "Special"},
+			{value: "T", label: "Thrown"},
+			{value: "V", label: "Versatile"},
+		];
+		this._itemPropertyVals = this._itemPropertyOptions.map(it => it.value);
+		this._itemPropertyLabels = {};
+		this._itemPropertyOptions.forEach(it => this._itemPropertyLabels[it.value] = it.label);
+		// Rarity options
+		this._rarityOptions = [
+			{value: "common", label: "Common"},
+			{value: "uncommon", label: "Uncommon"},
+			{value: "rare", label: "Rare"},
+			{value: "very rare", label: "Very Rare"},
+			{value: "legendary", label: "Legendary"},
+			{value: "artifact", label: "Artifact"},
+			{value: "varies", label: "Varies"},
+			{value: "none", label: "None"},
+		];
+		this._rarityVals = this._rarityOptions.map(it => it.value);
+		this._rarityLabels = {};
+		this._rarityOptions.forEach(it => this._rarityLabels[it.value] = it.label);
+	}
+
+	// Add this before _renderShopInput
+
+	get _weaponCategoryOptions () {
+		return [
+			{value: "simple", label: "Simple"},
+			{value: "martial", label: "Martial"},
+		];
+	}
+
+	get _damageTypeOptions () {
+		return [
+			{value: "B", label: "Bludgeoning"},
+			{value: "P", label: "Piercing"},
+			{value: "S", label: "Slashing"},
+			{value: "A", label: "Acid"},
+			{value: "C", label: "Cold"},
+			{value: "F", label: "Fire"},
+			{value: "O", label: "Force"},
+			{value: "L", label: "Lightning"},
+			{value: "N", label: "Necrotic"},
+			{value: "I", label: "Poison"},
+			{value: "Y", label: "Psychic"},
+			{value: "R", label: "Radiant"},
+			{value: "T", label: "Thunder"},
+			{value: "", label: "(Other/Custom)"},
+		];
 	}
 
 	async pHandleSidebarLoadExistingClick () {
@@ -37,13 +130,12 @@ export class ShopBuilder extends BuilderBase {
 		return {
 			...super._getInitialState(),
 			name: "New Shop Item",
-			type: "M",
+			type: "OTH",
 			value: 0,
 			weight: 0,
 			rarity: "none",
 			seller: "",
 			source: this._ui ? this._ui.source : "",
-			// Add other default shop fields as needed
 		};
 	}
 
@@ -60,13 +152,12 @@ export class ShopBuilder extends BuilderBase {
 	_renderInputImpl () {
 		this.doCreateProxies();
 		this.renderInputControls();
-		this._renderInputMain();
+		this._renderInputMainTabs();
 	}
 
-	_renderInputMain () {
+	_renderInputMainTabs () {
 		this._sourcesCache = MiscUtil.copy(this._ui.allSources);
 		const $wrp = this._ui.$wrpInput.empty();
-		// Remove debounce for immediate rendering
 		const cb = () => {
 			this.renderOutput();
 			this.doUiSave();
@@ -74,82 +165,176 @@ export class ShopBuilder extends BuilderBase {
 		};
 		this._cbCache = cb;
 		this._resetTabs({tabGroup: "input"});
-		const tabs = this._renderTabs([
-			new TabUiUtil.TabMeta({name: "Info", hasBorder: true}),
-			new TabUiUtil.TabMeta({name: "Item Details", hasBorder: true}),
-		], {
+		const tabs = this._renderTabs(this._tabTypes.map(t => new TabUiUtil.TabMeta({name: t.label, hasBorder: true})), {
 			tabGroup: "input",
-			cbTabChange: this.doUiSave.bind(this),
+			cbTabChange: () => {}, // No-op, only one tab
 		});
-		const [infoTab, detailsTab] = tabs;
 		$$`<div class="ve-flex-v-center w-100 no-shrink ui-tab__wrp-tab-heads--border">${tabs.map(it => it.$btnTab)}</div>`.appendTo($wrp);
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
-		// INFO
-		BuilderUi.$getStateIptString("Name", cb, this._state, {nullable: false, callback: () => this.pRenderSideMenu()}, "name").appendTo(infoTab.$wrpTab);
-		this._$selSource = this.$getSourceInput(cb).appendTo(infoTab.$wrpTab);
-		BuilderUi.$getStateIptString("Type", cb, this._state, {}, "type").appendTo(infoTab.$wrpTab);
-		BuilderUi.$getStateIptNumber("Value", cb, this._state, {}, "value").appendTo(infoTab.$wrpTab);
-		BuilderUi.$getStateIptNumber("Weight", cb, this._state, {}, "weight").appendTo(infoTab.$wrpTab);
-		BuilderUi.$getStateIptString("Rarity", cb, this._state, {}, "rarity").appendTo(infoTab.$wrpTab);
-		BuilderUi.$getStateIptString("Seller", cb, this._state, {}, "seller").appendTo(infoTab.$wrpTab);
-		// ITEM DETAILS (match items.json structure)
-		BuilderUi.$getStateIptStringArray("Properties", cb, this._state, {shortName: "Property"}, "property").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Charges", cb, this._state, {}, "charges").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo(detailsTab.$wrpTab);
-		// Additional fields from items.json
-		BuilderUi.$getStateIptBoolean("Weapon", cb, this._state, {}, "weapon").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Weapon Category", cb, this._state, {}, "weaponCategory").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Damage (dmg1)", cb, this._state, {}, "dmg1").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Damage Type", cb, this._state, {}, "dmgType").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Damage (dmg2)", cb, this._state, {}, "dmg2").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Range", cb, this._state, {}, "range").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Armor Category", cb, this._state, {}, "armorCategory").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptString("Strength Requirement", cb, this._state, {}, "strength").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptBoolean("Disadvantage on Stealth", cb, this._state, {}, "stealth").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptNumber("Bonus Weapon", cb, this._state, {}, "bonusWeapon").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptNumber("Bonus AC", cb, this._state, {}, "bonusAc").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Other Tags", cb, this._state, {shortName: "Tag"}, "otherTags").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Properties (Additional)", cb, this._state, {shortName: "Property"}, "properties").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Resistances", cb, this._state, {shortName: "Resistance"}, "resist").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Immunities", cb, this._state, {shortName: "Immunity"}, "immune").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Vulnerabilities", cb, this._state, {shortName: "Vulnerability"}, "vulnerable").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Condition Immunities", cb, this._state, {shortName: "Condition"}, "conditionImmune").appendTo(detailsTab.$wrpTab);
-		BuilderUi.$getStateIptStringArray("Spellcasting Ability", cb, this._state, {shortName: "Ability"}, "spellcastingAbility").appendTo(detailsTab.$wrpTab);
+		const [shopTab] = tabs;
+		this._renderShopInput(shopTab.$wrpTab, cb);
+	}
+
+	_renderShopInput($tab, cb) {
+		BuilderUi.$getStateIptString("Name", cb, this._state, {nullable: false, callback: () => this.pRenderSideMenu()}, "name").appendTo($tab);
+		this._$selSource = this.$getSourceInput(cb).appendTo($tab);
+		BuilderUi.$getStateIptEnum(
+			"Type",
+			cb,
+			this._state,
+			{
+				vals: this._itemTypeVals,
+				labels: this._itemTypeLabels,
+				fnDisplay: v => this._itemTypeLabels[v] || v
+			},
+			"type",
+		).on("change", () => {
+			renderWeaponFields();
+		}).appendTo($tab);
+		BuilderUi.$getStateIptNumber("Value in CP", cb, this._state, {}, "value").appendTo($tab);
+		BuilderUi.$getStateIptNumber("Weight", cb, this._state, {}, "weight").appendTo($tab);
+		BuilderUi.$getStateIptEnum(
+			"Rarity",
+			cb,
+			this._state,
+			{
+				vals: this._rarityVals,
+				labels: this._rarityLabels,
+				fnDisplay: v => this._rarityLabels[v] || v,
+			},
+			"rarity",
+		).appendTo($tab);
+		BuilderUi.$getStateIptString("Seller", cb, this._state, {}, "seller").appendTo($tab);
+		// --- Dynamic Properties Dropdowns ---
+		const $wrpPropertiesHeader = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`).appendTo($tab);
+		$wrpPropertiesHeader.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Property</span>`);
+		const $wrpProperties = $(`<div class="ve-flex-col w-100"></div>`).appendTo($wrpPropertiesHeader);
+		const updatePropertiesState = () => {
+			const vals = $wrpProperties.find("select").map(function() { return $(this).val(); }).get().filter(Boolean);
+			this._state.property = [...new Set(vals)];
+			cb();
+		};
+		const renderPropertyDropdowns = () => {
+			$wrpProperties.empty();
+			const selected = this._state.property && Array.isArray(this._state.property) ? this._state.property : [];
+			const dropdownCount = selected.length ? selected.length + 1 : 1;
+			for (let i = 0; i < dropdownCount; ++i) {
+				const val = selected[i] || "";
+				const $row = $(`<div class="mb-1"></div>`);
+				const $sel = $(`<select class="form-control input-xs form-control--minimal w-100" style="min-width:0;"></select>`);
+				$sel.append($(`<option value="">(Select Property)</option>`));
+				this._itemPropertyOptions.forEach(opt => {
+					$sel.append($(`<option></option>`).val(opt.value).text(opt.label));
+				});
+				$sel.val(val);
+				$sel.change(() => {
+					if (!$sel.val()) {
+						this._state.property = selected.slice(0, i);
+					} else {
+						const newSelected = selected.slice(0, i);
+						if ($sel.val()) newSelected.push($sel.val());
+						this._state.property = newSelected;
+					}
+					renderPropertyDropdowns();
+					updatePropertiesState();
+					renderWeaponFields(); // Call weapon fields update on property change
+				});
+				$row.append($sel);
+				$wrpProperties.append($row);
+			}
+		};
+		if (!Array.isArray(this._state.property)) this._state.property = [];
+		renderPropertyDropdowns();
+
+		// --- Weapon-specific fields ---
+		const renderWeaponFields = () => {
+			$tab.find(`#weapon-fields`).remove();
+			const isWeapon = this._state.type === "M" || this._state.type === "R";
+			const isVersatile = this._state.property.includes("V");
+			const isRanged = this._state.type === "R" || this._state.property.includes("T")
+			if (!isWeapon) {
+				this._state.dmg1 = "";
+				this._state.dmgType = "";
+				this._state.dmg2 = "";
+				this._state.range = "";
+			}
+			if (!isVersatile) {
+				this._state.dmg2 = "";
+			}
+			if (!isRanged) {
+				this._state.range = "";
+			}
+			if (isWeapon) {
+				const $wrpWeaponFields = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center" id="weapon-fields"></div>`).insertAfter($wrpPropertiesHeader);
+				$wrpWeaponFields.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Weapon</span>`);
+				const $wrpWeaponInputs = $(`<div class="ve-flex-col w-100"></div>`).appendTo($wrpWeaponFields);
+				BuilderUi.$getStateIptEnum(
+					"Weapon Category",
+					cb,
+					this._state,
+					{
+						vals: this._weaponCategoryOptions.map(it => it.value),
+						labels: Object.fromEntries(this._weaponCategoryOptions.map(it => [it.value, it.label])),
+						fnDisplay: v => (this._weaponCategoryOptions.find(it => it.value === v)?.label || v)
+					},
+					"weaponCategory",
+				).appendTo($wrpWeaponInputs);
+				BuilderUi.$getStateIptString("Damage Dice (e.g. 1d8)", cb, this._state, {}, "dmg1").appendTo($wrpWeaponInputs);
+				BuilderUi.$getStateIptEnum(
+					"Damage Type",
+					cb,
+					this._state,
+					{
+						vals: this._damageTypeOptions.map(it => it.value),
+						labels: Object.fromEntries(this._damageTypeOptions.map(it => [it.value, it.label])),
+						fnDisplay: v => (this._damageTypeOptions.find(it => it.value === v)?.label || v)
+					},
+					"dmgType",
+				).appendTo($wrpWeaponInputs);
+				if (isVersatile) {
+					BuilderUi.$getStateIptString("Damage Dice 2 (e.g. 1d10)", cb, this._state, {}, "dmg2").appendTo($wrpWeaponInputs);
+				}
+				if (isRanged) {
+					BuilderUi.$getStateIptString("Range", cb, this._state, {}, "range").appendTo($wrpWeaponInputs);
+				}
+			}
+		};
+		renderWeaponFields();
+		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo($tab);
+		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
+		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo($tab);
 	}
 
 	renderOutput () {
 		this._renderOutput();
 	}
 
-	_getRenderableItem() {
-		// Clone state to avoid mutating the builder state
+	_getRenderableItem () {
 		const item = MiscUtil.copy(this._state);
 
-		// --- Normalize attunement ---
-		// Only set attunement if reqAttune is true (boolean) or a non-empty string (not 'false')
-		if (item.reqAttune === true) {
-			item.attunement = true;
-		} else if (typeof item.reqAttune === "string") {
-			const trimmed = item.reqAttune.trim().toLowerCase();
-			if (trimmed && trimmed !== "false") {
-				item.attunement = trimmed === "true" ? true : item.reqAttune.trim();
-			}
+		// --- Attunement normalization ---
+		// 5eTools expects reqAttune to be boolean true or a non-empty string (for specific requirements)
+		if (item.reqAttune) {
+			item.reqAttune = true;
+			item._attunement = "(requires attunement)";
+		} else {
+			delete item.reqAttune;
+			delete item._attunement;
 		}
-		// Do not set attunement if reqAttune is false/null/undefined or string 'false'
-		// Do not delete reqAttune so it is preserved for saving
+
+		// --- Normalize property to always be an array ---
+		if (item.property && !Array.isArray(item.property)) {
+			item.property = [item.property];
+		}
 
 		// --- Normalize entries ---
 		if (typeof item.entries === "string") {
-			// If entries is a string, wrap in array
 			item.entries = [item.entries];
 		} else if (!Array.isArray(item.entries)) {
 			item.entries = [];
 		}
 
 		// --- Support lists in entries ---
-		// If any entry line starts with "- ", convert to a list object
 		if (Array.isArray(item.entries) && item.entries.length) {
 			let newEntries = [];
 			let currentList = null;
@@ -186,7 +371,6 @@ export class ShopBuilder extends BuilderBase {
 			item.rarity = undefined;
 		} else {
 			item.rarity = item.rarity.trim();
-			// Capitalize first letter for display (matches 5etools style)
 			item.rarity = item.rarity.charAt(0).toUpperCase() + item.rarity.slice(1).toLowerCase();
 		}
 
@@ -194,9 +378,6 @@ export class ShopBuilder extends BuilderBase {
 		if (!item.source) {
 			item.source = "Temp";
 		}
-
-		// --- Remove fields not expected by the renderer ---
-		delete item.seller;
 
 		// --- Remove undefined/empty fields ---
 		Object.keys(item).forEach(k => {
@@ -211,21 +392,40 @@ export class ShopBuilder extends BuilderBase {
 	}
 
 	_renderOutput () {
-		const $wrp = this._ui.$wrpOutput.empty();
 		this._resetTabs({tabGroup: "output"});
-		const tabs = this._renderTabs([
-			new TabUiUtil.TabMeta({name: "Shop Item"}),
-		], {tabGroup: "output"});
-		const [infoTab] = tabs;
+		const $wrp = this._ui.$wrpOutput.empty();
+		const tabs = this._renderTabs(this._tabTypes.map(t => new TabUiUtil.TabMeta({name: t.label})), {tabGroup: "output"});
 		$$`<div class="ve-flex-v-center w-100 no-shrink ui-tab__wrp-tab-heads--border">${tabs.map(it => it.$btnTab)}</div>`.appendTo($wrp);
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
-		// Always render using RenderItems, as in items.html
+		const [shopTab] = tabs;
+		this._renderShopOutput(shopTab.$wrpTab);
+		const $btnDownload = $("<button class=\"btn btn-xs btn-primary mt-2\">Download JSON</button>")
+			.click(() => {
+				const item = this._getRenderableItem();
+				const jsonStr = JSON.stringify(item, null, 2);
+				const blob = new Blob([jsonStr], {type: "application/json"});
+				const url = URL.createObjectURL(blob);
+				const a = document.createElement("a");
+				a.href = url;
+				a.download = `${item.name ? item.name.replace(/[^a-z0-9]/gi, "_").toLowerCase() : "shop_entry"}.json`;
+				document.body.appendChild(a);
+				a.click();
+				document.body.removeChild(a);
+				URL.revokeObjectURL(url);
+			});
+		$btnDownload.appendTo($wrp);
+	}
+
+	_renderShopOutput ($tab) {
+		const renderableItem = this._getRenderableItem();
 		if (RenderItems && typeof RenderItems.$getRenderedItem === "function") {
-			const renderableItem = this._getRenderableItem();
-			const $item = RenderItems.$getRenderedItem(renderableItem, {isEditable: true});
-			$item.appendTo(infoTab.$wrpTab);
+			// Always use the standard 'nice' UI renderer
+			const $item = $(RenderItems.$getRenderedItem(renderableItem));
+			$tab.append($item);
 		} else {
-			$$`<div class="veapp__msg ve-flex-vh-center">Unable to render item: RenderItems is not available.</div>`.appendTo(infoTab.$wrpTab);
+			// Fallback: just show JSON if renderer is missing (should not happen in production)
+			$$`<div class="veapp__msg ve-flex-vh-center">Shop Item JSON Preview</div>`.appendTo($tab);
+			$$`<pre class="ui-pre w-100">${JSON.stringify(renderableItem, null, 2)}</pre>`.appendTo($tab);
 		}
 	}
 }

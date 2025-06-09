@@ -306,7 +306,7 @@
             ],
             "type": "GV|DMG",
             "inherits": {
-                "namePrefix": "+1 Endurant",
+                "namePrefix": "+1 Endurant ",
                 "source": "DepthsofMelokir",
                 "rarity": "uncommon",
                 "reqAttune": "by a fighter",
