@@ -215,6 +215,19 @@
 		    "{@i Caution: Explosive}",
 		    "This enhancement can be fused to any non magical melee weapon. While fused to a weapon, it gains the Exploding property"
 		  ]
+		},
+		{
+		  "name": "Flickering Rune",
+		  "value": 40000,
+		  "weight": 0,
+		  "rarity": "Uncommon",
+		  "seller": "Lord Bartholemew",
+		  "source": "ArcaneAL",
+		  "reqAttune": true,
+		  "entries": [
+		    "This rune can be attached to any non-magical weapon, causing it to become flickering. A flickering rune causes a weapon to shimmer, grow blurry and indistinct, and momentarily turn invisible at random intervals for a second or two. Creatures have disadvantage on attempts they make to disarm you of a flickering weapon and you have advantage on attempts to avoid being disarmed. On a critical hit with a flickering weapon, the target must make a DC (8+prof+Strength or Dexterity) constitution saving throw or be blinded until the start of your next turn."
+		  ],
+		  "wondrous": true,
 		}
 	]
 }
