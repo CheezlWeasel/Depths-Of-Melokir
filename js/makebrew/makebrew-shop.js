@@ -302,7 +302,12 @@ export class ShopBuilder extends BuilderBase {
 		renderWeaponFields();
 		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo($tab);
 		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
-		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo($tab);
+		BuilderUi.$getStateIptEntries("Text", cb, this._state, {
+			fnPostProcess: (text) => {
+				if (typeof text !== "string") text = String(text); // Ensure text is a string
+				return text.replace(/\*\*(.*?)\*\*/g, '{@b $1}').replace(/\*(.*?)\*/g, '{@i $1}');
+			}
+		}, "entries").appendTo($tab);
 	}
 
 	renderOutput () {
