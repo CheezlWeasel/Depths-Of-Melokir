@@ -44,6 +44,8 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"type":"LA"}`, label: "Type : Light Armor"},
 			{value: `{"type":"R"}`, label: "Type : Ranged Weapon"},
 			{value: `{"weapon":true}`, label: "Flag : Weapon"},
+			{value: `{"weaponCategory":"simple"}`, label: "Category : Simple Weapons"},
+			{value: `{"weaponCategory":"martial"}`, label: "Category : Martial Weapons"},
 			{value: `{"type":"M"}`, label: "Type : Melee Weapon"},
 			{value: `{"type":"R"}`, label: "Type : Ranged Weapon"},
 			{value: `{"type":"S"}`, label: "Type : Shield"},
@@ -53,6 +55,21 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"type":"P"}`, label: "Type : Potion"},
 			{value: `{"type":"A"}`, label: "Type : Ammunition"},
 		];
+		this._requirementOptions.push(
+			{value: `{"itemProperty":"2H"}`, label: `Property : Two-Handed`},
+			{value: `{"itemProperty":"A"}`, label: `Property : Ammunition`},
+			{value: `{"itemProperty":"AF"}`, label: `Property : Ammunition`},
+			{value: `{"itemProperty":"BF"}`, label: `Property : Burst Fire`},
+			{value: `{"itemProperty":"F"}`, label: `Property : Finesse`},
+			{value: `{"itemProperty":"H"}`, label: `Property : Heavy`},
+			{value: `{"itemProperty":"L"}`, label: `Property : Light`},
+			{value: `{"itemProperty":"LD"}`, label: `Property : Loading`},
+			{value: `{"itemProperty":"R"}`, label: `Property : Reach`},
+			{value: `{"itemProperty":"RLD"}`, label: `Property : Reload`},
+			{value: `{"itemProperty":"S"}`, label: `Property : special`},
+			{value: `{"itemProperty":"T"}`, label: `Property : Thrown`},
+			{value: `{"itemProperty":"V"}`, label: `Property : Versatile`},
+		);
 		this._requirementOptions.push(
 			{value: `{"item":"Katar|SterlingVermin"}`, label: "Specific Item : Katar (SterlingVermin)"},
 			{value: `{"item":"Knuckledusters|DepthsofMelokir"}`, label: "Specific Item : Knuckledusters (DepthsofMelokir)"},
@@ -100,6 +117,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"item":"Net|PHB"}`, label: "Specific Item : Net (PHB)"},
 			{value: `{"item":"Orb|PHB"}`, label: "Specific Item : Orb (PHB)"}
 		);
+
 		this._requirementVals = this._requirementOptions.map(it => it.value);
 		this._requirementLabels = {};
 		this._requirementOptions.forEach(it => this._requirementLabels[it.value] = it.label);
@@ -202,7 +220,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			for (let i = 0; i < dropdownCount; ++i) {
 				const val = selected[i] || "";
 				const $row = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`);
-				$row.append(`<span class="mr-2 mkbru__row-name ">Base Item Requirements</span>`)
+				$row.append(`<span class="mr-2 mkbru__row-name ">Requirement</span>`)
 				const $sel = $(`<select class="form-control input-xs form-control--minimal"></select>`);
 				$sel.append($("<option value=''>Select Requirement</option>"));
 				this._requirementOptions.forEach(opt => {
@@ -228,7 +246,7 @@ export class MagicVariantBuilder extends BuilderBase {
 		renderRequiresDropdowns();
 
 		// Add dynamic dropdowns for the `excludes` property
-		const $wrpExcludes = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`).appendTo($wrp);
+		const $wrpExcludes = $("<div class='mb-3'></div>").appendTo($wrp);
 
 		const updateExcludesState = () => {
 			const vals = $wrpExcludes.find("select").map(function() { return $(this).val(); }).get().filter(Boolean);
@@ -243,7 +261,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			for (let i = 0; i < dropdownCount; ++i) {
 				const val = selected[i] || "";
 				const $row = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`);
-				$row.append(`<span class="mr-2 mkbru__row-name ">Base Item Exclusions</span>`)
+				$row.append(`<span class="mr-2 mkbru__row-name ">Exclusion</span>`)
 				const $sel = $(`<select class="form-control input-xs form-control--minimal"></select>`);
 				$sel.append($("<option value=''>Select Exclusion</option>"));
 				this._requirementOptions.forEach(opt => {
@@ -379,6 +397,15 @@ export class MagicVariantBuilder extends BuilderBase {
 		});
 		$includeBaseItemCostLabel.appendTo($inheritsWrapper);
 
+		// Add checkbox for attunement requirement
+		const $attunementCheckbox = $("<input type='checkbox'>").prop("checked", !!this._state.inherits.reqAttune);
+		const $attunementLabel = $("<label></label>").append($attunementCheckbox).append(" Requires Attunement");
+		$attunementCheckbox.change(() => {
+			this._state.inherits.reqAttune = $attunementCheckbox.prop("checked") ? true : undefined;
+			cb();
+		});
+		$attunementLabel.appendTo($inheritsWrapper);
+
 		// Add input for inherited value
 	}
 
@@ -410,6 +437,17 @@ export class MagicVariantBuilder extends BuilderBase {
 		// Parse `requires` entries from JSON strings to objects
 		if (item.requires && Array.isArray(item.requires)) {
 			item.requires = item.requires.map(req => {
+				try {
+					return JSON.parse(req);
+				} catch (e) {
+					return req; // Fallback to the original value if parsing fails
+				}
+			});
+		}
+
+		// Parse `excludes` entries from JSON strings to objects
+		if (item.excludes && Array.isArray(item.excludes)) {
+			item.excludes = item.excludes.map(req => {
 				try {
 					return JSON.parse(req);
 				} catch (e) {
