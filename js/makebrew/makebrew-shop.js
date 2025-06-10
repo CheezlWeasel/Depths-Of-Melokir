@@ -304,8 +304,13 @@ export class ShopBuilder extends BuilderBase {
 		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
 		BuilderUi.$getStateIptEntries("Text", cb, this._state, {
 			fnPostProcess: (text) => {
+				// If text is an array, join it to a string for formatting
+				if (Array.isArray(text)) text = text.join("\n");
 				if (typeof text !== "string") text = String(text); // Ensure text is a string
-				return text.replace(/\*\*(.*?)\*\*/g, `{@b $1}`).replace(/\*(.*?)\*/g, `{@i $1}`);
+				// Format bold/italic
+				text = text.replace(/\*\*(.*?)\*\*/g, `{@b $1}`).replace(/\*(.*?)\*/g, `{@i $1}`);
+				// Split back into array by newlines, trim, and filter
+				return text.split(/\r?\n/).map(e => e.trim()).filter(Boolean);
 			},
 		}, "entries").appendTo($tab);
 

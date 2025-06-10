@@ -37,6 +37,90 @@ export class MagicVariantBuilder extends BuilderBase {
 		this._itemTypeVals = this._itemTypeOptions.map(it => it.value);
 		this._itemTypeLabels = {};
 		this._itemTypeOptions.forEach(it => this._itemTypeLabels[it.value] = it.label);
+		this._requirementOptions = [
+			{value: `{"armor":true}`, label: "Flag : Armor"},
+			{value: `{"type":"HA"}`, label: "Type : Heavy Armor"},
+			{value: `{"type":"MA"}`, label: "Type : Medium Armor"},
+			{value: `{"type":"LA"}`, label: "Type : Light Armor"},
+			{value: `{"type":"R"}`, label: "Type : Ranged Weapon"},
+			{value: `{"weapon":true}`, label: "Flag : Weapon"},
+			{value: `{"type":"M"}`, label: "Type : Melee Weapon"},
+			{value: `{"type":"R"}`, label: "Type : Ranged Weapon"},
+			{value: `{"type":"S"}`, label: "Type : Shield"},
+			{value: `{"type":"SCF"}`, label: "Type : Spellcasting Focus"},
+			{value: `{"type":"NS"}`, label: "Type : Instrument"},
+			{value: `{"type":"GS"}`, label: "Type : Gaming Set"},
+			{value: `{"type":"P"}`, label: "Type : Potion"},
+			{value: `{"type":"A"}`, label: "Type : Ammunition"},
+		];
+		this._requirementOptions.push(
+			{value: `{"item":"Katar|SterlingVermin"}`, label: "Specific Item : Katar (SterlingVermin)"},
+			{value: `{"item":"Knuckledusters|DepthsofMelokir"}`, label: "Specific Item : Knuckledusters (DepthsofMelokir)"},
+			{value: `{"item":"Knuckle Knives|SterlingVermin"}`, label: "Specific Item : Knuckle Knives (SterlingVermin)"},
+			{value: `{"item":"Wicked Sickle|DepthsofMelokir"}`, label: "Specific Item : Wicked Sickle (DepthsofMelokir)"},
+			{value: `{"item":"Bestial Caestus|DepthsofMelokir"}`, label: "Specific Item : Bestial Caestus (DepthsofMelokir)"},
+			{value: `{"item":"Fan Shield|DepthsofMelokir"}`, label: "Specific Item : Fan Shield (DepthsofMelokir)"},
+			{value: `{"item":"Arbalest|DepthsofMelokir"}`, label: "Specific Item : Arbalest (DepthsofMelokir)"},
+			{value: `{"item":"Bagpipes|PHB"}`, label: "Specific Item : Bagpipes (PHB)"},
+			{value: `{"item":"Battleaxe|PHB"}`, label: "Specific Item : Battleaxe (PHB)"},
+			{value: `{"item":"Blowgun|PHB"}`, label: "Specific Item : Blowgun (PHB)"},
+			{value: `{"item":"Blowgun Needle|PHB"}`, label: "Specific Item : Blowgun Needle (PHB)"},
+			{value: `{"item":"Blowgun Needles (50)|PHB"}`, label: "Specific Item : Blowgun Needles (50) (PHB)"},
+			{value: `{"item":"Breastplate|PHB"}`, label: "Specific Item : Breastplate (PHB)"},
+			{value: `{"item":"Chain Mail|PHB"}`, label: "Specific Item : Chain Mail (PHB)"},
+			{value: `{"item":"Chain Shirt|PHB"}`, label: "Specific Item : Chain Shirt (PHB)"},
+			{value: `{"item":"Club|PHB"}`, label: "Specific Item : Club (PHB)"},
+			{value: `{"item":"Crystal|PHB"}`, label: "Specific Item : Crystal (PHB)"},
+			{value: `{"item":"Dagger|PHB"}`, label: "Specific Item : Dagger (PHB)"},
+			{value: `{"item":"Dart|PHB"}`, label: "Specific Item : Dart (PHB)"},
+			{value: `{"item":"Drum|PHB"}`, label: "Specific Item : Drum (PHB)"},
+			{value: `{"item":"Dulcimer|PHB"}`, label: "Specific Item : Dulcimer (PHB)"},
+			{value: `{"item":"Greataxe|PHB"}`, label: "Specific Item : Greataxe (PHB)"},
+			{value: `{"item":"Greatclub|PHB"}`, label: "Specific Item : Greatclub (PHB)"},
+			{value: `{"item":"Greatsword|PHB"}`, label: "Specific Item : Greatsword (PHB)"},
+			{value: `{"item":"Halberd|PHB"}`, label: "Specific Item : Halberd (PHB)"},
+			{value: `{"item":"Half Plate Armor|PHB"}`, label: "Specific Item : Half Plate Armor (PHB)"},
+			{value: `{"item":"Hand Crossbow|PHB"}`, label: "Specific Item : Hand Crossbow (PHB)"},
+			{value: `{"item":"Handaxe|PHB"}`, label: "Specific Item : Handaxe (PHB)"},
+			{value: `{"item":"Heavy Crossbow|PHB"}`, label: "Specific Item : Heavy Crossbow (PHB)"},
+			{value: `{"item":"Hide Armor|PHB"}`, label: "Specific Item : Hide Armor (PHB)"},
+			{value: `{"item":"Horn|PHB"}`, label: "Specific Item : Horn (PHB)"},
+			{value: `{"item":"Javelin|PHB"}`, label: "Specific Item : Javelin (PHB)"},
+			{value: `{"item":"Lance|PHB"}`, label: "Specific Item : Lance (PHB)"},
+			{value: `{"item":"Leather Armor|PHB"}`, label: "Specific Item : Leather Armor (PHB)"},
+			{value: `{"item":"Light Crossbow|PHB"}`, label: "Specific Item : Light Crossbow (PHB)"},
+			{value: `{"item":"Light Hammer|PHB"}`, label: "Specific Item : Light Hammer (PHB)"},
+			{value: `{"item":"Longbow|PHB"}`, label: "Specific Item : Longbow (PHB)"},
+			{value: `{"item":"Longsword|PHB"}`, label: "Specific Item : Longsword (PHB)"},
+			{value: `{"item":"Lute|PHB"}`, label: "Specific Item : Lute (PHB)"},
+			{value: `{"item":"Lyre|PHB"}`, label: "Specific Item : Lyre (PHB)"},
+			{value: `{"item":"Mace|PHB"}`, label: "Specific Item : Mace (PHB)"},
+			{value: `{"item":"Maul|PHB"}`, label: "Specific Item : Maul (PHB)"},
+			{value: `{"item":"Morningstar|PHB"}`, label: "Specific Item : Morningstar (PHB)"},
+			{value: `{"item":"Net|PHB"}`, label: "Specific Item : Net (PHB)"},
+			{value: `{"item":"Orb|PHB"}`, label: "Specific Item : Orb (PHB)"}
+		);
+		this._requirementVals = this._requirementOptions.map(it => it.value);
+		this._requirementLabels = {};
+		this._requirementOptions.forEach(it => this._requirementLabels[it.value] = it.label);
+	}
+
+	// Define a helper function to convert JSON source titles to full names
+	_sourceJsonToFull (src) {
+		const sourceMap = {
+			"PHB": "Player's Handbook",
+			"DMG": "Dungeon Master's Guide",
+			"XGE": "Xanathar's Guide to Everything",
+			"TCE": "Tasha's Cauldron of Everything",
+			"DepthsofMelokir": "Depths of Melokir",
+			"SterlingVermin": "Sterling Vermin Adventuring Co.",
+			"ArcaneAL": "Arcane and Aluminium",
+			"SacredTree": "The Sacred Tree",
+			"Feywild": "The Feywild",
+			"LandsofVita": "The Lands of Vita",
+			"VerdigrisRuins": "The Verdigris Ruins",
+		};
+		return sourceMap[src] || src; // Fallback to the original source if no mapping exists
 	}
 
 	_getInitialState () {
@@ -46,6 +130,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			type: "GV|DMG",
 			edition: "",
 			requires: [],
+			excludes: [],
 			inherits: {},
 			entries: [],
 			source: this._ui ? this._ui.source : "",
@@ -88,23 +173,252 @@ export class MagicVariantBuilder extends BuilderBase {
 			},
 			"type"
 		).appendTo($wrp);
-		BuilderUi.$getStateIptString("Edition", cb, this._state, {}, "edition").appendTo($wrp);
-		BuilderUi.$getStateIptStringArray("Requires (e.g. {type: 'HA'})", cb, this._state, {shortName: "Require", placeholder: '{"type": "HA"}'}, "requires").appendTo($wrp);
-		BuilderUi.$getStateIptObject("Inherits (object)", cb, this._state, {placeholder: '{"nameSuffix": " of Gleaming", "source": "XGE", ...}'}, "inherits").appendTo($wrp);
-		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo($wrp);
+		BuilderUi.$getStateIptEntries("Text", cb, this._state, {
+			fnPostProcess: (text) => {
+				// If text is an array, join it to a string for formatting
+				if (Array.isArray(text)) text = text.join("\n");
+				if (typeof text !== "string") text = String(text); // Ensure text is a string
+				// Format bold/italic
+				text = text.replace(/\*\*(.*?)\*\*/g, `{@b $1}`).replace(/\*(.*?)\*/g, `{@i $1}`);
+				// Split back into array by newlines, trim, and filter
+				return text.split(/\r?\n/).map(e => e.trim()).filter(Boolean);
+			},
+		}, "entries").appendTo($wrp);
+
+		// Add dynamic dropdowns for the `requires` property
+		const $wrpRequires = $("<div class='mb-3'></div>").appendTo($wrp);
+		$wrpRequires.append("<label><b>Requires</b></label>");
+
+		const updateRequiresState = () => {
+			const vals = $wrpRequires.find("select").map(function() { return $(this).val(); }).get().filter(Boolean);
+			this._state.requires = [...new Set(vals)];
+			cb();
+		};
+
+		const renderRequiresDropdowns = () => {
+			$wrpRequires.empty();
+			const selected = this._state.requires && Array.isArray(this._state.requires) ? this._state.requires : [];
+			const dropdownCount = selected.length ? selected.length + 1 : 1;
+			for (let i = 0; i < dropdownCount; ++i) {
+				const val = selected[i] || "";
+				const $row = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`);
+				$row.append(`<span class="mr-2 mkbru__row-name ">Base Item Requirements</span>`)
+				const $sel = $(`<select class="form-control input-xs form-control--minimal"></select>`);
+				$sel.append($("<option value=''>Select Requirement</option>"));
+				this._requirementOptions.forEach(opt => {
+					$sel.append($("<option></option>").val(opt.value).text(opt.label));
+				});
+				$sel.val(val);
+				$sel.change(() => {
+					if (!$sel.val()) {
+						this._state.requires = selected.slice(0, i);
+					} else {
+						const newSelected = selected.slice(0, i);
+						if ($sel.val()) newSelected.push($sel.val());
+						this._state.requires = newSelected;
+					}
+					renderRequiresDropdowns();
+					updateRequiresState();
+				});
+				$row.append($sel);
+				$wrpRequires.append($row);
+			}
+		};
+		if (!Array.isArray(this._state.requires)) this._state.requires = [];
+		renderRequiresDropdowns();
+
+		// Add dynamic dropdowns for the `excludes` property
+		const $wrpExcludes = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`).appendTo($wrp);
+
+		const updateExcludesState = () => {
+			const vals = $wrpExcludes.find("select").map(function() { return $(this).val(); }).get().filter(Boolean);
+			this._state.excludes = [...new Set(vals)];
+			cb();
+		};
+
+		const renderExcludesDropdowns = () => {
+			$wrpExcludes.empty();
+			const selected = this._state.excludes && Array.isArray(this._state.excludes) ? this._state.excludes : [];
+			const dropdownCount = selected.length ? selected.length + 1 : 1;
+			for (let i = 0; i < dropdownCount; ++i) {
+				const val = selected[i] || "";
+				const $row = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`);
+				$row.append(`<span class="mr-2 mkbru__row-name ">Base Item Exclusions</span>`)
+				const $sel = $(`<select class="form-control input-xs form-control--minimal"></select>`);
+				$sel.append($("<option value=''>Select Exclusion</option>"));
+				this._requirementOptions.forEach(opt => {
+					$sel.append($("<option></option>").val(opt.value).text(opt.label));
+				});
+				$sel.val(val);
+				$sel.change(() => {
+					if (!$sel.val()) {
+						this._state.excludes = selected.slice(0, i);
+					} else {
+						const newSelected = selected.slice(0, i);
+						if ($sel.val()) newSelected.push($sel.val());
+						this._state.excludes = newSelected;
+					}
+					renderExcludesDropdowns();
+					updateExcludesState();
+				});
+				$row.append($sel);
+				$wrpExcludes.append($row);
+			}
+		};
+		if (!Array.isArray(this._state.excludes)) this._state.excludes = [];
+		renderExcludesDropdowns();
+
+		// Replace the inherits input with individual form elements
+		const $inheritsWrapper = $(`<div class="mb-2 mkbru__row stripe-even"></div>`).appendTo($wrp);
+		$inheritsWrapper.append("<label><b>Inherits</b></label>");
+
+		// Add text field for nameSuffix
+		const $nameSuffix = $("<input class='form-control input-xs form-control--minimal' placeholder='Name Suffix (e.g., of Gleaming)'>")
+			.val(this._state.inherits.nameSuffix || "")
+			.change(() => {
+				this._state.inherits.nameSuffix = $nameSuffix.val().trim() || undefined;
+				cb();
+			})
+			.appendTo($inheritsWrapper);
+		// Add new fields for prefix, value, and seller within inherits
+		const $prefix = $("<input class='form-control input-xs form-control--minimal' placeholder='Prefix (e.g., Hookshot )'>")
+			.val(this._state.inherits.prefix || "")
+			.change(() => {
+				this._state.inherits.prefix = $prefix.val().trim() || undefined;
+				cb();
+			})
+			.appendTo($inheritsWrapper);
+
+		// Update the value field to handle both static and dynamic values
+		const $value = $("<input class='form-control input-xs form-control--minimal' placeholder='Value in CP'>")
+			.val(this._state.inherits.value || "")
+			.change(() => {
+				console.log(this._state.inherits.includeBaseItemCost);
+				this._state.inherits.value = $value.val()
+				if (this._state.inherits.includeBaseItemCost) {
+					// Remove the value field and add valueExpression
+					this._state.inherits.valueExpression = `[[baseItem.value]] + ${this._state.inherits.value || 0}`;
+					this._state.inherits.value = undefined;
+				} else {
+					// Restore the value field and remove valueExpression
+					if (!(this._state.inherits.valueExpression === undefined)) {
+						this._state.inherits.value = this._state.inherits.valueExpression
+							.replace(/^\[\[baseItem\.value\]\] \+ /, "") // Remove '[[baseItem.value]] +'
+							.trim();
+						this._state.inherits.value = parseInt(this._state.inherits.value, 10) || 0; // Convert to integer
+					}
+				}
+				cb();
+			})
+			.appendTo($inheritsWrapper);
+
+		const $seller = $("<input class='form-control input-xs form-control--minimal' placeholder='Seller'>")
+			.val(this._state.inherits.seller || "")
+			.change(() => {
+				this._state.inherits.seller = $seller.val().trim() || undefined;
+				cb();
+			})
+			.appendTo($inheritsWrapper);
+
+		// Add more fields as needed for other properties of `inherits`
+		// Add dropdown for source
+		const $source = $("<select class='form-control input-xs form-control--minimal'></select>")
+			.append(`<option value="">Select Source</option>`)
+			.append(this._sourcesCache.map(src => {
+				const fullName = this._sourceJsonToFull(src); // Assuming a method exists to get the full name
+				return `<option value="${src}" ${this._state.inherits.source === src ? "selected" : ""}>${fullName}</option>`;
+			}))
+			.change(() => {
+				this._state.inherits.source = $source.val() || undefined;
+				cb();
+			})
+			.appendTo($inheritsWrapper);
+
+		// Add checkbox for additional options
+		const $isLegendary = $("<label><input type='checkbox'> Is Legendary</label>")
+			.find("input")
+			.prop("checked", !!this._state.inherits.isLegendary)
+			.change(() => {
+				this._state.inherits.isLegendary = $isLegendary.prop("checked") || undefined;
+				cb();
+			})
+			.end()
+			//.appendTo($inheritsWrapper);
+
+		// Add a unique entries box to the inherits tab
+		const $inheritsEntries = $("<textarea class='form-control input-xs form-control--minimal' placeholder='Entries Inherited by each BaseItem'></textarea>")
+			.val(this._state.inherits.entries ? this._state.inherits.entries.join("\n") : "")
+			.change(() => {
+				const entries = $inheritsEntries.val().trim().split("\n").filter(Boolean);
+				this._state.inherits.entries = entries.length ? entries : undefined;
+				cb();
+			})
+			.appendTo($inheritsWrapper);
+
+		// Add checkbox for "Include base item cost"
+		const $includeBaseItemCostInput = $("<input type='checkbox'>").prop("checked", !!this._state.inherits.includeBaseItemCost);
+		const $includeBaseItemCostLabel = $("<label></label>").append($includeBaseItemCostInput).append(" Include base item cost");
+		$includeBaseItemCostInput.change(() => {
+			const isChecked = $includeBaseItemCostInput.prop("checked");
+			console.log("Checkbox is checked:", isChecked); // Debugging log to verify checkbox state
+			this._state.inherits.includeBaseItemCost = isChecked;
+			this._state.inherits.value = $value.val();
+			if (isChecked) {
+				this._state.inherits.valueExpression = `[[baseItem.value]] + ${this._state.inherits.value || 0}`;
+				this._state.inherits.value = undefined;
+			} else {
+				if (!(this._state.inherits.valueExpression === undefined)) {
+					this._state.inherits.value = this._state.inherits.valueExpression
+						.replace(/^\[\[baseItem\.value\]\] \+ /, "")
+						.trim();
+					this._state.inherits.value = parseInt(this._state.inherits.value, 10) || 0;
+					this._state.inherits.valueExpression = undefined;
+				}
+			}
+			cb();
+		});
+		$includeBaseItemCostLabel.appendTo($inheritsWrapper);
+
+		// Add input for inherited value
 	}
 
 	renderOutput () {
 		this._renderOutput();
 	}
 
-	_getRenderableItem() {
+	_getRenderableItem () {
 		const item = MiscUtil.copy(this._state);
-		if (typeof item.entries === "string") {
-			item.entries = [item.entries];
-		} else if (!Array.isArray(item.entries)) {
-			item.entries = [];
+
+		// Ensure `inherits` is built from the form inputs
+		if (item.inherits) {
+			item.inherits = {
+				nameSuffix: item.inherits.nameSuffix || undefined,
+				source: item.inherits.source || undefined,
+				isLegendary: item.inherits.isLegendary || undefined,
+				seller: item.inherits.seller || undefined,
+				value: item.inherits.value || undefined, // Ensure value is included
+				valueExpression: item.inherits.valueExpression || undefined, // Ensure valueExpression is included
+				entries: item.inherits.entries || undefined,
+				// Add other properties as needed
+			};
+			// Remove undefined properties
+			Object.keys(item.inherits).forEach(key => {
+				if (item.inherits[key] === undefined) delete item.inherits[key];
+			});
 		}
+
+		// Parse `requires` entries from JSON strings to objects
+		if (item.requires && Array.isArray(item.requires)) {
+			item.requires = item.requires.map(req => {
+				try {
+					return JSON.parse(req);
+				} catch (e) {
+					return req; // Fallback to the original value if parsing fails
+				}
+			});
+		}
+
+		// --- Support lists in entries ---
 		if (Array.isArray(item.entries) && item.entries.length) {
 			let newEntries = [];
 			let currentList = null;
@@ -123,9 +437,8 @@ export class MagicVariantBuilder extends BuilderBase {
 			if (currentList) newEntries.push(currentList);
 			item.entries = newEntries;
 		}
-		if (!item.source) {
-			item.source = "Temp";
-		}
+
+		// Remove empty or undefined properties from the main item
 		Object.keys(item).forEach(k => {
 			if (
 				item[k] === undefined ||
@@ -133,6 +446,7 @@ export class MagicVariantBuilder extends BuilderBase {
 				(Array.isArray(item[k]) && !item[k].length)
 			) delete item[k];
 		});
+
 		return item;
 	}
 

@@ -69,6 +69,22 @@
 			"seller": "Arthak"
 		},
 		{
+			"name": "Arrow",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"edition": "classic",
+			"type": "A",
+			"rarity": "none",
+			"weight": 0.05,
+			"value": 5,
+			"arrow": true,
+			"entries": [
+				"Within Depths of Melokir Nonmagical Ammunition does not need purchasing"
+			]
+		},
+		{
 			"name": "Bestial Caestus",
 			"type": "M",
 			"weapon": true,
@@ -189,21 +205,19 @@
 			"needleBlowgun": true
 		},
 		{
-			"name": "Blowgun Needles (50)",
+			"name": "Crossbow Bolt",
 			"source": "PHB",
 			"page": 150,
 			"srd": true,
 			"basicRules": true,
+			"edition": "classic",
 			"type": "A",
 			"rarity": "none",
-			"weight": 1,
-			"value": 100,
-			"needleBlowgun": true,
-			"packContents": [
-				{
-					"item": "blowgun needle|phb",
-					"quantity": 50
-				}
+			"weight": 0.075,
+			"value": 5,
+			"bolt": true,
+			"entries": [
+				"Within Depths of Melokir Nonmagical Ammunition does not need purchasing"
 			]
 		},
 		{
@@ -1142,24 +1156,9 @@
 			"rarity": "none",
 			"weight": 0.075,
 			"value": 0.2,
-			"bulletSling": true
-		},
-		{
-			"name": "Sling Bullets (20)",
-			"source": "PHB",
-			"page": 150,
-			"srd": true,
-			"basicRules": true,
-			"type": "A",
-			"rarity": "none",
-			"weight": 1.5,
-			"value": 4,
 			"bulletSling": true,
-			"packContents": [
-				{
-					"item": "sling bullet|phb",
-					"quantity": 20
-				}
+			"entries": [
+				"Within Depths of Melokir Nonmagical Ammunition does not need purchasing"
 			]
 		},
 		{
