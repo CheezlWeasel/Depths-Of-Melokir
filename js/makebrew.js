@@ -6,6 +6,7 @@ import {PageUiUtil} from "./makebrew/makebrew-builderui.js";
 import {TagCondition, TaggerUtils} from "./converter/converterutils-tags.js";
 import {SITE_STYLE__CLASSIC} from "./consts.js";
 import {ShopBuilder} from "./makebrew/makebrew-shop.js";
+import {MagicVariantBuilder} from "./makebrew/makebrew-magicvariant.js";
 
 class PageUi {
 	constructor () {
@@ -38,6 +39,7 @@ class PageUi {
 	set legendaryGroupBuilder (legendaryGroupBuilder) { this._builders.legendaryGroupBuilder = legendaryGroupBuilder; }
 	set spellBuilder (spellBuilder) { this._builders.spellBuilder = spellBuilder; }
 	set shopBuilder (shopBuilder) { this._builders.shopBuilder = shopBuilder; }
+	set magicVariantBuilder (magicVariantBuilder) { this._builders.magicVariantBuilder = magicVariantBuilder; }
 
 	get creatureBuilder () { return this._builders.creatureBuilder; }
 
@@ -190,15 +192,16 @@ class PageUi {
 		const prevMode = this._settings.activeBuilder;
 
 		const $wrpMode = $(`<div class="w-100 split-v-center"><div class="sidemenu__row__label mr-2">Mode</div></div>`).appendTo($mnu);
-		this._$selBuilderMode = $(`
-			<select class="form-control input-xs">
+		this._$selBuilderMode = $(
+			`<select class="form-control input-xs">
 				<option value="creatureBuilder">Creature</option>
 				<option value="legendaryGroupBuilder">Legendary Group</option>
 				<option value="spellBuilder">Spell</option>
 				<option value="shopBuilder">Shop</option>
+				<option value="magicVariantBuilder">Magic Variant</option>
 				<option value="none" class="italic">Everything Else?</option>
-			</select>
-		`)
+			</select>`
+		)
 			.appendTo($wrpMode)
 			.change(async () => {
 				const val = this._$selBuilderMode.val();
@@ -411,6 +414,10 @@ legendaryGroupBuilder.ui = ui;
 const shopBuilder = new ShopBuilder();
 ui.shopBuilder = shopBuilder;
 shopBuilder.ui = ui;
+
+const magicVariantBuilder = new MagicVariantBuilder();
+ui.magicVariantBuilder = magicVariantBuilder;
+magicVariantBuilder.ui = ui;
 
 window.addEventListener("load", async () => {
 	await Makebrew.doPageInit();

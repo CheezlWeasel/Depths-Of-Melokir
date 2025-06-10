@@ -302,7 +302,78 @@ export class ShopBuilder extends BuilderBase {
 		renderWeaponFields();
 		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo($tab);
 		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
-		BuilderUi.$getStateIptEntries("Text", cb, this._state, {fnPostProcess: BuilderUi.fnPostProcessDice}, "entries").appendTo($tab);
+		BuilderUi.$getStateIptEntries("Text", cb, this._state, {
+			fnPostProcess: (text) => {
+				if (typeof text !== "string") text = String(text); // Ensure text is a string
+				return text.replace(/\*\*(.*?)\*\*/g, `{@b $1}`).replace(/\*(.*?)\*/g, `{@i $1}`);
+			},
+		}, "entries").appendTo($tab);
+
+		// Add a dropdown for the `baseitem` property
+		const $baseItemWrapper = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center"></div>`).appendTo($tab);
+		$baseItemWrapper.append(`<span class="mr-2 mkbru__row-name ">Base Item</span>`);
+
+		const $baseItemSelect = $(`<select class="form-control input-xs form-control--minimal"></select>`).appendTo($baseItemWrapper);
+		$baseItemSelect.append(`<option value="">(Select Base Item)</option>`);
+
+		// Populate the dropdown with items from `shop-base.json`
+		const baseItems = [
+			{ baseItem: "Katar|SterlingVermin" },
+			{ baseItem: "Knuckledusters|DepthsofMelokir" },
+			{ baseItem: "Knuckle Knives|SterlingVermin" },
+			{ baseItem: "Wicked Sickle|DepthsofMelokir" },
+			{ baseItem: "Bestial Caestus|DepthsofMelokir" },
+			{ baseItem: "Fan Shield|DepthsofMelokir" },
+			{ baseItem: "Arbalest|DepthsofMelokir" },
+			{ baseItem: "Bagpipes|PHB" },
+			{ baseItem: "Battleaxe|PHB" },
+			{ baseItem: "Blowgun|PHB" },
+			{ baseItem: "Blowgun Needle|PHB" },
+			{ baseItem: "Blowgun Needles (50)|PHB" },
+			{ baseItem: "Breastplate|PHB" },
+			{ baseItem: "Chain Mail|PHB" },
+			{ baseItem: "Chain Shirt|PHB" },
+			{ baseItem: "Club|PHB" },
+			{ baseItem: "Crystal|PHB" },
+			{ baseItem: "Dagger|PHB" },
+			{ baseItem: "Dart|PHB" },
+			{ baseItem: "Drum|PHB" },
+			{ baseItem: "Dulcimer|PHB" },
+			{ baseItem: "Greataxe|PHB" },
+			{ baseItem: "Greatclub|PHB" },
+			{ baseItem: "Greatsword|PHB" },
+			{ baseItem: "Halberd|PHB" },
+			{ baseItem: "Half Plate Armor|PHB" },
+			{ baseItem: "Hand Crossbow|PHB" },
+			{ baseItem: "Handaxe|PHB" },
+			{ baseItem: "Heavy Crossbow|PHB" },
+			{ baseItem: "Hide Armor|PHB" },
+			{ baseItem: "Horn|PHB" },
+			{ baseItem: "Javelin|PHB" },
+			{ baseItem: "Lance|PHB" },
+			{ baseItem: "Leather Armor|PHB" },
+			{ baseItem: "Light Crossbow|PHB" },
+			{ baseItem: "Light Hammer|PHB" },
+			{ baseItem: "Longbow|PHB" },
+			{ baseItem: "Longsword|PHB" },
+			{ baseItem: "Lute|PHB" },
+			{ baseItem: "Lyre|PHB" },
+			{ baseItem: "Mace|PHB" },
+			{ baseItem: "Maul|PHB" },
+			{ baseItem: "Morningstar|PHB" },
+			{ baseItem: "Net|PHB" },
+			{ baseItem: "Orb|PHB" },
+		];
+
+		baseItems.forEach(item => {
+			const displayText = item.baseItem.split('|')[0]; // Display only the name, excluding the source
+			$baseItemSelect.append(`<option value="${item.baseItem}">${displayText}</option>`);
+		});
+
+		$baseItemSelect.change(() => {
+			this._state.baseitem = $baseItemSelect.val() || undefined;
+			cb();
+		});
 	}
 
 	renderOutput () {
