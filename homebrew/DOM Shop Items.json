@@ -147,6 +147,87 @@
 				"This bundle of black strings seems unusually suited to transmitting deathly energies.",
 				"While attuned to this item, you can use the Wrack Foes ability more than once per turn. Additionally, you may reroll ones once on your Wrack Foes damage."
 			]
+		},
+		{
+			"name": "Fragment N-007",
+			"type": "EHMT",
+			"value": 40000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"reqAttune": true,
+			"entries": [
+				"{@i Inscribed into the fragment is the phrase “out of spells, not options”}",
+				"This enhancement can be fused to any spellcasting focus or weapon. While fused to an item, it becomes a spellcasting focus, if it isn’t already. You gain a +1 bonus to the spell attack rolls and spell save DC of spells cast through this item."
+			]
+		},
+		{
+			"name": "Fragment S-196",
+			"type": "EHMT",
+			"value": 40000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"reqAttune": true,
+			"entries": [
+				"{@i Sticky… metal?}",
+				"This enhancement can be fused to any shield. When you attempt to grapple a creature, you can consider the fused shield as a free hand for the purposes of grappling. While grappling a creature this way, any magical properties (outside of curses) of the shield are suppressed for the duration of the grapple. Once you have successfully grappled a creature this way, you must finish a short rest before you can do so again."
+			]
+		},
+		{
+			"name": "Fragment Z-560",
+			"type": "EHMT",
+			"value": 50000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"reqAttune": true,
+			"entries": [
+				"{@i “Teleporting has never been so easy with the Go Further 9000TM!”}",
+				"This enhancement can be fused to any armour or clothing. While wearing the infused item, the range of your teleportation spells and features is increased by an amount equal to (5 x Proficiency Bonus) feet."
+			]
+		},
+		{
+			"name": "Fragment O-478",
+			"type": "EHMT",
+			"value": 30000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"entries": [
+				"{@i This metal is shockingly cold to the touch.}",
+				"This enhancement can be fused to any metal armour, shield or weapon. While wielding or wearing the fused item, if an item you or an ally within 30ft is wearing or wielding is targeted by the Heat Metal spell or a similar effect, the target of the spell is changed to this item instead. You do not suffer any downsides from the spell/effect outside of the damage."
+			]
+		},
+		{
+			"name": "Fragment X-431",
+			"type": "EHMT",
+			"value": 50000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"entries": [
+				"{@i Caution: Explosive}",
+				"This enhancement can be fused to any non magical melee weapon. While fused to a weapon, it gains the Exploding property"
+			]
+		},
+		{
+			"name": "Flickering Rune",
+			"value": 40000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Lord Bartholemew",
+			"source": "ArcaneAL",
+			"reqAttune": true,
+			"entries": [
+				"This rune can be attached to any non-magical weapon, causing it to become flickering. A flickering rune causes a weapon to shimmer, grow blurry and indistinct, and momentarily turn invisible at random intervals for a second or two. Creatures have disadvantage on attempts they make to disarm you of a flickering weapon and you have advantage on attempts to avoid being disarmed. On a critical hit with a flickering weapon, the target must make a DC (8+prof+Strength or Dexterity) constitution saving throw or be blinded until the start of your next turn."
+			],
+			"wondrous": true
 		}
 	]
 }
