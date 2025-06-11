@@ -166,7 +166,7 @@
 			"type": "EHMT",
 			"value": 40000,
 			"weight": 0,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"seller": "Bes' Selur",
 			"source": "ArcaneAL",
 			"reqAttune": true,
