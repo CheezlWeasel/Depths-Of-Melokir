@@ -231,6 +231,7 @@
 		{
 			"name": "Underwood Armour",
 			"type": "GV|DMG",
+			"rarity": "uncommon",
 			"requires": [
 				{
 				"armor": true
@@ -242,8 +243,9 @@
 				"namePrefix": "Underwood ",
 				"seller": "Lord Bartholemew",
 				"valueExpression": "[[baseItem.value]] + 30000",
+				"rarity": "uncommon",
 				"entries": [
-				"While you are bloodied (at half of your remaining hit points or lower) you gain a climbing speed equal to your movement speed. Additionally, this armour weighs half as much as its metal counterpart, and allows you to swim in heavy armour as if it was medium and medium armour as if it was light."
+					"While you are bloodied (at half of your remaining hit points or lower) you gain a climbing speed equal to your movement speed. Additionally, this armour weighs half as much as its metal counterpart, and allows you to swim in heavy armour as if it was medium and medium armour as if it was light."
 				]
 			},
 			"entries": [
