@@ -240,6 +240,7 @@
 			],
 			"inherits": {
 				"source": "ArcaneAL",
+				"namePrefix": "Underwood ",
 				"seller": "Lord Bartholemew",
 				"valueExpression": "[[baseItem.value]] + 30000",
 				"entries": [
