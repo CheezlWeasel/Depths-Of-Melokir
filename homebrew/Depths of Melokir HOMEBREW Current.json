@@ -1809,9 +1809,9 @@
                 {
                     "type": "list",
                     "items": [                
-                        "Creatures you have damaged with Painful Presence have their AC reduced by 2 until the start of your next turn, and you gain 5ft of movement after using Painful Presence.",
+                        "Creatures you have damaged with Geist's Waltz have their AC reduced by 2 until the start of your next turn, and you gain 5ft of movement after using Geist's Waltz.",
                         "Your Apparition features ignore resistance to pyschic and cold damage, and treat immunity to psychic and cold damage as resistance.",
-                        "You add an additional 1d6 necrotic or psychic (your choice) damage to damage rolls against a creature that has taken damage from Painful Presence this turn."
+                        "You add an additional 1d6 necrotic or psychic (your choice) damage to damage rolls against a creature that has taken damage from Geist's Waltz this turn."
                     ]
                 }
             ]
