@@ -90,7 +90,7 @@
             "type": "EHMT",
             "entries": [
                 "{@i This one is far older than any enhancement you’ve seen before…}",
-                "This enhancement can be fused to any non magical weapon. While fused to a weapon, you gain a +1 to attack and damage rolls made with said weapon. This bonus does not stack with any other +X feature. ",
+                "This enhancement can be fused to any non magical weapon. While fused to a weapon, you gain a +1 to attack and damage rolls made with said weapon.",
 				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
             ],
             "reqAttune": true,
