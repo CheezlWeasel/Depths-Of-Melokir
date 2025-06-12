@@ -234,7 +234,7 @@
 			"rarity": "uncommon",
 			"requires": [
 				{
-				"armor": true
+					"armor": true
 				}
 			],
 			"value": 30000,

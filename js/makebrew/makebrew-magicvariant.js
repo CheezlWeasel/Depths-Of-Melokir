@@ -121,6 +121,20 @@ export class MagicVariantBuilder extends BuilderBase {
 		this._requirementVals = this._requirementOptions.map(it => it.value);
 		this._requirementLabels = {};
 		this._requirementOptions.forEach(it => this._requirementLabels[it.value] = it.label);
+
+		this._rarityOptions = [
+			{value: "common", label: "Common"},
+			{value: "uncommon", label: "Uncommon"},
+			{value: "rare", label: "Rare"},
+			{value: "very rare", label: "Very Rare"},
+			{value: "legendary", label: "Legendary"},
+			{value: "artifact", label: "Artifact"},
+			{value: "varies", label: "Varies"},
+			{value: "none", label: "None"},
+		];
+		this._rarityVals = this._rarityOptions.map(it => it.value);
+		this._rarityLabels = {};
+		this._rarityOptions.forEach(it => this._rarityLabels[it.value] = it.label);
 	}
 
 	// Define a helper function to convert JSON source titles to full names
@@ -180,6 +194,17 @@ export class MagicVariantBuilder extends BuilderBase {
 		this._cbCache = cb;
 		BuilderUi.$getStateIptString("Name", cb, this._state, {nullable: false, callback: () => this.pRenderSideMenu()}, "name").appendTo($wrp);
 		this._$selSource = this.$getSourceInput(cb).appendTo($wrp);
+		BuilderUi.$getStateIptEnum(
+			"Rarity",
+			cb,
+			this._state,
+			{
+				vals: this._rarityVals,
+				labels: this._rarityLabels,
+				fnDisplay: v => this._rarityLabels[v] || v
+			},
+			"rarity"
+		).appendTo($wrp);
 		BuilderUi.$getStateIptEnum(
 			"Type (e.g. GV|DMG)",
 			cb,
@@ -351,6 +376,19 @@ export class MagicVariantBuilder extends BuilderBase {
 				cb();
 			})
 			.appendTo($inheritsWrapper);
+
+		// Add dropdown for rarity in the inherits field
+		const $inheritsRarity = $("<select class='form-control input-xs form-control--minimal'></select>");
+		$inheritsRarity.append(`<option value="">Select Rarity</option>`);
+		this._rarityOptions.forEach(opt => {
+			$inheritsRarity.append($("<option></option>").val(opt.value).text(opt.label));
+		});
+		$inheritsRarity.val(this._state.inherits.rarity || "");
+		$inheritsRarity.change(() => {
+			this._state.inherits.rarity = $inheritsRarity.val() || undefined;
+			cb();
+		});
+		$inheritsRarity.appendTo($inheritsWrapper);
 
 		// Add checkbox for additional options
 		const $isLegendary = $("<label><input type='checkbox'> Is Legendary</label>")
