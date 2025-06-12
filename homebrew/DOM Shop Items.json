@@ -94,7 +94,7 @@
 				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
             ],
             "reqAttune": true,
-            "value": 45000,
+            "value": 40000,
             "seller": "Bes' Selur"
         },
 		{
@@ -148,7 +148,7 @@
 		{
 			"name": "Fragment N-007",
 			"type": "EHMT",
-			"value": 40000,
+			"value": 50000,
 			"weight": 0,
 			"rarity": "uncommon",
 			"seller": "Bes' Selur",
@@ -203,7 +203,7 @@
 		{
 			"name": "Fragment X-431",
 			"type": "EHMT",
-			"value": 50000,
+			"value": 30000,
 			"weight": 0,
 			"rarity": "uncommon",
 			"seller": "Bes' Selur",
@@ -236,6 +236,7 @@
 				"armor": true
 				}
 			],
+			"value": 30000,
 			"inherits": {
 				"source": "ArcaneAL",
 				"namePrefix": "Underwood ",

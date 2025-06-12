@@ -299,10 +299,10 @@ export class MagicVariantBuilder extends BuilderBase {
 			})
 			.appendTo($inheritsWrapper);
 		// Add new fields for prefix, value, and seller within inherits
-		const $prefix = $("<input class='form-control input-xs form-control--minimal' placeholder='Prefix (e.g., Hookshot )'>")
-			.val(this._state.inherits.prefix || "")
+		const $namePrefix = $("<input class='form-control input-xs form-control--minimal' placeholder='Name Prefix (e.g., Hookshot )'>")
+			.val(this._state.inherits.namePrefix || "")
 			.change(() => {
-				this._state.inherits.prefix = $prefix.val().trim() || undefined;
+				this._state.inherits.namePrefix = $namePrefix.val().trim() || undefined;
 				cb();
 			})
 			.appendTo($inheritsWrapper);
@@ -420,6 +420,7 @@ export class MagicVariantBuilder extends BuilderBase {
 		if (item.inherits) {
 			item.inherits = {
 				nameSuffix: item.inherits.nameSuffix || undefined,
+				namePrefix: item.inherits.namePrefix || undefined,
 				source: item.inherits.source || undefined,
 				isLegendary: item.inherits.isLegendary || undefined,
 				seller: item.inherits.seller || undefined,
