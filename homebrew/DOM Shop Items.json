@@ -78,9 +78,7 @@
 			"abbreviation": "EHMT",
 			"source": "ArcaneAL",
 			"entries": [
-				"Enhancements are a classification of magic item, which are constructed from fragments of much more powerful and advanced Arcanuminium constructions. These fragments can be fused onto an item of a certain type.",
-				"An item enhanced by Arcanuminium is considered magical if it was not already. An Enhancement can be added to, removed from or swapped with another Enhancement over the course of a long rest. An item can only have one enhancement at a time, unless it or the item has a feature that allows otherwise.",
-				"Fragments are made entirely of Arcanuminium, about the size of a clenched fist and appear as a fragment of some larger creation that you can't really understand. When they fuse onto an item, the fragment seems to melt into the fused item with golden light. How it changes the item is up to player interpretation, as Fragments seem to shift themselves to better suit their wielders. By default, Arcanuminium is a white/silver metal that seems to have golden, glowing inlays (Same as the Door to AnA)"
+				"An item enhanced by Arcanuminium is considered magical if it was not already. An Enhancement can be added to, removed from or swapped with another Enhancement over the course of a long rest. An item can only have one enhancement at a time, unless it or the item has a feature that allows otherwise."
 			]		
 		}
 	],
