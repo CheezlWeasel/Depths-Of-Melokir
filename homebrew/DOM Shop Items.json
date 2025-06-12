@@ -225,6 +225,20 @@
 				"This rune can be attached to any non-magical weapon, causing it to become flickering. A flickering rune causes a weapon to shimmer, grow blurry and indistinct, and momentarily turn invisible at random intervals for a second or two. Creatures have disadvantage on attempts they make to disarm you of a flickering weapon and you have advantage on attempts to avoid being disarmed. On a critical hit with a flickering weapon, the target must make a DC (8+prof+Strength or Dexterity) constitution saving throw or be blinded until the start of your next turn."
 			],
 			"wondrous": true
+		},
+		{
+			"name": "Fragment N-010",
+			"type": "EHMT",
+			"weight": 0,
+			"rarity": "uncommon",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"value": 75000,
+			"reqAttune": true,
+			"entries": [
+				"{@i A fragment fit for a master of battle!}",
+				"This enhancement can be fused to any non-magical weapon or armour. While fused to an item, your non-spell save DCs increase by one. This is considered a +1 for the purposes of +1 stacking rules."
+			]
 		}
 	],
 	"magicvariant": [
