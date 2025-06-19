@@ -368,6 +368,7 @@ export class ShopBuilder extends BuilderBase {
 			{ baseItem: "Morningstar|PHB" },
 			{ baseItem: "Net|PHB" },
 			{ baseItem: "Orb|PHB" },
+			{ baseItem: "Warhammer|PHB" },
 		];
 
 		baseItems.forEach(item => {

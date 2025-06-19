@@ -115,7 +115,8 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"item":"Maul|PHB"}`, label: "Specific Item : Maul (PHB)"},
 			{value: `{"item":"Morningstar|PHB"}`, label: "Specific Item : Morningstar (PHB)"},
 			{value: `{"item":"Net|PHB"}`, label: "Specific Item : Net (PHB)"},
-			{value: `{"item":"Orb|PHB"}`, label: "Specific Item : Orb (PHB)"}
+			{value: `{"item":"Orb|PHB"}`, label: "Specific Item : Orb (PHB)"},
+			{value: `{"item":"Warhammer|PHB"}`, label: "Specific Item : Warhammer (PHB)"},
 		);
 
 		this._requirementVals = this._requirementOptions.map(it => it.value);
