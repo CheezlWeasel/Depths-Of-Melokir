@@ -268,32 +268,31 @@
 			"source": "ArcaneAL"
 		},
 		{
-		"uniqueId": "b17ee3aa-2bc2-4473-9353-a14def2e6595",
-		"name": "Marocrunch Mandible",
-		"type": "M",
-		"requires": [
-			{
-				"item": "Greatclub|PHB"
+			"name": "Marocrunch Mandible",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"name": "Greatclub"
+				},
+				{
+					"name": "Morningstar"
+				},
+				{
+					"name": "Warhammer"
+				}
+			],
+			"inherits": {
+				"nameSuffix": ")",
+				"namePrefix": "Marocrunch Mandible (",
+				"source": "LandsofVita",
+				"value": "30000"
 			},
-			{
-				"item": "Morningstar|PHB"
-			},
-			{
-				"item": "Warhammer|PHB"
-			}
-		],
-		"inherits": {
-			"nameSuffix": ")",
-			"namePrefix": "Marocrunch Mandible (",
+			"entries": [
+				"This repurposed mandible still carries some of the strength to crunch through bone.",
+				"Upon landing a critical hit with this weapon, the target takes 2d4 extra bludgeoning damage (this does not get doubled by said crit) and has their movement halved until the end of your next turn. This movement reduction cannot stack with other similar effects."
+			],
 			"source": "LandsofVita",
-			"value": "30000"
-		},
-		"entries": [
-			"This repurposed mandible still carries some of the strength to crunch through bone.",
-			"Upon landing a critical hit with this weapon, the target takes 2d4 extra bludgeoning damage (this does not get doubled by said crit) and has their movement halved until the end of your next turn. This movement reduction cannot stack with other similar effects."
-		],
-		"source": "LandsofVita",
-		"rarity": "uncommon"
+			"rarity": "uncommon"
 		}
 	]
 }
