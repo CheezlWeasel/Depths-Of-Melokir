@@ -270,6 +270,7 @@
 		{
 			"name": "Marocrunch Mandible",
 			"type": "GV|DMG",
+			"seller": "N/A",
 			"requires": [
 				{
 					"name": "Greatclub"
@@ -285,7 +286,9 @@
 				"nameSuffix": ")",
 				"namePrefix": "Marocrunch Mandible (",
 				"source": "LandsofVita",
-				"value": "30000"
+				"value": "30000",
+				"rarity": "uncommon",
+				"seller": "N/A"
 			},
 			"entries": [
 				"This repurposed mandible still carries some of the strength to crunch through bone.",
