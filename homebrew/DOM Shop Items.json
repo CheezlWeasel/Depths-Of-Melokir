@@ -262,7 +262,34 @@
 			"entries": [
 				"Due to the sheer weight of this weapon, you can swing yourself around with it. As part of making an attack with this weapon, you can move up to 5ft towards your target without provoking opportunity attacks. This cannot be used to make lateral movement around a target, and can only be used if the 5ft of movement actually brings the user within reach of the target."
 			],
-			"baseitem": "Warhammer|PHB",
+			"baseitem": "Warhammer",
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Coinhammer",
+			"value": 40000,
+			"weight": 10,
+			"rarity": "Uncommon",
+			"source": "LandsofVita",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "B",
+			"reqAttune": true,
+			"wondrous": true,
+			"type": "M",
+			"weaponCategory": "martial",
+			"entries": [
+				"Whenever you successfully hit with this weapon, instead of rolling damage you flip a number of coins equal to twice your proficiency bonus. (For digital use, roll a 1d2 and treat a 2 as a success, with this feature being unaffected by any reroll or dice modifying features.)",
+				"For each successful flip, this weapon deals 3 magical bludgeoning damage for that hit. the user takes magical bludgeoning damage equal to two times the amount of lost flips. This damage can be reduced, but cannot be ignored. Dealing critical damage with this weapon means flipping twice as many coins.",
+				"If you win every flip, you may flip another set of coins: these coins deal 6 damage either direction.",
+				"{@i [Author's note to user:  The weapon always still deals additional damage equal to your strength like a normal maul - the coins only replace the d12 you would normally roll. For example, winning 4 out of 6 flips deals 12+STR damage to your opponent while taking 4 damage in return. Additionally, The win-big set of coins cannot retrigger itself. If you DO manage to succeed on all your win-big flips, send me a screenshot so I can laugh at it forever]}",
+				"{@i [Author’s 2nd note: the coins cannot be rerolled by reroll features]}"
+			],
+			"baseitem": "Maul",
 			"_attunement": "(requires attunement)"
 		}
 	],
