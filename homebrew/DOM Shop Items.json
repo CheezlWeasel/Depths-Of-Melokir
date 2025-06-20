@@ -239,6 +239,31 @@
 				"{@i A fragment fit for a master of battle!}",
 				"This enhancement can be fused to any non-magical weapon or armour. While fused to an item, your non-spell save DCs increase by one. This is considered a +1 for the purposes of +1 stacking rules."
 			]
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Granite Blade",
+			"value": 37500,
+			"weight": 20,
+			"rarity": "Uncommon",
+			"source": "LandsofVita",
+			"seller": "N/A",
+			"property": [
+				"V",
+				"H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"dmg2": "3d3",
+			"reqAttune": true,
+			"wondrous": true,
+			"type": "M",
+			"weaponCategory": "martial",
+			"entries": [
+				"Due to the sheer weight of this weapon, you can swing yourself around with it. As part of making an attack with this weapon, you can move up to 5ft towards your target without provoking opportunity attacks. This cannot be used to make lateral movement around a target, and can only be used if the 5ft of movement actually brings the user within reach of the target."
+			],
+			"baseitem": "Warhammer|PHB",
+			"_attunement": "(requires attunement)"
 		}
 	],
 	"magicvariant": [
