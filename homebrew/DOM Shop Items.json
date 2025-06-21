@@ -245,7 +245,7 @@
 			"name": "Granite Blade",
 			"value": 37500,
 			"weight": 20,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"source": "LandsofVita",
 			"seller": "N/A",
 			"property": [
@@ -270,7 +270,7 @@
 			"name": "Coinhammer",
 			"value": 40000,
 			"weight": 10,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"source": "LandsofVita",
 			"seller": "N/A",
 			"property": [
@@ -298,7 +298,7 @@
 			"name": "Grinning Gastronome",
 			"value": 40000,
 			"weight": 6,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"seller": "Menes, The Runesmith",
 			"source": "LandsofVita",
 			"property": [
@@ -322,7 +322,7 @@
 			"name": "Red Iron Focus",
 			"value": 40000,
 			"weight": 2,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"seller": "Menes, The Runesmith",
 			"source": "LandsofVita",
 			"type": "SCF",
@@ -344,7 +344,7 @@
 			"name": "The Quetzal",
 			"value": 40000,
 			"weight": 2,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"seller": "Menes, The Runesmith",
 			"source": "LandsofVita",
 			"property": [
