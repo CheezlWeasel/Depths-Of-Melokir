@@ -292,6 +292,77 @@
 			],
 			"baseitem": "Maul",
 			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Grinning Gastronome",
+			"value": 40000,
+			"weight": 6,
+			"rarity": "Uncommon",
+			"seller": "Menes, The Runesmith",
+			"source": "LandsofVita",
+			"property": [
+				"2H",
+				"H"
+			],
+			"dmgType": "S",
+			"type": "M",
+			"weaponCategory": "martial",
+			"entries": [
+				"{@i This giant curved blade seems to have a hinge in the middle, with the inner edge lined with... teeth?}",
+				"At the start of your turn, you may choose to have this weapon folded or unfolded.",
+				"Folded: This weapon deals 1d10 slashing damage, and you can as a reaction to being successfully hit with a ranged attack attempt to \"eat\" said incoming ranged attack with your blade. Reduce the damage by 1d10+Proficiency bonus - if this fully reduces the damage, you feel pretty cool.",
+				"Unfolded: This weapon deals 2d6 bludgeoning damage and has reach."
+			],
+			"wondrous": true,
+			"dmg1": "1d10 / 2d6"
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Red Iron Focus",
+			"value": 40000,
+			"weight": 2,
+			"rarity": "Uncommon",
+			"seller": "Menes, The Runesmith",
+			"source": "LandsofVita",
+			"type": "SCF",
+			"weaponCategory": "martial",
+			"entries": [
+				"{@i This engraved disc of red iron is covered in tiny symbols. It feels like it... needs an exchange, in order to imbue its user with power.}",
+				"This item can be used as a spellcasting foci by any spellcasting class.",
+				"When attuning to this item and at the end of a long rest, choose Strength or Guile.",
+				"Strength: You cannot be involuntarily moved, and add 1d4 to strength and constitution saving throws. You subtract 1d4 from wisdom saving throws.",
+				"Guile: You have advantage against being charmed or frightened, and add 1d4 to a mental saving throw of your choice (chosen at start of session). Your Maximum HP is reduced by 13.",
+				"You may only have one of these bonuses active at a time."
+			],
+			"wondrous": true,
+			"reqAttune": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "The Quetzal",
+			"value": 40000,
+			"weight": 2,
+			"rarity": "Uncommon",
+			"seller": "Menes, The Runesmith",
+			"source": "LandsofVita",
+			"property": [
+				"2H",
+				"H",
+				"A"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"range": "150/600",
+			"type": "R",
+			"weaponCategory": "martial",
+			"entries": [
+				"{@i A thin bow made from bone carved from the walls - the “joints” allow for a much longer draw. It seems to have a faint heartbeat under your hand.}",
+				"Once per turn while wielding this weapon, you can choose to roll an attack with this weapon at disadvantage (this disadvantage cannot be negated, mitigated or cancelled by any other effect, including advantage.) If you successfully hit with this attack, you use 4d3 as your damage die for that attack and knock the target up to 10ft backwards."
+			],
+			"baseitem": "Longbow|PHB",
+			"wondrous": true
 		}
 	],
 	"magicvariant": [
