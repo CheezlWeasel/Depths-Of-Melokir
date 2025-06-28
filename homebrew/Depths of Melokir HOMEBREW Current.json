@@ -3985,5 +3985,45 @@
                 }
             ]
         }
+    ],
+    "spell": [
+        {
+            "name": "True Legend Lore",
+            "level": 10,
+            "school": "D",
+            "subschools": [
+                "Chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "hour",
+                    "note": "can be done as part of a short rest"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "entries": [
+                "  This spell allows to caster to briefly read the pattern of the fabric of reality itself in order to glimpse a moment of the ancient past, including moments that predate the gods. This spell seems to have been specially wrought to provide the caster with information about the Verdigris. When cast, the caster will receive a vivid vision of the ancient past, and learn something about the Verdigris’ secret past. Furthermore, any creature who has cast this spell will occasionally gain the ability to decern the literal meaning of words written in the Verdigris script.",
+                "Mystra was not consulted in the creation of the spell."
+            ],
+            "source": "VerdigrisRuins",
+            "components": {
+                "v": true,
+                "s": true
+            }
+        }
     ]
 }
