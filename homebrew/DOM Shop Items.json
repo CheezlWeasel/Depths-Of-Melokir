@@ -420,6 +420,30 @@
 			],
 			"source": "LandsofVita",
 			"rarity": "uncommon"
+		},
+		{
+			"uniqueId": "b17ee3aa-2bc2-4473-9353-a14def2e6595",
+			"name": "Polyknight's Weapon",
+			"type": "GV|DMG",
+			"requires": [
+				{
+				"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Polyknight's ",
+				"source": "DepthsofMelokir",
+				"value": "20000",
+				"seller": "Arthak"
+			},
+			"entries": [
+				"{@i For the Individual in your life that practices multiple forms of bodily harm.}",
+				"After successfully dealing damage to a creature with this weapon, if later on that turn that creature takes another damage type not inflicted by that weapon attack and not inflicted by a weapon attack, they take an additional 1d4 of that secondary damage. Only triggers once per turn."
+			],
+			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"seller": "Arthak",
+			"value": "20000"
 		}
 	]
 }
