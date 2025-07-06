@@ -446,6 +446,7 @@ class ShopPage extends ListPage {
 					type,
 					cost: item.value || 0,
 					weight: Parser.weightValueToNumber(item.weight),
+					seller: item.seller || "",
 				},
 				{
 					isExcluded,
@@ -501,6 +502,7 @@ class ShopPage extends ListPage {
 					cost: item.value || 0,
 					attunement: item._attunementCategory !== VeCt.STR_NO_ATTUNEMENT,
 					weight: Parser.weightValueToNumber(item.weight),
+					seller: item.seller || "",
 				},
 			);
 
