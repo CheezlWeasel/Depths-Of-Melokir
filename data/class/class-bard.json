@@ -782,7 +782,7 @@
 					"source": "DepthsofMelokir",
 					"name": "Bardic Inspiration Optional Variant: Modified Properties",
 					"entries": [
-						"You may use Bardic inspiration as reaction to ally failing skill check INSTEAD of as a Bonus action on your turn."
+						"If you would give a bardic inspiration as a bonus action, you can now instead give it as a reaction to failing a saving throw, attack roll or ability check"
 					]
 				}
 			]
