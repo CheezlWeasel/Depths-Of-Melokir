@@ -1,3 +1,13 @@
+# v1.4.0.2
+Seller can now be sorted by ascending and descending within the shop tab
+Seller Filter ability tbd
+
+# v1.4.0.1
+Illrigger Architect of Ruin now displays the Spells Known in its specific table
+
+also hi its been a while since i have posted one of these
+v2.0.0.0 is in a gradual rollout when i get sent JSONS from DMs
+
 # v1.4.0.0
 The Amulet of Unending Fear has had a minor nerf that is now reflected in the shop
 
