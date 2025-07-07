@@ -1552,7 +1552,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, while you have adopted your alternate persona, you can use your action to inspire your choice of fear or adoration in those nearby. When you do, all creatures within 30 feet who can see you must succeed on a Wisdom saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be {@condition charmed}, if you chose adoration, or {@condition frightened} if you chose fear. This effect lasts for one minute. Each time a creature takes damage from you or one of your allies it can repeat the saving throw, ending the effect on a success. You can use this feature again after you finish a long rest."
+				"At 6th level, while you have adopted your alternate persona, you can use your action to inspire your choice of fear or adoration in those nearby. When you do, creatures of your choice within 30 feet who can see you must succeed on a Wisdom saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be {@condition charmed}, if you chose adoration, or {@condition frightened} if you chose fear. This effect lasts for one minute. Each time a creature takes damage from you or one of your allies it can repeat the saving throw, ending the effect on a success. You can use this feature again after you finish a long rest."
 			]
 		},
 		{

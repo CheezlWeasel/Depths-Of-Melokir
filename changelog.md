@@ -1,3 +1,9 @@
+# v1.4.1.0
+Lictor Subclass and Class features have been altered to match the new wording present in the doc
+
+# v1.4.0.3
+Arena Royale Pugilist 6th Level Feature Updated wording
+
 # v1.4.0.2
 Seller can now be sorted by ascending and descending within the shop tab
 Seller Filter box ability tbd

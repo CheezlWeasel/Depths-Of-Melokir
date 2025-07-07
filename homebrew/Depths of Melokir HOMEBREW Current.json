@@ -968,7 +968,7 @@
                 "Wrack Foes: Wrack with Grief|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|3",
 				"Consumption of Misfortune|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|3",
                 "Geist's Waltz|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|6",
-				"Improved Incorporeal Form|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|11",
+				"Phantasmal Killer|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|11",
 				"Ethereal Passage|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|15",
 				"Spectral Absolute|Lictor|DepthsofMelokir|Apparition|DepthsofMelokir|18"
             ]
@@ -1343,10 +1343,18 @@
             "level": 2,
             "entries": [
                 "{@i 2nd-level Lictor Feature}",
-                "You are now kept alive - after a fashion - by the necromanticmagic that turns within you. You don't need to eat, drink, or breathe.",
+                "You are now kept alive - after a fashion - by the necromantic magic that turns within you. You don't need to eat, drink, or breathe.",
                 "The energy of nearby death also refuels your ongoing quest for vindication. You have three Necrotic Charges. You can never have more Necrotic charges than shown on the table for your level. You regain all spent Necrotic Charges when you finish a long rest. Additionally, you gain a charge whenever a creature of size Small or larger within 30ft of you dies, and in the other way determined by your office at 3rd level.",
-                "On your turn while you are not incapacitated, you can expend one or more Necrotic charges as a bonus action to gain 2d4 temporary hit points, plus an additional die for each additional charge. Alternatively, you can expend a charge when you successfully hit with a melee attack to deal an additional 2d4 necrotic damage.",
-                "This temporary HP / damage increases to 2d6 at 6th level, 2d8 at 10th level, and 2d10 at 15th level. The maximum number of charges your Necrotic Engine can hold increases as you gain levels in this class: up to 4 charges at 5th level, 5 charges at 11th level, and 6 charges at 17th level."
+                "On your turn while you are not incapacitated, you can use Necrotic Charges in the following ways:",
+                {
+                "type": "list",
+                "items": [
+                    "Necrotic Shell: You expend one or more necrotic charges as a bonus action, gaining 2d4 temporary hit points plus an additional die for each additional charge.",
+                    "Deathly Strike: You expend one necrotic charge when you successfully hit with a melee attack, dealing an additional 2d4 necrotic damage.",
+                    ]
+                },
+                "This temporary HP / damage increases to 2d6 at 6th level, 2d8 at 10th level, and 2d10 at 15th level.",
+                "The maximum number of charges your Necrotic Engine can hold increases as you gain levels in this class: up to 4 charges at 5th level, 5 charges at 11th level, and 6 charges at 17th level.",
             ]
         },
         {
@@ -1729,7 +1737,7 @@
             "header": 2,
             "level": 3,
             "entries": [
-                "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 20 feet of you must succeed on a Wisdom saving throw or take 2d6 psychic damage and fall prone, being unable to stand until the end of your next turn. A creature that fails its save by 5 or more is also frightened of you until the start of your next turn.",
+                "You unleash an awful wail of raw emotion that washes over your enemies. Creatures of your choice within 10 feet of you have their movement speed reduced by 5ft until the end of their next turn, and must make a Wisdom saving throw or take 2d6 psychic damage. If they fail their movement speed is instead reduced by 10ft, and if they fail by 5 or more they also fall prone and cannot get up until the end of their next turn.",
                 "This feature's damage increases to 2d8 at 6th level, 2d10 at 10th level, and 2d12 at 15th level."
             ]
         },
@@ -1757,13 +1765,13 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Once per turn when you move through a creature, you can cause that creature to take 1d8+PROF cold damage.",
+                "When you move through a creature, you can cause that creature to take 1d8+PROF cold damage. This ability is usable PROF times per round, and cannot be used against the same creature more than once per round.",
                 "This damage increases to 2d8 at 11th level, and 3d8 at 15th level.",
-                "Additionally, you do not provoke opportunity attacks and your speed increases by 10ft."
+                "Additionally, you do not provoke opportunity attacks and your speed increases by 10ft"
             ]
         },
         {
-            "name": "Improved Incorporeal Form",
+            "name": "Phantasmal Killer",
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
@@ -1772,10 +1780,8 @@
             "header": 2,
             "level": 11,
             "entries": [
-                
-                "Your melee weapon attacks can now deal psychic or cold damage (your choice), instead of their usual damage type.",
-                "This can also change the additional necrotic damage from Necrotic Engine.",
-                "In addition, you can now move through objects of any size, including solid walls, without the need to concentrate or expend uses of your Incorporeal Form feature. As an action, you can touch one creature and expend a use of that feature to share this benefit with it until the start of your next turn. If a creature sharing this benefits ends its turn inside an object, it is immediately shunted to the nearest unoccupied space outside of the object, taking 1d10 force damage for every 5 feet it was shunted."
+                "You become swifter in inflicting your raison d'être on your foes. You can use Wrack with Grief as a bonus action, still paying the Necrotic Charge. When you do so, you can expend an additional Necrotic Charge to gain the base benefits of a Necrotic Shell.",
+                "In addition, you can extend your incorporeal form to others: as an action, you can touch a willing creature and expend a use of Incorporeal Form, allowing it to benefit from that feature until the start of your next turn. If a creature sharing this benefit ends its turn inside an object, it is immediately shunted to the nearest unoccupied space outside of the object, taking 1d10 force damage for every 5 feet it was shunted."
             ]
         },
         {
@@ -1847,7 +1853,7 @@
             "level": 1,
             "entries": [
                 "Yours is the office of war, and you have armed accordingly for your cursed crusade. You gain proficiency with heavy armor.",
-                "Additionally, you take an additional fighting style from the Lictor Fighting Style list. You cannot take a fighting style you already have."
+                "Additionally, your office has impressed upon you the importance of inflicting dread on your foes. You gain the ability to cast {@spell Thaumaturgy}."
             ]
         },
         {
@@ -1860,7 +1866,6 @@
             "header": 1,
             "level": 1,
             "entries": [
-                
                 "You bear a dark likeness of a paladin's power. You have a pool of negative energy equal to 5 x your lictor level that replenishes when you take a long rest.",
                 "After dealing damage to a creature with a melee weapon attack, you can draw energy from the pool up to the amount of damage done and gain temporary Hit Points equal to the amount of points expended."
             ]
@@ -2310,8 +2315,7 @@
             "header": 1,
             "level": 1,
             "entries": [
-                
-                "As a bonus action, you can allow the death incubating inside your body to exude outwards in an aura that extends 10 feet from you in all directions, or withdraw it again. Any creature other than you that ends its turn in the aura takes 1d4+PROF necrotic, poison or piercing (your choice) damage.",
+                "As a bonus action, you can allow the death incubating inside your body to exude outwards in an aura that extends 10 feet from you in all directions, or withdraw it again. Any creature other than you that ends its turn in the aura takes 1d4+PROF necrotic, poison or piercing (your choice) damage. This aura retracts when you take another bonus action to do so, or when you fall unconscious.",
                 "The damage dealt by your aura increases when you reach certain levels in this class: 2d4+PROF at 6th level, 3d4+PROF at 11th level, 4d4+PROF at 15th level, and 5d4+PROF at 18th level."
             ]
         },
@@ -2503,9 +2507,8 @@
             "header": 2,
             "level": 6,
             "entries": [
-                
-                "You have trained extensively to improve your martial skill: when you attack a creature while no creatures other than your target are within 5ft of you, your range for critical hits is reduced by 1.",
-                "Additionally, you can briefly become incorporeal: you can cast Misty Step as a bonus action by spending 2 necrotic charges."
+                "You have trained extensively to improve your martial skill: when you attack a creature while no creatures other than your target are within 5ft of you, you deal an additional 1d8 damage of the weapon's type. This occurs once per turn.",
+                "Additionally, you can briefly become incorporeal: you can cast {@spell Misty Step} as a bonus action by spending 2 necrotic charges."
             ]
         },
         {
@@ -2600,11 +2603,18 @@
             "level": 1,
             "entries": [
                 
-                "You can demoralize others by giving voice to the discordant negative energy reverberating through your body. You can use a bonus action to start Wailing, which lasts for 1 minute. The sounds are audible up to 120 feet away, and can be heard on the Ethereal Plane. Your Wailing ends early if you are incapacitated, end your turn entirely within an area of sunlight, or are rendered unable to speak. You can also cease Wailing at any time (no action required). While you are Wailing, you have advantage on Charisma (Intimidation) checks and disadvantage on Charisma (Performance) checks, and creatures of your choice within 20 feet of you are subject to the following effects: In order to cast a spell with a verbal component, they must succeed on a DC 5 concentration saving throw. If they fail, they can take another action but are unable to cast a spell that turn.",
-                "In order to move within 5ft of you, they must make a DC 5 constitution saving throw. On a failure they instead move 5ft in a random direction away from you. Only triggers once per turn.",
-                "On the turn you begin Wailing, and as a bonus action on subsequent turns while your Wailing persists, you can choose one creature that is subject to these effects. The chosen creature subtracts 1d6 from the first ability check, attack roll, or saving throw it makes before the end of your next turn.",
-                "You can use this feature once, and cannot do so again until you complete a short rest or long rest, unless you expend a Necrotic Charge to do so again. ",
-                "The saving throws imposed by this feature is increased to 8 at 6th level, 11 at 11th level, 14 at 15th level, and 17 at 18th level."                
+                "You can demoralize others by giving voice to the discordant negative energy reverberating through your body.",
+                "You can use a bonus action to start Wailing, which lasts for 1 minute. The sounds are audible up to 120 feet away, and can be heard on the Ethereal Plane. Your Wailing ends early if you are incapacitated, end your turn entirely within an area of sunlight, or are rendered unable to speak. You can also cease Wailing at any time (no action required).",
+                "While you are Wailing, you have advantage on Charisma (Intimidation) checks and disadvantage on Charisma (Performance) checks. On the turn you begin Wailing and as a bonus action on your subsequent turns while your Wailing persists, you can choose one of the following effects to be active until the start of your next turn.",
+                {
+                    "type":"list",
+                    "items":[
+                        "One creature within 30ft subtracts 1d4 from the first skill check, attack roll or saving throw it makes. This increases to 1d6 at 6th level, 1d8 at 10th level and 1d10 at 15th level.",
+                        "Creatures of your choice within 20ft of you must make a Wisdom saving throw against your Wrack DC whenever they attempt to cast a spell. On a failure the spell is harmful to cast: they take necrotic damage equal to a Deathly Strike.",
+                        "Creatures that end their movement within 5ft of you must make a Wisdom saving throw or immediately use their reaction to move half their speed away from you, without provoking attacks of opportunity."
+                    ]
+                },
+                "You can use this feature once, and cannot do so again until you complete a short rest or long rest, unless you expend a Necrotic Charge to do so again."           
             ]
         },
         {
@@ -2646,8 +2656,7 @@
             "header": 2,
             "level": 3,
             "entries": [
-                
-                "You gain another way of regaining Necrotic Charges: Once per round, when a hostile creature fails an attack roll that was under the effect of Wailing, or fails a saving throw that was under the effect of Wailing, you can gain a Necrotic Charge."
+                "You gain another way of regaining Necrotic Charges: Once per round, when a hostile creature fails a roll affected by Wailing, or fails a saving throw inflicted by Wailing, you may regain a necrotic charge."
             ]
         },
         {
@@ -2660,10 +2669,7 @@
             "header": 2,
             "level": 6,
             "entries": [
-                
-                "The thrill of deathly energy resonates within you, emerging as unearthly shivers of sound. Whenever you gain a Necrotic Charge or use your Unrelenting Animus feature, you can choose one creature within 30 feet of you to direct an echo of death towards. The chosen creature must make a Charisma saving throw equal to your Wrack DC: on a failure, they take 2d4 thunder or necrotic damage (your choice).", 
-                "Additionally, the target subtracts the higher number on the d4s rolled from the first instance of damage it inflicts before the start of your next turn. This ability is only usable once per round.", 
-                "The amount of d4s rolled is increased to 3d4 at 9th level, 4d4 at 12th level, 5d4 at 15th level, and 6d4 at 18th level."
+                "The thrill of deathly energy resonates within you, emerging as unearthly shivers of sound. At the start of your turn, you may expend one hit die to enhance the next Wrack you use during that turn: the Wrack deals an additional die of damage, and deals half damage on success if it didn't already. This benefit expires at the end of your turn."
             ]
         },
         {
@@ -2676,9 +2682,7 @@
             "header": 2,
             "level": 11,
             "entries": [
-                
-                "Whenever you begin Wailing, friendly creatures within 20 feet of you that can hear you can choose to join you. Any creature that does so gains temporary hit points equal to your lictor level, and spreads its effects of your Wailing to within 10 feet of itself while your Wailing continues.",
-                "Additionally, your Wrack with Noise can originate from the location of a creature joining in."
+                "Whenever you begin Wailing, friendly creatures within 20 feet of you that can hear you can choose to join you. Any creature that does so gains temporary hit points equal to your lictor level, and spreads its effects of your Wailing abilities to within 10 feet of itself while your Wailing continues. Additionally, your Wrack with Noise can originate from the location of a creature joining in."
             ]
         },
         {
