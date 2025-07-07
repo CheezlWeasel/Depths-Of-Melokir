@@ -1349,12 +1349,12 @@
                 {
                 "type": "list",
                 "items": [
-                    "Necrotic Shell: You expend one or more necrotic charges as a bonus action, gaining 2d4 temporary hit points plus an additional die for each additional charge.",
-                    "Deathly Strike: You expend one necrotic charge when you successfully hit with a melee attack, dealing an additional 2d4 necrotic damage.",
+                        "Necrotic Shell: You expend one or more necrotic charges as a bonus action, gaining 2d4 temporary hit points plus an additional die for each additional charge.",
+                        "Deathly Strike: You expend one necrotic charge when you successfully hit with a melee attack, dealing an additional 2d4 necrotic damage."
                     ]
                 },
                 "This temporary HP / damage increases to 2d6 at 6th level, 2d8 at 10th level, and 2d10 at 15th level.",
-                "The maximum number of charges your Necrotic Engine can hold increases as you gain levels in this class: up to 4 charges at 5th level, 5 charges at 11th level, and 6 charges at 17th level.",
+                "The maximum number of charges your Necrotic Engine can hold increases as you gain levels in this class: up to 4 charges at 5th level, 5 charges at 11th level, and 6 charges at 17th level."
             ]
         },
         {
