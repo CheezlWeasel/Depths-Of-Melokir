@@ -5,5 +5,5 @@
 		"This file contains as an index for other homebrew files, which should be placed in the same directory.",
 		"For example, add \"My Homebrew.json\" to the \"toImport\" array below, and have a valid JSON homebrew file in this (\"homebrew/\") directory."
 	],
-	"toImport": ["Depths of Melokir HOMEBREW Current.json","Benjamin Huffman; Pugilist.json","MCDM Productions; The Illrigger Revised.json", "DOM Shop Items.json"]
+	"toImport": ["Depths of Melokir HOMEBREW Current.json","Benjamin Huffman; Pugilist.json","MCDM Productions; The Illrigger Revised.json", "DOM Shop Items.json","Ultrakill.json"]
 }
