@@ -383,6 +383,228 @@
 				"When a spell is cast with this item, the caster can attempt to reroll an attack roll or damage die. Each time this ability is used, regardless of the result, the caster takes damage equal to twice the die roll. A die can be rerolled with this ability up to PROF times. The damage from this feature to self is force, cannot be reduced or negated in any way, and ignores temporary HP.",
 				"This ability is usable once per long rest."
 			]
+		},
+		{
+			"uniqueId": "fbc349f4-2736-4bcd-8b4f-9b23358ac1ae",
+			"name": "Cloak of Daggers",
+			"type": "G",
+			"value": 40000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"This asymmetrical cloak has a ring of silver daggers along its bottom hem. While wearing the cloak, you have advantage on Dexterity (Stealth) checks while in dim light or darkness.",
+				"In addition, you can use a bonus action to summon a magic silver dagger to one or both of your hands, provided that they're empty. Each dagger disappears in a puff of smoke after 1 minute or at the end of your turn if you aren't holding it."
+			]
+		},
+		{
+			"uniqueId": "1b05f44b-89a3-4da6-a48e-822e4d8293ec",
+			"name": "Clear Bell",
+			"type": "OTH",
+			"value": 22000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"entries": [
+				"When you use an action to ring this all-glass handbell, the sound rings out with perfect clarity. Any creature within 30 feet of the bell that can hear it can immediately make a saving throw to end any one effect on it that's causing it to be charmed or frightened. The saving throw DC is the same as the original effect's.",
+				"Once the bell has been rung in this way, it shouldn't be rung again until the next dawn. Each time it's used again before then, it has a cumulative 20 percent chance of not working and shattering into a fine, nonmagical powder."
+			],
+			"wondrous": true
+		},
+		{
+			"uniqueId": "3d2d977a-2880-4c24-9ad3-a72fff16e202",
+			"name": "Charging Bugle",
+			"type": "OTH",
+			"value": 45000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"entries": [
+				"This blue bugle horn is lined in enchanted copper that can transform sound into electrical force. You can blow a percussive note from the bugle in place of the verbal component when casting a spell of 1st level or higher that deals thunder damage, such as shatter or thunderwave. When you do, any creature or object affected by the spell also takes an extra 1d6 lightning damage. If the spell's damage would be halved on a successful saving throw, this lightning damage is also halved on a successful one.",
+				"In addition, you can use a bonus action on your first turn of combat to blow an invigorating call from the bugle. Any friendly creature within 30 feet of you (including yourself) that can hear the bugle gains a 5-foot bonus to its speed until the start of your next turn."
+			],
+			"reqAttune": true,
+			"wondrous": true
+		},
+		{
+			"uniqueId": "126f02b2-1f82-413c-b911-323e497580b7",
+			"name": "Bullfrog Bugle",
+			"type": "OTH",
+			"value": 5000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"wondrous": true,
+			"entries": [
+				"This horn sounds like a croaking frog when sounded, which is audible out to a range of 100 feet. When you speak through this horn, frogs, toads, and other beasts with the Amphibious trait can understand the meaning of your words, though the horn doesn't give you any special ability to understand them in return.",
+				"Call Frog. You can use an action to sound the horn loudly, emitting a resonant croak audible out to 300 feet instead. Roll 2d6. If the total is 7, a giant toad appears in the nearest unoccupied space within 30 feet of you. On any other result, a giant frog appears instead. The creature is friendly to you and your companions and obeys your verbal commands (no action required by you), provided that it can understand you. {@i This creature will not enter combat, if initiative is rolled, it will immediately flee.}",
+				"The creature remains for 1 hour or until it's reduced to 0 hit points. Once this property has been used, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"uniqueId": "4f0a2deb-17ee-44cb-ba0a-2e4404a3b04f",
+			"name": "Bowstring Amulet",
+			"type": "OTH",
+			"value": 7500,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"wondrous": true,
+			"entries": [
+				"This amulet's bow and arrow pendant is strung with a length of well-worn bowstring. Once on each of your turns while wearing the amulet, you can speak its command word as part of making a ranged attack with a bow or crossbow. When you do, the fired arrow or bolt magically creates a length of weightless hempen rope behind it. One end of the rope is tied to the arrow or bolt, and the other end appears in an open hand or at your feet (your choice). The rope remains for 10 minutes, until it's cut or untied, or until you use this property of the amulet again, at which point the rope instantly unravels and disappears. The rope also disappears early if it becomes longer than 300 feet before the arrow or bolt hits a target. For the rope's duration, the arrow or bolt can hold up to 500 pounds without breaking or dislodging from its point of impact."
+			]
+		},
+		{
+			"uniqueId": "78c47b7d-9784-4893-9a53-6e4b34e4c0b8",
+			"name": "Bane Shield",
+			"type": "S",
+			"value": 20000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"baseitem": "Shield|PHB",
+			"entries": [
+				"This classic iron shield is emblazoned with the skull like face of a demon. The shield has 3 charges and regains 1d3 expended charges daily at dawn. When you take damage from a creature within 5 feet of you while holding this shield, you can use your reaction to expend 1 of its charges to curse that creature. The next time that creature makes an ability check or attack roll before the end of its next turn, it must roll a d4 and subtract the number rolled from the total."
+			]
+		},
+		{
+			"uniqueId": "f3c9629e-ec0e-422b-ad50-bc68766c9bda",
+			"name": "Beetle Helm",
+			"type": "OTH",
+			"value": 45000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"This helm has a large beetle horn attached to it, supposedly so you can avoid attacks.",
+				"A number of times equal to your proficiency per short rest you may attempt to parry an attack against you. As a reaction to being hit, roll an Athletics check, if the check meets or exceeds the attack roll, reduce the damage you take by 1d10 + proficiency bonus."
+			]
+		},
+		{
+			"uniqueId": "c7f6c1f4-2f17-4a32-95a4-077431383041",
+			"name": "Matron's gloves",
+			"type": "OTH",
+			"value": 35000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"A number of times equal to your proficiency bonus per short rest, when you take the Attack action you may forgo an attack to select a target no more than one size larger than you within 10ft to throw. Make an Athletics check to a DC determined by the dm, if you succeed you can throw a target a number of feet equal to three times your strength score."
+			]
+		},
+		{
+			"uniqueId": "239dfc56-fa2a-4a30-b8d1-c45d6308c7a9",
+			"name": "Great Estoc",
+			"type": "M",
+			"value": 37500,
+			"weight": 0,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [
+				"F",
+				"2H",
+				"H",
+				"S"
+			],
+			"dmg1": "2d5",
+			"dmgType": "P",
+			"dmg2": "",
+			"range": "",
+			"weaponCategory": "martial",
+			"entries": [
+				"{@i {@b Special.}} On a critical hit, the target suffers a 1d4 penalty to its Armour Class until the end of your next turn, this effect does not stack with repeated critical hits"
+			]
+		},
+		{
+			"uniqueId": "2a51df2f-53e5-4801-9ac5-249b4107417c",
+			"name": "Silver Hawk's Buckler",
+			"type": "OTH",
+			"value": 25000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"baseitem": "Fan Shield|DepthsofMelokir",
+			"entries": [
+				"This shield functions like a folding fan, rotating metal plates spin out to give it form. The strange alloy it is made from is both lightweight and durable.",
+				"While this shield is equipped it can be either deployed or stowed as a bonus action. While stowed the hand it is held in is considered “free” but you do not benefit from its bonus to AC",
+				"Whilst attuned this shield has two charges, as bonus action you can expend one charge to target a creature or location within 30 ft and roll a DC 15 acrobatics or athletics check to be pulled towards them, if you succeed the check by 5 or more, you regain that spent charge. Moving towards them does not provoke opportunity attacks, but you are affected by things on the ground such as spike growth. When you successfully pull yourself towards a creature, you have advantage on your next attack this turn against the creature. This shield's charges are regained after a short rest."
+			],
+			"reqAttune": true
+		},
+		{
+			"uniqueId": "30e100a2-c265-4958-8301-4d889e273eba",
+			"name": "Elementalist's Companion",
+			"type": "OTH",
+			"value": 39000,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"entries": [
+				"This item relies on the user different types of elemental damage.",
+				"When you deal one of the following damage types by casting a spell: fire, acid, cold or lightning, you can cause a target to be marked. Once marked, if they take damage from a spell you cast that isn't the same damage type they were initially marked with you can cause one of the following effects depending on the original damage type. By doing this you do apply a different mark even if triggering one.",
+				"- Cold - the target has disadvantage on its next attack roll until the end of its next turn.",
+				"- Fire - the target starts to burn, and takes 1d8 + your proficiency bonus fire damage at the start of their next turn.",
+				"- Acid - The target starts to melt, gaining a -2 ac penalty until the end of their next turn.",
+				"- Lightning - Target on their next turn can either use a bonus action or an action, this lasts until the end of their next turn.",
+				"- Each of these marks last until the end of your next turn."
+			],
+			"reqAttune": true
 		}
 	],
 	"magicvariant": [
@@ -464,6 +686,259 @@
 			"rarity": "uncommon",
 			"seller": "Arthak",
 			"value": "20000"
+		},
+		{
+			"name": "Aknosom Armour",
+			"source": "Feywild",
+			"value": 15000,
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"armor":true}
+			],
+			"excludes": [],
+			"rarity": "uncommon",
+			"entries": [
+				"Whilst attuned and wearing this armour you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Aknosom Feather: While you are wearing this armor, you can use your reaction or bonus action to gain resistance to fire until the end of your next turn. Once you use this property, you cannot use it again until you finish a long rest.",
+						"Flame Sac: While you are attuned to this armor, you can use a bonus action to speak its command word and exhale fire at a target within 15 feet of you. The target must make a DC 15 Dexterity saving throw, taking 3d6 fire damage on a failed save, or half as much damage on a successful one. Once used, this property cannot be used again until you finish a long rest."
+					]
+				},
+				"You can discount the price of this item by the Armour Price by providing the armour used."
+			],
+			"inherits": {
+				"namePrefix": "Aknosom ",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"valueExpression": "[[baseItem.value]] + 15000",
+				"entries": [
+				"Whilst attuned and wearing this armour you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Aknosom Feather: While you are wearing this armor, you can use your reaction or bonus action to gain resistance to fire until the end of your next turn. Once you use this property, you cannot use it again until you finish a long rest.",
+						"Flame Sac: While you are attuned to this armor, you can use a bonus action to speak its command word and exhale fire at a target within 15 feet of you. The target must make a DC 15 Dexterity saving throw, taking 3d6 fire damage on a failed save, or half as much damage on a successful one. Once used, this property cannot be used again until you finish a long rest."
+					]
+				},
+				"You can discount the price of this item by the Armour Price by providing the armour used."
+				],
+				"includeBaseItemCost": true,
+				"seller": "Elered"
+			}
+		},
+		{
+			"name": "Flying Mantis Polearm",
+			"source": "Feywild",
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"name":"Staff"},
+				{"name":"Glaive"},
+				{"name":"Pike"}
+			],
+			"excludes": [],
+			"rarity": "uncommon",
+			"entries": [
+				"At the start of your turn while wielding this weapon, you may attempt a DC 15 Athletics or Acrobatics check, gaining a flying speed equal to your walking speed until the end of your turn a success. While flying this way, you have advantage on checks to mount onto large or larger creatures. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+				"Once per short rest, you can use this polearm to jump 15ft without provoking opportunity attacks."
+			],
+			"inherits": {
+				"nameSuffix": ")",
+				"namePrefix": "Flying Mantis Polearm (",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"value": "32000",
+				"entries": [
+					"At the start of your turn while wielding this weapon, you may attempt a DC 15 Athletics or Acrobatics check, gaining a flying speed equal to your walking speed until the end of your turn a success. While flying this way, you have advantage on checks to mount onto large or larger creatures. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+					"Once per short rest, you can use this polearm to jump 15ft without provoking opportunity attacks."
+				],
+				"seller": "Elered"
+			}
+		},
+		{
+			"name": "Great Wroggi Armour",
+			"source": "Feywild",
+			"value": 10000,
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"armor":true}
+			],
+			"excludes": [],
+			"rarity": "uncommon",
+			"entries": [
+				"Whilst wearing this armour you gain the following",
+				{
+					"type": "list",
+					"items": [
+						"Wroggi Sense: You have a +1 to nature checks and survival checks.",
+						"Team player: You may use the help action as a bonus action twice per long rest."
+					]
+				},
+				"You can discount the price of this item by the Armour Price by providing the armour used."
+			],
+			"inherits": {
+				"namePrefix": "Great Wroggi ",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"valueExpression": "[[baseItem.value]] + 10000",
+				"entries": [
+					"Whilst wearing this armour you gain the following",
+					{
+						"type": "list",
+						"items": [
+							"Wroggi Sense: You have a +1 to nature checks and survival checks.",
+							"Team player: You may use the help action as a bonus action twice per long rest."
+						]
+					},
+					"You can discount the price of this item by the Armour Price by providing the armour used."
+				],
+				"includeBaseItemCost": true,
+				"seller": "Elered"
+			}
+		},
+		{
+			"name": "Seregios Armour",
+			"value": 35000,
+			"source": "Feywild",
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"armor":true}
+			],
+			"excludes": [],
+			"rarity": "uncommon",
+			"entries": [
+				"Whilst attuned and wearing this armour you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Seregios Dissenter: During the first round of combat your melee weapon attacks score a critical hit on a roll of 19 or higher.",
+						"Seregios Airblade: While you are attuned to this armor, you can cast the blade ward spell from it as a bonus action. Once you use this property, you can't use it again until you finish a short rest.",
+						"Seregios groomingscale: While you are attuned to this armor, you can conjure a magical comb as an action. Running this comb through your hair allows you to change the length, color, curliness, and style of your hair. After running the comb through your hair, your hair is also cleaned and has a pleasant fragrance."
+					]
+				},
+				"You can discount the price of this item by the Armour Price by providing the armour used."
+			],
+			"inherits": {
+				"namePrefix": "Seregios ",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"valueExpression": "[[baseItem.value]] + 35000",
+				"entries": [
+				"Whilst attuned and wearing this armour you gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Seregios Dissenter: During the first round of combat your melee weapon attacks score a critical hit on a roll of 19 or higher.",
+						"Seregios Airblade: While you are attuned to this armor, you can cast the blade ward spell from it as a bonus action. Once you use this property, you can't use it again until you finish a short rest.",
+						"Seregios groomingscale: While you are attuned to this armor, you can conjure a magical comb as an action. Running this comb through your hair allows you to change the length, color, curliness, and style of your hair. After running the comb through your hair, your hair is also cleaned and has a pleasant fragrance."
+					]
+				},
+				"You can discount the price of this item by the Armour Price by providing the armour used."
+				],
+				"seller": "Elered",
+				"includeBaseItemCost": true
+			}
+		},
+		{
+			"name": "Shadowfell Hunting Horn",
+			"source": "Feywild",
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"name":"Greatclub"},
+				{"name":"Club"}
+			],
+			"excludes": [],
+			"rarity": "uncommon",
+			"entries": [
+				"Whilst wielding this club you have +1 to attack rolls and damage with this weapon. As a bonus action on your turn, you can make a DC 20 performance check, if you succeed, you and each ally within 10ft of you regains 1d4 + your proficiency bonus hp. This ability can be used a number of times equal to your proficiency bonus per short rest."
+			],
+			"inherits": {
+				"nameSuffix": ")",
+				"namePrefix": "Shadowfell Hunting Horn (",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"value": "50000",
+				"entries": [
+					"Whilst wielding this club you have +1 to attack rolls and damage with this weapon. As a bonus action on your turn, you can make a DC 20 performance check, if you succeed, you and each ally within 10ft of you regains 1d4 + your proficiency bonus hp. This ability can be used a number of times equal to your proficiency bonus per short rest."
+				],
+				"seller": "Elered"
+			}
+		},
+		{
+			"name": "Sprinter's Armour",
+			"source": "Feywild",
+			"value": 24000,
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"armor":true}
+			],
+			"excludes": [],
+			"rarity": "uncommon",
+			"entries": [
+				"Whilst wearing this armour, At the beginning of your first turn after rolling initiative you can expend and roll one of your hit die, taking that much necrotic damage that cannot be mitigated or reduced. After doing so, your movement is doubled for that turn."
+			],
+			"inherits": {
+				"namePrefix": "Sprinter's ",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"valueExpression": "[[baseItem.value]] + 24000",
+				"entries": [
+					"Whilst wearing this armour, At the beginning of your first turn after rolling initiative you can expend and roll one of your hit die, taking that much necrotic damage that cannot be mitigated or reduced. After doing so, your movement is doubled for that turn."
+				],
+				"seller": "Elered",
+				"includeBaseItemCost": true
+			}
+		},
+		{
+			"name": "Thrown Weapon",
+			"source": "Feywild",
+			"edition": "",
+			"type": "GV|DMG",
+			"requires": [
+				{"type":"M"}
+			],
+			"excludes": [
+				{
+					"itemProperty":"H"
+				},
+				{
+					"itemProperty":"2H"
+				},
+				{
+					"itemProperty":"S"
+				},
+				{
+					"itemProperty":"UN"
+				}
+			],
+			"rarity": "uncommon",
+			"entries": [
+				"Whilst attuned to this weapon, add +1 to attack and damage rolls with this weapon.",
+				"This weapon gains the thrown (20/60) property if it didn't already have it. If it did, increase the range of the ability to 40/120. This weapon when thrown returns to your hand."
+			],
+			"inherits": {
+				"namePrefix": "Thrown ",
+				"source": "Feywild",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"value": "50000",
+				"entries": [
+					"Whilst attuned to this weapon, add +1 to attack and damage rolls with this weapon.",
+					"This weapon gains the thrown (20/60) property if it didn't already have it. If it did, increase the range of the ability to 40/120. This weapon when thrown returns to your hand."
+				],
+				"seller": "Elered"
+			}
 		}
 	]
 }
