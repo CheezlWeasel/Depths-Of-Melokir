@@ -769,7 +769,6 @@
 			"requires": [
 				{"armor":true}
 			],
-			"excludes": [],
 			"rarity": "uncommon",
 			"entries": [
 				"Whilst wearing this armour you gain the following",
@@ -908,20 +907,14 @@
 			"requires": [
 				{"type":"M"}
 			],
-			"excludes": [
-				{
-					"itemProperty":"H"
-				},
-				{
-					"itemProperty":"2H"
-				},
-				{
-					"itemProperty":"S"
-				},
-				{
-					"itemProperty":"UN"
-				}
-			],
+			"excludes": {
+				"property":[
+					"H",
+					"2H",
+					"S",
+					"UN"
+				]
+			},
 			"rarity": "uncommon",
 			"entries": [
 				"Whilst attuned to this weapon, add +1 to attack and damage rolls with this weapon.",
