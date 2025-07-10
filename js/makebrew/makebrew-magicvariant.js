@@ -58,7 +58,6 @@ export class MagicVariantBuilder extends BuilderBase {
 		this._requirementOptions.push(
 			{value: `{"itemProperty":"2H"}`, label: `Property : Two-Handed`},
 			{value: `{"itemProperty":"A"}`, label: `Property : Ammunition`},
-			{value: `{"itemProperty":"AF"}`, label: `Property : Ammunition`},
 			{value: `{"itemProperty":"BF"}`, label: `Property : Burst Fire`},
 			{value: `{"itemProperty":"F"}`, label: `Property : Finesse`},
 			{value: `{"itemProperty":"H"}`, label: `Property : Heavy`},
@@ -66,7 +65,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"itemProperty":"LD"}`, label: `Property : Loading`},
 			{value: `{"itemProperty":"R"}`, label: `Property : Reach`},
 			{value: `{"itemProperty":"RLD"}`, label: `Property : Reload`},
-			{value: `{"itemProperty":"S"}`, label: `Property : special`},
+			{value: `{"itemProperty":"S"}`, label: `Property : Special`},
 			{value: `{"itemProperty":"T"}`, label: `Property : Thrown`},
 			{value: `{"itemProperty":"V"}`, label: `Property : Versatile`},
 			{value: `{"itemProperty":"UN"}`, label: `Property : Esoteric`},
