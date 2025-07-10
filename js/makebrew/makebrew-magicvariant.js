@@ -525,6 +525,25 @@ export class MagicVariantBuilder extends BuilderBase {
 			if (currentList) newEntries.push(currentList);
 			item.entries = newEntries;
 		}
+		// --- Support lists in inherits.entries ---
+		if (item.inherits && Array.isArray(item.inherits.entries) && item.inherits.entries.length) {
+			let newEntries = [];
+			let currentList = null;
+			item.inherits.entries.forEach(entry => {
+				if (typeof entry === "string" && entry.trim().startsWith("- ")) {
+					if (!currentList) currentList = {type: "list", items: []};
+					currentList.items.push(entry.trim().slice(2));
+				} else {
+					if (currentList) {
+						newEntries.push(currentList);
+						currentList = null;
+					}
+					newEntries.push(entry);
+				}
+			});
+			if (currentList) newEntries.push(currentList);
+			item.inherits.entries = newEntries;
+		}
 
 		// Remove empty or undefined properties from the main item
 		Object.keys(item).forEach(k => {
