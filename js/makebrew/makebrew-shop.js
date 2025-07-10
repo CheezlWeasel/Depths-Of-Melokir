@@ -340,6 +340,8 @@ export class ShopBuilder extends BuilderBase {
 			{ baseItem: "Drum|PHB" },
 			{ baseItem: "Dulcimer|PHB" },
 			{ baseItem: "Fan Shield|DepthsofMelokir" },
+			{ baseItem: "Flail|PHB" },
+			{ baseItem: "Glaive|PHB" },
 			{ baseItem: "Greataxe|PHB" },
 			{ baseItem: "Greatclub|PHB" },
 			{ baseItem: "Greatsword|PHB" },

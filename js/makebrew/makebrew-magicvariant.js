@@ -89,7 +89,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"name":"Dulcimer"}`, label: "Specific Item : Dulcimer (PHB)"},
 			{value: `{"name":"Fan Shield"}`, label: "Specific Item : Fan Shield (DepthsofMelokir)"},
 			{value: `{"name":"Flail"}`, label: "Specific Item : Flail (PHB)"},
-			{value: `{name:"Glaive"}`, label: "Specific Item : Glaive (PHB)"},
+			{value: `{"name":"Glaive"}`, label: "Specific Item : Glaive (PHB)"},
 			{value: `{"name":"Greataxe"}`, label: "Specific Item : Greataxe (PHB)"},
 			{value: `{"name":"Greatclub"}`, label: "Specific Item : Greatclub (PHB)"},
 			{value: `{"name":"Greatsword"}`, label: "Specific Item : Greatsword (PHB)"},
