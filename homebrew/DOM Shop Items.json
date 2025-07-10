@@ -363,6 +363,26 @@
 			],
 			"baseitem": "Longbow|PHB",
 			"wondrous": true
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Cerulean Stave",
+			"value": 50000,
+			"weight": 2,
+			"rarity": "uncommon",
+			"source": "LandsofVita",
+			"weaponCategory": "simple",
+			"baseItem":"Staff|PHB",
+			"wondrous": true,
+			"type": "SCF",
+			"seller": "N/A",
+			"reqAttune": true,
+			"entries": [
+				"{@i A blue crystalline staff. Seems to resonate somewhat with other sounds.}",
+				"This item can be used as a spellcasting focus by any class.",
+				"When a spell is cast with this item, the caster can attempt to reroll an attack roll or damage die. Each time this ability is used, regardless of the result, the caster takes damage equal to twice the die roll. A die can be rerolled with this ability up to PROF times. The damage from this feature to self is force, cannot be reduced or negated in any way, and ignores temporary HP.",
+				"This ability is usable once per long rest."
+			]
 		}
 	],
 	"magicvariant": [

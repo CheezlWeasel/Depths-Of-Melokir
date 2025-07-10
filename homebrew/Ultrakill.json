@@ -1,0 +1,1210 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Ultrakill",
+				"abbreviation": "UK",
+				"full": "Ultrakill",
+				"version": "1",
+				"authors": [
+					"Cheezl"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color": "ee1111"
+			}
+		],
+		"dateAdded": 1516994880,
+		"dateLastModified": 1745439760
+	},
+	"monster": [
+		{
+			"name": "Filth",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 10,
+			"int": 6,
+			"wis": 6,
+			"cha": 6,
+			"passive": 10,
+			"cr": "1/4",
+			"senses": [
+				"blindsight 20 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"int": "+0",
+				"wis": "+0",
+				"cha": "+0",
+				"str": "+0"
+			},
+			"action": [
+				{
+					"name": "Lunge",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Leaping Lunge",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage, plus 3 ({@damage 1d6}) bludgeoning damage. This attack may only be used when the filth leaps 10 feet and lands next to its target"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"traitTags": [
+				"Aggressive"
+			],
+			"trait": [
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The filth's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Demonic Undead",
+					"entries": [
+						"This Creature counts as both Fiend and Undead for the purposes of features that interact with either creature type, mechanical bonuses that apply to both (i.e. divine smite) only occur once"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/4wjjkwhv889wtv63z8xgf/Filth-token.png?rlkey=sx3t2z1wu9ea3tc13rmdcjwjd&st=eii3mqdc&dl=1"
+			},
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Stray",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"fiend",
+						"undead"
+					]
+				}
+			},
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 7,
+			"dex": 13,
+			"con": 10,
+			"int": 7,
+			"wis": 7,
+			"cha": 16,
+			"passive": 8,
+			"cr": "1/2",
+			"senses": [
+				"blindsight 40 ft. no other senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"int": "+0",
+				"wis": "+0"
+			},
+			"action": [
+				{
+					"name": "Throw Hell Energy Projectile",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}10 ({@damage 2d8 + 1}) fire/necrotic damage. this attack counts as both fire and necrotic for the purposes of features that interact with either (i.e. resistance)"
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"languages": [
+				"Understands Infernal",
+				"Common."
+			],
+			"languageTags": [
+				"I",
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Demonic Undead",
+					"entries": [
+						"This Creature counts as both Fiend and Undead for the purposes of features that interact with either creature type, mechanical bonuses that apply to both (i.e. divine smite) only occur once"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/dm0ltcuxdnblgcgrvuotm/Stray-token.png?rlkey=tbhle2kpl2gedr31himoj82cu&st=20n8zldo&dl=1"
+			}
+		},
+		{
+			"name": "Schism",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"fiend",
+						"undead"
+					]
+				}
+			},
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 10,
+			"con": 10,
+			"int": 7,
+			"wis": 7,
+			"cha": 14,
+			"passive": 8,
+			"cr": "1/2",
+			"senses": [
+				"blindsight 40 ft. no other senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Understands Infernal",
+				"Common"
+			],
+			"languageTags": [
+				"I",
+				"C"
+			],
+			"save": {
+				"int": "+0",
+				"wis": "+0"
+			},
+			"action": [
+				{
+					"name": "Sweeping Hell Energy",
+					"entries": [
+						"The schism fires a sweeping beam of Hell Energy in a 60-foot cone. Each creature in that area must make a {@dc 10} Dexterity saving throw, taking 17 ({@damage 4d8}) fire/necrotic damage on a failed save, or half as much damage on a successful one. A creature can instead choose to make a {@dc 20} Strength saving throw to Parry and Deflect the Schism's attack back at them. If a creature successfully makes this strength save no other creatures take the damage and the schism takes the full damage alone."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"trait": [
+				{
+					"name": "Demonic Undead",
+					"entries": [
+						"This Creature counts as both Fiend and Undead for the purposes of features that interact with either creature type, mechanical bonuses that apply to both (i.e. divine smite) only occur once"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/rhfkmlic86fstqdiitxar/Schism-token.png?rlkey=eh1i17cddqk925nj7giuxlyoz&st=m9dltm09&dl=0"
+			},
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Soldier",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"fiend",
+						"undead"
+					]
+				}
+			},
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Natural Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8",
+				"average": 36
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 7,
+			"dex": 17,
+			"con": 10,
+			"int": 7,
+			"wis": 7,
+			"cha": 12,
+			"passive": 8,
+			"cr": "2",
+			"senses": [
+				"blindsight 50 ft. no other senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"int": "+0",
+				"wis": "+0"
+			},
+			"immune": [
+				{
+					"special": "Damage from any AOE"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Soldier may make 3 Hell Energy Ball attacks"
+					]
+				},
+				{
+					"name": "Hell Energy Ball",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}12 ({@damage 2d8 + 3}) fire/necrotic damage. The Soldier may not make Hell Energy Ball attacks if a creature is within 5 feet of it"
+					]
+				},
+				{
+					"name": "Gun Smack",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d6 - 2}) bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Barrel Roll",
+					"entries": [
+						"The Soldier moves up to 15 feet in any direction, the Soldier may make this movement through enemy spaces. This movement triggers opportunity attacks but imposes disadvantage on them "
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/kljkyq6ua2duigecw7xk7/Soldier-token.png?rlkey=dmraxzm1j43xc56m5qvhyrzjm&st=k1oeela3&dl=1"
+			},
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Malicious Face (Maurice)",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"fly": {
+					"number": 15,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 5,
+			"dex": 5,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 11,
+			"cr": "5",
+			"senses": [
+				"blindsight 60 ft. no other senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"con": "+6",
+				"int": "+4"
+			},
+			"immune": [
+				"fire"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"will": [
+						"{@spell fireball}, The Malicious Face may not use this if used in the previous turn, it casts this with Verbal Components only"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"trait": [
+				{
+					"name": "Enrage",
+					"entries": [
+						"When the Malicious Face gets below half health, it may use Fireball without restriction. It also gains an extra attack on its Multiattack."
+					]
+				},
+				{
+					"name": "Stone Corpse",
+					"entries": [
+						"When the Malicious Face is reduce to 0 HP it lands upon any creature directly below it dealing the equivalent fall damage dice multiplied by 2 in bludgeoning damage. Its corpse is also persistent difficult terrain"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Malicious Face makes 3 Hell Energy Ball attacks"
+					]
+				},
+				{
+					"name": "Hell Energy Ball",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 40/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) fire/necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/cq85lfcz9jri2cdkfee2i/Maurice-token.png?rlkey=a7p0kwiszt4mi8j5edqt5xke6&st=z4ksid6x&dl=1"
+			},
+			"damageTagsSpell": [
+				"F"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Mannequin",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 60,
+				"climb": 60
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 16,
+			"passive": 11,
+			"cr": "9",
+			"save": {
+				"wis": "+5"
+			},
+			"senses": [
+				"blindsight 100 ft",
+				"no other senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Understands Infernal",
+				"Common"
+			],
+			"languageTags": [
+				"I",
+				"C"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mannequin makes 3 Claw Attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d8 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Focused Hell Energy Ball",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 40/120 ft., one target. {@h}21 ({@damage 3d10 + 5}) radiant damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"trait": [
+				{
+					"name": "Unnatural Movement",
+					"entries": [
+						"When triggering opportunity attacks the Mannequin forces Disadvantage and has Half Cover"
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/kshszlww8yhkwhejd9x2b/Mannequin-token.png?rlkey=0fhmnqybrmgmpd401b5xuwor2&st=q643g055&dl=1"
+			},
+			"damageTags": [
+				"R",
+				"S"
+			]
+		},
+		{
+			"name": "Swordsmachine",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 11",
+				"average": 60
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 12,
+			"int": 7,
+			"wis": 7,
+			"cha": 7,
+			"passive": 8,
+			"cr": "9",
+			"save": {
+				"int": "+2",
+				"wis": "+2",
+				"cha": "+2",
+				"dex": "+8"
+			},
+			"immune": [
+				"psychic"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Swordsmachine makes 3 attacks using any mix of Sword Attacks or Shotgun Blasts"
+					]
+				},
+				{
+					"name": "Sword Attack",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 1d10 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Shotgun Blast",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 20/20 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"trait": [
+				{
+					"name": "Enraged",
+					"entries": [
+						"When the Swordsmachine is initially reduce to below half of its total HP, the Swordsmachine is {@condition stunned} for a single round. Afterwards the swords machine takes two actions on its turns instead of one, if an effect would force the Swordsmachine to either choose to use its movement or its action it may only use a single action"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/z0gb4ipxv3dn9ve9g4x5q/Swordsmachine-token.png?rlkey=8y7yfbmf3wx4kt7736zc5322m&st=hpf0r0d0&dl=1"
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Drone",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d8",
+				"average": 9
+			},
+			"speed": {
+				"fly": {
+					"number": 40,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 10,
+			"int": 7,
+			"wis": 7,
+			"cha": 7,
+			"passive": 8,
+			"cr": "1/4",
+			"save": {
+				"int": "+0",
+				"cha": "+0",
+				"wis": "+0",
+				"dex": "+5"
+			},
+			"action": [
+				{
+					"name": "Hell Energy Ball",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) fire/necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"trait": [
+				{
+					"name": "Death Spiral",
+					"entries": [
+						"When the drone is reduced to 0 hp it spirals to the ground and explodes on contact, if a particular creature targeted it within 40ft the drone will spiral towards that creature, if the drone died to an area effect or the particular creature is outside the 40 ft it instead dives into the closest non-construct creature, on explosion the drone deals {@dice 3d6} fire/force"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/73vod0zgo28lfhntdazmy/Drone-token.png?rlkey=1ojmfyrtyxn6feye8l54ecti8&st=j998c2gm&dl=1"
+			}
+		},
+		{
+			"name": "Streetcleaner",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 7,
+			"dex": 18,
+			"con": 12,
+			"int": 7,
+			"wis": 7,
+			"cha": 7,
+			"passive": 8,
+			"cr": "5",
+			"save": {
+				"int": "+1",
+				"wis": "+1",
+				"cha": "+1",
+				"dex": "+7"
+			},
+			"immune": [
+				"psychic",
+				{
+					"special": "Immunity to damage from any Area of Effect"
+				}
+			],
+			"vulnerable": [],
+			"trait": [
+				{
+					"name": "Exposed Tanks",
+					"entries": [
+						"If the Streetcleaner is attacked by a creature not within the Flamethrower cone while the cone is active it takes double damage. If the Flamethrower is not active this trait is inactive",
+						"if Reduced to zero HP via an attack that deals double damage the Streetcleaner explodes, each creature within 10 feet must make a {@dc 15} Dexterity saving throw or take {@dice 3d8} fire damage"
+					]
+				}
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"reaction": [
+				{
+					"name": "Dodge",
+					"entries": [
+						"As a reaction to taking damage from a weapon attack the Streetcleaner can choose to dodge, this requires the Streetcleaner to move 5 ft, this movement can be reduced by any source of movement reduction. If the Streetcleaner is able to move this 5 feet it does not recieve damage from the attack roll, Using this reaction disables the Flamethrower"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Flamethrower",
+					"entries": [
+						"The Streetcleaner as an action activates its flamethrower, ",
+						"The Flamethrower emits a persistent 20 ft cone, the first time a creature enters this cone and if a creature is in the cone at the start of their turn they must make a {@dc 15} Dexterity saving throw or take {@dice 2d8} fire damage.",
+						"While the flamethrower is activate the Streetcleaner may not take any other actions and its movement is reduced by 10 ft. If the Streetcleaner does not move it may expend any amount of movement to turn the direction of the cone. If the Streetcleaner loses access to its actions the Flamethrower is disabled."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/vjdmog8flne382jl3w7bs/Streetcleaner-token.png?rlkey=e5u4iei3ru09h7lfya0a7p7ui&st=0n43l5zj&dl=1"
+			},
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Sentry",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 7,
+			"wis": 7,
+			"cha": 7,
+			"passive": 8,
+			"cr": "9",
+			"save": {
+				"int": "+2",
+				"wis": "+2",
+				"cha": "+2"
+			},
+			"action": [
+				{
+					"name": "Lock On",
+					"entries": [
+						"The Sentry chooses a creature within 100ft. After choosing a creature the sentry may no longer move, while locked on the Sentry reduces forced movement by 5 feet. At the end of the locked on creature's turn the Sentry fires a powerful shot at the target, this attack automatically hits dealing {@dice 10d8} piercing damage. This lock can be broken by a few methods.",
+						"The Sentry loses Lock On when it takes more than 15 damage from a single source",
+						"The Sentry loses Lock On when it is moved by any method more than 5 feet",
+						"The Sentry does not fire if the creature it is targeting with Lock On is behind Full Cover or if the creature is outside of the line of sight of the sentry"
+					]
+				},
+				{
+					"name": "Sweeping Kick",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage. On hit if any amount of damage is dealt the target is knocked back 10 ft. If the Sentry uses Sweeping Kick as an opportunity attack Lock On is broken."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/hclrwkftypd5b836uf7i1/Sentry-token.png?rlkey=6egx4e4uv0fv58vbslon3ihja&st=rvcz7z1q&dl=1"
+			},
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Gutterman",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor",
+						"tower shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 24,
+			"dex": 7,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "9",
+			"action": [
+				{
+					"name": "Minigun",
+					"entries": [
+						"The Gutterman chooses a point on the battlefield at least 30 feet away. This point does not need to be visible.",
+						"The Gutterman begins to fire it's minigun at this point. This line is a persistent AOE from that point to the Gutterman. Any creature that enters this line or begins their turn in this line must make a {@dc 14} Dexterity Saving Throw or take {@dice 6d6} piercing damage taking half as much on a success. As an action the Gutterman may move the point that they are firing at 20 ft without bringing it within 30 ft, any creatures that are caught in this moving AOE must make the Dexterity Saving Throw against the damage. If the Gutterman would lose access to its actions the Minigun is disabled until reactivated"
+					]
+				},
+				{
+					"name": "Smack",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage. If this attack is used the Minigun is disabled until reactivated"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Shieldbreak",
+					"entries": [
+						"The Gutterman is weilding a Minigun in one hand and a Tower Shield in the other, The tower shield can be broken if an attack that would be blocked by the Tower Shield's +3 AC deals 22 damage in a single instance, the Gutterman's Shield Breaks and they are {@condition incapacitated} for a single turn."
+					]
+				},
+				{
+					"name": "Persistent Corpse",
+					"entries": [
+						"The Gutterman when reduced to 0 HP has their corpse remain, the space occupied counts as difficult terrain. If the corpse takes 15 damage from a single instance it explodes, each creature within a 15 ft radius of the corpse makes a {@dc 14} Dexterity Saving Throw or take {@dice 4d6} fire damage taking half as much on a success"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/hf5k7zbssvih1b55bxpzm/Gutterman-token.png?rlkey=6vcmjge6gogi6wtpl0fhpfm9e&st=ek33xbdj&dl=1"
+			},
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Guttertank",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 24,
+			"dex": 7,
+			"con": 14,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"passive": 11,
+			"cr": "9",
+			"action": [
+				{
+					"name": "Time-stop Rocket",
+					"entries": [
+						"The Guttertank fires a rocket at a point in space, the rocket has 1 HP and 15 AC. The rocket flies to and stops at this space. The rocket then explodes at the start of the Guttertank's next turn. The rocket can also be exploded before this if reduced to 0 HP.",
+						"When the rocket explodes each creature within 15 ft must make a {@dc 14} Dexterity Saving Throw or take {@dice 3d10} fire damage or half as much on a success.",
+						"If the rocket explodes by being reduced to 0 it deals an additional {@dice 2d10} fire damage"
+					]
+				},
+				{
+					"name": "Smack",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d10 + 7}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://www.dropbox.com/scl/fi/murc5r9ykxzniqgmuwyux/Guttertank-token.png?rlkey=h3e0k1315rpkb0hmfzj98wqrv&st=d5k6owms&dl=1"
+			},
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "THR Defense System",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d12 + 60",
+				"average": 190
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 20,
+			"dex": 0,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"passive": 13,
+			"cr": "9",
+			"save": {
+				"con": "+7",
+				"int": "+7",
+				"wis": "+7",
+				"cha": "+7",
+				"str": "+9"
+			},
+			"action": [
+				{
+					"name": "Focused Hell Energy Ball",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 40/120 ft., one target. {@h}16 ({@damage 3d10+5}) radiant damage."
+					]
+				},
+				{
+					"name": "Time Stop Rocket",
+					"entries": [
+						"The Defence System fires a rocket at a point in space, the rocket has 1 HP and 15 AC. The rocket flies to and stops at this space. The rocket then explodes at the start of the Defence Sytems next turn. The rocket can also be exploded before this if reduced to 0 HP.",
+						"When the rocket explodes each creature within 15 ft must make a {@dc 14} Dexterity Saving Throw or take {@dice 3d10} fire damage or half as much on a success.",
+						"If the rocket explodes by being reduced to 0 it deals an additional {@dice 2d10} fire damage"
+					]
+				},
+				{
+					"name": "Hell Energy Mortar",
+					"entries": [
+						"The Defence system fires a mortar at a specific creature, the Mortar lands at the end of the creature's turn where the creature was standing. This space is the origin of the spell {@spell Fireball}, DC12. The targeted creature may choose to make a DC20 Strength save instead if they are holding a melee weapon or no weapon at all to parry the mortar at the THR Defence System. On a success the THR takes the full damage and no creature in the original area takes the damage. "
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"trait": [
+				{
+					"name": "Linked Machines",
+					"entries": [
+						"Any active THR Defense System shares its HP with all other THR Defense System, Each Defense System may not use an action already used by another THR Defense System this round of combat"
+					]
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"damageTags": [
+				"R"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "THR Brain",
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"source": "Ultrakill",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d20 + 68",
+				"average": 246
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 20,
+			"dex": 6,
+			"con": 18,
+			"int": 20,
+			"wis": 18,
+			"cha": 18,
+			"passive": 14,
+			"cr": "15",
+			"save": {
+				"cha": "+9",
+				"wis": "+9",
+				"int": "+10",
+				"dex": "+3"
+			},
+			"trait": [
+				{
+					"name": "The Brain",
+					"entries": [
+						"When the THR Brain is reduced to 0 the Earthmover-1000 is also Reduced to 0 and begins to self destruct with no command module to upkeep its systems"
+					]
+				},
+				{
+					"name": "Twin Turns",
+					"entries": [
+						"The THR Brain takes two turns in initiative, it goes first in Initiative and 5th in Initiative"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multi-action",
+					"entries": [
+						"The THR Brain uses its Sweeping Hell Energy Beams and then makes two Focused Hell Energy Ball Attacks or Uses its Rally Defenses feature"
+					]
+				},
+				{
+					"name": "Sweeping Hell Energy Beams",
+					"entries": [
+						"The THR Brain designates one half of the arena split by its token.",
+						"At the start of its next turn any creatures within this half of the arena take {@dice 13d6} radiant damage"
+					]
+				},
+				{
+					"name": "Focused Hell Energy Ball",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 120/400 ft., one target. {@h}20 ({@damage 4d10 +5}) radiant damage."
+					]
+				},
+				{
+					"name": "Rally Defenses",
+					"entries": [
+						"From its second turn and subsiquent turns the THR Brain may attempt to summon up to three THR Defenses, the THR Brain summons {@dice 1d4-1} THR Defense Systems. It may not use this action if any THR Defense Systems were alive during its previous turn"
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"immune": [
+				"poison"
+			],
+			"damageTags": [
+				"R"
+			]
+		}
+	]
+}
