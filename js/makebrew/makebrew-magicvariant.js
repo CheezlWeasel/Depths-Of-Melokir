@@ -69,6 +69,7 @@ export class MagicVariantBuilder extends BuilderBase {
 			{value: `{"itemProperty":"S"}`, label: `Property : special`},
 			{value: `{"itemProperty":"T"}`, label: `Property : Thrown`},
 			{value: `{"itemProperty":"V"}`, label: `Property : Versatile`},
+			{value: `{"itemProperty":"UN"}`, label: `Property : Esoteric`},
 		);
 		this._requirementOptions.push(
 			{value: `{"name":"Arbalest"}`, label: "Specific Item : Arbalest (DepthsofMelokir)"},

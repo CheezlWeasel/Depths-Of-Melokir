@@ -58,6 +58,7 @@ export class ShopBuilder extends BuilderBase {
 			{value: "S", label: "Special"},
 			{value: "T", label: "Thrown"},
 			{value: "V", label: "Versatile"},
+			{value: "UN", label: "Esoteric"},
 		];
 		this._itemPropertyVals = this._itemPropertyOptions.map(it => it.value);
 		this._itemPropertyLabels = {};
