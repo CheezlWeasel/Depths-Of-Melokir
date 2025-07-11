@@ -57,18 +57,6 @@
 			"seller": "Arthak"
 		},
 		{
-			"name": "Wicked Sickle",
-			"type": "M",
-			"weapon": true,
-			"weaponCategory": "martial",
-			"rarity": "none",
-			"value": 2500,
-			"dmg1": "2d4",
-			"dmgType": "P",
-			"source": "DepthsofMelokir",
-			"seller": "Arthak"
-		},
-		{
 			"name": "Arrow",
 			"source": "PHB",
 			"page": 150,
@@ -129,11 +117,11 @@
 				"A"
 			],
 			"range": "100/400",
-			"dmg1": "2d10",
+			"dmg1": "1d12 + 1d4",
 			"dmgType": "P",
 			"entries": [
 				"This weapon can only be wielded by those with a 15 Strength or higher.",
-				"It does 2d10 + Your Strength modifier piercing damage, and can only be fired once per turn.",
+				"It does 1d12 + 1d4 + Your Strength modifier piercing damage, and can only be fired once per turn.",
 				"Having this weapon in hand reduces your speed by 10ft.",
 				"This weapon uses strength instead of dexterity for attack rolls and damage."
 			],
