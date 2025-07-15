@@ -580,7 +580,7 @@
 				"While this shield is equipped it can be either deployed or stowed as a bonus action. While stowed the hand it is held in is considered “free” but you do not benefit from its bonus to AC",
 				"Whilst attuned this shield has two charges, as bonus action you can expend one charge to target a creature or location within 30 ft and roll a DC 15 acrobatics or athletics check to be pulled towards them, if you succeed the check by 5 or more, you regain that spent charge. Moving towards them does not provoke opportunity attacks, but you are affected by things on the ground such as spike growth. When you successfully pull yourself towards a creature, you have advantage on your next attack this turn against the creature. This shield's charges are regained after a short rest."
 			],
-			"reqAttune": true
+			"reqAttune": "by those with proficiency with shields"
 		},
 		{
 			"uniqueId": "30e100a2-c265-4958-8301-4d889e273eba",
@@ -604,7 +604,7 @@
 				"- Lightning - Target on their next turn can either use a bonus action or an action, this lasts until the end of their next turn.",
 				"- Each of these marks last until the end of your next turn."
 			],
-			"reqAttune": true
+			"reqAttune": "by a character with the spellcasting feature or the pact magic feature."
 		}
 	],
 	"magicvariant": [
