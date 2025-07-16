@@ -1033,6 +1033,382 @@
 			],
 			"value": 75000,
 			"seller": "Arthak"
+		},
+		{
+			"name": "+2 All-Purpose Tool",
+			"source": "TCE",
+			"page": 119,
+			"rarity": "rare",
+			"reqAttune": "by an artificer",
+			"reqAttuneTags": [
+				{
+					"class": "artificer|tce"
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"focus": [
+				"Artificer"
+			],
+			"entries": [
+				"This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|PHB}). Whatever form the tool takes, you are proficient with it.",
+				"While holding this tool, you gain a +2 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.",
+				"As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Amulet of the Devout",
+			"source": "TCE",
+			"page": 119,
+			"rarity": "rare",
+			"reqAttune": "by a cleric or paladin",
+			"reqAttuneTags": [
+				{
+					"class": "cleric"
+				},
+				{
+					"class": "paladin"
+				}
+			],
+			"wondrous": true,
+			"weight": 1,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"entries": [
+				"This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells.",
+				"While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Arcane Grimoire",
+			"source": "TCE",
+			"page": 120,
+			"rarity": "rare",
+			"reqAttune": "by a wizard",
+			"reqAttuneTags": [
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"weight": 3,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"focus": [
+				"Wizard"
+			],
+			"entries": [
+				"While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.",
+				"You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Bloodwell Vial",
+			"source": "TCE",
+			"page": 122,
+			"rarity": "rare",
+			"reqAttune": "by a sorcerer",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"focus": [
+				"Sorcerer"
+			],
+			"entries": [
+				"To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
+				"In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Dragonhide Belt",
+			"source": "FTD",
+			"page": 23,
+			"rarity": "rare",
+			"reqAttune": "by a monk",
+			"reqAttuneTags": [
+				{
+					"class": "monk"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"This finely detailed belt is made of dragonhide. While wearing it, you gain a +2 bonus to the saving throw DCs of your ki features. In addition, you can use an action to regain ki points equal to a roll of your Martial Arts die. You can't use this action again until the next dawn."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Moon Sickle",
+			"source": "TCE",
+			"page": 133,
+			"baseItem": "sickle|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "by a druid or ranger",
+			"reqAttuneTags": [
+				{
+					"class": "druid"
+				},
+				{
+					"class": "ranger"
+				}
+			],
+			"weight": 2,
+			"weaponCategory": "simple",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"focus": [
+				"Druid",
+				"Ranger"
+			],
+			"entries": [
+				"This silver-bladed sickle glimmers softly with moonlight. While holding this magic weapon, you gain a +2 bonus to attack and damage rolls made with it, and you gain a +2 bonus to spell attack rolls and the saving throw DCs of your druid and ranger spells. In addition, you can use the sickle as a spellcasting focus for your druid and ranger spells.",
+				"When you cast a spell that restores hit points, you can roll a {@dice d4} and add the number rolled to the amount of hit points restored, provided you are holding the sickle."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Rhythm-Maker's Drum",
+			"source": "TCE",
+			"page": 134,
+			"type": "INS",
+			"rarity": "rare",
+			"reqAttune": "by a bard",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				}
+			],
+			"wondrous": true,
+			"weight": 3,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"entries": [
+				"While holding this {@item drum|PHB}, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your bard spells.",
+				"As an action, you can play the {@item drum|PHB} to regain one use of your Bardic Inspiration feature. This property of the {@item drum|PHB} can't be used again until the next dawn."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Rod of the Pact Keeper",
+			"source": "DMG",
+			"page": 197,
+			"type": "RD|DMG",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a warlock",
+			"reqAttuneTags": [
+				{
+					"class": "warlock"
+				}
+			],
+			"weight": 2,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"entries": [
+				"While holding this rod, you gain a +2 bonus to spell attack rolls and to the saving throw DCs of your warlock spells.",
+				"In addition, you can regain one warlock spell slot as an action while holding the rod. You can't use this property again until you finish a long rest."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Wand of the War Mage",
+			"source": "DMG",
+			"page": 212,
+			"srd": true,
+			"type": "WD|DMG",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 1,
+			"bonusSpellAttack": "+2",
+			"entries": [
+				"While you are holding this wand, you gain a +2 bonus to spell attack rolls. In addition, you ignore {@quickref Cover||3||half cover} when making a spell attack."
+			],
+			"value": 120000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Wand of the Ritualist",
+			"source": "DepthsofMelokir",
+			"srd": true,
+			"type": "WD|DMG",
+			"tier": "major",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 1,
+			"bonusSpellSaveDc": "+2",
+			"entries": [
+				"While you are holding this wand, you gain a +2 to your spell save DCs"
+			],
+			"value": 120000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Insignia of Claws",
+			"source": "HotDQ",
+			"page": 94,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 178
+				}
+			],
+			"rarity": "rare",
+			"wondrous": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"While wearing the insignia you gain a +2 bonus to the attack rolls and the damage rolls you make with natural weapons and simple weapons given by a race, class or subclass. Such attacks are considered to be magical."
+			],
+			"value": 120000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "+2 Rage Object",
+			"weapon": true,
+			"source": "DepthsofMelokir",
+			"rarity": "rare",
+			"reqAttune": "by a barbarian",
+			"reqAttuneTags": [
+				{
+					"class": "barbarian"
+				}
+			],
+			"wondrous": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"This weapon has a +2 to attack and damage rolls.",
+				"Twice per short rest, whilst wielding this weapon, you can use your strength modifier for the listed skill checks instead of any other ability score:",
+				"- Acrobatics",
+				"- Perception",
+				"- Stealth",
+				"- Survival",
+				"- Intimidation"
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Gravebound Brooch",
+			"source": "DepthsofMelokir",
+			"rarity": "rare",
+			"reqAttune": "by a lictor",
+			"reqAttuneTags": [
+				{
+					"class": "lictor|DepthsofMelokir"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"{@i This ornate silvery brooch seems to have a constant stream of necrotic energy channeled through it via the inset dark red gem, which is surrounded by thin gold filigree.}",
+				"While attuned to this item, you gain a +2 to the saving throws of your Wrack feature. In addition, when using the Necrotic Engine Feature to gain temporary HP or deal additional necrotic damages, or using a Wrack Foes, you reroll 1s on the dice, even if the new result is a one.",
+				"Additionally, you can use Wrack Foes more than once per turn."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Amulet of Ferverous Reserves",
+			"source": "DepthsofMelokir",
+			"rarity": "rare",
+			"reqAttune": "by a lictor",
+			"reqAttuneTags": [
+				{
+					"class": "lictor|DepthsofMelokir"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"{@i This brass-embossed amulet seems to be chill to the touch, even to your hands. The locket within seems to hold a reserve of necrotic energy.}",
+				"While attuned to this item, if you expend a charge of your Necrotic Engine to gain temporary HP or deal additional damage, you add +2 to the result of the tempoary HP/damage roll. ",
+				"Additionally, twice per short rest if you fail a saving throw, you may expend a Necrotic Charge to gain an additional 1d6 to the save.",
+				"Furthermore, if you are under the effects of the Unrelenting Animus feature, you have advantage on death saving throws."
+			],
+			"value": 300000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Potion of Reverberations",
+			"source": "DepthsofMelokir",
+			"type": "P",
+			"rarity": "rare",
+			"entries": [
+				"You may consume this potion as an action. When you consume this potion you gain 20 temporary hit points. While you have temporary hit points from this effect, your movement speed is doubled. Immediately after losing these temporary hit points, creatures within 15ft (excluding you), need to make a dc 15 constitution saving throw or be knocked back 10ft and take 4d8 thunder damage."
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"value": 50000,
+			"seller": "Arthak"
+		},
+		{
+			"name":"Medallion of Mettle",
+			"source": "DepthsofMelokir",
+			"type": "OTH",
+			"rarity":"rare",
+			"seller":"Arthak",
+			"value": 200000,
+			"entries": [
+				"This ostentatious medallion draws the eye of even casual onlookers. Whenever you gain temporary hit points, you gain an additional {@dice 1d6} temporary hit points."
+			],
+			"reqAttune": true
+		},
+		{
+			"name":"Scarlet Mist Scarf",
+			"source": "DepthsofMelokir",
+			"type": "OTH",
+			"rarity":"rare",
+			"seller":"Arthak",
+			"value": 250000,
+			"entries": [
+				"Whilst wearing this item once per short rest you can activate this item and start concentrating, as a bonus action. Whilst active you and allies within 15ft gain the benefit half cover. When this aura first appears, if you or an ally is below half hp, they gain a number of temporary hit points equal to your level + your proficiency bonus. These effects last for 1 minute or until you lose your concentration (as if you were concentrating on a spell)."
+			],
+			"reqAttune": true
+		},
+		{
+			"name":"Reservoir of Strength",
+			"source": "DepthsofMelokir",
+			"type": "OTH",
+			"rarity":"rare",
+			"seller":"Arthak",
+			"value": 160000,
+			"entries": [
+				"Once per long rest if an ally falls to 0 hp, as a reaction you enter a state of extreme focus. Until the end of your next turn you are under the effect of the haste spell. Once that turn ends, you have disadvantage on attacks and are unable to cast spells until the end of your next turn."
+			],
+			"reqAttune": true
 		}
 	]
 }

@@ -605,6 +605,40 @@
 				"- Each of these marks last until the end of your next turn."
 			],
 			"reqAttune": true
+		},
+		{
+			"uniqueId": "30e100a2-c265-4958-8301-4d889e273eba",
+			"name": "Longsword of Duality",
+			"type": "M",
+			"rarity": "rare",
+			"seller": "Arthak",
+			"source": "DepthsofMelokir",
+			"bonusWeapon": "+1",
+			"entries": [
+				"This weapon has a +1 to attack and damage rolls. This weapon also has the finesse property",
+				"Whilst using this weapon one handed you gain the ability to use the interception fighting style with ability to target yourself.",
+				"Whilst using this weapon two handed, When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a weapon damage die as a 3."
+			],
+			"reqAttune": true,
+			"value": 160000,
+			"baseitem": "Longsword|PHB"
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Steadfast Focus",
+			"value": 35000,
+			"weight": 2,
+			"rarity": "uncommon",
+			"source": "LandsofVita",
+			"weaponCategory": "simple",
+			"wondrous": true,
+			"seller": "The Demiurge",
+			"type": "SCF",
+			"entries": [
+				"{@i A Demiurge focus, infused with a minor Miracle. A selfless phenomenon, stolen from its place in the tapestry.}",
+				"This item can be used as a spellcasting focus, and holds two charges. These recharge on a long rest.",
+				"When you target a single allied creature with a spell of first level or higher (including yourself), you may expend a charge: Until the end of their next turn, they cannot be knocked prone or involuntarily moved. If that creature would be involuntarily moved or knocked prone while this is in effect, they can use their reaction to make a melee attack against a creature within reach."
+			]
 		}
 	],
 	"magicvariant": [
@@ -676,7 +710,8 @@
 				"namePrefix": "Polyknight's ",
 				"source": "DepthsofMelokir",
 				"value": "20000",
-				"seller": "Arthak"
+				"seller": "Arthak",
+				"rarity": "uncommon"
 			},
 			"entries": [
 				"{@i For the Individual in your life that practices multiple forms of bodily harm.}",

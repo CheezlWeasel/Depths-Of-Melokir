@@ -327,6 +327,139 @@
             },
             "value": 75000,
             "seller": "Arthak"
+		},
+        {
+            "uniqueId": "b17ee3aa-2bc2-4473-9353-a14def2e6595",
+            "name": "Spriteforged Weapon",
+            "requires": [
+                {
+                "weapon": true
+                }
+            ],
+            "inherits": {
+                "namePrefix": "Spriteforged ",
+                "source": "LandsofVita",
+                "seller": "The Demiurge",
+                "rarity": "uncommon",
+                "value": "40000",
+                "entries": [
+                "{@i A Demiurge-made weapon, forged in the essence of a minor Angel. It would scream, should it still have a means to.}",
+                "This weapon holds two charges, which recharge on a long rest.",
+                "When making a successful weapon attack with this weapon, the user may expend one charge: If they do so, draw a 15ft cone originating from the target: creatures within the cone (including the original target) must make a DC (8+PROF+STR/DEX) DEX save or take 2d4+PROF radiant damage."
+                ]
+            },
+            "seller": "The Demiurge",
+            "source": "LandsofVita",
+            "rarity": "uncommon",
+            "type":"GV|DMG"
+        },
+        {
+            "uniqueId": "b17ee3aa-2bc2-4473-9353-a14def2e6595",
+            "name": "Calefactor Plate",
+            "requires": [
+                {
+                "armor": true
+                }
+            ],
+            "inherits": {
+                "namePrefix": "Calefactor ",
+                "source": "LandsofVita",
+                "seller": "The Demiurge",
+                "rarity": "uncommon",
+                "valueExpression": "20000 + [[baseItem.value]]",
+                "entries": [
+                "{@i Demiurge-made armour, formed with solid overlapping plates and a minor furnace demon implanted in it. It releases its rage in an unending blast - exactly as the designers intended.}",
+                "This armour holds two charges, which recharge on a long rest.",
+                "When a creature successfully deals damage to you that brings you to half or less HP, the user may expend one charge as a reaction: if they do so, creatures within 10ft of the wearer must make a DC (8+PROF+STR/CON) DEX save or take 3d4+PROF fire damage and be pushed 15ft backwards, or half damage and 5ft backwards on a successful save."
+                ]
+            },
+            "source": "LandsofVita",
+            "seller": "The Demiurge",
+            "rarity": "uncommon",
+            "type": "A"
+        },
+        {
+			"name": "+1 True Name Weapon",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+            "wondrous": true,
+			"inherits": {
+				"namePrefix": "+1 True Name ",
+				"source": "IllriggerRevised",
+				"page": 38,
+				"rarity": "rare",
+				"reqAttune": "by a illrigger",
+				"bonusWeapon": "+1",
+				"entries": [
+					"This weapon is ornately decorated with elegant details in brimstone and obsidian. It smells of iron and incense. When you attune to this weapon, you must whisper your true name to it. The name sears across the weapon in Infernal runes, then fades.",
+					"The typical True Name, an rare item, empowers an illrigger's Baleful Interdict. Whenever you roll an 18, 19, or 20 on your attack roll with this weapon and place a seal on a creature as part of the attack, you can place an additional seal on that creature."
+				],
+                "value": 300000,
+			    "seller": "Arthak"
+			},
+			"hasFluff": true
+		},
+        {
+			"name": "+2 Weapon",
+			"edition": "classic",
+			"type": "GV|DMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+            "wondrous": true,
+            "value": 120000,
+			"inherits": {
+				"namePrefix": "+2 ",
+				"source": "DMG",
+				"page": 213,
+				"srd": true,
+				"basicRules": true,
+				"tier": "major",
+				"rarity": "rare",
+				"bonusWeapon": "+2",
+				"entries": [
+					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon."
+				],
+                "value": 120000,
+                "seller": "Arthak"
+			}
+		},
+		{
+			"name": "+2 Wanderer's Weapon",
+            "edition": "classic",
+            "type": "GV|DMG",
+            "requires": [
+                {
+                    "weapon": true
+                }
+            ],
+			"inherits": {
+                "namePrefix": "+2 Wanderer's ",
+                "source": "DepthsofMelokir",
+                "rarity": "rare",
+                "reqAttune": "by a Ranger",
+                "reqAttuneTags": [
+                    {
+                        "class": "ranger"
+                    }
+                ],
+			    "wondrous": true,
+                "entries": [
+                    "Whilst you are wielding this weapon, you cannot be suprised. Additionally, when you roll initiative you can grant any friendly ally within 60ft an additional 1d6 to that roll. This benefit can be used once per short rest."
+                ],
+                "bonusWeapon": "+2",
+                "value": 300000,
+                "seller": "Arthak"
+            }
 		}
     ]
 }
