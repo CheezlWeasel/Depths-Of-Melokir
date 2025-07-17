@@ -156,7 +156,8 @@
 			"reqAttune": true,
 			"entries": [
 				"{@i Inscribed into the fragment is the phrase “out of spells, not options”}",
-				"This enhancement can be fused to any spellcasting focus or weapon. While fused to an item, it becomes a spellcasting focus, if it isn’t already. You gain a +1 bonus to the spell attack rolls and spell save DC of spells cast through this item."
+				"This enhancement can be fused to any spellcasting focus or weapon. While fused to an item, it becomes a spellcasting focus, if it isn’t already. You gain a +1 bonus to the spell attack rolls and spell save DC of spells cast through this item.",
+				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
 			]
 		},
 		{
