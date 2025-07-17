@@ -516,6 +516,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 		}
 
 		data.subclass.forEach(sc => {
+			if (sc.classSource === Parser.SRC_XPHB) return; // IGNORE XPHB Subclasses, this is to prevent homebrew subclasses being read by the dataloader as the XPHB classes have been removed !!!MIRROR SPECIFIC!!!
 			if (sc.className === VeCt.STR_GENERIC || sc.classSource === VeCt.STR_GENERIC) return;
 
 			const cls = this._dataList.find(c => c.name.toLowerCase() === sc.className.toLowerCase() && c.source.toLowerCase() === (sc.classSource || Parser.SRC_PHB).toLowerCase());
