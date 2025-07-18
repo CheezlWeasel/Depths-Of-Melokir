@@ -640,6 +640,31 @@
 				"This item can be used as a spellcasting focus, and holds two charges. These recharge on a long rest.",
 				"When you target a single allied creature with a spell of first level or higher (including yourself), you may expend a charge: Until the end of their next turn, they cannot be knocked prone or involuntarily moved. If that creature would be involuntarily moved or knocked prone while this is in effect, they can use their reaction to make a melee attack against a creature within reach."
 			]
+		},
+		{
+			"uniqueId": "30e100a2-c265-4958-8301-4d889e273eba",
+			"name": "Bian Whip",
+			"type": "M",
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [
+				"F",
+				"2H",
+				"R",
+				"H",
+				"S"
+			],
+			"dmg1": "3d3",
+			"dmgType": "S",
+			"entries": [
+				"{@i {@b Special.}} You have disadvantage when you use a Flail Whip to attack a target within 5 feet of you. Additionally, to utilise this weapon it requires you have a minimum of 10 Dexterity & 10 Strength"
+			],
+			"reqAttune": true,
+			"value": 40000,
+			"baseitem": "Longsword|PHB",
+			"weaponCategory": "martial",
+			"_attunement": "(requires attunement)"
 		}
 	],
 	"magicvariant": [
