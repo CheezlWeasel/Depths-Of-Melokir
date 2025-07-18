@@ -95,7 +95,7 @@
             ],
             "reqAttune": true,
             "value": 40000,
-            "seller": "Bes' Selur"
+            "seller": "FCB"
         },
 		{
             "name": "Wrath Emblem",
@@ -151,7 +151,7 @@
 			"value": 75000,
 			"weight": 0,
 			"rarity": "uncommon",
-			"seller": "Bes' Selur",
+			"seller": "FCB",
 			"source": "ArcaneAL",
 			"reqAttune": true,
 			"entries": [
@@ -232,7 +232,7 @@
 			"type": "EHMT",
 			"weight": 0,
 			"rarity": "uncommon",
-			"seller": "Bes' Selur",
+			"seller": "FCB",
 			"source": "ArcaneAL",
 			"value": 75000,
 			"reqAttune": true,
