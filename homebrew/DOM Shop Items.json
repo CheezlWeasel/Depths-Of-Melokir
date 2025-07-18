@@ -665,6 +665,199 @@
 			"baseitem": "Longsword|PHB",
 			"weaponCategory": "martial",
 			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "63afc8cb-8b2e-4905-a80a-e3175fbaf993",
+			"name": "Fragment S-240",
+			"type": "EHMT",
+			"value": 5000,
+			"rarity": "common",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i It seems to absorb nearby soundwaves…}",
+				"This enhancement can be fused to any non-magical medium or heavy armour. While fused to an item, it does not give you disadvantage on stealth checks if it would do so usually. Additionally, the strength requirement of the armour increases by 2, or becomes 13 if it doesn’t already have one."
+			]
+		},
+		{
+			"uniqueId": "750af361-2c2b-4c47-a71a-26ed2faea127",
+			"name": "Fragment O-894",
+			"type": "EHMT",
+			"value": 45000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i Hatred seems to radiate from the metal…}",
+				"This enhancement can be fused to any armour. While wearing the fused item, you can not be automatically grappled as a result of being hit by an attack. Instead, you can make a Strength(Athletics) or Dexterity(Acrobatics) check to resist the grapple, with a DC equal to the attack roll that hit you."
+			]
+		},
+		{
+			"uniqueId": "d59e445e-4b69-48f4-b999-1e0e657d9e01",
+			"name": "Fragment S-050",
+			"type": "EHMT",
+			"value": 35000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i It seems to be a fragment of a ranged weapon designed for close-quarters use…}",
+				"This enhancement can be fused to any nonmagical ranged weapon. While fused to a weapon, you no longer suffer disadvantage from making a ranged attack while a hostile creature is within 5ft of you. However, the range of the weapon becomes 30/60, if it is not already shorter."
+			]
+		},
+		{
+			"uniqueId": "100d799b-1778-4a59-832f-47e916b461a0",
+			"name": "Fragment S-782",
+			"type": "EHMT",
+			"value": 80000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i Careful not to nick yourself..}",
+				"This enhancement can be fused to any nonmagical melee weapon with the light property. While fused to a weapon, when you make the extra attack of the light property, you can make it as part of the attack action instead of as a bonus action. You can make this extra attack only once per turn. You can use this enhancement a number of times equal to your proficiency bonus and regain all uses upon finishing a short rest."
+			]
+		},
+		{
+			"uniqueId": "38859be0-2cc2-4d0b-a132-e34f75279775",
+			"name": "Fragment S-945",
+			"type": "EHMT",
+			"value": 40000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i Careful not to leave items unattended near this fragment…}",
+				"This enhancement can be fused to two different weapons or spellcasting foci (it can be one of each). While fused to two items, one of the items is shunted into an interdimensional space. You can summon the stored item as if you were drawing it. When you do so, it swaps places with the unstored item, appearing in the same place as said item.",
+				"This enhancement can be fused alongside another enhancement, so long as only one of the items it is fused to has an enhancement."
+			]
+		},
+		{
+			"uniqueId": "6e66631a-c785-4ab6-86b6-94853d45c110",
+			"name": "Fragment X-185",
+			"type": "EHMT",
+			"value": 20000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i \"Fuck you\", says the fuck you guy who grapple me with they beard.}",
+				"This enhancement can be fused to any melee weapon that does slashing damage. Attacks made with the fused weapon against creatures with beards have advantage. Additionally, when you attack a creature that has at least one beard with the fused weapon and roll a 20 on the attack roll, you cut off one of the creature’s beards. The creature dies if it can’t survive without the lost beard. A creature is immune to this effect if it is immune to slashing damage or the DM decides that the creature is too big for its beard to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.",
+				"This enhancement can be fused to a weapon that already has an enhancement"
+			]
+		},
+		{
+			"uniqueId": "0db8d9ac-0121-4daa-902f-e46ffb77e660",
+			"name": "Fragment Z-020",
+			"type": "EHMT",
+			"value": 35000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i Bouncy…}",
+				"This enhancement can be fused to any armour. While fused to an item, you gain the ability to double-jump. Double-jumping allows you to jump while you are mid-air, once per turn. This doubles your jump distance. While falling, you can use your reaction to jump in mid-air to break your fall. When you do so, you are only considered to have fallen 1/10 of the distance you originally did."
+			]
+		},
+		{
+			"uniqueId": "cdcc9d93-1661-4586-ac76-7dfa2bd2b1cc",
+			"name": "Fragment Z-366",
+			"type": "EHMT",
+			"value": 50000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i It seems this enhancement used to be part of a Haste machine…}",
+				"This enhancement can be fused to any melee weapon. Whenever you kill a creature on your turn with the fused weapon, you regain half of your expended movement."
+			]
+		},
+		{
+			"uniqueId": "35b7c062-083b-4aed-b130-3647d67d4630",
+			"name": "Fragment Z-498",
+			"type": "EHMT",
+			"value": 25000,
+			"rarity": "none",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i There’s a name scratched into the metal… BRA-DO-?}",
+				"This enhancement can be fused to any nonmagical armour. If your speed is reduced by an effect while you are wearing armour this enhancement is fused to, you instead ignore the speed reduction and increase your speed by the amount it would’ve been reduced by until the end of your next turn. Once you have used this property, you cannot do so until the next dawn."
+			]
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Fragment Z-736",
+			"type": "EHMT",
+			"value": 35000,
+			"rarity": "uncommon",
+			"seller": "Amanda",
+			"source": "ArcaneAL",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"{@i SPEED AND POWER!!!}",
+				"This enhancement can be fused to any nonmagical ranged weapon or any non-attunement +X ranged weapon. When you take the attack action with the fused weapon, you can replace one of your attacks to create a line of magical energy 30ft long and 5ft originating from your space that lasts until the end of your next turn. While moving through or along this line, your speed is doubled and you don’t provoke attacks of opportunity, this benefit applies to your allies as well. Once you have used this special attack, you must finish a short rest to use it again.",
+				"(DM Note: A square must be >50% covered by the line to give you the speed bonus on that square. Ultimately, it is up to the DM running at the time)"
+			]
 		}
 	],
 	"magicvariant": [
