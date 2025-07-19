@@ -1409,6 +1409,45 @@
 				"Once per long rest if an ally falls to 0 hp, as a reaction you enter a state of extreme focus. Until the end of your next turn you are under the effect of the haste spell. Once that turn ends, you have disadvantage on attacks and are unable to cast spells until the end of your next turn."
 			],
 			"reqAttune": true
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Resilient Binding Ring",
+			"type": "RG",
+			"value": 250000,
+			"rarity": "rare",
+			"seller": "Arthak",
+			"source": "DepthsofMelokir",
+			"reqAttune": "by a Paladin",
+			"entries": [
+				"A number of times equal to your proficiency bonus per short rest, you may extend the range of your lay on hands. The range is increased to 30ft. (It still requires a bonus action)",
+				"As a bonus action on your turn you may expend a divine sense to gain advantage on attack rolls against fiends, celestials and undead.",
+				"Whilst attuned to this ring, when you use the divine smite feature you may choose to change the damage type from radiant to one of the following options, fire, cold, lightning, thunder or poison"
+			],
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Bandit Lord's Ring",
+			"type": "RG",
+			"value": 250000,
+			"rarity": "rare",
+			"seller": "Arthak",
+			"source": "DepthsofMelokir",
+			"reqAttune": "by a Rogue",
+			"entries": [
+				"Whilst attuned to this ring, you add your proficiency to the damage whenever you sneak attack.",
+				"Additionally you can use the following abilities a number of times equal to 2 + your proficiency bonus per long rest.",
+				{
+				"type": "list",
+				"items": [
+					"When you take the dash action you gain a climbing speed equal to your walking speed.",
+					"After you take the hide action you can teleport to an unoccupied space within 15ft.",
+					"When you take the disengage action, you can have an allied creature within 30ft of you, move 5ft without provoking opportunity attacks as a reaction."
+				]
+				}
+			],
+			"_attunement": "(requires attunement)"
 		}
 	]
 }

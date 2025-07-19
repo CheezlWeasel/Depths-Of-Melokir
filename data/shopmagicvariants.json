@@ -460,6 +460,69 @@
                 "value": 300000,
                 "seller": "Arthak"
             }
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Focused Will Weapon",
+			"type": "GV|DMG",
+			"seller": "Arthak",
+			"value": 300000,
+			"requires": [
+				{
+				"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Focused Will ",
+				"source": "DepthsofMelokir",
+				"seller": "Arthak",
+				"value": 300000,
+				"reqAttune": "by a Monk",
+				"rarity": "rare",
+				"entries": [
+					"Whilst attuned, you have a +1 bonus to attack and damage rolls with this weapon.",
+					"Whenever you use Monk's Focus to use Flurry of Blows, Patient Defense or Step of the Wind, and you spend a focus point for these abilities, you may use the base ability of Patient Defense or Step of the Wind. You can use this effect a number of times equal to your proficiency bonus per short rest"
+				]
+			},
+			"source": "DepthsofMelokir",
+			"reqAttune": "by a Monk",
+			"rarity": "rare",
+			"entries": [
+				"Whilst attuned, you have a +1 bonus to attack and damage rolls with this weapon.",
+				"Whenever you use Monk's Focus to use Flurry of Blows, Patient Defense or Step of the Wind, and you spend a focus point for these abilities, you may use the base ability of Patient Defense or Step of the Wind. You can use this effect a number of times equal to your proficiency bonus per short rest"
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Bishop's Oathbound Duty",
+			"type": "GV|DMG",
+			"reqAttune": "by a Paladin",
+			"seller": "Arthak",
+			"value": 300000,
+			"requires": [
+				{
+				"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Bishop's Oathbound Duty (",
+                "nameSuffix": ")",
+				"source": "DepthsofMelokir",
+				"seller": "Arthak",
+				"rarity": "rare",
+				"value": 300000,
+				"reqAttune": "by a Paladin",
+				"entries": [
+				"Whilst attuned to this weapon, you have +2 to attack and damage rolls made with it.",
+				"Whilst attuned to this weapon your lay on hands pool is increased by 20."
+				]
+			},
+			"source": "DepthsofMelokir",
+			"rarity": "rare",
+			"entries": [
+				"Whilst attuned to this weapon, you have +2 to attack and damage rolls made with it.",
+				"Whilst attuned to this weapon your lay on hands pool is increased by 20."
+			]
 		}
     ]
 }
