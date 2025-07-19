@@ -755,7 +755,6 @@
 			"dmgType": "",
 			"dmg2": "",
 			"range": "",
-			"reqAttune": true,
 			"entries": [
 				"{@i Careful not to leave items unattended near this fragment…}",
 				"This enhancement can be fused to two different weapons or spellcasting foci (it can be one of each). While fused to two items, one of the items is shunted into an interdimensional space. You can summon the stored item as if you were drawing it. When you do so, it swaps places with the unstored item, appearing in the same place as said item.",
@@ -775,7 +774,6 @@
 			"dmgType": "",
 			"dmg2": "",
 			"range": "",
-			"reqAttune": true,
 			"entries": [
 				"{@i \"Fuck you\", says the fuck you guy who grapple me with they beard.}",
 				"This enhancement can be fused to any melee weapon that does slashing damage. Attacks made with the fused weapon against creatures with beards have advantage. Additionally, when you attack a creature that has at least one beard with the fused weapon and roll a 20 on the attack roll, you cut off one of the creature’s beards. The creature dies if it can’t survive without the lost beard. A creature is immune to this effect if it is immune to slashing damage or the DM decides that the creature is too big for its beard to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit.",
@@ -833,7 +831,6 @@
 			"dmgType": "",
 			"dmg2": "",
 			"range": "",
-			"reqAttune": true,
 			"entries": [
 				"{@i There’s a name scratched into the metal… BRA-DO-?}",
 				"This enhancement can be fused to any nonmagical armour. If your speed is reduced by an effect while you are wearing armour this enhancement is fused to, you instead ignore the speed reduction and increase your speed by the amount it would’ve been reduced by until the end of your next turn. Once you have used this property, you cannot do so until the next dawn."
