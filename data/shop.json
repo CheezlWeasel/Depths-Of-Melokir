@@ -1407,8 +1407,7 @@
 			"value": 160000,
 			"entries": [
 				"Once per long rest if an ally falls to 0 hp, as a reaction you enter a state of extreme focus. Until the end of your next turn you are under the effect of the haste spell. Once that turn ends, you have disadvantage on attacks and are unable to cast spells until the end of your next turn."
-			],
-			"reqAttune": true
+			]
 		},
 		{
 			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
