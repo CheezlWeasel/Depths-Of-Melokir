@@ -41,6 +41,7 @@ export class ShopBuilder extends BuilderBase {
 			{value: "GV|DMG", label: "Generic Variant"},
 			{value: "EMB", label: "Emblem"},
 			{value: "EHMT", label: "Enhancement"},
+			{value: "SC|DMG", label: "Spell Scroll"},
 		];
 		this._itemTypeVals = this._itemTypeOptions.map(it => it.value);
 		this._itemTypeLabels = {};
@@ -65,13 +66,13 @@ export class ShopBuilder extends BuilderBase {
 		this._itemPropertyOptions.forEach(it => this._itemPropertyLabels[it.value] = it.label);
 		// Rarity options
 		this._rarityOptions = [
-			{value: "common", label: "Common"},
-			{value: "uncommon", label: "Uncommon"},
-			{value: "rare", label: "Rare"},
-			{value: "very rare", label: "Very Rare"},
-			{value: "legendary", label: "Legendary"},
-			{value: "artifact", label: "Artifact"},
-			{value: "varies", label: "Varies"},
+			{value: "common", label: "common"},
+			{value: "uncommon", label: "uncommon"},
+			{value: "rare", label: "rare"},
+			{value: "very rare", label: "very rare"},
+			{value: "legendary", label: "legendary"},
+			{value: "artifact", label: "artifact"},
+			{value: "varies", label: "varies"},
 			{value: "none", label: "None"},
 		];
 		this._rarityVals = this._rarityOptions.map(it => it.value);
