@@ -915,6 +915,205 @@
 			],
 			"reqAttune": true,
 			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Evergreen Staff",
+			"type": "M",
+			"value": 5000,
+			"rarity": "common",
+			"seller": "The Craftspeople",
+			"source": "SacredTree",
+			"entries": [
+				"{@i Magic seems to cling to this staff much longer than one would expect}",
+				"When you cast the shillelagh spell on this staff, it lasts 8 hours instead of the usual 1 minute"
+			],
+			"baseitem": "Quarterstaff",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Sacred Amber Focus",
+			"type": "SCF",
+			"value": 10000,
+			"rarity": "common",
+			"seller": "The Craftspeople",
+			"source": "SacredTree",
+			"entries": [
+				"{@i Shaped from the Amber the Sacred Tree produces, it seems to limit any incoming divine magic}",
+				"If you're holding the focus when you take radiant damage, you can use your reaction to reduce the damage by 1d4 (to a minimum of 0).",
+				"By paying the Craftspeople 300gp, you can increase the rarity of the Sacred Amber Focus to uncommon, and give it one of the following features:",
+				{
+				"type": "list",
+				"items": [
+					"{@b The Woodcarver's Offering - Punish the Holy.} Increase the amount of radiant damage this item reduces to 1d4 + your PB. When you reduce damage dealt by a creature within 60 ft. of you using this item, the creature that dealt damage to you takes psychic damage equal to the amount you reduced the damage by.",
+					"{@b The Metalworker's Offering - Hide the Vulnerable.} Increase the amount of radiant damage this item reduces to 1d4 + your PB. When you finish a short or long rest, choose a damage type that isn't radiant, bludgeoning, piercing or slashing; you can use the foci to reduce damage of that type in addition to radiant damage, until you finish a short or long rest and select a different damage type.",
+					"{@b The Weaver's Offering - Shield the Weak.} Increase the amount of radiant damage this item reduces to a number of d4s equal to your PB. While attuned to the foci, you can use your action to transform it into a shield, or back into its original form. While it is a shield, you can still use it as a spell focus if you are proficient with shields. In addition, you can also use the reaction to reduce the radiant damage taken by a creature within 30 ft. of you."
+				]
+				}
+			],
+			"reqAttune": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Sacred Heartwood Staff",
+			"type": "M",
+			"value": 12500,
+			"rarity": "common",
+			"seller": "The Craftspeople",
+			"source": "SacredTree",
+			"entries": [
+				"{@i Carved from still-living wood from The Sacred Tree, it still holds a small amount of divine power}",
+				"When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one radiant damage roll of the spell.",
+				"By paying the Craftspeople 425gp, you can increase the rarity of the Sacred Heartwood Staff to uncommon, and give it one of the following features:",
+				{
+				"type": "list",
+				"items": [
+					"{@b The Woodcarver's Offering - Light the Path}. While attuned to and holding the staff, you can cast the light cantrip, targeting only the staff. In addition, while the staff is under the effects of the light cantrip and you are holding it, you can cast Branding Smite using your spellcasting modifier, or Constitution if you do not have a spellcasting modifier. You can cast this spell using the staff a number of times equal to your PB, and regain all uses when you finish a long rest.",
+					"{@b The Metalworker's Offering - Turn the Earth.} While attuned to the staff, as an action, you can slam the staff into the ground, casting Earth Tremor as if it were cast using a second-level spell slot using your spellcasting modifier, or Constitution if you do not have a spellcasting modifier. When you do so, you may expend a hit die, without rolling it, to change the damage type of this spell to radiant. You can cast this spell using the staff a number of times equal to your PB, and regain all uses when you finish a long rest.",
+					"{@b The Weaver's Offering - Mend the Tears.} While attuned to and holding the staff, you can cast Healing Word as if it were cast using a second-level spell slot using your spellcasting modifier, or Constitution if you do not have a spellcasting modifier. When you do so, you may expend a hit die, without rolling it, to cause a mote of light to fall upon a creature of your choice within 60 ft. of you. That creature must succeed on a Dexterity saving throw with a DC based on the spellcasting modifier for the Healing Word or take radiant damage equal to the amount of hit points restored with the Healing Word. You can cast this spell using the staff a number of times equal to your PB, and regain all uses when you finish a long rest."
+				]
+				}
+			],
+			"baseitem": "Quarterstaff|PHB",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"reqAttune": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Nihil Emblem",
+			"type": "EM",
+			"value": 50000,
+			"rarity": "uncommon",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i You feel a little more careful with this Emblem in your hands}",
+				"The Emblem has a number of charges equal to your PB, and regains all charges at dawn.",
+				"As a reaction to being hit by an attack, you can expend a charge to perform one of the following:",
+				{
+				"type": "list",
+				"items": [
+					"Negate Critical. If the triggering attack was a critical hit, it instead becomes a normal hit.",
+					"Negate Skill. If the triggering attack had a secondary effect (such as becoming grappled, or an effect that could be avoided by a saving throw), you may ignore the secondary effect."
+				]
+				}
+			],
+			"reqAttune": true,
+			"wondrous": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Miracle Emblem",
+			"type": "EM",
+			"value": 30000,
+			"rarity": "uncommon",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i Something about thoughts and prayers}",
+				"While you are above half your maximum hit points, if you would be reduced to 0 hit points, you are instead reduced to 1 hit point (even if you would be killed outright)."
+			],
+			"reqAttune": true,
+			"wondrous": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Vantage Emblem",
+			"type": "EM",
+			"value": 25000,
+			"rarity": "uncommon",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i Desperate times, desperate measures}",
+				"While attuned to this item and bloodied, as a reaction to being targeted by an attack from a creature within 5ft. of you, you may make a melee attack against that creature before they attack you. You can use this feature a number of times equal to your PB, and regain all uses daily at dawn."
+			],
+			"reqAttune": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Canto Emblem",
+			"type": "EM",
+			"value": 5000,
+			"rarity": "common",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i As free as on horseback}",
+				"While attuned to this emblem, after making an attack on your turn you may move up to your remaining movement speed (the movement you use is still expended as normal)."
+			],
+			"wondrous": true
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Ring of Quick Stride",
+			"type": "RG",
+			"value": 60000,
+			"rarity": "uncommon",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i You can {@b feel} the blood flowing to your legs.}",
+				"As a bonus action while wearing this ring, you can force your vitality into your legs. When you do so, you take an amount of necrotic damage in intervals of 10 (up to a maximum of 60) of your choice, which cannot be reduced in any way, and if you do your movement speed is increased by a number of feet equal to half the damage that you took from this effect until the end of this turn."
+			],
+			"wondrous": true
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Trailblazer's Buckler",
+			"type": "G",
+			"value": 70000,
+			"rarity": "uncommon",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i A small, almost otherworldly platinum buckler, it hums with magic similar to the Shield spell}",
+				"As a bonus action while holding the buckler and not wielding a shield, you can cause a barrier of magical force to emit from the buckler, granting you a +1 bonus to your AC until the start of your next turn. While this barrier is active, when you get hit by an attack you may use your reaction to stop the force of the blow, reducing the damage of the triggering attack by 5. Once you use this reaction, you lose the bonus to your AC, and cannot use the bonus action granted by this item for 10 minutes."
+			],
+			"wondrous": true
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Old-School Ring",
+			"type": "RG",
+			"value": 15000,
+			"rarity": "common",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i A ring that looks a few decades out of date, but hey, it'll come back into style right?}",
+				"When you would have advantage on an attack, you may choose to roll without advantage, instead subtracting the target's Dexterity modifier from their AC (minimum of 0) (you are still considered to be rolling with advantage for the purposes of features that require you to be)."
+			],
+			"wondrous": true
+		},
+		{
+			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
+			"name": "Beastongue Drought",
+			"type": "P",
+			"value": 500,
+			"rarity": "common",
+			"seller": "Sought",
+			"source": "SacredTree",
+			"entries": [
+				"{@i Opening this bottle hits you with the smell of wet fur}",
+				"When you drink this potion, you are under the effects of Speak with Animals for {@dice 1d4*10} minutes, however, while under this effect, your speech can only be understood by beasts."
+			]
 		}
 	],
 	"magicvariant": [

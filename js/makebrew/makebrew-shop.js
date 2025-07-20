@@ -39,7 +39,7 @@ export class ShopBuilder extends BuilderBase {
 			{value: "CON", label: "Container"},
 			{value: "OTH", label: "Other"},
 			{value: "GV|DMG", label: "Generic Variant"},
-			{value: "EMB", label: "Emblem"},
+			{value: "EM", label: "Emblem"},
 			{value: "EHMT", label: "Enhancement"},
 			{value: "SC|DMG", label: "Spell Scroll"},
 		];
