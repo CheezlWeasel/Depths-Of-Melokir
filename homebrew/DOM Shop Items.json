@@ -855,6 +855,66 @@
 				"This enhancement can be fused to any nonmagical ranged weapon or any non-attunement +X ranged weapon. When you take the attack action with the fused weapon, you can replace one of your attacks to create a line of magical energy 30ft long and 5ft originating from your space that lasts until the end of your next turn. While moving through or along this line, your speed is doubled and you don’t provoke attacks of opportunity, this benefit applies to your allies as well. Once you have used this special attack, you must finish a short rest to use it again.",
 				"(DM Note: A square must be >50% covered by the line to give you the speed bonus on that square. Ultimately, it is up to the DM running at the time)"
 			]
+		},
+		{
+			"uniqueId": "778a43a8-9ee4-438d-ad9e-ca05a9459810",
+			"name": "Fragment Z-607",
+			"type": "EHMT",
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"value": 190000,
+			"entries": [
+				"{@i This fragment seems more… democratic than most.!}",
+				"This enhancement can be fused to any nonmagical armour. While wearing the fused armour, you can teleport to an unoccupied space you can see within 30ft as a bonus action. When you do so, you take 1d8 force damage once you arrive, that cannot be reduced in any way. Every subsequent use of this item doubles the number of d8s you roll when you arrive, resetting every dawn."
+			]
+		},
+		{
+			"uniqueId": "778a43a8-9ee4-438d-ad9e-ca05a9459810",
+			"name": "Fragment X-051",
+			"type": "EHMT",
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"value": 150000,
+			"entries": [
+				"{@i The fragment seems to crystallise the armour around your ankles.}",
+				"This enhancement can be fused to any armour or clothing. While wearing the fused item, any fall damage you take has the exploding property. Whenever you take fall damage, creatures within 15ft of you must make a DC (8+Con+Prof) Dexterity saving throw or take magical piercing damage equal to the damage rolled."
+			]
+		},
+		{
+			"uniqueId": "778a43a8-9ee4-438d-ad9e-ca05a9459810",
+			"name": "Fragment S-167",
+			"type": "EHMT",
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"value": 170000,
+			"entries": [
+				"{@i It looks like it was originally a glove, but it has a few too many fingers for that…}",
+				"This enhancement can be fused to any spellcasting focus. While fused to this focus, when you cast a spell that requires a ranged spell attack roll, you can instead make it as a melee spell attack. Alternatively, if you cast a spell that requires you to make a melee spell attack, you can instead make it as a ranged spell attack with a range of 60ft. Once you have used either option, you must finish a short or long rest to use this enhancement again."
+			],
+			"reqAttune": true,
+			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "778a43a8-9ee4-438d-ad9e-ca05a9459810",
+			"name": "Fragment O-465",
+			"type": "EHMT",
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Bes' Selur",
+			"source": "ArcaneAL",
+			"value": 200000,
+			"entries": [
+				"{@i When fused, the armour seems to vibrate slightly.}",
+				"This enhancement can be fused to any armour. As a bonus action while wearing the fused armour, you can activate a magical displacement field, which lasts for a minute. Attacks made against you are made at disadvantage so long as this field is active. The effect ends early if you are incapacitated, restrained or hit by an attack. Once you have used this feature, you must finish a short or long rest to use it again."
+			],
+			"reqAttune": true,
+			"_attunement": "(requires attunement)"
 		}
 	],
 	"magicvariant": [
