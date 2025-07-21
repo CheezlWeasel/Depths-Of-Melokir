@@ -228,15 +228,16 @@
 			"inherits": {
 				"namePrefix": "Arcanist's ",
 				"source": "DepthsofMelokir",
-				"rarity": "uncommon",
+				"rarity": "rare",
                 "wondrous": true,
 				"entries": [
-					"A number of times equal to your proficiency bonus per long rest you may use your action to enter a stance. As part of entering this stance you may forgo any amount of attacks you may make this turn to make one. This attack deals 2d8 + Strength or Dexterity, and an additional 1d8 per attack you could make. If this attack hits an enemy they need to make a constitution saving throw equal to 8 + Proficiency bonus + Strength or Dexterity. If they fail, all attacks have advantage to hit them until the start of their next turn, as your mighty strike breaks their composure."
+                    "Whilst wielding this weapon you have a +1 to attack and damage rolls with it.",
+					"A number of times equal to your proficiency bonus per long rest you may use your action to enter a stance. As part of entering this stance you may forgo any amount of attacks you may make this turn to make one. This attack deals 2d10 + Strength or Dexterity, and an additional 1d10 per attack you could make. If this attack hits an enemy they need to make a constitution saving throw equal to 8 + Proficiency bonus + Strength or Dexterity. If they fail, all attacks have advantage to hit them until the start of their next turn, as your mighty strike breaks their composure."
 				],
-                "valueExpression": "15000",
+                "value": 240000,
 			    "seller": "Arthak"
 			},
-            "value": 15000
+            "value": 240000
 		},
 		{
 			"name": "Blunt, Force, Trauma",
