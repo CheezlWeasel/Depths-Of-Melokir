@@ -171,7 +171,7 @@
 			"reqAttune": true,
 			"entries": [
 				"{@i Sticky… metal?}",
-				"This enhancement can be fused to any shield. When you attempt to grapple a creature, you can consider the fused shield as a free hand for the purposes of grappling. While grappling a creature this way, any magical properties (outside of curses) of the shield are suppressed for the duration of the grapple. Once you have successfully grappled a creature this way, you must finish a short rest before you can do so again."
+				"This enhancement can be fused to any shield. When you atFeywildt to grapple a creature, you can consider the fused shield as a free hand for the purposes of grappling. While grappling a creature this way, any magical properties (outside of curses) of the shield are suppressed for the duration of the grapple. Once you have successfully grappled a creature this way, you must finish a short rest before you can do so again."
 			]
 		},
 		{
@@ -223,7 +223,7 @@
 			"source": "ArcaneAL",
 			"reqAttune": true,
 			"entries": [
-				"This rune can be attached to any non-magical weapon, causing it to become flickering. A flickering rune causes a weapon to shimmer, grow blurry and indistinct, and momentarily turn invisible at random intervals for a second or two. Creatures have disadvantage on attempts they make to disarm you of a flickering weapon and you have advantage on attempts to avoid being disarmed. On a critical hit with a flickering weapon, the target must make a DC (8+prof+Strength or Dexterity) constitution saving throw or be blinded until the start of your next turn."
+				"This rune can be attached to any non-magical weapon, causing it to become flickering. A flickering rune causes a weapon to shimmer, grow blurry and indistinct, and momentarily turn invisible at random intervals for a second or two. Creatures have disadvantage on atFeywildts they make to disarm you of a flickering weapon and you have advantage on atFeywildts to avoid being disarmed. On a critical hit with a flickering weapon, the target must make a DC (8+prof+Strength or Dexterity) constitution saving throw or be blinded until the start of your next turn."
 			],
 			"wondrous": true
 		},
@@ -312,7 +312,7 @@
 			"entries": [
 				"{@i This giant curved blade seems to have a hinge in the middle, with the inner edge lined with... teeth?}",
 				"At the start of your turn, you may choose to have this weapon folded or unfolded.",
-				"Folded: This weapon deals 1d10 slashing damage, and you can as a reaction to being successfully hit with a ranged attack attempt to \"eat\" said incoming ranged attack with your blade. Reduce the damage by 1d10+Proficiency bonus - if this fully reduces the damage, you feel pretty cool.",
+				"Folded: This weapon deals 1d10 slashing damage, and you can as a reaction to being successfully hit with a ranged attack atFeywildt to \"eat\" said incoming ranged attack with your blade. Reduce the damage by 1d10+Proficiency bonus - if this fully reduces the damage, you feel pretty cool.",
 				"Unfolded: This weapon deals 2d6 bludgeoning damage and has reach."
 			],
 			"wondrous": true,
@@ -381,7 +381,7 @@
 			"entries": [
 				"{@i A blue crystalline staff. Seems to resonate somewhat with other sounds.}",
 				"This item can be used as a spellcasting focus by any class.",
-				"When a spell is cast with this item, the caster can attempt to reroll an attack roll or damage die. Each time this ability is used, regardless of the result, the caster takes damage equal to twice the die roll. A die can be rerolled with this ability up to PROF times. The damage from this feature to self is force, cannot be reduced or negated in any way, and ignores temporary HP.",
+				"When a spell is cast with this item, the caster can atFeywildt to reroll an attack roll or damage die. Each time this ability is used, regardless of the result, the caster takes damage equal to twice the die roll. A die can be rerolled with this ability up to PROF times. The damage from this feature to self is force, cannot be reduced or negated in any way, and ignores Feywildorary HP.",
 				"This ability is usable once per long rest."
 			]
 		},
@@ -517,7 +517,7 @@
 			"reqAttune": true,
 			"entries": [
 				"This helm has a large beetle horn attached to it, supposedly so you can avoid attacks.",
-				"A number of times equal to your proficiency per short rest you may attempt to parry an attack against you. As a reaction to being hit, roll an Athletics check, if the check meets or exceeds the attack roll, reduce the damage you take by 1d10 + proficiency bonus."
+				"A number of times equal to your proficiency per short rest you may atFeywildt to parry an attack against you. As a reaction to being hit, roll an Athletics check, if the check meets or exceeds the attack roll, reduce the damage you take by 1d10 + proficiency bonus."
 			]
 		},
 		{
@@ -1123,7 +1123,7 @@
 			"weight": 0,
 			"rarity": "uncommon",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [],
 			"dmg1": "",
 			"dmgType": "",
@@ -1146,7 +1146,7 @@
 			"weight": 0,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [],
 			"dmg1": "",
 			"dmgType": "",
@@ -1164,7 +1164,7 @@
 			"value": 240000,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [
 				"H",
 				"R",
@@ -1190,7 +1190,7 @@
 			"weight": 0,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [
 				"H",
 				"S"
@@ -1215,7 +1215,7 @@
 			"value": 140000,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [],
 			"dmg1": "",
 			"dmgType": "",
@@ -1235,14 +1235,14 @@
 			"weight": 10,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [],
 			"dmg1": "",
 			"dmgType": "",
 			"dmg2": "",
 			"range": "",
 			"entries": [
-				"This helmet was made from a temple bell and weighs 10 pounds. While wearing it, you have resistance to thunder damage and can't be deafened. In addition, whenever a creature within 5 feet of you deals bludgeoning damage to you with a melee attack, roll a d6. On a 5 or 6, the attacking creature takes 5 or 6 thunder damage, respectively."
+				"This helmet was made from a Feywildle bell and weighs 10 pounds. While wearing it, you have resistance to thunder damage and can't be deafened. In addition, whenever a creature within 5 feet of you deals bludgeoning damage to you with a melee attack, roll a d6. On a 5 or 6, the attacking creature takes 5 or 6 thunder damage, respectively."
 			]
 		},
 		{
@@ -1253,7 +1253,7 @@
 			"weight": 2,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [
 				"2H",
 				"H"
@@ -1278,7 +1278,7 @@
 			"value": 155000,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [],
 			"dmg1": "",
 			"dmgType": "",
@@ -1299,7 +1299,7 @@
 			"weight": 0,
 			"rarity": "rare",
 			"seller": "Elered",
-			"source": "Temp",
+			"source": "Feywild",
 			"property": [],
 			"dmg1": "",
 			"dmgType": "",
@@ -1342,7 +1342,7 @@
 				},
 				"The tether ends after 1 minute. It ends early if you sever the tether (no action required), are no longer holding the rod, the target ends its turn more than 30 feet away from you, the target has total cover from you, or if you or the target fall unconscious."
 			]
-		}
+		},
 	],
 	"magicvariant": [
 		{
@@ -1481,7 +1481,7 @@
 			"excludes": [],
 			"rarity": "uncommon",
 			"entries": [
-				"At the start of your turn while wielding this weapon, you may attempt a DC 15 Athletics or Acrobatics check, gaining a flying speed equal to your walking speed until the end of your turn a success. While flying this way, you have advantage on checks to mount onto large or larger creatures. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+				"At the start of your turn while wielding this weapon, you may atFeywildt a DC 15 Athletics or Acrobatics check, gaining a flying speed equal to your walking speed until the end of your turn a success. While flying this way, you have advantage on checks to mount onto large or larger creatures. You can use this feature a number of times equal to your proficiency bonus per long rest.",
 				"Once per short rest, you can use this polearm to jump 15ft without provoking opportunity attacks."
 			],
 			"inherits": {
@@ -1492,7 +1492,7 @@
 				"reqAttune": true,
 				"value": "32000",
 				"entries": [
-					"At the start of your turn while wielding this weapon, you may attempt a DC 15 Athletics or Acrobatics check, gaining a flying speed equal to your walking speed until the end of your turn a success. While flying this way, you have advantage on checks to mount onto large or larger creatures. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+					"At the start of your turn while wielding this weapon, you may atFeywildt a DC 15 Athletics or Acrobatics check, gaining a flying speed equal to your walking speed until the end of your turn a success. While flying this way, you have advantage on checks to mount onto large or larger creatures. You can use this feature a number of times equal to your proficiency bonus per long rest.",
 					"Once per short rest, you can use this polearm to jump 15ft without provoking opportunity attacks."
 				],
 				"seller": "Elered"
