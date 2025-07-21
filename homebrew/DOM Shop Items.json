@@ -1318,7 +1318,7 @@
 			"type": "M",
 			"value": 300000,
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"seller": "Elered",
 			"source": "Feywild",
 			"property": [
@@ -1342,7 +1342,7 @@
 				},
 				"The tether ends after 1 minute. It ends early if you sever the tether (no action required), are no longer holding the rod, the target ends its turn more than 30 feet away from you, the target has total cover from you, or if you or the target fall unconscious."
 			]
-		},
+		}
 	],
 	"magicvariant": [
 		{
