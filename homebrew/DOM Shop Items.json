@@ -98,6 +98,20 @@
             "seller": "FCB"
         },
 		{
+            "name": "Fragment N-002",
+            "rarity": "rare",
+            "source": "ArcaneAL",
+            "type": "EHMT",
+            "entries": [
+                "{@i It’s an older model, but it checks out}",
+                "This enhancement can be fused to any non magical weapon. While fused to a weapon, you gain a +2 to attack and damage rolls made with said weapon.",
+				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
+            ],
+            "reqAttune": true,
+            "value": 300000,
+            "seller": "FCB"
+        },
+		{
             "name": "Wrath Emblem",
             "rarity": "uncommon",
             "source": "SacredTree",
@@ -146,6 +160,21 @@
 			]
 		},
 		{
+			"name": "Fragment N-004",
+			"type": "EHMT",
+			"value": 300000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "FCB",
+			"source": "ArcaneAL",
+			"reqAttune": true,
+			"entries": [
+				"{@i “Good ol’ +1, no-one ever went wrong with an old fashioned +1…”}",
+				"This enhancement can be fused to any nomagical weapon or magical weapon of uncommon or lower rarity. While fused to an item, the weapon’s bonus to attack and damage rolls is increased by one, to a maximum of +1. This bonus applies after any other +1 bonuses have been applied and does not stack with itself (from other copies of this item).",
+				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
+			]
+		},
+		{
 			"name": "Fragment N-007",
 			"type": "EHMT",
 			"value": 75000,
@@ -157,6 +186,21 @@
 			"entries": [
 				"{@i Inscribed into the fragment is the phrase “out of spells, not options”}",
 				"This enhancement can be fused to any spellcasting focus or weapon. While fused to an item, it becomes a spellcasting focus, if it isn’t already. You gain a +1 bonus to the spell attack rolls and spell save DC of spells cast through this item.",
+				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
+			]
+		},
+		{
+			"name": "Fragment N-008",
+			"type": "EHMT",
+			"value": 300000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "FCB",
+			"source": "ArcaneAL",
+			"reqAttune": true,
+			"entries": [
+				"{@i Inscribed into the fragment is a depiction of a mage holding another mage in a headlock}",
+				"This enhancement can be fused to any spellcasting focus or weapon. While fused to an item, it becomes a spellcasting focus, if it isn’t already. You gain a +2 bonus to the spell attack rolls and spell save DC of spells cast through this item.",
 				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
 			]
 		},
@@ -1230,7 +1274,7 @@
 		{
 			"uniqueId": "c70d2578-cb87-49f2-8295-91a36dd8daf3",
 			"name": "Clangor Helmet",
-			"type": "A",
+			"type": "G",
 			"value": 170000,
 			"weight": 10,
 			"rarity": "rare",
@@ -1265,8 +1309,7 @@
 			"entries": [
 				"This large bow is wrought from the boughs of an old, resilient tree. Its wooden frame is exceptionally sturdy but difficult to draw. You must have a Strength score of 13 or higher to wield this bow. This bow's damage die is a d10, and when you make a ranged attack with this bow, you score a critical hit on a roll of 19 or 20.",
 				"Attacks made with this weapon have a +1 to attack and damage rolls.",
-				"Once on each of your turns when you make a ranged attack with this weapon, you can use the bow to fire a javelin or spear, instead of an arrow, without affecting the bow's damage die. When you do, the bow's normal and long ranges are halved for the attack. If the attack hits, the target takes extra piercing damage equal to your Strength modifier.",
-				"Range. A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range."
+				"Once on each of your turns when you make a ranged attack with this weapon, you can use the bow to fire a javelin or spear, instead of an arrow, without affecting the bow's damage die. When you do, the bow's normal and long ranges are halved for the attack. If the attack hits, the target takes extra piercing damage equal to your Strength modifier."
 			],
 			"weaponCategory": "martial",
 			"reqAttune": true
@@ -1341,6 +1384,61 @@
 				]
 				},
 				"The tether ends after 1 minute. It ends early if you sever the tether (no action required), are no longer holding the rod, the target ends its turn more than 30 feet away from you, the target has total cover from you, or if you or the target fall unconscious."
+			]
+		},
+		{
+			"uniqueId": "18a07c84-effa-4b77-8c73-e009cf950d0e",
+			"name": "Blackthorn Spear of the Moonless Hunter",
+			"type": "M",
+			"value": 300000,
+			"weight": 3,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [
+				"T",
+				"V",
+				"F"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"dmg2": "1d8",
+			"range": "20/60",
+			"entries": [
+				"This spiny, black bone spear is a favorite among nocturnal hunting tribes. While attuned to the spear, you can always see the faint outline of it, even in total darkness. You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
+				"This spear contains a fragment of the moonless hunter, an ancient spirit that can be channeled to assume some of its powers. While holding the spear, you can use a bonus action to call forth and assume the spirit of the moonless hunter. While assuming the spirit, your eyes become pure white, and you gain the following benefits:",
+				"- You ignore the effects of exhaustion.",
+				"- You can't sleep or be put to sleep by magical means, and you can't take or benefit from finishing a long rest.",
+				"- You have advantage on Dexterity (Stealth) checks.",
+				"- You can see normally in darkness, both magical and nonmagical, out to a range of 60 feet.",
+				"- As a free action you can cause the spear to fly back to your empty hand or land at your feet (your choice), provided that the spear is within 60 feet of you.",
+				"- Your walking speed increases by 10 feet.",
+				"You can assume the spirit in this way for up to 8 hours. The effect ends early if you release the spirit as a bonus action or if you're farther than 60 feet away from the spear for more than 1 minute. The spirit returns to the spear when you are no longer assuming it, at which point you gain 1 level of exhaustion for every 2 hours you assumed the spirit (minimum 1 level). Exhaustion gained in this way can only be reduced by finishing a long rest."
+			],
+			"weaponCategory": "simple",
+			"baseitem": "Spear|PHB",
+			"reqAttune": true
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Belt of the Hell Hound",
+			"type": "G",
+			"value": 250000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"When you wear this belt, you can feel the fires of the lower planes burn inside you. While wearing the belt, when you make a melee attack against a creature and have advantage on the attack, the target takes an extra 1d6 fire damage from the attack on a hit.",
+				"In addition, while wearing this belt, you can use an action to release a hellish howl. When you do, you exhale a plume of flames from your mouth in a 15-foot cone. Each creature in the area must succeed on a DC 15 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried. Once this property has been used, it can't be used again until the next dawn.",
+				"{@i {@b Curse}}. Once you wear this belt, you can't remove it unless you are targeted by the remove curse spell or similar magic. While wearing the belt, you must eat twice the normal amount of food each day (a minimum of 2 pounds) to avoid exhaustion. In addition, while wearing the belt, there is a cumulative 10 percent chance when you die and again at the end of each hour you remain dead that you immediately immolate and turn to ash."
 			]
 		}
 	],
@@ -1670,6 +1768,131 @@
 				],
 				"seller": "Elered"
 			}
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Crashing Tide Hammer",
+			"type": "GV|DMG",
+			"seller": "Elered",
+			"value": 160000,
+			"requires": [
+				{
+				"name": "Warhammer"
+				},
+				{
+				"name": "Maul"
+				}
+			],
+			"inherits": {
+				"nameSuffix": ")",
+				"namePrefix": "Crashing Tide Hammer (",
+				"source": "Feywild",
+				"seller": "Elered",
+				"rarity": "rare",
+				"value": 160000,
+				"entries": [
+				"This item takes the form of a metal rod with a slightly weighted, porous end. While grasping the rod, you can use a bonus action to cause a hammer head of swirling salt water to gush forth from the rod and spring into existence. You can use another bonus action while holding it to make the hammer's head disappear. While the hammer's head is summoned, it gains the following properties.",
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon, which extinguishes any nonmagical flame that it hits. In addition, when you hit a target primarily made of fire with the weapon, such as a fire elemental or magma mephit, you treat the weapon's damage dice as having rolled their maximum value.",
+				"The first time on each of your turns when you have advantage on an attack roll against a creature and hit it with the hammer, that creature must succeed on a Strength saving throw equal to 8 + your proficiency bonus + your strength modifier or be knocked prone. Whenever you hit a prone creature with the hammer, you can choose to push it up to 10 feet away from you, sweeping it away in a roiling tide of salt water."
+				]
+			},
+			"source": "Feywild",
+			"rarity": "rare",
+			"entries": [
+				"This item takes the form of a metal rod with a slightly weighted, porous end. While grasping the rod, you can use a bonus action to cause a hammer head of swirling salt water to gush forth from the rod and spring into existence. You can use another bonus action while holding it to make the hammer's head disappear. While the hammer's head is summoned, it gains the following properties.",
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon, which extinguishes any nonmagical flame that it hits. In addition, when you hit a target primarily made of fire with the weapon, such as a fire elemental or magma mephit, you treat the weapon's damage dice as having rolled their maximum value.",
+				"The first time on each of your turns when you have advantage on an attack roll against a creature and hit it with the hammer, that creature must succeed on a Strength saving throw equal to 8 + your proficiency bonus + your strength modifier or be knocked prone. Whenever you hit a prone creature with the hammer, you can choose to push it up to 10 feet away from you, sweeping it away in a roiling tide of salt water."
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Captain's Pride",
+			"type": "GV|DMG",
+			"seller": "Elered",
+			"value": 150000,
+			"requires": [
+				{
+				"armor": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": ")",
+				"namePrefix": "Captain's Pride (",
+				"source": "Feywild",
+				"seller": "Elered",
+				"rarity": "rare",
+				"valueExpression": "[[baseItem.value]] + 150000",
+				"entries": [
+				"This well-crafted leather armor comes with a sturdy, enveloping longcoat, bearing on its back the insignia of a well-known pirate captain. When you attune to it, the insignia changes to one that represents you instead. While wearing this armor, climbing and swimming don't cost you extra movement, and you can breathe underwater.",
+				"In addition, you can use a bonus action to shift into a watery, elemental form, gaining the following benefits for the duration:",
+				{
+					"type": "list",
+					"items": [
+					"Your speed increases by 10 feet.",
+					"You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, as well as resistance to acid damage.",
+					"You have advantage on ability checks to avoid or escape being grappled or restrained. If you're already grappled or restrained when you shift into this form, you automatically escape.",
+					"While you're underwater, Wisdom (Perception) checks made to see you have disadvantage."
+					]
+				},
+				"This form lasts as long as you concentrate (as if concentrating on a spell), to a maximum of 1 minute. Once this property of the armor has been used, it can't be used again until the next dawn."
+				]
+			},
+			"source": "Feywild",
+			"rarity": "rare",
+			"entries": [
+				"This well-crafted leather armor comes with a sturdy, enveloping longcoat, bearing on its back the insignia of a well-known pirate captain. When you attune to it, the insignia changes to one that represents you instead. While wearing this armor, climbing and swimming don't cost you extra movement, and you can breathe underwater.",
+				"In addition, you can use a bonus action to shift into a watery, elemental form, gaining the following benefits for the duration:",
+				{
+				"type": "list",
+				"items": [
+					"Your speed increases by 10 feet.",
+					"You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, as well as resistance to acid damage.",
+					"You have advantage on ability checks to avoid or escape being grappled or restrained. If you're already grappled or restrained when you shift into this form, you automatically escape.",
+					"While you're underwater, Wisdom (Perception) checks made to see you have disadvantage."
+				]
+				},
+				"This form lasts as long as you concentrate (as if concentrating on a spell), to a maximum of 1 minute. Once this property of the armor has been used, it can't be used again until the next dawn."
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Bloodletter's Crossbow",
+			"type": "GV|DMG",
+			"seller": "Elered",
+			"rarity": "rare",
+			"value": 250000,
+			"requires": [
+				{
+				"name": "Light Crossbow"
+				},
+				{
+				"name": "Hand Crossbow"
+				},
+				{
+				"name": "Heavy Crossbow"
+				},
+				{
+				"name": "Arbalest"
+				}
+			],
+			"inherits": {
+				"nameSuffix": ")",
+				"namePrefix": "Bloodletter's Crossbow (",
+				"source": "Feywild",
+				"seller": "Elered",
+				"rarity": "rare",
+				"value": 250000,
+				"entries": [
+				"This crossbow doesn't have a typical string. Instead, a string of blood magically appears behind a loaded bolt whenever a bladed lever is pulled. You take 1 necrotic damage each time you fire the crossbow, which can't be reduced in any way. A creature hit by a bolt shot from this crossbow takes an extra 1d6 necrotic damage.",
+				"Immediately after you make an attack with this crossbow as part of the Attack action, you can use a bonus action to fire a special crossbow bolt from it. This bolt is made of your own blood. On a hit, the target takes necrotic damage equal to a roll of one of your Hit Dice, adding your Highest Physical Ability Score modifier as normal. Whenever you use this property, you temporarily expend the used Hit Die. Set the die aside or record the number of Hit Dice expended in this way. You regain any of these temporarily expended Hit Dice whenever you finish a short or long rest, in addition to any other Hit Dice you would normally regain."
+				]
+			},
+			"source": "Feywild",
+			"rarity": "rare",
+			"entries": [
+				"This crossbow doesn't have a typical string. Instead, a string of blood magically appears behind a loaded bolt whenever a bladed lever is pulled. You take 1 necrotic damage each time you fire the crossbow, which can't be reduced in any way. A creature hit by a bolt shot from this crossbow takes an extra 1d6 necrotic damage.",
+				"Immediately after you make an attack with this crossbow as part of the Attack action, you can use a bonus action to fire a special crossbow bolt from it. This bolt is made of your own blood. On a hit, the target takes necrotic damage equal to a roll of one of your Hit Dice, adding your Highest Physical Ability Score modifier as normal. Whenever you use this property, you temporarily expend the used Hit Die. Set the die aside or record the number of Hit Dice expended in this way. You regain any of these temporarily expended Hit Dice whenever you finish a short or long rest, in addition to any other Hit Dice you would normally regain."
+			]
 		}
 	]
 }
