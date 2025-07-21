@@ -1012,6 +1012,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
+				"Whilst attuned to this item, creatures created by a subclass feature such as wildfire spirit, drake companion or hound of ill omen have the following benefits.",
 				{
 					"type": "list",
 					"items": [
