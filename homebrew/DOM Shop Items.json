@@ -1114,6 +1114,234 @@
 				"{@i Opening this bottle hits you with the smell of wet fur}",
 				"When you drink this potion, you are under the effects of Speak with Animals for {@dice 1d4*10} minutes, however, while under this effect, your speech can only be understood by beasts."
 			]
+		},
+		{
+			"uniqueId": "e5bb2491-bbef-482d-86aa-9498517416e8",
+			"name": "Physician's Vow",
+			"type": "G",
+			"value": 35000,
+			"weight": 0,
+			"rarity": "uncommon",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"This reliquary has three charges and regain all charges during a short rest.",
+				"When you heal a creature who is bloodied (below half hp), you can expend a charge from this item and they gain one of the following effects until the end of their next turn:",
+				"- Adapt. They gain an additional 10ft of movement, and standing up from prone only expends 10ft of movement.",
+				"- Evade. The target can use their reaction to move 10ft, this movement does not provoke opportunity attacks.",
+				"- Fortitude. The target is bolstered, they have advantage on their next dexterity or strength check and cannot be forcibly moved."
+			]
+		},
+		{
+			"uniqueId": "06d49e63-eb2a-419b-a9f6-eafe8d88292b",
+			"name": "Great Shield",
+			"type": "S",
+			"value": 120000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"baseitem": "Shield|PHB",
+			"entries": [
+				"Whilst wielding this shield, if a melee attack misses you, you can use a reaction to make an attack against the enemy, if the attack hits they're pushed back 10ft. You can use this ability three times, resetting on a short rest."
+			]
+		},
+		{
+			"uniqueId": "4ffa566f-15ba-4c29-aced-e918f1cc4f90",
+			"name": "Covolt Scythe",
+			"type": "M",
+			"value": 240000,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"dmg2": "",
+			"range": "",
+			"baseitem": "Lance|PHB",
+			"weaponCategory": "martial",
+			"entries": [
+				"This jagged scythe is forged with covolt, an elemental blue metal that carries storm-like properties. When you hit a creature with an attack using this magic weapon, it takes an extra 1d6 lightning damage. Once on each of your turns when you hit a creature with this weapon, you can choose a different creature within 10 feet of the target. That creature must succeed on a DC 15 Dexterity saving throw or take 1d8 lightning damage as an arc of electricity lashes out at it from the original target."
+			],
+			"reqAttune": true,
+			"weight": 6
+		},
+		{
+			"uniqueId": "23db1f59-81aa-4025-a93f-55d6d5902cda",
+			"name": "Drill Lance",
+			"type": "M",
+			"value": 260000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [
+				"H",
+				"S"
+			],
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"dmg2": "",
+			"range": "",
+			"weaponCategory": "martial",
+			"baseitem": "Lance|PHB",
+			"reqAttune": true,
+			"entries": [
+				"{@b {@i Special.}} You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.",
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. On a hit, the lance's point whirs as it rapidly spins. When you attack a creature or object made of stone or wood with this magic lance you gain advantage to hit them.",
+				"Overcharge. The lance magically stores your movement into its own, spinning faster as you charge forward. Once per turn, if you move at least 20 feet straight toward a target and then attack it with the lance on the same turn, the weapon releases a superheated line of energy from it in the direction of the target. The line is 15 feet long and 5 feet wide. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 1d12 fire damage. If the triggering attack also hits, this fire damage is in addition to the weapon's damage against the target."
+			]
+		},
+		{
+			"uniqueId": "6936e1d9-d2ef-441c-927a-f54d7a290b95",
+			"name": "Conspirator's Coat",
+			"type": "G",
+			"value": 140000,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"reqAttune": true,
+			"entries": [
+				"This magic longcoat is adorned with raven feathers and carved jet buttons. While wearing this coat, you have advantage on Charisma (Deception) checks. In addition, the coat has 5 charges and regains 1d4 + 1 expended charges daily at dusk. While wearing the coat, you can use a bonus action to expend 1 of its charges to disappear, releasing up to three ravens from your location under your control that scatter into the air. Each raven has AC 12, 1 hit point, and can fly up to 40 feet as part of this bonus action without provoking opportunity attacks. At the start of your next turn, the ravens vanish, and you reappear in the space of one of the ravens (your choice).",
+				"If all the ravens are reduced to 0 hit points, you reappear early in the same space as the last one that died. When you do, any excess damage dealt to the raven carries over to your normal form."
+			]
+		},
+		{
+			"uniqueId": "c70d2578-cb87-49f2-8295-91a36dd8daf3",
+			"name": "Clangor Helmet",
+			"type": "A",
+			"value": 170000,
+			"weight": 10,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"entries": [
+				"This helmet was made from a temple bell and weighs 10 pounds. While wearing it, you have resistance to thunder damage and can't be deafened. In addition, whenever a creature within 5 feet of you deals bludgeoning damage to you with a melee attack, roll a d6. On a 5 or 6, the attacking creature takes 5 or 6 thunder damage, respectively."
+			]
+		},
+		{
+			"uniqueId": "060c357c-b03f-48b6-97bd-a3ae89670380",
+			"name": "Champion's Greatbow",
+			"type": "R",
+			"value": 280000,
+			"weight": 2,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [
+				"2H",
+				"H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"dmg2": "",
+			"range": "150/600",
+			"entries": [
+				"This large bow is wrought from the boughs of an old, resilient tree. Its wooden frame is exceptionally sturdy but difficult to draw. You must have a Strength score of 13 or higher to wield this bow. This bow's damage die is a d10, and when you make a ranged attack with this bow, you score a critical hit on a roll of 19 or 20.",
+				"Attacks made with this weapon have a +1 to attack and damage rolls.",
+				"Once on each of your turns when you make a ranged attack with this weapon, you can use the bow to fire a javelin or spear, instead of an arrow, without affecting the bow's damage die. When you do, the bow's normal and long ranges are halved for the attack. If the attack hits, the target takes extra piercing damage equal to your Strength modifier.",
+				"Range. A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range."
+			],
+			"weaponCategory": "martial",
+			"reqAttune": true
+		},
+		{
+			"uniqueId": "6de48e19-f2b4-408f-9a09-3156939f28b4",
+			"name": "Chain Devil Gloves",
+			"type": "G",
+			"value": 155000,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"entries": [
+				"These leather gloves are fashioned from the hands of a slain chain devil. While wearing these gloves, an ethereal chain attaches itself to any weapon you throw that has the thrown property. The chain has a reach of 60 feet and breaks its connection to the weapon if the weapon is held by a creature or if you are ever more than 60 feet away from it. You can have up to 4 of these chains at any time.",
+				"As an action, you can cause these chains to suddenly retract and pull any attached weapons with them. Any creature within the path of one or more of these weapons must make a DC 15 Dexterity saving throw. On a failed save, a creature takes force damage equal to the damage die of the thrown weapon. A solid object or wall blocks the path of the retracted chain and weapon. A retracted weapon lands harmlessly at your feet or in an open hand once it reaches you."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"uniqueId": "e10817b8-ce38-4498-8e49-a0894ca4e67e",
+			"name": "Bracelet of the Shattered Aegis",
+			"type": "G",
+			"value": 250000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Elered",
+			"source": "Temp",
+			"property": [],
+			"dmg1": "",
+			"dmgType": "",
+			"dmg2": "",
+			"range": "",
+			"entries": [
+				"A smoldering, defensive insignia burns at the center of the cracked glass sphere that rests atop this woven bracelet. The bracelet has 2 charges and regains all expended charges daily at dawn. If the bracelet has at least 1 charge, you gain a +1 bonus to AC while wearing it.",
+				"While wearing the bracelet, you can expend 1 of its charges as a reaction when a friendly creature that you can see within 30 feet of you is hit by an attack. That creature gains a bonus to its AC equal to your constitution ability modifier (minimum +1) until the start of your next turn, including against the triggering attack, as a shimmering, magical barrier protects it from harm. If the creature is already under the effect of the shield spell, this property has no effect, and the charge is wasted. If an attacker hits the creature while it's protected by this barrier, the barrier shatters, and any hostile creature within 5 feet of it must make a Dexterity saving throw against a DC of 8 + Constitution + Proficiency bonus. On a failed save, a creature takes 3d8 fire damage, or half as much damage on a successful one. When the barrier shatters, the creature loses this bonus to its AC."
+			],
+			"wondrous": true,
+			"reqAttune": true
+		},
+		{
+			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
+			"name": "Bloodmire Rod of the Witch Doctor",
+			"type": "M",
+			"value": 300000,
+			"weight": 0,
+			"rarity": "Rare",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"baseitem": "Lance|PHB",
+			"reqAttune": "by a cleric, druid, ranger, paladin, or warlock",
+			"weaponCategory": "simple",
+			"entries": [
+				"This gnarled wooden scepter from the Bloodmire is set with a strange, cracked opal at its head and can be used as a spellcasting focus. The rod has 6 charges and regains 1d4 + 2 expended charges daily at dusk.",
+				"While holding the rod, you can expend 1 of its charges as an action to create a magical tether of light between the rod and another creature you can see within 30 feet of you. The tether's color and effects depend on what kind of tether you create. You can only have one of each tether at a time.",
+				{
+				"type": "list",
+				"items": [
+					"Empowering Tether. This tether is a brilliant white. A creature affected by this tether regains 2d10 hit points when it's first affected by it, and while it's connected to the tether, it deals an extra 1d10 damage of the weapon's type to the first target it hits with a melee weapon attack on each of its turns. In addition, on each of your following turns while you maintain the tether, you can expend 1 of the rod's charges as a bonus action to send a surge of healing magic through the tether and cause the target to regain 2d10 hit points.",
+					"Withering Tether. This tether is a sickly red. A creature affected by this tether must make a Constitution saving throw when it's first affected by it, using your spell save DC. On a failed save, a creature takes 2d10 necrotic damage, and on each of your following turns while you maintain the tether, you can use a bonus action to deal 1d10 necrotic damage to the target automatically. On a successful save, a creature takes half as much necrotic damage, and the tether immediately ends."
+				]
+				},
+				"The tether ends after 1 minute. It ends early if you sever the tether (no action required), are no longer holding the rod, the target ends its turn more than 30 feet away from you, the target has total cover from you, or if you or the target fall unconscious."
+			]
 		}
 	],
 	"magicvariant": [

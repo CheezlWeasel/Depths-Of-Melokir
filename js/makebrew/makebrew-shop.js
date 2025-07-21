@@ -302,8 +302,6 @@ export class ShopBuilder extends BuilderBase {
 			}
 		};
 		renderWeaponFields();
-		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").appendTo($tab);
-		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
 		BuilderUi.$getStateIptEntries("Text", cb, this._state, {
 			fnPostProcess: (text) => {
 				// If text is an array, join it to a string for formatting
@@ -399,6 +397,29 @@ export class ShopBuilder extends BuilderBase {
 			this._state.baseitem = $baseItemSelect.val() || undefined;
 			cb();
 		});
+		BuilderUi.$getStateIptBoolean("Wondrous Item", cb, this._state, {}, "wondrous").appendTo($tab);
+		BuilderUi.$getStateIptBoolean("Attunement", cb, this._state, {}, "reqAttune").on("change", () => {
+			renderAttunementFields();
+		}).appendTo($tab);
+		const renderAttunementFields = () => {
+			$tab.find(`#attunement-fields`).remove();
+			if (!this._state.reqAttune) return
+			const isAttunement = this._state.reqAttune;
+			console.log(isAttunement);
+			if (isAttunement) {
+				// --- Attunement Requirement Textbox ---
+				const $attuneReqWrapper = $(`<div class="mb-2 mkbru__row stripe-even ve-flex-v-center" id="attunement-fields" style="display: none;"></div>`).appendTo($tab);
+				$attuneReqWrapper.append(`<span class="mr-2 mkbru__row-name" style="min-width: 120px;">Attunement Requirement</span>`);
+				const $attuneReqInput = $(`<input class="form-control input-xs form-control--minimal" placeholder="e.g. by a wizard">`)
+					.val(this._state.reqAttuneText || "")
+					.on("input", () => {
+						this._state.reqAttuneText = $attuneReqInput.val().trim() || undefined;
+						cb();
+					})
+					.appendTo($attuneReqWrapper);
+			}
+		};
+		renderAttunementFields();
 	}
 
 	renderOutput () {
@@ -410,12 +431,11 @@ export class ShopBuilder extends BuilderBase {
 
 		// --- Attunement normalization ---
 		// 5eTools expects reqAttune to be boolean true or a non-empty string (for specific requirements)
-		if (item.reqAttune) {
-			item.reqAttune = true;
-			item._attunement = "(requires attunement)";
-		} else {
+		if (item.reqAttune === false) {
 			delete item.reqAttune;
-			delete item._attunement;
+		} else if (item.reqAttuneText) {
+			item.reqAttune = item.reqAttuneText;
+			delete item.reqAttuneText;
 		}
 
 		// --- Normalize property to always be an array ---
