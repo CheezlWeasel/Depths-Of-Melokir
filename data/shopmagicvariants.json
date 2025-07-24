@@ -85,9 +85,6 @@
 					"weapon": true
 				}
 			],
-			"excludes": {
-				"net": true
-			},
             "wondrous": true,
             "value": 30000,
 			"inherits": {
@@ -413,9 +410,6 @@
 					"weapon": true
 				}
 			],
-			"excludes": {
-				"net": true
-			},
             "wondrous": true,
             "value": 120000,
 			"inherits": {
@@ -524,6 +518,37 @@
 				"Whilst attuned to this weapon, you have +2 to attack and damage rolls made with it.",
 				"Whilst attuned to this weapon your lay on hands pool is increased by 20."
 			]
+		},
+		{
+			"name": "+2 Endurant Weapon",
+            "requires": [
+                {
+                   "weapon": true
+                }
+            ],
+            "type": "GV|DMG",
+            "inherits": {
+                "namePrefix": "+2 Endurant ",
+                "source": "DepthsofMelokir",
+                "rarity": "rare",
+                "reqAttune": "by a fighter",
+                "reqAttuneTags": [
+                    {
+                        "class": "fighter"
+                    }
+                ],
+                "wondrous": true,
+                "bonusWeapon": "+1",
+                "entries": [
+                    "Weapon (any simple or martial weapon)",
+                    "While attuned, you have a +1 bonus to attack and damage rolls with this weapon.",
+                    "Furthermore, you gain an additional use of the \"Second Wind\" feature, and gain a +1 bonus to the amount of hit points recovered when you use the second wind feature."
+                ],
+                "value": 300000,
+                "seller": "Arthak"
+            },
+            "value": 300000,
+            "seller": "Arthak"
 		}
     ]
 }

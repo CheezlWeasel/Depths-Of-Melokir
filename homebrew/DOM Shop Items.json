@@ -433,7 +433,6 @@
 		{
 			"uniqueId": "fbc349f4-2736-4bcd-8b4f-9b23358ac1ae",
 			"name": "Cloak of Daggers",
-			"type": "G",
 			"value": 40000,
 			"rarity": "uncommon",
 			"seller": "Elered",
@@ -1120,7 +1119,6 @@
 		{
 			"uniqueId": "ea16ffda-836f-4beb-8fd6-1739cc2b5ee6",
 			"name": "Trailblazer's Buckler",
-			"type": "G",
 			"value": 70000,
 			"rarity": "uncommon",
 			"seller": "Sought",
@@ -1161,7 +1159,6 @@
 		{
 			"uniqueId": "e5bb2491-bbef-482d-86aa-9498517416e8",
 			"name": "Physician's Vow",
-			"type": "G",
 			"value": 35000,
 			"weight": 0,
 			"rarity": "uncommon",
@@ -1230,12 +1227,12 @@
 			"name": "Drill Lance",
 			"type": "M",
 			"value": 260000,
-			"weight": 0,
+			"weight": 6,
 			"rarity": "rare",
 			"seller": "Elered",
 			"source": "Feywild",
 			"property": [
-				"H",
+				"R",
 				"S"
 			],
 			"dmg1": "1d12",
@@ -1246,15 +1243,14 @@
 			"baseitem": "Lance|PHB",
 			"reqAttune": true,
 			"entries": [
-				"{@b {@i Special.}} You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.",
 				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. On a hit, the lance's point whirs as it rapidly spins. When you attack a creature or object made of stone or wood with this magic lance you gain advantage to hit them.",
-				"Overcharge. The lance magically stores your movement into its own, spinning faster as you charge forward. Once per turn, if you move at least 20 feet straight toward a target and then attack it with the lance on the same turn, the weapon releases a superheated line of energy from it in the direction of the target. The line is 15 feet long and 5 feet wide. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 1d12 fire damage. If the triggering attack also hits, this fire damage is in addition to the weapon's damage against the target."
+				"{@b {@i Overcharge.}} The lance magically stores your movement into its own, spinning faster as you charge forward. Once per turn, if you move at least 20 feet straight toward a target and then attack it with the lance on the same turn, the weapon releases a superheated line of energy from it in the direction of the target. The line is 15 feet long and 5 feet wide. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 1d12 fire damage. If the triggering attack also hits, this fire damage is in addition to the weapon's damage against the target.",
+				"{@b {@i Special.}} You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
 			]
 		},
 		{
 			"uniqueId": "6936e1d9-d2ef-441c-927a-f54d7a290b95",
 			"name": "Conspirator's Coat",
-			"type": "G",
 			"value": 140000,
 			"rarity": "rare",
 			"seller": "Elered",
@@ -1273,7 +1269,6 @@
 		{
 			"uniqueId": "c70d2578-cb87-49f2-8295-91a36dd8daf3",
 			"name": "Clangor Helmet",
-			"type": "G",
 			"value": 170000,
 			"weight": 10,
 			"rarity": "rare",
@@ -1299,7 +1294,8 @@
 			"source": "Feywild",
 			"property": [
 				"2H",
-				"H"
+				"H",
+				"A"
 			],
 			"dmg1": "1d10",
 			"dmgType": "P",
@@ -1316,7 +1312,6 @@
 		{
 			"uniqueId": "6de48e19-f2b4-408f-9a09-3156939f28b4",
 			"name": "Chain Devil Gloves",
-			"type": "G",
 			"value": 155000,
 			"rarity": "rare",
 			"seller": "Elered",
@@ -1336,7 +1331,6 @@
 		{
 			"uniqueId": "e10817b8-ce38-4498-8e49-a0894ca4e67e",
 			"name": "Bracelet of the Shattered Aegis",
-			"type": "G",
 			"value": 250000,
 			"weight": 0,
 			"rarity": "rare",
@@ -1421,7 +1415,6 @@
 		{
 			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
 			"name": "Belt of the Hell Hound",
-			"type": "G",
 			"value": 250000,
 			"weight": 0,
 			"rarity": "rare",
@@ -1810,6 +1803,7 @@
 			"type": "GV|DMG",
 			"seller": "Elered",
 			"value": 160000,
+			"reqAttune": true,
 			"requires": [
 				{
 				"name": "Warhammer"
@@ -1824,6 +1818,7 @@
 				"source": "Feywild",
 				"seller": "Elered",
 				"rarity": "rare",
+				"reqAttune": true,
 				"value": 160000,
 				"entries": [
 				"This item takes the form of a metal rod with a slightly weighted, porous end. While grasping the rod, you can use a bonus action to cause a hammer head of swirling salt water to gush forth from the rod and spring into existence. You can use another bonus action while holding it to make the hammer's head disappear. While the hammer's head is summoned, it gains the following properties.",
