@@ -108,7 +108,7 @@
 				"This enhancement can be fused alongside another enhancement, so long as it is of a rarity equal to or lower than this enhancement."
             ],
             "reqAttune": true,
-            "value": 300000,
+            "value": 150000,
             "seller": "FCB"
         },
 		{
