@@ -96,7 +96,7 @@
                     "type": "entries",
                     "name": "Indomitable human spirit.",
                     "entries": [
-                        "Once per long rest, if you are bloodied (Reduced to below half your hit point maximum), you may immediately use your reaction to roll a d12 plus your constitution modifier and gain that many hit points."
+                        "Once per long rest, if you are bloodied (Reduced to below half your hit point maximum) or take damage while bloodied, you may immediately use your reaction to roll a d12 plus your constitution modifier and gain that many hit points."
                     ]
                 },
                 {
