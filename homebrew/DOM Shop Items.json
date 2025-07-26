@@ -60,6 +60,18 @@
 					"Cheezl"
 				],
 				"color": "43B3A3"
+			},
+			{
+				"json": "IslesOfAzoria",
+				"abbreviation": "IoA",
+				"full": "Isles of Azoria",
+				"authors": [
+					"kinettik02"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color":"85FFF8"
 			}
 		],
 		"edition": "classic"
