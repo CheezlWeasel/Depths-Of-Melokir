@@ -1447,6 +1447,31 @@
 				}
 			],
 			"_attunement": "(requires attunement)"
+		},
+		{
+			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
+			"name": "Staff of the Woodlands",
+			"type": "M",
+			"weight": 0,
+			"rarity": "Rare",
+			"source": "DepthsofMelokir",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"baseitem": "Staff|PHB",
+			"weaponCategory": "simple",
+			"entries": [
+				"This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.",
+				"The staff has 10 charges for the following properties. It regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.",
+				"Spells. You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: {@spell animal friendship} (1 charge),  {@spell awaken} (5 charges),  {@spell barkskin} (2 charges),  {@spell locate animals or plants} (2 charges),  {@spell speak with animals} (1 charge),  {@spell speak with plants} (3 charges),  {@spell pass without trace} (2 charges) or  {@spell wall of thorns} (6 charges).",
+				"Tree Form. You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff."
+			],
+			"reqAttune": "by a Druid",
+			"value": 250000,
+			"seller": "Arthak"
 		}
 	]
 }
