@@ -1472,6 +1472,37 @@
 			"reqAttune": "by a Druid",
 			"value": 250000,
 			"seller": "Arthak"
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Bracers of Vigilance",
+			"value": 240000,
+			"weight": 1,
+			"rarity": "Rare",
+			"source": "DepthsofMelokir",
+			"wondrous": true,
+			"reqAttune": "by a creature with proficiency in Perception",
+			"type": "G",
+			"entries": [
+				"{@i An adventurer attuned to these is always on the watch.}",
+				"Once per round if attuned, after making an opportunity attack (or similar effects like Sentinel), you are still afforded a \"bonus\" reaction for that round that can be used on something that is not an opportunity attack. Conversely, if you take a non-opportunity attack reaction as your reaction for the round, you gain a \"bonus\" reaction that can only be used to make an opportunity attack or similar.",
+				"A creature attuned can make a \"bonus\" reaction a number of times equal to their proficiency bonus per long rest."
+			]
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Symphonic Headband",
+			"value": 5000,
+			"weight": 1,
+			"rarity": "Uncommon",
+			"source": "DepthsofMelokir",
+			"wondrous": true,
+			"reqAttune": "by a bard",
+			"type": "OTH",
+			"entries": [
+				"{@i A thin silver headband. While wearing it, you sometimes hear a distant song.}",
+				"While attuned to this item, you may grant Bardic Inspiration, or cast levelled bard spells that would take a bonus action, as an action instead."
+			]
 		}
 	]
 }
