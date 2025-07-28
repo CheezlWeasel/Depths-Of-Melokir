@@ -1552,7 +1552,11 @@
 				"source": "DepthsofMelokir",
 				"value": "20000",
 				"seller": "Arthak",
-				"rarity": "uncommon"
+				"rarity": "uncommon",
+				"entries": [
+					"{@i For the Individual in your life that practices multiple forms of bodily harm.}",
+					"After successfully dealing damage to a creature with this weapon, if later on that turn that creature takes another damage type not inflicted by that weapon attack and not inflicted by a weapon attack, they take an additional 1d4 of that secondary damage. Only triggers once per turn."
+				]
 			},
 			"entries": [
 				"{@i For the Individual in your life that practices multiple forms of bodily harm.}",
