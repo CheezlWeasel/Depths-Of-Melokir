@@ -1226,7 +1226,7 @@
 			"dmgType": "S",
 			"dmg2": "",
 			"range": "",
-			"baseitem": "Lance|PHB",
+			"baseitem": "Glaive|PHB",
 			"weaponCategory": "martial",
 			"entries": [
 				"This jagged scythe is forged with covolt, an elemental blue metal that carries storm-like properties. When you hit a creature with an attack using this magic weapon, it takes an extra 1d6 lightning damage. Once on each of your turns when you hit a creature with this weapon, you can choose a different creature within 10 feet of the target. That creature must succeed on a DC 15 Dexterity saving throw or take 1d8 lightning damage as an arc of electricity lashes out at it from the original target."
@@ -1477,6 +1477,46 @@
 			"entries": [
 				"@i {Note: This is one of a kind, ping Byron when you purchase this so it will be removed from the store}",
 				"While wielding this shield, you have a 20+ Invulnerable save. Whenever you make a saving throw, a result of a 20 or higher on the dice always succeeds, regardless of the DC. A roll of 20 cancelled out by advantage, disadvantage or a reroll does not count for this ability. "
+			]
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Mini-Bow",
+			"type": "R",
+			"value": 50000,
+			"weight": 0,
+			"rarity": "Uncommon",
+			"seller": "Helli",
+			"source": "IslesOfAzoria",
+			"property": [
+				"A",
+				"2H"
+			],
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"range": "80/320",
+			"baseitem": "Shortbow|PHB",
+			"entries": [
+				"{@i “A smaller bow that works just as well in melee as it does at range”}",
+				"The damage dice for this weapon is a d4 rather than a d6.",
+				"Attacks with this weapon have a +1 to hit and damage rolls and do not suffer disadvantage from having enemies within 5 feet of you.",
+				"You may make opportunity attacks with this weapon as if it were a melee weapon with a reach of 5ft."
+			]
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Miniscule Refillable Potion of Healing",
+			"type": "P",
+			"value": 100,
+			"weight": 0,
+			"rarity": "Common",
+			"seller": "Helli",
+			"source": "IslesOfAzoria",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"{@i “Listen, if the guild merchants would let me, I'd pay you to take these.”}",
+				"While attuned to this small vial, it will fill with liquid at the end of every long rest. When you drink this liquid, flip two coins. For each heads you flip, regain 1 hit point."
 			]
 		}
 	],

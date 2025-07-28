@@ -124,6 +124,7 @@
                 ],
 			    "wondrous": true,
                 "entries": [
+                    "This weapon has a +1 to attack and damage rolls",
                     "Whilst you are wielding this weapon, you cannot be suprised. Additionally, when you roll initiative you can grant any friendly ally within 60ft an additional 1d6 to that roll. This benefit can be used once per short rest."
                 ],
                 "bonusWeapon": "+1",
@@ -449,6 +450,7 @@
                 ],
 			    "wondrous": true,
                 "entries": [
+                    "This weapon has a +2 to attack and damage rolls",
                     "Whilst you are wielding this weapon, you cannot be suprised. Additionally, when you roll initiative you can grant any friendly ally within 60ft an additional 1d6 to that roll. This benefit can be used once per short rest."
                 ],
                 "bonusWeapon": "+2",
@@ -538,10 +540,10 @@
                     }
                 ],
                 "wondrous": true,
-                "bonusWeapon": "+1",
+                "bonusWeapon": "+2",
                 "entries": [
                     "Weapon (any simple or martial weapon)",
-                    "While attuned, you have a +1 bonus to attack and damage rolls with this weapon.",
+                    "While attuned, you have a +2 bonus to attack and damage rolls with this weapon.",
                     "Furthermore, you gain an additional use of the \"Second Wind\" feature, and gain a +1 bonus to the amount of hit points recovered when you use the second wind feature."
                 ],
                 "value": 300000,
