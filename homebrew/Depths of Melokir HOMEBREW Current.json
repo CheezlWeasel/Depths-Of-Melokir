@@ -2495,8 +2495,7 @@
             "header": 2,
             "level": 3,
             "entries": [
-                
-                "You raise an unholy cacophony that overwhelms the senses of your foes. Each creature in a 15-foot cone must succeed on a Constitution saving throw or take 3d8 thunder damage and is pushed 10ft away from you. A creature that fails its save by 5 or more is also dazed until the end of your next turn. (A dazed creature can only do one of the following things on their turn: move, use an action, or use a bonus action.)",
+                "You raise an unholy cacophony that overwhelms the senses of your foes. Each creature in a 15-foot cone must succeed on a Constitution saving throw or take 3d8 thunder damage and is pushed 10ft away from you. A creature that fails its save by 5 or more is also {@condition dazed|DepthsofMelokir} until the end of your next turn.",
                 "This feature's damage increases to 4d8 at 6th level, 5d8 at 10th level, and 6d8 at 15th level."
             ]
         },
@@ -3922,7 +3921,7 @@
                     "type": "entries",
                     "name": "Lariat",
                     "entries": [
-                        "You physically spin the creature around you. Creatures within 5ft of you and the {@condition grappled} creature must make a Dexterity saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d4} magical bludgeoning damage. If a creature fails by 5 or more, they become dazed until the end of their next turn."
+                        "You physically spin the creature around you. Creatures within 5ft of you and the {@condition grappled} creature must make a Dexterity saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d4} magical bludgeoning damage. If a creature fails by 5 or more, they become {@condition dazed|DepthsofMelokir} until the end of their next turn."
                     ]
                 },
                 {
@@ -4093,5 +4092,20 @@
                 "s": true
             }
         }
+    ],
+    "condition": [
+		{
+			"name": "Dazed",
+			"source": "DepthsofMelokir",
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"A dazed creature, on its turn, must choose whether it gets a move, action, or bonus action. It gets only one of the three.",
+                        "Dazed can be removed by effects that can remove Stunned, such as {@spell Lesser Restoration} or {@spell Greater Restoration}"
+					]
+				}
+			]
+		}
     ]
 }
