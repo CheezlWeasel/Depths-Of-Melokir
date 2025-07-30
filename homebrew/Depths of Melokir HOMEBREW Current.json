@@ -990,22 +990,6 @@
             ]
         },
         {
-            "name":"Office of the Wight",
-            "shortName": "Wight",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassFeatures": [
-                "Office of the Wight|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|1",
-                "Wrack Foes: Wrack with Weakness|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|3",
-                "Consumption of Spirit|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|3",
-				"Vigor Mortis|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|6",
-				"Unrelenting Grasp|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|11",
-				"Inexorable Form|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|15",
-				"Unstoppable Force|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|18"
-            ]
-        },
-        {
             "name":"Office of the Tomb Guardian",
             "shortName": "Tomb Guardian",
             "source": "DepthsofMelokir",
@@ -1067,6 +1051,22 @@
 				"Persephonic Orchestra|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|11",
 				"Crecendo of Despair|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|15",
 				"Herald of Doom|Lictor|DepthsofMelokir|Wailer|DepthsofMelokir|18"
+            ]
+        },
+        {
+            "name":"Office of the Hulk",
+            "shortName": "Hulk",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassFeatures": [
+                "Office of the Hulk|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Force|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|3",
+                "Consumption of Spirit|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|3",
+				"Juggernaut|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|6",
+				"Vigor Mortis|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|11",
+				"Meat Shield|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|15",
+				"Unstoppable Force|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|18"
             ]
         },
         {
@@ -1969,152 +1969,6 @@
                         "Your Wrack Foes and weapon attacks ignore resistance to necrotic and fire damage, and treat immunity as resistance.",
                         "Whenever you use Command Macabre, you can target up to three creatures at a time using the one bonus action.",
                         "Your Aura of Vulnerability also applies to attack rolls. You gain a second Extra Attack."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Office of the Wight",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "level": 1,
-            "entries" : [
-                "Returned out of the grave in a corporeal form, you were reanimated through the sheer force of powerful emotion to lead the front of a dread army. Whether motivated by the darkness of anger, shame, spite or revenge, or the lighter aspects of happiness, love or justice, you were fuelled by emotional forces to take on whatever came before you with nothing but yourself.",
-                "Eventually, the power of the feelings running through you rekindled your autonomy, and you sought a new path. The marks of this office are manifold in their variation: Wights vary from the restful dead returned in the state of their deathbed, to taut pale skin stretched over a being powered by unearthly forces rather than sinew and bone, or even the bare skeletons of who they were brought back after aeons of rest. The nature of your undeath and volatile animus have made you dogged and resilient to harm - the tenacity of your returned form matching your unrelenting pursuit of unlife and all that it holds.",
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Deadened Pain|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|1|DepthsofMelokir"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Tireless Strength|Lictor|DepthsofMelokir|Wight|DepthsofMelokir|1|DepthsofMelokir"
-                }
-            ]
-        },
-        {
-            "name": "Deadened Pain",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 1,
-            "level": 1,
-            "entries": [
-                
-                "Due to your soul being reinforced by strong emotion, you have a high threshold for pain, which is equal to half your Lictor level rounded down + your proficiency bonus. If a source of damage dealing bludgeoning, piercing or slashing damage deals damage equal to your pain threshold or less, you take no damage instead. The damage considered for this feature must be before resistance is applied, and not afterwards.",
-                "At 10th level, your pain threshold also applies to all non-radiant damage, and is doubled for necrotic and poison damage."
-            ]
-        },
-        {
-            "name": "Tireless Strength",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 1,
-            "level": 1,
-            "entries": [
-                
-                "With intense fervour that fuels strength beyond the grave, you pull down your foes. You have advantage on checks made to resist someone escaping a grapple."
-            ]
-        },
-        {
-            "name": "Wrack Foes: Wrack with Weakness",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
-            "level": 3,
-            "entries": [
-                
-                "You issue forth a wave of weakness to enemies around you. Creatures of your choice within 10 feet of you must succeed on a Constitution saving throw or become poisoned until the end of your next turn. A creature can be immune to this poison only if it is also immune to disease. A creature that fails its save by 5 or more is poisoned for 1 minute, and the damage of its weapon attacks is halved until the end of your next turn.",
-                "At Level 10, if a creature uses a teleportation effect while affected by your wrack, you may also teleport along with them, appearing in an unoccupied space within 5ft of them of your choice. If you were grappling them when this occurred, you are still grappling them."
-            ]
-        },
-        {
-            "name": "Consumption of Spirit",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
-            "level": 3,
-            "entries": [
-                
-                "You gain an additional way to regain Necrotic Charges:",
-                "Once per round, whenever you succeed on a Shove check, Grapple check, check to resist a Grapple escape, or a Grapple check to climb onto a larger creature, you can gain a Necrotic Charge."
-            ]
-        },
-        {
-            "name": "Vigor Mortis",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
-            "level": 6,
-            "entries": [
-                
-                "Whenever you successfully grapple a creature, you can choose to immediately attempt to shove it prone as part of the same attack.",
-                "Furthermore, you can grapple creatures up to two size categories above yourself."
-            ]
-        },
-        {
-            "name": "Unrelenting Grasp",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
-            "level": 11,
-            "entries": [
-                
-                "A creature grappled by you must make a Constitution saving throw against your Wrack Save DC upon successfully escaping your grapple. On a failed save, you can move to remain adjacent to them as they move without provoking opportunity attacks."
-            ]
-        },
-        {
-            "name": "Inexorable Form",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
-            "level": 15,
-            "entries": [
-                
-                "Whenever you take damage, you can use your reaction to make a Constitution saving throw with a DC of 5 + half the damage taken, unless the damage is radiant or from a critical hit. On a success, you halve the damage taken; if this reduces the damage taken to below your pain threshold, you ignore it entirely.",
-                "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses upon completing a long rest."
-            ]
-        },
-        {
-            "name": "Unstoppable Force",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Wight",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
-            "level": 18,
-            "entries": [
-                
-                "You have reached the apex of your Office, becoming a herculean undead with strength only matched by the spirit that flows through your core. You gain the following benefits:",
-                {
-                    "type": "list",
-                    "items": [
-                        "You can grapple up to three creatures, regardless of how many hands you have free.","Your Wrack Foes ignores resistance to poison damage,and treats immunity as resistance.",
-                        "You deal 1d8+STR bludgeoning damage against your target whenever you make a successful grapple check or shove check, or an enemy fails their escape check against you.",
-                        "Your movement speed is not reduced from grappling a creature."
                     ]
                 }
             ]
@@ -3987,6 +3841,220 @@
                         }
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Unstoppable Force",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 18,
+            "page": 0,
+            "entries": [
+                "{@i 18th-level Office of the Wight feature}",
+                "You have reached the apex of your Office, becoming a herculean undead with strength only matched by the spirit that flows through your core. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "item",
+                            "entry": "Your base size is large - using Juggernaut increases your size to Huge."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You can treat {@condition grappled} creatures as a shield, providing +2 AC against creatures that are not the {@condition grappled} creature - this does not reduce the damage die used by the Unarmed Fighting Style."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "Your Office features ignore resistance to bludgeoning damage, and treat immunity as resistance."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You treat 1s on damage die for Office features as a 3."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Meat Shield",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 15,
+            "page": 0,
+            "entries": [
+                "{@i 15th-level Office of the Hulk feature}",
+                "Your strength only grows. You gain expertise in {@skill Athletics}. Additionally, as a reaction to a creature you are not grappling making an attack roll against you, you may use a creature you are grappling as a meat shield: make an athletics check against the attack roll. If you succeed, the attack targets the {@condition grappled} creature instead."
+            ]
+        },
+        {
+            "name": "Vigor Mortis",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 11,
+            "page": 0,
+            "entries": [
+                "{@i 11th-level Office of the Hulk feature}",
+                "As your ability to apply brute force waxes, you find new ways to really apply the hurt. When you succeed on a grappling check either to grapple someone or to prevent someone from escaping a grapple, you can apply one of the following:",
+                {
+                    "type": "entries",
+                    "name": "Floor Slam",
+                    "entries": [
+                        "You slam the creature against the ground: they take (PROF){@dice D6} magical bludgeoning damage and must make a Dexterity saving throw against your Wrack DC. on a failure, they are knocked {@condition prone}."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Suplex",
+                    "entries": [
+                        "You suplex the creature: They take {@dice 3d4} magical bludgeoning damage and must make a Constitution saving throw against your Wrack DC: on a failure, they become {@condition stunned} until the start of your next turn and are moved to the other side of you, given that that is a safe space for them to be placed on."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Lariat",
+                    "entries": [
+                        "You physically spin the creature around you. Creatures within 5ft of you and the {@condition grappled} creature must make a Dexterity saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d4} magical bludgeoning damage. If a creature fails by 5 or more, they become dazed until the end of their next turn."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Fastball",
+                    "entries": [
+                        "You throw the creature at a solid surface you can see within 30ft of you. The thrown creature and any creature in the square chosen must make a Strength saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d8} magical bludgeoning damage, or half on success.",
+                        "You can use this a maximum of twice per round, and must choose a different one for each time in a round. Additionally, you can grapple creatures of up to two size categories larger than you, and can brace a creature of up to one size larger than you using your wrack.",
+                        "\\pagebreakNum"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Juggernaut",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 6,
+            "page": 0,
+            "entries": [
+                "{@i 6th-level Office of the Hulk feature}",
+                "You are able to channel necrotic energy to directly increase your size. As a bonus action, you magically gain the following benefits, which lasts for 1 minute:",
+                {
+                    "type":"list",
+                    "items":[
+                        {
+                            "type": "item",
+                            "entry": "If you are smaller than large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You have advantage on strength Checks and Strength saving throws."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You gain 5ft of movement speed."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "Your movement speed is not reduced by dragging a creature."
+                        },
+                        {
+                            "type": "item",
+                            "entry": "You can use this feature once, and cannot do so again unless you complete a short or long rest, unless you expend two necrotic charges to do so again."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Consumption of Spirit",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "page": 0,
+            "entries": [
+                "{@i 3rd-level Office of the Hulk feature}",
+                "You gain an additional way to regain Necrotic Charges: Once per round, whenever you succeed on a Shove check, Grapple check, check to resist a Grapple escape, or a Grapple check to climb onto a larger creature, you can gain a Necrotic Charge."
+            ]
+        },
+        {
+            "name": "Wrack Foes: Wrack with Force",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 3,
+            "page": 0,
+            "entries": [
+                "{@i 3rd-level Office of the Hulk feature}",
+                "You channel necrotic energy into your decayed muscles, charging forward with unstoppable strength. Move up to your remaining movement speed +5ft in a straight line, or up to your movement speed being able to turn at 10ft intervals, passing through creatures without incurring extra movement and not provoking opportunity attacks. Each creature in the path must succeed on a Strength saving throw or take {@dice 2d8}+STR magical bludgeoning damage and are pushed 5ft away from the path, taking half as much damage and not being pushed away on a success. This wrack uses your regular movement speed as you charge.",
+                "If you are grappling a creature when you use this wrack that is of your size category or smaller, you can also brace them in front of you when you charge: that {@condition grappled} creature must make a Strength saving throw or take {@damage 2d4} bludgeoning damage for each creature, wall or object collided with during the charge, or half on a success. This bracing is only usable on one creature per charge.",
+                "This feature's damage increases to {@dice 2d10}+STR and {@dice 3d4} respectively at level 6, {@dice 2d12}+STR and {@dice 4d4} at level 10, and {@dice 3d10}+STR and {@dice 5d4} at level 15.",
+                "\\columnbreak"
+            ]
+        },
+        {
+            "name": "Never Out of Reach",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "page": 0,
+            "entries": [
+                "{@i 1st-level Office of the Hulk feature}",
+                "Your revenant strength allows you to achieve superhuman feats. Once per short rest, you can cast the {@spell Jump} spell on yourself.",
+                "At level 5, when you do so you can grapple a creature once as a free action during that jump. At level 12, you get two uses of this feature per short rest and can cast this spell as a bonus action."
+            ]
+        },
+        {
+            "name": "Tireless Strength",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "page": 0,
+            "entries": [
+                "{@i 1st-level Office of the Hulk feature}",
+                "The intense fervour that fuels your strength beyond the grave holds an iron grip on your foes. You add your Charisma modifier to grappling checks, and whenever you start your turn with a creature {@condition grappled} they take {@dice 1d6}+PROF magical bludgeoning damage."
+            ]
+        },
+        {
+            "name": "Office of the Hulk",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Hulk",
+            "subclassSource": "DepthsofMelokir",
+            "level": 1,
+            "entries": [
+                "Sometimes, the most powerful undead is not the one raised through the most complicated rituals. Nor is it the undead with the most esoteric powers. Sometimes, it's just a corpse risen with a lot of energy and a lot of muscle, pointed at the enemy.",
+                "Returned out of the grave with newfound brawn, energy courses through your veins to enhance your strength and crush all who stand before you to form the front line of a dread army. Whether utilised as part of a horde to throw at a problem, or a more unique specimen sent in as a siege-breaker, your strength ensured that there was naught left in your wake.",
+                "Eventually, the shackles of your raising have slipped, and now the only will to guide your hands is your own. Some may call you an abomination, a monster, an unholy amalgm: but for all that you are adrift, you can be certain that your strength is finally, truly, your own.",
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tireless Strength|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|1"
+				},
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Never Out of Reach|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|1"
+				}
             ]
         }
     ],
