@@ -4002,8 +4002,7 @@
                 "{@i 3rd-level Office of the Hulk feature}",
                 "You channel necrotic energy into your decayed muscles, charging forward with unstoppable strength. Move up to your remaining movement speed +5ft in a straight line, or up to your movement speed being able to turn at 10ft intervals, passing through creatures without incurring extra movement and not provoking opportunity attacks. Each creature in the path must succeed on a Strength saving throw or take {@dice 2d8}+STR magical bludgeoning damage and are pushed 5ft away from the path, taking half as much damage and not being pushed away on a success. This wrack uses your regular movement speed as you charge.",
                 "If you are grappling a creature when you use this wrack that is of your size category or smaller, you can also brace them in front of you when you charge: that {@condition grappled} creature must make a Strength saving throw or take {@damage 2d4} bludgeoning damage for each creature, wall or object collided with during the charge, or half on a success. This bracing is only usable on one creature per charge.",
-                "This feature's damage increases to {@dice 2d10}+STR and {@dice 3d4} respectively at level 6, {@dice 2d12}+STR and {@dice 4d4} at level 10, and {@dice 3d10}+STR and {@dice 5d4} at level 15.",
-                "\\columnbreak"
+                "This feature's damage increases to {@dice 2d10}+STR and {@dice 3d4} respectively at level 6, {@dice 2d12}+STR and {@dice 4d4} at level 10, and {@dice 3d10}+STR and {@dice 5d4} at level 15."
             ]
         },
         {
