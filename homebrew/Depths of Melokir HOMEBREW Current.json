@@ -3929,11 +3929,10 @@
                     "type": "entries",
                     "name": "Fastball",
                     "entries": [
-                        "You throw the creature at a solid surface you can see within 30ft of you. The thrown creature and any creature in the square chosen must make a Strength saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d8} magical bludgeoning damage, or half on success.",
-                        "You can use this a maximum of twice per round, and must choose a different one for each time in a round. Additionally, you can grapple creatures of up to two size categories larger than you, and can brace a creature of up to one size larger than you using your wrack.",
-                        "\\pagebreakNum"
+                        "You throw the creature at a solid surface you can see within 30ft of you. The thrown creature and any creature in the square chosen must make a Strength saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d8} magical bludgeoning damage, or half on success."
                     ]
-                }
+                },
+                "You can use this a maximum of twice per round, and must choose a different one for each time in a round. Additionally, you can grapple creatures of up to two size categories larger than you, and can brace a creature of up to one size larger than you using your wrack."
             ]
         },
         {
@@ -3966,13 +3965,11 @@
                         {
                             "type": "item",
                             "entry": "Your movement speed is not reduced by dragging a creature."
-                        },
-                        {
-                            "type": "item",
-                            "entry": "You can use this feature once, and cannot do so again unless you complete a short or long rest, unless you expend two necrotic charges to do so again."
                         }
                     ]
-                }
+                },
+                "You can use this feature once, and cannot do so again unless you complete a short or long rest, unless you expend two necrotic charges to do so again."
+                        
             ]
         },
         {
