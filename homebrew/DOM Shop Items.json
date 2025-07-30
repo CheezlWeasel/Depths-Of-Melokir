@@ -1485,7 +1485,7 @@
 			"type": "R",
 			"value": 50000,
 			"weight": 0,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"seller": "Helli",
 			"source": "IslesOfAzoria",
 			"weaponCategory": "simple",
@@ -1510,7 +1510,7 @@
 			"type": "P",
 			"value": 100,
 			"weight": 0,
-			"rarity": "Common",
+			"rarity": "common",
 			"seller": "Helli",
 			"source": "IslesOfAzoria",
 			"reqAttune": true,
@@ -1519,6 +1519,113 @@
 				"{@i “Listen, if the guild merchants would let me, I'd pay you to take these.”}",
 				"While attuned to this small vial, it will fill with liquid at the end of every long rest. When you drink this liquid, flip two coins. For each heads you flip, regain 1 hit point."
 			]
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Pendant of Superior Mage Armour",
+			"value": 200000,
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Hilbert",
+			"source": "VerdigrisRuins",
+			"baseitem": "Shortbow|PHB",
+			"type": "G",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While attuned to this item, a creature can spend a bonus action to project a magical protective magical force around itself for 10 minutes, provided that it is not wearing armour. For the duration of the effect, the creature's base AC becomes 17 + its Dexterity modifier (Maximum of +1). The effect ends if the creature dons armour or a shield, or if it is dismissed as an action.",
+				"Once this bonus action is used, it cannot be used again until next dawn, unless a spell slot of at least 5th level is expended by the attuned creature to use the effect again."
+			]
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Pendant of Greater Mage Armour",
+			"value": 50000,
+			"weight": 0,
+			"rarity": "uncommon",
+			"seller": "Hilbert",
+			"source": "VerdigrisRuins",
+			"baseitem": "Shortbow|PHB",
+			"type": "G",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While attuned to this item, a creature can spend a bonus action to project a magical protective magical force around itself for 10 minutes, provided that it is not wearing armour. For the duration of the effect, the creature's base AC becomes 15 + its Dexterity modifier (Maximum of +2). The effect ends if the creature dons armour or a shield, or if it is dismissed as an action.",
+				"Once this bonus action is used, it cannot be used again until next dawn, unless a spell slot of at least 3rd level is expended by the attuned creature to use the effect again."
+			]
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Verdigris Shield Sigil",
+			"value": 5000,
+			"weight": 0,
+			"rarity": "common",
+			"seller": "Hilbert",
+			"source": "VerdigrisRuins",
+			"baseitem": "Shortbow|PHB",
+			"type": "G",
+			"entries": [
+				"This long decayed bronze sigil of a shield holds a fragment of ancient magic, and can be worn as a lapel pin of sorts. If you press it to your arm, shoulder, or leg as an action, the sigil stays attached there until you use an action to remove it.",
+				"The sigil magically endows you with a measure of confidence. When you make a saving throw to avoid or end the frightened condition on yourself, you can give yourself advantage on the roll if the sigil is on your person. You must decide to do so before rolling the d20. If the save succeeds, you can't use the sigil in this way until you finish a long rest."
+			],
+			"wondrous": true
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Illuminate Arcaanstone staff",
+			"weight": 0,
+			"rarity": "rare",
+			"seller": "Hilbert",
+			"source": "VerdigrisRuins",
+			"baseitem": "Staff|PHB",
+			"type": "SCF",
+			"value": 200000,
+			"entries": [
+				"This ancient staff carries with it a tiny fragment of the arcane power wielded by the Verdigris. Even now, it hums with ancient arcane energy.",
+				"While attuned to this staff, you gain the following abilities while you are using it as your arcane focus:",
+				"{@b Primal Elementalism:} When you attune to this staff, select one of the following damage types: Acid, Cold Fire, Lightning, or Thunder. Cantrips you cast can be changed to deal your selected damage type. Furthermore, when you cast a spell that deals your selected damage type, you may choose for an additional effect to occur based on your selected damage type (Detailed below). This additional effect can be used a number of times equal to your Intelligence modifier, and you regain all uses on a long rest.",
+				{
+				"type": "list",
+				"items": [
+					"Acid: One creature that took damage from your spell has their armour class reduced by 1 until the start of your next turn.",
+					"Cold: One creature that took damage from your spell has their speed reduced by 10ft until the start of your next turn.",
+					"Fire: One creature that took damage from your spell suffers additional damage equal to your intelligence modifier.",
+					"Lightning: One creature that took damage from your spell loses their reaction.",
+					"Thunder: One creature that took damage from your spell is moved up to 10ft horizontally in a direction of your choice."
+				]
+				},
+				"Your selected damage type can be changed on a short rest.",
+				"{@b Mystic Reclamation:} Whenever you use a class feature to regain spell slots as a part of a short rest (Such as through the Arcane recovery, Pact magic, or Natural recovery) you may also regain a number of hit points equal to double the highest level spell slot you recovered + your intelligence modifier as part of that short rest. (Ei; if you recovered a 4th level spell slot, your would also regain 8 + your intelligence modifier hit points)"
+			],
+			"reqAttune": "by a creature with spellcasting or pact magic feature."
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Flickering Arcaanstone staff",
+			"weight": 0,
+			"rarity": "uncommon",
+			"seller": "Hilbert",
+			"source": "VerdigrisRuins",
+			"baseitem": "Staff|PHB",
+			"type": "SCF",
+			"value": 50000,
+			"entries": [
+				"This ancient staff carries with it a tiny fragment of the arcane power wielded by the Verdigris. Even now, it hums with ancient arcane energy.",
+				"While attuned to this staff, you gain the following abilities while you are using it as your arcane focus:",
+				"{@b Primal Elementalism:} When you attune to this staff, select one of the following damage types: Acid, Cold Fire, Lightning, or Thunder. Cantrips you cast can be changed to deal your selected damage type. Furthermore, when you cast a spell that deals your selected damage type, you may choose for an additional effect to occur based on your selected damage type (Detailed below). This additional effect can be used a number of times equal to your Intelligence modifier, and you regain all uses on a long rest.",
+				{
+				"type": "list",
+				"items": [
+					"Acid: One creature that took damage from your spell has their armour class reduced by 1 until the start of your next turn.",
+					"Cold: One creature that took damage from your spell has their speed reduced by 10ft until the start of your next turn.",
+					"Fire: One creature that took damage from your spell suffers additional damage equal to your intelligence modifier.",
+					"Lightning: One creature that took damage from your spell loses their reaction.",
+					"Thunder: One creature that took damage from your spell is moved up to 10ft horizontally in a direction of your choice."
+				]
+				},
+				"Your selected damage type can be changed on a short rest."
+			],
+			"reqAttune": "by a creature with spellcasting or pact magic feature."
 		}
 	],
 	"magicvariant": [
@@ -1979,6 +2086,142 @@
 			"entries": [
 				"This crossbow doesn't have a typical string. Instead, a string of blood magically appears behind a loaded bolt whenever a bladed lever is pulled. You take 1 necrotic damage each time you fire the crossbow, which can't be reduced in any way. A creature hit by a bolt shot from this crossbow takes an extra 1d6 necrotic damage.",
 				"Immediately after you make an attack with this crossbow as part of the Attack action, you can use a bonus action to fire a special crossbow bolt from it. This bolt is made of your own blood. On a hit, the target takes necrotic damage equal to a roll of one of your Hit Dice, adding your Highest Physical Ability Score modifier as normal. Whenever you use this property, you temporarily expend the used Hit Die. Set the die aside or record the number of Hit Dice expended in this way. You regain any of these temporarily expended Hit Dice whenever you finish a short or long rest, in addition to any other Hit Dice you would normally regain."
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Decayed Verdigris Weapon",
+			"reqAttune": true,
+			"requires": [
+				{
+				"type": "M"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Decayed Verdigris ",
+				"source": "VerdigrisRuins",
+				"seller": "Hilbert",
+				"value": "50000",
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"entries": [
+				"This ancient weapon, forged during the age of bronze, carries with it a tiny fragment of the arcane power wielded by the Verdigris.",
+				"While attuned to this weapon, you gain the following ability:",
+				"{@b Ruin:} When you hit a creature with this magic weapon, you can force it to make a constitution saving throw with a DC equal to 8 + your proficiency bonus + your constitution modifier. On a failed save, that creature suffers the effects of the \"Bane\" spell for 1d4 rounds (No concentration needed). You may use this ability a number of times to equal to your constitution modifier, and regain all expended uses on a long rest."
+				]
+			},
+			"source": "VerdigrisRuins",
+			"rarity": "uncommon",
+			"type": "M",
+			"entries": [
+				"This ancient weapon, forged during the age of bronze, carries with it a tiny fragment of the arcane power wielded by the Verdigris.",
+				"While attuned to this weapon, you gain the following ability:",
+				"{@b Ruin:} When you hit a creature with this magic weapon, you can force it to make a constitution saving throw with a DC equal to 8 + your proficiency bonus + your constitution modifier. On a failed save, that creature suffers the effects of the \"Bane\" spell for 1d4 rounds (No concentration needed). You may use this ability a number of times to equal to your constitution modifier, and regain all expended uses on a long rest."
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Cracked Ruinstone Weapon",
+			"reqAttune": true,
+			"requires": [
+				{
+					"dmgType": "B"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Cracked Ruinstone ",
+				"source": "VerdigrisRuins",
+				"seller": "Hilbert",
+				"reqAttune": true,
+				"value": "200000",
+				"rarity": "rare",
+				"entries": [
+				"This ancient weapon, carved long before the age of bronze, carries with it a fragment of the arcane power wielded by the Verdigris before they had even mastered fire. Though cracks run throughout the length of this weapon, its strong magic is still holding it together, for now.",
+				"You have a +1 bonus to attack and damage rolls with this magic weapon.",
+				"While attuned to this weapon, you gain the following abilities:",
+				"{@b Shatter:} When you hit a creature or object with this magic weapon, you may choose to expend a hit die and add it to the damage roll. You may use this ability a number of times equal to your strength modifier, and regain all expended uses on a long rest.",
+				"{@b Dust to Dust:} As a bonus action you may designate a creature you have hit with this weapon in the last minute to suffer the fragility of stone. The number required on an attack roll with this weapon, against the designated creature, to score a critical hit is 1 lower than usual (for example on a 19 or 20, rather than just a 20) for one minute. However, for that duration, the number that other creatures require on an attack roll against you to score a critical hit, is also 1 lower than usual. You may use this ability once, and regain the ability to do so on a short rest.",
+				"{@b Cracked:} While you have no uses left of this weapon's abilities, you may continue to use those abilities with the following caveat. Each time you use an ability of this weapon with no uses left, the weapon has a 50% chance of instantly breaking, destroying the item, after the abilities effect is resolved."
+				]
+			},
+			"source": "VerdigrisRuins",
+			"rarity": "rare",
+			"type": "M",
+			"entries": [
+				"This ancient weapon, carved long before the age of bronze, carries with it a fragment of the arcane power wielded by the Verdigris before they had even mastered fire. Though cracks run throughout the length of this weapon, its strong magic is still holding it together, for now.",
+				"You have a +1 bonus to attack and damage rolls with this magic weapon.",
+				"While attuned to this weapon, you gain the following abilities:",
+				"{@b Shatter:} When you hit a creature or object with this magic weapon, you may choose to expend a hit die and add it to the damage roll. You may use this ability a number of times equal to your strength modifier, and regain all expended uses on a long rest.",
+				"{@b Dust to Dust:} As a bonus action you may designate a creature you have hit with this weapon in the last minute to suffer the fragility of stone. The number required on an attack roll with this weapon, against the designated creature, to score a critical hit is 1 lower than usual (for example on a 19 or 20, rather than just a 20) for one minute. However, for that duration, the number that other creatures require on an attack roll against you to score a critical hit, is also 1 lower than usual. You may use this ability once, and regain the ability to do so on a short rest.",
+				"{@b Cracked:} While you have no uses left of this weapon's abilities, you may continue to use those abilities with the following caveat. Each time you use an ability of this weapon with no uses left, the weapon has a 50% chance of instantly breaking, destroying the item, after the abilities effect is resolved."
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Endurant Verdigris Weapon",
+			"reqAttune": true,
+			"requires": [
+				{
+					"type": "M"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Endurant Verdigris ",
+				"source": "VerdigrisRuins",
+				"seller": "Hilbert",
+				"reqAttune": true,
+				"rarity": "rare",
+				"value": "200000",
+				"entries": [
+				"This ancient weapon, forged during the age of bronze, carries with it a fragment of the arcane power wielded by the Verdigris.",
+				"You have a +1 bonus to attack and damage rolls with this magic weapon.",
+				"While attuned to this weapon, you gain the following abilities:",
+				"{@b Ruin:} When you hit a creature with this magic weapon, you can force it to make a constitution saving throw with a DC equal to 8 + your proficiency bonus + your constitution modifier. On a failed save, that creature suffers the effects of the \"Bane\" spell for 1d6 rounds (No concentration needed). You may use this ability a number of times equal to your constitution modifier, and regain all expended uses on a long rest.",
+				"{@b Decay:} As a bonus action, you may designate a creature you have hit with this weapon in the last minute to decay. That creatures armour class is reduced by your constitution modifier. At the start of its turn its AC increases by one, until its armour class has returned to its initial level. You may use this ability once, and regain the ability to do so on a short rest."
+				]
+			},
+			"source": "VerdigrisRuins",
+			"rarity": "rare",
+			"type": "M",
+			"entries": [
+				"This ancient weapon, forged during the age of bronze, carries with it a fragment of the arcane power wielded by the Verdigris.",
+				"You have a +1 bonus to attack and damage rolls with this magic weapon.",
+				"While attuned to this weapon, you gain the following abilities:",
+				"{@b Ruin:} When you hit a creature with this magic weapon, you can force it to make a constitution saving throw with a DC equal to 8 + your proficiency bonus + your constitution modifier. On a failed save, that creature suffers the effects of the \"Bane\" spell for 1d6 rounds (No concentration needed). You may use this ability a number of times equal to your constitution modifier, and regain all expended uses on a long rest.",
+				"{@b Decay:} As a bonus action, you may designate a creature you have hit with this weapon in the last minute to decay. That creatures armour class is reduced by your constitution modifier. At the start of its turn its AC increases by one, until its armour class has returned to its initial level. You may use this ability once, and regain the ability to do so on a short rest."
+			]
+		},
+		{
+			"uniqueId": "5e78d1f0-22b3-4741-b75a-4ae571c7a2cd",
+			"name": "Brittle Ruinstone Weapon",
+			"reqAttune": true,
+			"requires": [
+				{
+					"dmgType": "B"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Brittle Ruinstone ",
+				"source": "VerdigrisRuins",
+				"seller": "Hilbert",
+				"reqAttune": true,
+				"value": "50000",
+				"rarity": "uncommon",
+				"entries": [
+				"This ancient weapon, carved long before the age of bronze, carries with it a tiny fragment of the arcane power wielded by the Verdigris before they had even mastered fire.",
+				"While attuned to this weapon, you gain the following abilities:",
+				"{@b Shatter:} When you hit a creature or object with this magic weapon, you may choose to expend a hit die and add it to the damage roll (This additional damage is not doubled by a critical hit). You may use this ability a number of times to equal to your strength modifier, and regain all expended uses on a long rest. ",
+				"{@b Brittle:} While you have no uses left of this weapon's abilities, you may continue to use those abilities with the following caveat. Each time you use an ability of this weapon with no uses left, the weapon has a 25% chance of instantly breaking, destroying the item, after the abilities effect is resolved."
+				]
+			},
+			"source": "VerdigrisRuins",
+			"rarity": "uncommon",
+			"type": "M",
+			"entries": [
+				"This ancient weapon, carved long before the age of bronze, carries with it a tiny fragment of the arcane power wielded by the Verdigris before they had even mastered fire.",
+				"While attuned to this weapon, you gain the following abilities:",
+				"{@b Shatter:} When you hit a creature or object with this magic weapon, you may choose to expend a hit die and add it to the damage roll (This additional damage is not doubled by a critical hit). You may use this ability a number of times to equal to your strength modifier, and regain all expended uses on a long rest.",
+				"{@b Brittle:} While you have no uses left of this weapon's abilities, you may continue to use those abilities with the following caveat. Each time you use an ability of this weapon with no uses left, the weapon has a 25% chance of instantly breaking, destroying the item, after the abilities effect is resolved."
 			]
 		}
 	]

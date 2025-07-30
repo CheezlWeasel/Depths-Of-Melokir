@@ -1453,7 +1453,7 @@
 			"name": "Staff of the Woodlands",
 			"type": "M",
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"source": "DepthsofMelokir",
 			"property": [
 				"V"
@@ -1477,7 +1477,7 @@
 			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
 			"name": "Bracers of Vigilance",
 			"value": 240000,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"source": "DepthsofMelokir",
 			"wondrous": true,
 			"seller": "Arthak",
@@ -1493,7 +1493,7 @@
 			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
 			"name": "Symphonic Headband",
 			"value": 5000,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"source": "DepthsofMelokir",
 			"wondrous": true,
 			"reqAttune": "by a bard",
