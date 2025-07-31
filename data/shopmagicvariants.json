@@ -372,10 +372,11 @@
                 "When a creature successfully deals damage to you that brings you to half or less HP, the user may expend one charge as a reaction: if they do so, creatures within 10ft of the wearer must make a DC (8+PROF+STR/CON) DEX save or take 3d4+PROF fire damage and be pushed 15ft backwards, or half damage and 5ft backwards on a successful save."
                 ]
             },
+            "value": 20000,
             "source": "LandsofVita",
             "seller": "The Demiurge",
             "rarity": "uncommon",
-            "type": "A"
+            "type": "GV|DMG"
         },
         {
 			"name": "+1 True Name Weapon",
