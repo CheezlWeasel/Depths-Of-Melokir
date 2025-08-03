@@ -1626,6 +1626,94 @@
 				"Your selected damage type can be changed on a short rest."
 			],
 			"reqAttune": "by a creature with spellcasting or pact magic feature."
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Resplendent Symphonic Headband",
+			"weight": 0,
+			"rarity": "Rare",
+			"seller": "Arthak",
+			"source": "DepthsofMelokir",
+			"baseitem": "Staff|PHB",
+			"value": 300000,
+			"entries": [
+				"If you do not already have a feature that grants Bardic Inspiration Die, you gain one Bardic Inspiration die (d8) while wearing this. This Bardic die is replenished on the conclusion of a short rest.",
+				"While wearing this item, you may grant Bardic Inspiration, or cast levelled bard spells that would take a bonus action, as an action instead."
+			],
+			"reqAttune": true,
+			"wondrous": true
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Rendsink Shield",
+			"weight": 0,
+			"rarity": "Rare",
+			"seller": "Demiurge",
+			"source": "DepthsofMelokir",
+			"baseitem": "Shield|PHB",
+			"value": 300000,
+			"entries": [
+				"{@i This Demiurge-made shield is designed to channel the natural aetheric buildup from using Miracles: it bridges the gap between siege weaponry and defensive equipment.}",
+				"While wielding this shield in one hand while attuned, it counts as a martial melee weapon with 5ft reach and the heavy property, dealing 1d8 bludgeoning damage.",
+				"{@i [Note: if you’re using this with Dual Wielder, the AC from the shield doesn’t stack with the +1 AC from the feat.]}",
+				"While wielding this shield in two hands while attuned, the user can use one attack via the attack action to spend half of your remaining movement (if any) draw a 5ft x 15ft line. Creatures in those squares must make a DC (8+PROF+STR/CON) STR save or take {@dice 3d6}+PROF fire damage, or half on success. After using this attack, you are pushed 10ft away from the designated space without provoking opportunity attacks. This is usable once per turn."
+			],
+			"reqAttune": true,
+			"weaponCategory": "martial",
+			"type": "S"
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Colossus Sword",
+			"weight": 0,
+			"rarity": "Rare",
+			"seller": "Demiurge",
+			"source": "DepthsofMelokir",
+			"property": [
+				"2H",
+				"H"
+			],
+			"dmg1": "Special",
+			"dmgType": "S",
+			"baseitem": "Greatsword|PHB",
+			"value": 200000,
+			"entries": [
+				"{@i This Demiurge-forged “Sword” imbued with the essence of a Giant is less of a weapon and more of a giant hunk of metal.}",
+				"This weapon has +1 to attack and damage rolls.",
+				"This weapon is so large that it takes up the space in front of you. At the start of your turn choose a space relative to you within 5ft: this weapon is occupying that square relative to you, rendering it difficult terrain.",
+				"This weapon has three stances: Low, Horizontal and High. you can start in any stance after rolling initiative. You can spend one attack to change stances. Some of this weapons properties will automatically change the stance.",
+				"{@b Low}",
+				{
+				"type": "list",
+				"items": [
+					"Holding this weapon low to the ground, it takes immense effort to even lift it to strike. All attacks made while in this stance cost two attacks instead of one.",
+					"Attacks in this stance deal {@dice 2d6}+STR slashing damage.",
+					"When hit by a low stance attack, a large or smaller creature must make a DC (8+PROF+STR) strength saving throw: on a failure, they are knocked 10ft upwards and fall {@condition prone} upon reaching the ground."
+				]
+				},
+				"{@b Horizontal}",
+				{
+				"type": "list",
+				"items": [
+					"Holding this weapon to the side allows you to make wide sweeping attacks, but lowers your guard. While in this stance, your AC is reduced by 3.",
+					"A Horizontal stance attack has a range of 10ft and deals {@dice 3d6}+STR slashing damage.",
+					"While in the Horizontal stance, you may make one attack as a bonus action."
+				]
+				},
+				"{@b High}",
+				{
+				"type": "list",
+				"items": [
+					"Holding this weapon aloft above your head is extremely precarious. While in this stance, your movement speed is reduced to 10ft and you can make a either a shoulder bash or a High stance attack.",
+					"A shoulder bash moves 5ft towards the target as part of making the attack, inherits this weapon's +1 to hit, but only deals {@dice 1d4}+STR bludgeoning damage.",
+					"A High stance attack deals {@dice 6d6}+STR slashing damage. If you have made a shoulder bash attack this turn, you may treat any 1's or 2's on the dice of this attack as a 3.",
+					"Making a High stance attack automatically moves you into the \"low\" stance."
+				]
+				}
+			],
+			"reqAttune": "by a creature with Extra Attack feature or equivalent",
+			"type": "M",
+			"weaponCategory": "martial"
 		}
 	],
 	"magicvariant": [
