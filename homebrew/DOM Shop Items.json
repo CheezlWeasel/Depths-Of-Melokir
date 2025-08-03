@@ -1714,6 +1714,30 @@
 			"reqAttune": "by a creature with Extra Attack feature or equivalent",
 			"type": "M",
 			"weaponCategory": "martial"
+		},
+		{
+			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
+			"name": "Gambler's Gauntlet",
+			"weight": 0,
+			"rarity": "Rare",
+			"seller": "Elered",
+			"source": "Feywild",
+			"property": [
+				"H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"value": 225000,
+			"reqAttune": true,
+			"weaponCategory": "simple",
+			"type": "M",
+			"entries": [
+				"This gauntlet's rings spin around its frame, these rings give you the feeling that if you wanna play hard, you're going to work hard to get that knockout.",
+				"This weapon you have a +1 to attack and damage rolls.",
+				"Whilst attuned when you make an attack and successfully hit with this weapon, it gains one charge. Using 3 charges, when you attack and hit an enemy, you can deal an additional 3d6 bludgeoning damage against them. These charges reset to 0 at the end of a long rest. When you roll 3 of the same numbers on the dice when using the charges you regain that much health.",
+				"Additionally this weapon deals double damage to objects and structures.",
+				"{@i [Design note: this item takes up a hand and it does not count of Unarmed attacks]}"
+			]
 		}
 	],
 	"magicvariant": [
