@@ -1631,7 +1631,7 @@
 			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
 			"name": "Resplendent Symphonic Headband",
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"seller": "Arthak",
 			"source": "DepthsofMelokir",
 			"baseitem": "Staff|PHB",
@@ -1647,9 +1647,9 @@
 			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
 			"name": "Rendsink Shield",
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"seller": "Demiurge",
-			"source": "DepthsofMelokir",
+			"source": "LandsofVita",
 			"baseitem": "Shield|PHB",
 			"value": 300000,
 			"entries": [
@@ -1666,9 +1666,9 @@
 			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
 			"name": "Colossus Sword",
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"seller": "Demiurge",
-			"source": "DepthsofMelokir",
+			"source": "LandsofVita",
 			"property": [
 				"2H",
 				"H"
@@ -1719,7 +1719,7 @@
 			"uniqueId": "7d872422-74f0-46b2-8290-7be92f6e82c6",
 			"name": "Gambler's Gauntlet",
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"seller": "Elered",
 			"source": "Feywild",
 			"property": [
