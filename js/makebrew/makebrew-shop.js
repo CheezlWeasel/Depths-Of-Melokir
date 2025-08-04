@@ -486,9 +486,6 @@ export class ShopBuilder extends BuilderBase {
 		// --- Normalize rarity ---
 		if (typeof item.rarity !== "string" || !item.rarity.trim() || ["none","false","true"].includes(item.rarity.trim().toLowerCase())) {
 			item.rarity = undefined;
-		} else {
-			item.rarity = item.rarity.trim();
-			item.rarity = item.rarity.charAt(0).toUpperCase() + item.rarity.slice(1).toLowerCase();
 		}
 
 		// --- Ensure source is always set ---
