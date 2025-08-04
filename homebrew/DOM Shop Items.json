@@ -1763,7 +1763,7 @@
 			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
 			"name": "Tome of Nosferatu",
 			"weight": 0,
-			"rarity": "Uncommon",
+			"rarity": "uncommon",
 			"source": "IslesOfAzoria",
 			"baseitem": "Staff|PHB",
 			"entries": [
@@ -1777,7 +1777,7 @@
 			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
 			"name": "Sky Shark Tooth Necklace",
 			"weight": 0,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"source": "IslesOfAzoria",
 			"baseitem": "Staff|PHB",
 			"entries": [
