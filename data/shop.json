@@ -1008,6 +1008,35 @@
 		{
 			"name": "Summoners Compendium",
 			"source": "DepthsofMelokir",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"Whilst attuned to this item, creatures created by a subclass feature such as wildfire spirit, drake companion or hound of ill omen have the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "Once per turn, they deal an additional 1d4 damage when they hit with an attack."
+						},
+						{
+							"type": "item",
+							"entry": "At the start of a session or when the summon first appears, they have a number of temporary hit points equal to your level."
+						},
+						{
+							"type": "item",
+							"entry": "If the summon would die, they may instead choose to explode, enemies within 10ft must make a constitution saving throw equal to your spell casting DC. This explosion deals 3d6 force damage to each enemy if they fail the saving throw, taking half damage on a success."
+						}
+					]
+				}
+			],
+			"value": 75000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Summoners Compendium (Rare)",
+			"source": "DepthsofMelokir",
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,

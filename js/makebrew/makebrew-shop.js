@@ -41,6 +41,7 @@ export class ShopBuilder extends BuilderBase {
 			{value: "GV|DMG", label: "Generic Variant"},
 			{value: "EM", label: "Emblem"},
 			{value: "EHMT", label: "Enhancement"},
+			{value: "CHARM", label: "Weapon Charm"},
 			{value: "SC|DMG", label: "Spell Scroll"},
 		];
 		this._itemTypeVals = this._itemTypeOptions.map(it => it.value);

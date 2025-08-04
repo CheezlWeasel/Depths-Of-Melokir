@@ -72,6 +72,18 @@
 					"Cheezl"
 				],
 				"color":"85FFF8"
+			},
+			{
+				"json": "HellShard",
+				"abbreviation": "HS",
+				"full": "The Hellfire Shard",
+				"authors": [
+					"bayta"
+				],
+				"convertedBy": [
+					"Cheezl"
+				],
+				"color":"202024"				
 			}
 		],
 		"edition": "classic"
@@ -92,6 +104,14 @@
 			"entries": [
 				"An item enhanced by Arcanuminium is considered magical if it was not already. An Enhancement can be added to, removed from or swapped with another Enhancement over the course of a long rest. An item can only have one enhancement at a time, unless it or the item has a feature that allows otherwise."
 			]		
+		},
+		{
+			"name": "Weapon Charm",
+			"abbreviation": "CHARM",
+			"source": "HellShard",
+			"entries": [
+				""
+			]
 		}
 	],
 	"shop": [
