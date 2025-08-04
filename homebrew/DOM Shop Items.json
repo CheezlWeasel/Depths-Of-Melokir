@@ -1758,6 +1758,45 @@
 				"Additionally this weapon deals double damage to objects and structures.",
 				"{@i [Design note: this item takes up a hand and it does not count of Unarmed attacks]}"
 			]
+		},
+		{
+			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
+			"name": "Tome of Nosferatu",
+			"weight": 0,
+			"rarity": "Uncommon",
+			"source": "IslesOfAzoria",
+			"baseitem": "Staff|PHB",
+			"entries": [
+				"While holding this focus, you can cast {@spell Nosferatu|IslesofAzoria} using your spell slots. If you are attuned to a focus that provides a bonus to spell attacks, that bonus applies to the spell even if you are not holding it."
+			],
+			"value": 40000,
+			"seller": "Helli",
+			"type": "SCF"
+		},
+		{
+			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
+			"name": "Sky Shark Tooth Necklace",
+			"weight": 0,
+			"rarity": "Rare",
+			"source": "IslesOfAzoria",
+			"baseitem": "Staff|PHB",
+			"entries": [
+				"While attuned to this item you may speak its command word as a bonus action, causing electricity to run through your body, granting you the following effects:",
+				{
+				"type": "list",
+				"items": [
+					"You gain resistance to lightning damage.",
+					"When you hit a creature with a melee weapon attack on your turn, you may wound the target. At the start of each of its turns, it takes 1d4 lightning damage for each time you've wounded it, and it can then make a Constitution save (DC = 8+Prof+Con), ending the effect of all such wounds on itself on a success.",
+					"The first time you are subjected to lightning damage on a turn, you take no damage and each creature within 10 ft. of you must make a Dexterity save (DC = 8+Prof+Con), taking 4d6 lightning damage on a failure and half as much on a success. This sudden burst of electricity takes a toll on your body. You must make a DC 15 Constitution save, taking necrotic damage equal to the rolled lightning damage on a failure, and half as much on a success.",
+					"If you end your turn without moving at least 5ft, you begin to suffocate. You can only breathe again once you move at least 5ft on a turn."
+				]
+				},
+				"These effects last for 1 minute or until you fall unconscious, once this feature has been used it cannot be used again until the next dawn."
+			],
+			"value": 200000,
+			"seller": "Helli",
+			"wondrous": true,
+			"reqAttune": true
 		}
 	],
 	"magicvariant": [
