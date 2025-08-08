@@ -4092,46 +4092,104 @@
                 "s": true
             }
         },
-{
-	"name": "Nosferatu",
-	"level": 2,
-	"school": "N",
-	"time": [
-		{
-			"number": 1,
-			"unit": "action"
-		}
-	],
-	"range": {
-		"type": "point",
-		"distance": {
-			"type": "feet",
-			"amount": 10
-		}
-	},
-	"duration": [
-		{
-			"type": "instant"
-		}
-	],
-	"source": "IslesOfAzoria",
-	"components": {
-		"v": true,
-		"s": true
-	},
-	"entriesHigherLevel": [
-		{
-			"type": "entries",
-			"name": "At Higher Levels",
-			"entries": [
-				"At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d4} for each slot level above 2nd."
-			]
-		}
-	],
-	"entries": [
-		"A spectral pair of fangs bite a creature within range, draining them of their vitality and empowering you. Make a melee spell attack against a creature within range. On a hit, the target takes {@damage 6d4} necrotic damage, you gain temporary HP equal to half the damage dealt by this spell, provided your target was not a construct or undead."
-	]
-}
+        {
+            "name": "Nosferatu",
+            "level": 2,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "source": "IslesOfAzoria",
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 2d4} for each slot level above 2nd."
+                    ]
+                }
+            ],
+            "entries": [
+                "A spectral pair of fangs bite a creature within range, draining them of their vitality and empowering you. Make a melee spell attack against a creature within range. On a hit, the target takes {@damage 6d4} necrotic damage, you gain temporary HP equal to half the damage dealt by this spell, provided your target was not a construct or undead."
+            ]
+        },
+        {
+            "name": "Squigglethread’s Dichotomous Darts",
+            "level": 2,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1,
+                        "upTo": true
+                    }
+                }
+            ],
+            "classes": {
+                "fromClassList": []
+            },
+            "source": "IslesOfAzoria",
+            "components": {
+                "s": true,
+                "m": "A handful of thorns"
+            },
+            "entries": [
+                "When you cast this spell flip 4 coins (or roll 4 d2s), for each result you conjure a magical dart of the corresponding type below. These darts last for the duration of the spell, until they are thrown, or until you cast this spell again.",
+                "- Tails(1) - Harm: A creature may throw this dart at a creature within 60ft as an attack (as per the 'Attack' action), making a ranged spell attack using your spellcasting modifier. On a hit the target takes {@damage 2d6} force damage, adding your spellcasting modifier to the damage dealt.",
+                "- Heads(2) - Heal: A creature may throw this dart at a creature within 60ft as an attack (as per the 'Attack' action, but not requiring an attack roll), healing the target for {@dice 1d6} hit points, adding your spellcasting modifier to the amount healed."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the amount of coins flipped increases by 2 for each slot level above 2nd"
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "spellAttack": [
+                "R"
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        }
     ],
     "condition": [
 		{

@@ -1765,9 +1765,24 @@
 			"weight": 0,
 			"rarity": "uncommon",
 			"source": "IslesOfAzoria",
-			"baseitem": "Staff|PHB",
+			"baseitem": "SFC",
 			"entries": [
 				"While holding this focus, you can cast {@spell Nosferatu|IslesofAzoria} using your spell slots. If you are attuned to a focus that provides a bonus to spell attacks, that bonus applies to the spell even if you are not holding it."
+			],
+			"value": 40000,
+			"seller": "Helli",
+			"type": "SCF"
+		},
+		{
+			"uniqueId": "9ddc67e9-ac2b-481f-9602-36447d900537",
+			"name": "Tome of Squigglethread’s Dichotomous Darts",
+			"weight": 0,
+			"rarity": "uncommon",
+			"source": "IslesOfAzoria",
+			"baseitem": "SFC",
+			"entries": [
+				"{@i “This was meant to just be healing darts, but happy accidents I guess.”}",
+				"While holding this focus, you can cast {@spell Squigglethread’s Dichotomous Darts|IslesOfAzoria} using your spell slots. If you are attuned to a focus that provides a bonus to spell attacks, that bonus applies to the spell even if you are not holding it."
 			],
 			"value": 40000,
 			"seller": "Helli",
