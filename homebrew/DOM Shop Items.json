@@ -1128,6 +1128,7 @@
 			"rarity": "common",
 			"seller": "Sought",
 			"source": "SacredTree",
+			"reqAttune": true,
 			"entries": [
 				"{@i As free as on horseback}",
 				"While attuned to this emblem, after making an attack on your turn you may move up to your remaining movement speed (the movement you use is still expended as normal)."
