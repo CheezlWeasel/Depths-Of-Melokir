@@ -15,7 +15,7 @@
 			"dmg1": "2d4",
 			"dmgType": "P",
 			"entries": [
-				"{@i {@b Frenzied pursuit:}} While holding this weapon, If you have no movement remaining on your turn, and have no valid targets within range, you may move up to 10ft if that movement would bring you within melee range of an enemy."
+				"{@i {@b Frenzied pursuit:}} when making a melee attack with this weapon, if you have no movement remaining and have no valid targets within range, you may move up to 10ft if that movement would bring you within melee range of an enemy."
 			],
 			"source": "DepthsofMelokir",
 			"seller": "Arthak"
