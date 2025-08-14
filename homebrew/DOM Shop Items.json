@@ -1474,7 +1474,6 @@
 			"rarity": "rare",
 			"seller": "FCB",
 			"source": "ArcaneAL",
-			"reqAttune": true,
 			"entries": [
 				"{@i I wonder if it works on Adamantine?}",
 				"This enhancement can be fused to any magical armour. While fused to an item, all magical properties it has are suppressed, with the exception of curses, and it’s considered nonmagical armour for the purposes of fusing enhancements to it. If this enhancement is unfused from an item, so are any incompatible enhancements it was supporting.",
