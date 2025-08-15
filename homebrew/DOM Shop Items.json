@@ -2202,6 +2202,7 @@
 				"source": "Feywild",
 				"seller": "Elered",
 				"rarity": "rare",
+				"reqAttune": true,
 				"valueExpression": "[[baseItem.value]] + 150000",
 				"entries": [
 				"This well-crafted leather armor comes with a sturdy, enveloping longcoat, bearing on its back the insignia of a well-known pirate captain. When you attune to it, the insignia changes to one that represents you instead. While wearing this armor, climbing and swimming don't cost you extra movement, and you can breathe underwater.",
@@ -2219,6 +2220,7 @@
 				]
 			},
 			"source": "Feywild",
+			"reqAttune": true,
 			"rarity": "rare",
 			"entries": [
 				"This well-crafted leather armor comes with a sturdy, enveloping longcoat, bearing on its back the insignia of a well-known pirate captain. When you attune to it, the insignia changes to one that represents you instead. While wearing this armor, climbing and swimming don't cost you extra movement, and you can breathe underwater.",
