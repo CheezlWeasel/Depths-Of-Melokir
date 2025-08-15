@@ -1474,7 +1474,6 @@
 			"rarity": "rare",
 			"seller": "FCB",
 			"source": "ArcaneAL",
-			"reqAttune": true,
 			"entries": [
 				"{@i I wonder if it works on Adamantine?}",
 				"This enhancement can be fused to any magical armour. While fused to an item, all magical properties it has are suppressed, with the exception of curses, and it’s considered nonmagical armour for the purposes of fusing enhancements to it. If this enhancement is unfused from an item, so are any incompatible enhancements it was supporting.",
@@ -2412,6 +2411,51 @@
 				"{@b Shatter:} When you hit a creature or object with this magic weapon, you may choose to expend a hit die and add it to the damage roll (This additional damage is not doubled by a critical hit). You may use this ability a number of times to equal to your strength modifier, and regain all expended uses on a long rest.",
 				"{@b Brittle:} While you have no uses left of this weapon's abilities, you may continue to use those abilities with the following caveat. Each time you use an ability of this weapon with no uses left, the weapon has a 25% chance of instantly breaking, destroying the item, after the abilities effect is resolved."
 			]
+		},
+		{
+			"uniqueId": "7c006e12-c1ce-4c32-960a-0be4aad2fd99",
+			"name": "Weapon of Vinification",
+			"type": "GV|DMG",
+			"requires": [
+				{
+				"weapon": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Vinification",
+				"source": "IslesOfAzoria",
+				"seller": "Helli",
+				"rarity": "rare",
+				"value": "2400",
+				"entries": [
+				"{@i “No matter how much you attempt to dry it, this weapon drips with a deep red wine.”}",
+				"Attacks with this weapon have a +1 to attack and damage rolls.",
+				"While attuned to this weapon you receive the following effects;",
+				{
+					"type": "list",
+					"items": [
+					"Once per turn when you land an attack against a creature with this weapon, you may force the creature to make a Constitution save (DC = 8+Prof+Wis/Con). On a failed save the creature is 'drunk' for 1d4+1 rounds, while 'drunk', the creature has disadvantage on any ability checks or saving throws using their Dexterity or Intelligence. This effect can be used an amount of times equal to your proficiency modifier, recharging on a short rest. Creatures with an immunity to the poisoned condition are immune to this effect.",
+					"Attacks made with this weapon against a 'drunk' creature have advantage and deal an additional 2d6 poison damage on a hit.",
+					"If you consume alcohol as part of a short rest, you gain a +1 bonus to healing received from each hit die rolled."
+					]
+				}
+				]
+			},
+			"entries": [
+				"{@i “No matter how much you attempt to dry it, this weapon drips with a deep red wine.”}",
+				"Attacks with this weapon have a +1 to attack and damage rolls.",
+				"While attuned to this weapon you receive the following effects;",
+				{
+				"type": "list",
+				"items": [
+					"Once per turn when you land an attack against a creature with this weapon, you may force the creature to make a Constitution save (DC = 8+Prof+Wis/Con). On a failed save the creature is 'drunk' for 1d4+1 rounds, while 'drunk', the creature has disadvantage on any ability checks or saving throws using their Dexterity or Intelligence. This effect can be used an amount of times equal to your proficiency modifier, recharging on a short rest. Creatures with an immunity to the poisoned condition are immune to this effect.",
+					"Attacks made with this weapon against a 'drunk' creature have advantage and deal an additional 2d6 poison damage on a hit.",
+					"If you consume alcohol as part of a short rest, you gain a +1 bonus to healing received from each hit die rolled."
+				]
+				}
+			],
+			"source": "IslesOfAzoria",
+			"rarity": "rare"
 		}
 	]
 }
