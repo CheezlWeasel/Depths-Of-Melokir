@@ -58,6 +58,40 @@
 			"seller": "Arthak"
 		},
 		{
+			"name": "Potion of Greater Healing",
+			"source": "DMG",
+			"page": 187,
+			"srd": true,
+			"type": "P",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"entries": [
+				"You regain {@dice 4d4 + 4} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"value": 10000,
+			"seller": "Arthak"
+		},
+		{
+			"name": "Potion of Superior Healing",
+			"source": "DMG",
+			"page": 187,
+			"srd": true,
+			"type": "P",
+			"tier": "minor",
+			"rarity": "uncommon",
+			"entries": [
+				"You regain {@dice 8d4 + 8} hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+			],
+			"miscTags": [
+				"CNS"
+			],
+			"value": 20000,
+			"seller": "Arthak"
+		},
+		{
 			"name": "Potion of Comprehension",
 			"source": "WDMM",
 			"page": 62,

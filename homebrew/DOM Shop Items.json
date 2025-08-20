@@ -2456,6 +2456,32 @@
 			],
 			"source": "IslesOfAzoria",
 			"rarity": "rare"
+		},
+		{
+			"uniqueId": "b17ee3aa-2bc2-4473-9353-a14def2e6595",
+			"name": "Maroguard Armor",
+			"requires": [
+				{
+				"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Maroguard ",
+				"source": "LandsofVita",
+				"seller": "The Marocrunch",
+				"rarity": "rare",
+				"valueExpression": "[[baseItem.value]] + 150000",
+				"entries": [
+				"{@i This armour seems to be made from interlocking pearlescent plates. A thin arcane field seems to project from each part.}",
+				"While wearing this armour, you do not trigger any hostile abilities that would have adverse effects from coming into contact with a creature or from making a successful melee attack against them (Example: a Fire Elemental's Fire Form).",
+				"Additionally, you gain +2AC against spell attacks with a range of Touch.",
+				"Furthermore, you are always considered to be under the Shield spell for the purpose of negating Magic Missile."
+				]
+			},
+			"source": "LandsofVita",
+			"rarity": "rare",
+			"value": 150000,
+			"type": "GV|DMG"
 		}
 	]
 }
