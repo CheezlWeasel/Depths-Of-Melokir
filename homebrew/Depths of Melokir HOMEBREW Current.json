@@ -1344,16 +1344,16 @@
             "entries": [
                 "{@i 2nd-level Lictor Feature}",
                 "You are now kept alive - after a fashion - by the necromantic magic that turns within you. You don't need to eat, drink, or breathe.",
-                "The energy of nearby death also refuels your ongoing quest for vindication. You have three Necrotic Charges. You can never have more Necrotic charges than shown on the table for your level. You regain all spent Necrotic Charges when you finish a long rest. Additionally, you gain a charge whenever a creature of size Small or larger within 30ft of you dies, and in the other way determined by your office at 3rd level.",
+                "The energy of nearby death also refuels your ongoing quest for vindication. You have three Necrotic Charges. You can never have more Necrotic charges than shown on the table for your level. You regain all spent Necrotic Charges when you finish a long rest. Additionally, you may gain a charge whenever a creature of size Small or larger withi 30ft of you dies. Once you gain a charge this way, you cannot gain a charge this way until the start of your next turn.",
                 "On your turn while you are not incapacitated, you can use Necrotic Charges in the following ways:",
                 {
                 "type": "list",
                 "items": [
-                        "Necrotic Shell: You expend one or more necrotic charges as a bonus action, gaining 2d4 temporary hit points plus an additional die for each additional charge.",
+                        "Necrotic Shell: You expend one or more necrotic charges as a bonus action, gaining 1d4 temporary hit points plus one die per charge, and plus an additional die if you spend 3 or more charges.",
                         "Deathly Strike: You expend one necrotic charge when you successfully hit with a melee attack, dealing an additional 2d4 necrotic damage."
                     ]
                 },
-                "This temporary HP / damage increases to 2d6 at 6th level, 2d8 at 10th level, and 2d10 at 15th level.",
+                "This temporary HP / damage increases to d6s at 6th level, d8s at 10th level, and d10s at 15th level.",
                 "The maximum number of charges your Necrotic Engine can hold increases as you gain levels in this class: up to 4 charges at 5th level, 5 charges at 11th level, and 6 charges at 17th level."
             ]
         },
@@ -1533,7 +1533,7 @@
             "level": 10,
             "entries": [
                 "{@i 10th-level Lictor Feature}",
-                "Whenever a creature of size small or larger within 30 feet of you is reduced to below half of its hit point maximum for the first time since its last long rest, you become aware of this fact, and your necrotic engine gains a charge."
+                "Whenever a creature of size small or larger within 30 feet of you is reduced to below half of its hit point maximum for the first time since its last long rest, you become aware of this fact, and your necrotic engine gains a charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
             ]
         },
         {
@@ -3813,6 +3813,7 @@
             "subclassShortName": "Veildancer",
             "subclassSource": "DepthsofMelokir",
             "level": 11,
+            "header": 2,
             "entries": [  
                 "At 11th level, those affected by your mirages are never truly where they seem to be. Whenever a creature under the effect of one of your Veils receives damage, they can use their reaction to teleport up to 30 ft. in an unoccupied space they can either see or have occupied in the last minute."
             ]
@@ -3825,6 +3826,7 @@
             "subclassShortName": "Veildancer",
             "subclassSource": "DepthsofMelokir",
             "level": 15,
+            "header": 2,
             "entries": [  
                 "At 15th level, your mirages can target more creatures and even affect the material plane. You can create one of the following effects as a bonus action while you are under the effect of one of your Veils or as part of the bonus action used to activate your Veil of Mirages. Once you have used this feature, you cannot do so again until you take a short or long rest:",
                 {
@@ -3850,6 +3852,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 18,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 18th-level Office of the Wight feature}",
@@ -3885,6 +3888,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 15,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 15th-level Office of the Hulk feature}",
@@ -3899,6 +3903,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 11,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 11th-level Office of the Hulk feature}",
@@ -3942,6 +3947,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 6,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 6th-level Office of the Hulk feature}",
@@ -3979,6 +3985,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 3rd-level Office of the Hulk feature}",
@@ -3993,6 +4000,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 3rd-level Office of the Hulk feature}",
@@ -4009,6 +4017,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 1st-level Office of the Hulk feature}",
@@ -4024,6 +4033,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
+            "header": 2,
             "page": 0,
             "entries": [
                 "{@i 1st-level Office of the Hulk feature}",
@@ -4038,6 +4048,7 @@
             "subclassShortName": "Hulk",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
+            "header": 2,
             "entries": [
                 "Sometimes, the most powerful undead is not the one raised through the most complicated rituals. Nor is it the undead with the most esoteric powers. Sometimes, it's just a corpse risen with a lot of energy and a lot of muscle, pointed at the enemy.",
                 "Returned out of the grave with newfound brawn, energy courses through your veins to enhance your strength and crush all who stand before you to form the front line of a dread army. Whether utilised as part of a horde to throw at a problem, or a more unique specimen sent in as a siege-breaker, your strength ensured that there was naught left in your wake.",

@@ -1812,6 +1812,38 @@
 			"seller": "Helli",
 			"wondrous": true,
 			"reqAttune": true
+		},
+		{
+			"uniqueId": "06ecc51c-0032-49f3-9ff1-d168790584a2",
+			"name": "Gnashing Gastronome",
+			"value": 260000,
+			"weight": 20,
+			"rarity": "rare",
+			"source": "DepthsofMelokir",
+			"property": [
+				"2H",
+				"H"
+			],
+			"weaponCategory": "martial",
+			"baseitem": "Greatsword|PHB",
+			"wondrous": true,
+			"dmg1": "1d10/2d6",
+			"reqAttune": true,
+			"type": "M",
+			"entries": [
+				"{@i This giant curved blade seems to have a hinge in the middle, with the inner edge lined with teeth.}",
+				"You have a +1 bonus to attack and damage rolls using this weapon. At the start of your turn, you may choose to have this weapon folded or unfolded.",
+				{
+					"type": "list",
+					"items": [
+						"Folded: This weapon deals 1d10 slashing damage, and you can as a reaction to being successfully hit with a ranged attack attempt to \"eat\" said incoming ranged attack with your blade. Reduce the damage by 1d12+Proficiency bonus - if this fully reduces the damage, you feel pretty cool.",
+						"Unfolded: This weapon deals 2d6 bludgeoning damage and has reach."
+					]
+				},
+				"While in the 'Unfolded' mode, you can immediately use a bonus action after successfully hitting a creature with this weapon to re-fold the Gastronome, biting down on your target. They must make a DC [9+PROF+CON] dexterity saving throw or take 2d8+CON magical bludgeoning damage and get pulled 5ft towards you if possible, or half damage and no forced movement on a success. Using this bonus action puts you in the 'Folded' mode.",
+				"While in the 'Folded' mode, you can immediately use a bonus action after successfully hitting a creature with this weapon to unfold the Gastronome, forcefully launching the blade from your foe and pushing them back. They must make a DC [9+PROF+CON] Constitution saving throw or take 3d8+CON magical slashing damage and are forcefully pushed 10ft away from you, or half damage and no forced movement on a success. Using this bonus action puts you in the 'Unfolded' mode.",
+				"You can use a bonus action from this weapon thrice per short rest."
+			]
 		}
 	],
 	"magicvariant": [
