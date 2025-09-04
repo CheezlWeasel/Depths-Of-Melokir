@@ -1701,8 +1701,8 @@
             "header": 1,
             "level": 1,
             "entries": [
-                "You can move through other creatures as if they were difficult terrain, and creatures gain no benefit from half-cover or shields against your melee attack rolls.",
-                "At the start of your turn, you can become incorporeal, able to move through objects of size Large or smaller, including doors or windows but not solid walls. You can do so a number of times equal to your proficiency bonus, and regain all expended uses upon completing a short rest. You take 1d10 force damage if you end your turn inside an object or creature and are shunted to the nearest safe empty space."
+                "You can move through hostile creatures as if they were difficult terrain and friendly creatures with no penalty.",
+                "At the start of your turn, you can become incorporeal, able to move through objects of size Large or smaller. You can through up to 5ft of solid walls at a time. You can do so a number of times equal to your proficiency bonus, and regain all expended uses upon completing a short rest. You take 1d10 force damage if you end your movement inside an object or creature and are shunted to the nearest safe empty space."
             ]
         },
         {
@@ -1752,7 +1752,7 @@
             "level": 3,
             "entries": [
                 "You gain an additional way to regain Necrotic Charges:",
-                "Once per round, whenever a creature you can see rolls a 1 or 2 on a D20, you can gain a Necrotic Charge."
+                "whenever you move through three or more creatures in a turn, you may gain a necrotic charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
             ]
         },
         {
@@ -1765,9 +1765,16 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "When you move through a creature, you can cause that creature to take 1d8+PROF cold damage. This ability is usable PROF times per round, and cannot be used against the same creature more than once per round.",
-                "This damage increases to 2d8 at 11th level, and 3d8 at 15th level.",
-                "Additionally, you do not provoke opportunity attacks and your speed increases by 10ft"
+                "As a bonus action, you may expend a charge to enter Geist's Waltz. When you enter this form and as a bonus action on subsequent turns, you become more incorporeal until the end of your turn, gaining the following benefits:",
+                {
+                    "type":"list",
+                    "items": [
+                        "Up to twice this turn, when you pass through a creature you may force them to make a Dexterity saving throw against your Wrack DC, dealing 1d8+PROF cold damage to them on a failure, or half as much on a success. Usable once per creature.",
+                        "Your movement does not provoke attacks of opportunity."
+                    ]
+                },
+                "This form lasts for 1 minute, or until you fall unconscious.",
+                "The damage from this feature increases to 2d8+PROF 11th level, and 3d8+PROF at 15th level."
             ]
         },
         {
@@ -1780,7 +1787,7 @@
             "header": 2,
             "level": 11,
             "entries": [
-                "You become swifter in inflicting your raison d'être on your foes. You can use Wrack with Grief as a bonus action, still paying the Necrotic Charge. When you do so, you can expend an additional Necrotic Charge to gain the base benefits of a Necrotic Shell.",
+                "You become swifter in inflicting your raison d'être on your foes. When you use a bonus action on Geist's Waltz, you may expend an additional Necrotic Charge to Wrack with Grief as you do so.",
                 "In addition, you can extend your incorporeal form to others: as an action, you can touch a willing creature and expend a use of Incorporeal Form, allowing it to benefit from that feature until the start of your next turn. If a creature sharing this benefit ends its turn inside an object, it is immediately shunted to the nearest unoccupied space outside of the object, taking 1d10 force damage for every 5 feet it was shunted."
             ]
         },
@@ -1794,7 +1801,6 @@
             "header": 2,
             "level": 15,
             "entries": [
-                
                 "You are able to tap into your ethereal nature, shifting between the ethereal and material plane at will. As a bonus action, you may loosen your connection to your current plane of existence for 1 minute. As part of this action and as a bonus action on subsequent turns while under this effect, you may vanish from your current plane of existence and appear in the Ethereal Plane.",
                 "While in the Ethereal plane you may use a bonus action to return to an unoccupied space in the plane you originated from corresponding to your position in the Ethereal plane.",
                 "While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away.",
@@ -1895,9 +1901,8 @@
             "header": 2,
             "level": 3,
             "entries": [
-                
                 "You gain an additional way to regain Necrotic Charges:",
-                "Once per round, Whenever a creature within 30ft of you beats someone's AC by 5 or more, you can gain a necrotic charge."
+                "Whenever you or an allied creature exceeds a hostile creature's AC by 5 or more, you may regain a necrotic charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
             ]
         },
         {
@@ -1910,8 +1915,7 @@
             "header": 2,
             "level": 6,
             "entries": [
-                
-                "You have lost none of the gravitas in your grave commands. You are immune to being frightened. Additionally, as a bonus action you may command a willing allied creature within 30ft of you to do one of the following:",
+                "You have lost none of the gravitas in your grave commands. You are immune to being frightened. Additionally, as a bonus action you may expend a necrotic charge and command a willing allied creature within 30ft of you to do one of the following:",
                 {
                     "type": "list",
                     "items": [
@@ -1919,8 +1923,7 @@
                         "Reinforce: The creature expends their reaction to gain the benefits of half cover until the start of their next turn.",
                         "Hold the line: until the start of your next turn, the creature can use their reaction to make an opportunity attack against an enemy that comes within their reach."
                     ]
-                },
-                "This ability may be used an amount of times equal to twice your proficiency bonus per long rest."
+                }
             ]
         },
         {
@@ -2047,9 +2050,8 @@
             "header": 2,
             "level": 3,
             "entries": [
-                
                 "You gain another way to regain Necrotic Charges:",
-                "Once per round, whenever you deal damage to a creature not on your turn whilst within 30ft of them, you can gain a necrotic charge."
+                "whenever you deal damage to a creature not on your turn whilst within 30ft of them, you may gain a necrotic charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
             ]
         },
         {
@@ -2062,8 +2064,7 @@
             "header": 2,
             "level": 6,
             "entries": [
-                
-                "Immediately after you hit a creature with a melee weapon attack, you can use a bonus action to mark the target with sapping magic to prevent its escape. The target is marked for 1 minute. The mark ends early if you use this feature again. Until the effect ends, you gain the following benefits:",
+                "Immediately after you hit a creature with a melee weapon attack, you can use a bonus action and expend a Necrotic Charge to mark the target with sapping magic to prevent its escape. The target is marked for 1 minute. The mark ends early if you use this feature again. Until the effect ends, you gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
@@ -2071,8 +2072,7 @@
                         "You can make opportunity attacks against the target if it moves while within the reach of your melee attacks, even if that movement does not take it out of your reach. ",
                         "If the marked creature tries to cast a spell of 3rd level or lower, its magic is disrupted. The creature must make a Constitution saving throw against your Wrack Save DC. On a failed save, it takes 1d4 necrotic damage per level of the spell, the spell fails and has no effect. The creature may still make another action that isn't casting a spell. On a success, the creature is able to cast the spell as normal."
                     ]
-                },
-                "You can't use this feature again until you finish a long rest, unless you expend a Necrotic Charge to do so again."
+                }
             ]
         },
         {
@@ -2169,8 +2169,8 @@
             "header": 1,
             "level": 1,
             "entries": [
-                "As a bonus action, you can allow the death incubating inside your body to exude outwards in an aura that extends 10 feet from you in all directions, or withdraw it again. Any creature other than you that ends its turn in the aura takes 1d4+PROF necrotic, poison or piercing (your choice) damage. This aura retracts when you take another bonus action to do so, or when you fall unconscious.",
-                "The damage dealt by your aura increases when you reach certain levels in this class: 2d4+PROF at 6th level, 3d4+PROF at 11th level, 4d4+PROF at 15th level, and 5d4+PROF at 18th level."
+                "As a bonus action, you can expend a necrotic charge, allowing the death incubating inside your body to exude outwards in an aura that extends 10 feet from you in all directions. Any creature other than you that ends its turn in the aura takes {@dice 1d4} necrotic, poison or piercing (your choice) damage. This aura retracts when you take another bonus action to do so, or when you fall unconscious.",
+"The damage dealt by your aura increases when you reach certain levels in this class: {@dice 2d4} at 6th level, {@dice 3d4} at 11th level, {@dice 4d4} at 15th level, and {@dice 5d4} at 18th level."
             ]
         },
         {
@@ -2200,7 +2200,7 @@
             "entries": [
                 
                 "You gain another way to regain Necrotic Charges:",
-                "Once per round, when at least three creatures take damage from Withering Aura before the start of your next turn, you can gain a Necrotic Charge."
+                "When you have dealt three instances of damage to creatures not on your turn, you may gain a necrotic charge. Once you gain a charge this way, you cannot do so again in this way again until the start of your next turn."
             ]
         },
         {
@@ -2215,7 +2215,8 @@
             "entries": [
                 
                 "If a creature of size small or larger that you can see dies due to damage you've caused, you can use your reaction to infuse their energy into the Withering Aura. Until the end of your next turn, your Withering Aura counts as difficult terrain to hostile creatures and deals 1d6 necrotic, piercing, or poison damage (your choice) to hostile creatures moving into or through the area for every 5 feet they travel.",
-                "Once you have used this reaction, you can no longer do so unless you spend a Necrotic Charge to do so again, or finish a long rest. A Necrotic Charge can also be spent as a bonus action on subsequent turns to extend the duration of the effect by another turn."
+                "This only counts towards Consumption of Despair once per creature.",
+                "Once you have used this reaction, you can no longer do so unless you spend a Necrotic Charge to do so again, or finish a long rest. A Necrotic Charge can also be spent at the start of your subsequent turns to sustain it."
             ]
         },
         {
@@ -2228,8 +2229,7 @@
             "header": 2,
             "level": 11,
             "entries": [
-                
-                "Your curse enfolds you, skin and bone. At the start of each of your turns, roll 1d6. Until you roll this die again, you have a bonus to your AC equal to half the number rolled (rounded down), and a creature that hits you with a melee attack takes necrotic, piercing, or poison damage (your choice) equal to the number rolled."
+                "Your curse enfolds you, skin and bone. At the start of each of your turns while your Withering Aura is active, roll {@dice 1d6}. Until you roll this die again, you have a bonus to your AC equal to half the number rolled (rounded down), and a creature that hits you with a melee attack for the first time that turn takes necrotic, piercing, or poison damage (your choice) equal to the number rolled."
             ]
         },
         {
@@ -2348,7 +2348,7 @@
             "entries": [
                 
                 "You gain a new way to regain Necrotic Charges:",
-                "Once per round when a hostile creature misses an attack roll against an ally by 5 or more, you may gain a necrotic charge."
+                "When a hostile creature misses an attack roll against an ally by 5 or more, you may gain a necrotic charge. Once you gain a charge this way, you cannot do so again in this way again until the start of your next turn."
             ]
         },
         {
@@ -2458,17 +2458,16 @@
             "entries": [
                 
                 "You can demoralize others by giving voice to the discordant negative energy reverberating through your body.",
-                "You can use a bonus action to start Wailing, which lasts for 1 minute. The sounds are audible up to 120 feet away, and can be heard on the Ethereal Plane. Your Wailing ends early if you are incapacitated, end your turn entirely within an area of sunlight, or are rendered unable to speak. You can also cease Wailing at any time (no action required).",
+                "You can use a bonus action and expend a charge to start Wailing, which lasts for 1 minute. The sounds are audible up to 120 feet away, and can be heard on the Ethereal Plane. Your Wailing ends early if you are incapacitated, end your turn entirely within an area of sunlight, or are rendered unable to speak. You can also cease Wailing at any time (no action required).",
                 "While you are Wailing, you have advantage on Charisma (Intimidation) checks and disadvantage on Charisma (Performance) checks. On the turn you begin Wailing and as a bonus action on your subsequent turns while your Wailing persists, you can choose one of the following effects to be active until the start of your next turn.",
                 {
                     "type":"list",
                     "items":[
                         "One creature within 30ft subtracts 1d4 from the first skill check, attack roll or saving throw it makes. This increases to 1d6 at 6th level, 1d8 at 10th level and 1d10 at 15th level.",
                         "Creatures of your choice within 20ft of you must make a Wisdom saving throw against your Wrack DC whenever they attempt to cast a spell. On a failure the spell is harmful to cast: they take necrotic damage equal to a Deathly Strike.",
-                        "Creatures that end their movement within 5ft of you must make a Wisdom saving throw or immediately use their reaction to move half their speed away from you, without provoking attacks of opportunity."
+                        "Creatures that end their movement within 5ft of you must make a Wisdom saving throw or immediately use their reaction to move their remaining movement speed away from you, without provoking attacks of opportunity."
                     ]
-                },
-                "You can use this feature once, and cannot do so again until you complete a short rest or long rest, unless you expend a Necrotic Charge to do so again."           
+                }      
             ]
         },
         {
@@ -2495,8 +2494,9 @@
             "header": 2,
             "level": 3,
             "entries": [
-                "You raise an unholy cacophony that overwhelms the senses of your foes. Each creature in a 15-foot cone must succeed on a Constitution saving throw or take 3d8 thunder damage and is pushed 10ft away from you. A creature that fails its save by 5 or more is also {@condition dazed|DepthsofMelokir} until the end of your next turn.",
-                "This feature's damage increases to 4d8 at 6th level, 5d8 at 10th level, and 6d8 at 15th level."
+                "You raise an unholy cacophony that overwhelms the senses of your foes.",
+                "Each creature in a 15-foot cone must succeed on a Constitution saving throw or take {@dice 2d8} thunder damage. A creature that fails this saving throw by 5 or more is also pushed 10ft away from you.",
+                "This feature's damage increases to {@dice 3d8} at 6th level, {@dice 4d8} at 10th level, and {@dice 5d8} at 15th level."
             ]
         },
         {
@@ -2509,7 +2509,8 @@
             "header": 2,
             "level": 3,
             "entries": [
-                "You gain another way of regaining Necrotic Charges: Once per round, when a hostile creature fails a roll affected by Wailing, or fails a saving throw inflicted by Wailing, you may regain a necrotic charge."
+                "You gain another way of regaining Necrotic Charges:",
+                "When a hostile creature fails a roll affected by Wailing, or fails a saving throw inflicted by Wailing, you may regain a necrotic charge. Once you gain a charge this way, you cannot do so again in this way again until the start of your next turn."
             ]
         },
         {
@@ -2522,7 +2523,7 @@
             "header": 2,
             "level": 6,
             "entries": [
-                "The thrill of deathly energy resonates within you, emerging as unearthly shivers of sound. At the start of your turn, you may expend one hit die to enhance the next Wrack you use during that turn: the Wrack deals an additional die of damage, and deals half damage on success if it didn't already. This benefit expires at the end of your turn."
+                "The thrill of deathly energy resonates within you, emerging as unearthly shivers of sound. You may use your Wracks as an action instead of replacing an attack: when you do so, it deals an additional die of damage, deals half on success if it does not do so already, and for Wrack with Noise the amount it is pushed back is doubled."
             ]
         },
         {
@@ -3907,36 +3908,38 @@
             "page": 0,
             "entries": [
                 "{@i 11th-level Office of the Hulk feature}",
-                "As your ability to apply brute force waxes, you find new ways to really apply the hurt. When you succeed on a grappling check either to grapple someone or to prevent someone from escaping a grapple, you can apply one of the following:",
+                "As your ability to apply brute force waxes, you find new ways to really apply the hurt. When you succeed on grappling check either to grapple someone or to prevent someone from escaping a grapple, you can apply one of the following:",
                 {
                     "type": "entries",
                     "name": "Floor Slam",
                     "entries": [
-                        "You slam the creature against the ground: they take (PROF){@dice D6} magical bludgeoning damage and must make a Dexterity saving throw against your Wrack DC. on a failure, they are knocked {@condition prone}."
+                        "You slam the creature against the ground: they take {@dice 2d6+STR} magical bludgeoning damage and must make a Dexterity saving throw against your Wrack DC. on a failure, they are knocked {@condition prone}."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Suplex",
                     "entries": [
-                        "You suplex the creature: They take {@dice 3d4} magical bludgeoning damage and must make a Constitution saving throw against your Wrack DC: on a failure, they become {@condition stunned} until the start of your next turn and are moved to the other side of you, given that that is a safe space for them to be placed on."
+                        "You suplex the creature: They take {@dice 2d4+STR} magical bludgeoning damage and must make a Constitution saving throw against your Wrack DC: on a failure, they become {@condition stunned} until the start of your next turn and are moved to the other side of you, given that that is a safe space for them to be placed on."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Lariat",
                     "entries": [
-                        "You physically spin the creature around you. Creatures within 5ft of you and the {@condition grappled} creature must make a Dexterity saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d4} magical bludgeoning damage. If a creature fails by 5 or more, they become {@condition dazed|DepthsofMelokir} until the end of their next turn."
+                        "You physically spin the creature around you. Creatures within 5ft of you and the {@condition grappled} creature must make a Dexterity saving throw against your Wrack DC: on a failure, they take {@dice 2d4+STR} magical bludgeoning damage. If a creature fails by 5 or more, they become {@condition dazed|DepthsofMelokir} until the end of their next turn."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Fastball",
                     "entries": [
-                        "You throw the creature at a solid surface you can see within 30ft of you. The thrown creature and any creature in the square chosen must make a Strength saving throw against your Wrack DC: on a failure, they take (PROF) {@dice d8} magical bludgeoning damage, or half on success."
+                        "You throw the creature at a solid surface you can see within 30ft of you. The thrown creature and any creature in the square chosen must make a Strength saving throw against your Wrack DC: on a failure, they take {@dice 2d8+STR} magical bludgeoning damage, or half on success."
                     ]
                 },
-                "You can use this a maximum of twice per round, and must choose a different one for each time in a round. Additionally, you can grapple creatures of up to two size categories larger than you, and can brace a creature of up to one size larger than you using your wrack."
+                "You can use this a maximum of twice per round, and must choose a different one for each time in a round.",
+                "Additionally, you can grapple creatures of up to two size categories larger than you, and can brace a creature of up to one size larger than you using your wrack.",
+                "The damage dealt by any of these options increases by 1 die at 15th level."
             ]
         },
         {
@@ -3951,7 +3954,7 @@
             "page": 0,
             "entries": [
                 "{@i 6th-level Office of the Hulk feature}",
-                "You are able to channel necrotic energy to directly increase your size. As a bonus action, you magically gain the following benefits, which lasts for 1 minute:",
+                "You are able to channel necrotic energy to directly increase your size. As a bonus action you may expend a charge. You magically gain the following benefits, which lasts for 1 minute:",
                 {
                     "type":"list",
                     "items":[
@@ -3972,9 +3975,7 @@
                             "entry": "Your movement speed is not reduced by dragging a creature."
                         }
                     ]
-                },
-                "You can use this feature once, and cannot do so again unless you complete a short or long rest, unless you expend two necrotic charges to do so again."
-                        
+                }                      
             ]
         },
         {
@@ -3989,7 +3990,8 @@
             "page": 0,
             "entries": [
                 "{@i 3rd-level Office of the Hulk feature}",
-                "You gain an additional way to regain Necrotic Charges: Once per round, whenever you succeed on a Shove check, Grapple check, check to resist a Grapple escape, or a Grapple check to climb onto a larger creature, you can gain a Necrotic Charge."
+                "You gain an additional way to regain Necrotic Charges:",
+                "Whenever you succeed against a hostile creature on a Shove check, Grapple check, or a check to resist a Grapple escape, you can gain a Necrotic Charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
             ]
         },
         {
@@ -4004,9 +4006,9 @@
             "page": 0,
             "entries": [
                 "{@i 3rd-level Office of the Hulk feature}",
-                "You channel necrotic energy into your decayed muscles, charging forward with unstoppable strength. Move up to your remaining movement speed +5ft in a straight line, or up to your movement speed being able to turn at 10ft intervals, passing through creatures without incurring extra movement and not provoking opportunity attacks. Each creature in the path must succeed on a Strength saving throw or take {@dice 2d8}+STR magical bludgeoning damage and are pushed 5ft away from the path, taking half as much damage and not being pushed away on a success. This wrack uses your regular movement speed as you charge.",
-                "If you are grappling a creature when you use this wrack that is of your size category or smaller, you can also brace them in front of you when you charge: that {@condition grappled} creature must make a Strength saving throw or take {@damage 2d4} bludgeoning damage for each creature, wall or object collided with during the charge, or half on a success. This bracing is only usable on one creature per charge.",
-                "This feature's damage increases to {@dice 2d10}+STR and {@dice 3d4} respectively at level 6, {@dice 2d12}+STR and {@dice 4d4} at level 10, and {@dice 3d10}+STR and {@dice 5d4} at level 15."
+                "You channel necrotic energy into your decayed muscles, charging forward with unstoppable strength. Move up to your remaining movement speed +5ft in a straight line, or up to your movement speed being able to turn at 10ft intervals, passing through creatures without incurring extra movement and not provoking opportunity attacks. Each creature in the path must succeed on a Strength saving throw or take {@dice 2d8+STR} magical bludgeoning damage and are pushed 5ft away from the path, taking half as much damage and not being pushed away on a success. This wrack uses your regular movement speed as you charge.",
+                "If you are grappling a creature when you use this wrack that is of your size category or smaller, you can also brace them in front of you when you charge: that grappled creature must make a Strength saving throw or take {@dice 2d4} bludgeoning damage for each creature, wall or object collided with during the charge (to a maximum amount of obstacles equal to your Strength bonus), or half on a success. This bracing is only usable on one creature per charge.",
+                "This feature's damage increases to {@dice 2d10+STR} and {@dice 3d4} respectively at level 6, {@dice 2d12+STR} and {@dice 4d4} at level 10, and {@dice 3d10+STR} and {@dice 5d4} at level 15."
             ]
         },
         {
