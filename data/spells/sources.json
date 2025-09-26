@@ -389,16 +389,7 @@
 			]
 		},
 		"Antimagic Field": {
-			"class": [
-				{
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Antipathy/Sympathy": {
 			"class": [
@@ -1549,23 +1540,7 @@
 			]
 		},
 		"Demiplane": {
-			"class": [
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			],
-			"classVariant": [
-				{
-					"name": "Sorcerer",
-					"source": "PHB",
-					"definedInSource": "TCE"
-				}
-			]
+
 		},
 		"Destructive Wave": {
 			"class": [
@@ -2185,24 +2160,7 @@
 			]
 		},
 		"Feeblemind": {
-			"class": [
-				{
-					"name": "Bard",
-					"source": "PHB"
-				},
-				{
-					"name": "Druid",
-					"source": "PHB"
-				},
-				{
-					"name": "Warlock",
-					"source": "PHB"
-				},
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Feign Death": {
 			"class": [
@@ -3645,12 +3603,7 @@
 			]
 		},
 		"Maze": {
-			"class": [
-				{
-					"name": "Wizard",
-					"source": "PHB"
-				}
-			]
+
 		},
 		"Meld into Stone": {
 			"class": [

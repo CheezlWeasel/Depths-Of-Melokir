@@ -1,3 +1,6 @@
+# v1.4.3.0
+Lictor Subclasses are now in line with the Lictor 5.3 Doc
+
 # v1.4.2.0
 Lictor Class and Subclass features are now in line with the Lictor 5.2 Doc
 

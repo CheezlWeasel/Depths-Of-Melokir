@@ -999,7 +999,7 @@
                 "Office of the Tomb Guardian|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1",
                 "Wrack Foes: Wrack with Regret|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|3",
                 "Consumption of Greed|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|3",
-				"Immuring Mark|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|6",
+				"Pursuit of the Winds|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|6",
 				"Thief's Curse|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|11",
 				"Dispersing Passage|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|15",
 				"Ascendant Psychopomp|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|18"
@@ -1054,19 +1054,19 @@
             ]
         },
         {
-            "name":"Office of the Hulk",
-            "shortName": "Hulk",
+            "name":"Office of the Shambling Flesh",
+            "shortName": "Shambling Flesh",
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
             "subclassFeatures": [
-                "Office of the Hulk|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|1",
-                "Wrack Foes: Wrack with Force|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|3",
-                "Consumption of Spirit|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|3",
-				"Juggernaut|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|6",
-				"Vigor Mortis|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|11",
-				"Meat Shield|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|15",
-				"Unstoppable Force|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|18"
+                "Office of the Shambling Flesh|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|1",
+                "Wrack Foes: Wrack with Force|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|3",
+                "Consumption of Spirit|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|3",
+				"Juggernaut|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|6",
+				"Vigor Mortis|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|11",
+				"Meat Shield|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|15",
+				"Unstoppable Force|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|18"
             ]
         },
         {
@@ -1801,10 +1801,12 @@
             "header": 2,
             "level": 15,
             "entries": [
-                "You are able to tap into your ethereal nature, shifting between the ethereal and material plane at will. As a bonus action, you may loosen your connection to your current plane of existence for 1 minute. As part of this action and as a bonus action on subsequent turns while under this effect, you may vanish from your current plane of existence and appear in the Ethereal Plane.",
-                "While in the Ethereal plane you may use a bonus action to return to an unoccupied space in the plane you originated from corresponding to your position in the Ethereal plane.",
-                "While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away.",
-                "This ability may be used once per short rest."
+                "{@i 15th-level Office of the Apparition feature}",
+                "You are able to tap into your ethereal nature, shifting to the Ethereal Plane in times of need.",
+                "When finding yourself within an Area of Effect or being targeted with an attack, as a reaction you may loosen your connection to your current plane, vanishing and appearing in the Ethereal Plane, avoiding the triggering effect.",
+                "While in the ethereal plane you may return to an unoccupied space in the plane you originated from corresponding to your position in the Ethereal plane, no action required.",
+                "The ethereal plane mirrors the dimensions of your previous planar surroundings in shades of gray, and you can't see anything more than 60 feet away.",
+                "This ability may be used once per short rest, or additional times by spending three necrotic charges."
             ]
         },
         {
@@ -1952,7 +1954,16 @@
             "level": 15,
             "entries": [
                 
-                "You may channel your undead energy into an aura of menace, inverting a Paladin's aegis. You may expend two Necrotic Charges as an action to create an aura with a 30ft radius centered on yourself, lasting for 1 minute. Whenever creatures of your choice roll a 1 or 2 on a damage roll they make for a weapon attack, they can reroll the die and must use the new roll, even if it is a 1 or a 2."
+                "{@i 15th-level Office of the Death Knight feature}",
+                "You may channel your undead energy into an aura of harm, inverting a Paladin's aegis. You may expend two necrotic charges as an action to create an aura with a 20ft radius centred on yourself, lasting for a minute or until you go unconscious.",
+                "Creatures of your choice within the Aura (including yourself) treat rolls of a 3 or less on weapon attack damage die as a 4. Additionally, the Aura confers one of the following benefits of your choosing:",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b Cleave:} The first time each turn an affected creature exceeds a hostile creature's AC by 10 or more with a weapon attack, you may have another creature within 5ft of the original target and within reach also be hit by the attack, provided it’s AC is also exceeded by 10.",
+                        "{@b Sunder:} The first time each turn an affected creature exceeds a hostile creature's AC by 10 or more with a weapon attack, the struck creature takes necrotic damage equal to your Deathly Strike."
+                    ]    
+                }
             ]
         },
         {
@@ -2007,12 +2018,12 @@
             "header": 1,
             "level": 1,
             "entries": [
-                
-                "Removed or replaced organs have left precious little for a thief's dagger to puncture when you come upon them in the dark. You gain resistance to piercing damage and darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet. In addition, you can extend your withering energies as an action to instantly molder or evaporate up to 1 cubic foot of food or water that you touch. Other nonmagical drinks are spoiled — wine turning to vinegar, for instance."
+                "Removed or replaced organs have left precious little for a thief's dagger to puncture when you come upon them in the dark. You gain resistance to piercing damage and darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet.",
+                "In addition, you can extend your withering energies as an action to instantly molder or evaporate up to 1 cubic foot of food or water that you touch. Other nonmagical drinks are spoiled — wine turning to vinegar, for instance."
             ]
         },
         {
-            "name": "Forgive no Trespass",
+            "name": "Shifting Sands",
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
@@ -2021,9 +2032,8 @@
             "header": 1,
             "level": 1,
             "entries": [
-                
-                "On any creature's turn other than your own, the reach of your melee attacks is increased by 5 feet. If you hit a creature with an opportunity attack, its remaining movement speed is reduced by 10 feet until the end of its next turn.",
-                "The amount you reduce the movement speed of your target by increases as you gain levels in this class; up to 15 feet at 11th level, and up to 20 feet at 15th level."
+                "On any creature’s turn other than your own, the reach of your melee attacks is increased by 5 feet. Once per turn if you hit a creature with an opportunity attack, its remaining movement speed is reduced by 10 feet until the end of its next turn.",
+                "The amount of movement your shifting sands reduces changes as you gain levels in this class: up to 15 feet at 11th level, and up to 20 feet at 15th level."
             ]
         },
         {
@@ -2036,8 +2046,11 @@
             "header": 2,
             "level": 3,
             "entries": [
-                
-                "You utter a curse of doom upon those that transgress against you. hostile creatures within 10ft of you must make a Wisdom saving throw or take 1d6 force damage and cannot take movement that would move them more than 30ft away from you until the end of your next turn. If they fail the save by 5 or more, whenever they attack one of your allies they take 1d6 force damage for the same duration. This feature's damage increases to 1d8 at 6th level, 1d10 at 10th level, and 1d12 at 15th level."
+                "You utter a curse of doom upon your surrounding foes, conjuring a Sandstorm to consume them. Choose a 20ft cube centred on a point within 40ft of you: this space becomes consumed by a Sandstorm until the start of your next turn, rendering it difficult terrain to hostile creatures.",
+                "Additionally, any hostile creature within the Sandstorm  at the time of creation must make a Wisdom saving throw against your Wrack DC: on a failure, they take 1d6 necrotic or slashing (your choice) damage and becomes Cursed until the end of the Tomb Guardian’s next turn (this is not a curse for the purposes of Curse immunity.) ",
+                "A Cursed creature provokes an attack of opportunity from the Tomb Guardian when they start their turn. A Tomb Guardian can make opportunity attacks this way without using their reaction, up to a number of times before their next turn equal to their proficiency bonus. When doing so, the opportunity attack does not add your ability modifier to the damage roll.",
+                "A creature that fails the wisdom save by 5 or more cannot willingly move outside of the Sandstorm while Cursed.",
+                "This feature’s damage increases to 1d8 damage at 6th level, 1d10 at 10th level, and 1d12 at 15th level."
             ]
         },
         {
@@ -2051,7 +2064,22 @@
             "level": 3,
             "entries": [
                 "You gain another way to regain Necrotic Charges:",
-                "whenever you deal damage to a creature not on your turn whilst within 30ft of them, you may gain a necrotic charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
+                "when you successfully hit a hostile creature with an opportunity attack, if you have already hit a creature with another attack either during your previous turn or as another opportunity attack, you may regain a Necrotic Charge. once you do, you cannot do so again until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Pursuit of the Winds",
+            "source": "DepthsofMelokir",
+            "className": "Lictor",
+            "classSource": "DepthsofMelokir",
+            "subclassShortName": "Tomb Guardian",
+            "subclassSource": "DepthsofMelokir",
+            "header": 2,
+            "level": 6,
+            "entries": [
+                "Creatures provoke attacks of opportunity from you when they move into your reach.",
+                "Additionally, after making an opportunity attack, you may spend 1 necrotic charge to teleport to any space within your Sandstorm.",
+                "Furthermore, your flensing winds also form wards to protect your allies: you and allies within your Sandstorm gain half cover, and cannot become blinded, deafened or petrified."
             ]
         },
         {
@@ -2062,32 +2090,17 @@
             "subclassShortName": "Tomb Guardian",
             "subclassSource": "DepthsofMelokir",
             "header": 2,
-            "level": 6,
-            "entries": [
-                "Immediately after you hit a creature with a melee weapon attack, you can use a bonus action and expend a Necrotic Charge to mark the target with sapping magic to prevent its escape. The target is marked for 1 minute. The mark ends early if you use this feature again. Until the effect ends, you gain the following benefits:",
-                {
-                    "type": "list",
-                    "items": [
-                        "Once per round, you can make an opportunity attack against the marked target without using your reaction.",
-                        "You can make opportunity attacks against the target if it moves while within the reach of your melee attacks, even if that movement does not take it out of your reach. ",
-                        "If the marked creature tries to cast a spell of 3rd level or lower, its magic is disrupted. The creature must make a Constitution saving throw against your Wrack Save DC. On a failed save, it takes 1d4 necrotic damage per level of the spell, the spell fails and has no effect. The creature may still make another action that isn't casting a spell. On a success, the creature is able to cast the spell as normal."
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Thief's Curse",
-            "source": "DepthsofMelokir",
-            "className": "Lictor",
-            "classSource": "DepthsofMelokir",
-            "subclassShortName": "Tomb Guardian",
-            "subclassSource": "DepthsofMelokir",
-            "header": 2,
             "level": 11,
             "entries": [
-                "Those who would take what you guard must reckon with an abjuring curse. When a divination spell is cast on a target within 60 feet of you, you become aware of it and can use your reaction to cause it to fail or provide misleading results.",
-                "Alternatively, when a creature you can see picks up or moves an object you can see, you can use your reaction to curse the creature. Until the object is dropped or returned to its place, the cursed target subtracts 1d6 from all saving throws. This curse lasts for 1 minute, or until you use this feature on another target.",
-                "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses upon completing a long rest."
+                "Those who would challenge your domain must reckon with your vengeance. Immediately after you hit a creature with a melee weapon attack, you can use a bonus action and spend 2 necrotic charges to Mark the target for 1 minute. The mark ends early if you use this feature again, or if you fall unconscious. Until the effect ends, you gain the following benefits:",
+                {
+                    "type":"list",
+                    "items": [
+                        "If the marked creature tries to cast a spell of 4th level or lower, its magic is disrupted. The creature must make a Constitution saving throw against your Wrack Save DC. On a failed save, it takes 1d8 necrotic damage per level of the spell, the spell fails and it has no effect. The creature may use the action, bonus action or reaction on something else that is not casting a spell.",
+                        "If you successfully make an attack of opportunity against the marked target, if you choose to teleport to a space within your Sandstorm, you can force them to make a charisma saving throw against your Wrack Save DC: on a failure, they are also teleported with you into the Sandstorm.",
+                        "Once between your turns, you may make an opportunity attack against the marked creature without using your reaction."
+                    ]
+                }     
             ]
         },
         {
@@ -2099,10 +2112,17 @@
             "subclassSource": "DepthsofMelokir",
             "header": 2,
             "level": 15,
-            "entries": [
-                
-                "As a bonus action, you can magically transform into a whirlwind of dust, insects, salt, or sand and move up to 60 feet before reverting to your normal form. While in whirlwind form, you are immune to all damage, can't be grappled, petrified, knocked prone, restrained, or stunned, and you can pass freely through the space of other creatures. A creature whose space you pass through in whirlwind form must succeed on a Dexterity saving throw against your Wrack Save DC or become blinded until the end of your next turn.",
-                "Once you use this feature, you must complete a long rest before you can use it again, unless you expend two Necrotic Charges to do so again."
+            "entries": [ 
+                "As a bonus action, you can spend two necrotic charges to magically transform into a whirlwind of dust, insects, salt or sand. This transformation lasts for 1 minute, or until you are knocked unconscious.",
+                "While transformed, you gain the following benefits:",
+                {
+                    "type":"list",
+                    "items":[
+                        "You cannot be grappled, petrified, knocked prone, restrained, or stunned.",
+                        "Your Sandstorm from Wrack with Regret is altered: it is a 10ft radius sphere centred on you that follows you, and does not dissipate at the start of your next turn. Using Wrack with Regret again increases the radius by 5ft until the start of your next turn, and forces the hostile creatures within to make the associated Wisdom saving throw.",
+                        "Creatures that take damage from your opportunity attacks cannot gain hit points until the start of your next turn."
+                    ]
+                }
             ]
         },
         {
@@ -2242,8 +2262,8 @@
             "header": 2,
             "level": 15,
             "entries": [
-                
-                "Through spreading your decay, you may empower your allies with unholy vitality. On your turn, as a reaction to a friendly creature within 30 feet being knocked unconscious you can expend any number of hit die and roll them. The creature gets 1 HP and an amount of temporary HP equal to the number rolled, not being knocked unconscious. While that creature has that temporary HP, their creature type is also Undead and they deal an additional 2d4 necrotic, piercing, or poison damage (your choice) on weapon attacks and unarmed strikes.",
+                "{@i 15th-level Office of the Tribute Feature}",
+                "Through spreading your decay, you may empower your allies with unholy vitality. As a reaction to a friendly creature within 30 feet being knocked unconscious you can expend any number of hit die and roll them. The creature gets 1 HP and an amount of temporary HP equal to the number rolled, not being knocked unconscious. While that creature has that temporary HP, their creature type is also Undead and they deal an additional 2d4 necrotic, piercing, or poison damage (your choice) on weapon attacks and unarmed strikes.",
                 "You can use this feature a number of times equal to your proficiency bonus per long rest."
             ]
         },
@@ -3850,7 +3870,7 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 18,
             "header": 2,
@@ -3886,13 +3906,13 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 15,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 15th-level Office of the Hulk feature}",
+                "{@i 15th-level Office of the Shambling Flesh feature}",
                 "Your strength only grows. You gain expertise in {@skill Athletics}. Additionally, as a reaction to a creature you are not grappling making an attack roll against you, you may use a creature you are grappling as a meat shield: make an athletics check against the attack roll. If you succeed, the attack targets the {@condition grappled} creature instead."
             ]
         },
@@ -3901,13 +3921,13 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 11,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 11th-level Office of the Hulk feature}",
+                "{@i 11th-level Office of the Shambling Flesh feature}",
                 "As your ability to apply brute force waxes, you find new ways to really apply the hurt. When you succeed on grappling check either to grapple someone or to prevent someone from escaping a grapple, you can apply one of the following:",
                 {
                     "type": "entries",
@@ -3947,14 +3967,14 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 6,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 6th-level Office of the Hulk feature}",
-                "You are able to channel necrotic energy to directly increase your size. As a bonus action you may expend a charge. You magically gain the following benefits, which lasts for 1 minute:",
+                "{@i 6th-level Office of the Shambling Flesh feature}",
+                "You are able to channel necrotic energy to directly increase your size. As a bonus action you may expend two charges. You magically gain the following benefits, which lasts for 1 minute:",
                 {
                     "type":"list",
                     "items":[
@@ -3983,13 +4003,13 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 3rd-level Office of the Hulk feature}",
+                "{@i 3rd-level Office of the Shambling Flesh feature}",
                 "You gain an additional way to regain Necrotic Charges:",
                 "Whenever you succeed against a hostile creature on a Shove check, Grapple check, or a check to resist a Grapple escape, you can gain a Necrotic Charge. Once you gain a charge this way, you cannot do so again until the start of your next turn."
             ]
@@ -3999,13 +4019,13 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 3,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 3rd-level Office of the Hulk feature}",
+                "{@i 3rd-level Office of the Shambling Flesh feature}",
                 "You channel necrotic energy into your decayed muscles, charging forward with unstoppable strength. Move up to your remaining movement speed +5ft in a straight line, or up to your movement speed being able to turn at 10ft intervals, passing through creatures without incurring extra movement and not provoking opportunity attacks. Each creature in the path must succeed on a Strength saving throw or take {@dice 2d8+STR} magical bludgeoning damage and are pushed 5ft away from the path, taking half as much damage and not being pushed away on a success. This wrack uses your regular movement speed as you charge.",
                 "If you are grappling a creature when you use this wrack that is of your size category or smaller, you can also brace them in front of you when you charge: that grappled creature must make a Strength saving throw or take {@dice 2d4} bludgeoning damage for each creature, wall or object collided with during the charge (to a maximum amount of obstacles equal to your Strength bonus), or half on a success. This bracing is only usable on one creature per charge.",
                 "This feature's damage increases to {@dice 2d10+STR} and {@dice 3d4} respectively at level 6, {@dice 2d12+STR} and {@dice 4d4} at level 10, and {@dice 3d10+STR} and {@dice 5d4} at level 15."
@@ -4016,13 +4036,13 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 1st-level Office of the Hulk feature}",
+                "{@i 1st-level Office of the Shambling Flesh feature}",
                 "Your revenant strength allows you to achieve superhuman feats. Once per short rest, you can cast the {@spell Jump} spell on yourself.",
                 "At level 5, when you do so you can grapple a creature once as a free action during that jump. At level 12, you get two uses of this feature per short rest and can cast this spell as a bonus action."
             ]
@@ -4032,22 +4052,22 @@
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
             "header": 2,
             "page": 0,
             "entries": [
-                "{@i 1st-level Office of the Hulk feature}",
+                "{@i 1st-level Office of the Shambling Flesh feature}",
                 "The intense fervour that fuels your strength beyond the grave holds an iron grip on your foes. You add your Charisma modifier to grappling checks, and whenever you start your turn with a creature {@condition grappled} they take {@dice 1d6}+PROF magical bludgeoning damage."
             ]
         },
         {
-            "name": "Office of the Hulk",
+            "name": "Office of the Shambling Flesh",
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
-            "subclassShortName": "Hulk",
+            "subclassShortName": "Shambling Flesh",
             "subclassSource": "DepthsofMelokir",
             "level": 1,
             "header": 2,
@@ -4057,11 +4077,11 @@
                 "Eventually, the shackles of your raising have slipped, and now the only will to guide your hands is your own. Some may call you an abomination, a monster, an unholy amalgm: but for all that you are adrift, you can be certain that your strength is finally, truly, your own.",
                 {
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tireless Strength|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|1"
+					"subclassFeature": "Tireless Strength|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|1"
 				},
                 {
 					"type": "refSubclassFeature",
-					"subclassFeature": "Never Out of Reach|Lictor|DepthsofMelokir|Hulk|DepthsofMelokir|1"
+					"subclassFeature": "Never Out of Reach|Lictor|DepthsofMelokir|Shambling Flesh|DepthsofMelokir|1"
 				}
             ]
         }
