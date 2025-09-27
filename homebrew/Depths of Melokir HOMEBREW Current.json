@@ -2004,12 +2004,12 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Forgive no Trespass|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1|DepthsofMelokir"
+                    "subclassFeature": "Shifting Sands|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1|DepthsofMelokir"
                 }
             ]
         },
         {
-            "name": "Empty Flesh",
+            "name": "Thief's Curse",
             "source": "DepthsofMelokir",
             "className": "Lictor",
             "classSource": "DepthsofMelokir",
