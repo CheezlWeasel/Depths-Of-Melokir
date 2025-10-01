@@ -1000,7 +1000,7 @@
                 "Wrack Foes: Wrack with Regret|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|3",
                 "Consumption of Greed|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|3",
 				"Pursuit of the Winds|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|6",
-				"Thief's Curse|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|11",
+				"Immuring Mark|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|11",
 				"Dispersing Passage|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|15",
 				"Ascendant Psychopomp|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|18"
             ]
@@ -2000,7 +2000,7 @@
                 "Lictors originating from this office are most likely to be mummies or similar undead. Very rarely, a being such as a flesh golem might coalesce something of a consciousness enough to become a lictor of this kind, but such personalities are likely to be simplistic or fractured. Despite their new liberty, tomb guardians of any origin are prone to paranoia, as if, despite all they have achieved, part of their original curse still drives them.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Empty Flesh|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1|DepthsofMelokir"
+                    "subclassFeature": "Thief's Curse|Lictor|DepthsofMelokir|Tomb Guardian|DepthsofMelokir|1|DepthsofMelokir"
                 },
                 {
                     "type": "refSubclassFeature",
